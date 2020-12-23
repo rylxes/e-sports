@@ -2,14 +2,16 @@
 
 namespace App\Models;
 
+use App\Scopes\UserScope;
 use Eloquent as Model;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * Class ClubAssesment
  * @package App\Models
- * @version December 22, 2020, 11:32 pm UTC
+ * @version December 23, 2020, 11:09 am UTC
  *
  * @property integer $user_id
  * @property boolean $enjoy_practice_routines
@@ -131,5 +133,22 @@ class ClubAssesment extends Model
         'updated_at' => 'nullable'
     ];
 
+
+    public function user()
+    {
+        return $this->belongsTo(User::Class);
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope(new UserScope());
+        self::creating(function ($model) {
+            $model->user_id = Auth::user()->id;
+        });
+        self::saving(function ($model) {
+            $model->user_id = Auth::user()->id;
+        });
+    }
     
 }

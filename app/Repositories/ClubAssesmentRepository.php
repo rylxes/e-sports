@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class ClubAssesmentRepository
  * @package App\Repositories
- * @version December 22, 2020, 11:32 pm UTC
+ * @version December 23, 2020, 11:09 am UTC
 */
 
 class ClubAssesmentRepository extends BaseRepository
