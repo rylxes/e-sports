@@ -2,25 +2,23 @@
 
 namespace App\Repositories;
 
-use App\Models\Video;
+use App\Models\SkillTest;
 use App\Repositories\BaseRepository;
 
 /**
- * Class VideoRepository
+ * Class SkillTestRepository
  * @package App\Repositories
- * @version December 23, 2020, 11:18 am UTC
+ * @version December 23, 2020, 11:19 am UTC
 */
 
-class VideoRepository extends BaseRepository
+class SkillTestRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'user_id',
-        'type_id',
-        'skill_test_id',
-        'url'
+        'name',
+        'sport_id'
     ];
 
     /**
@@ -38,6 +36,6 @@ class VideoRepository extends BaseRepository
      **/
     public function model()
     {
-        return Video::class;
+        return SkillTest::class;
     }
 }

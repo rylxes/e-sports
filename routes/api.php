@@ -54,3 +54,5 @@ Route::resource('health_predictors', App\Http\Controllers\API\HealthPredictorAPI
 Route::resource('psych_predictors', App\Http\Controllers\API\PsychPredictorAPIController::class);
 
 Route::resource('skill_reports', App\Http\Controllers\API\SkillReportAPIController::class);
+
+Route::resource('skill_tests', App\Http\Controllers\API\SkillTestAPIController::class);

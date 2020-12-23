@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Video;
+use App\Models\SkillTest;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class VideoFactory extends Factory
+class SkillTestFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Video::class;
+    protected $model = SkillTest::class;
 
     /**
      * Define the model's default state.
@@ -22,10 +22,8 @@ class VideoFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => $this->faker->randomDigitNotNull,
-        'type_id' => $this->faker->randomDigitNotNull,
-        'skill_test_id' => $this->faker->randomDigitNotNull,
-        'url' => $this->faker->word,
+            'name' => $this->faker->word,
+        'sport_id' => $this->faker->randomDigitNotNull,
         'created_at' => $this->faker->date('Y-m-d H:i:s'),
         'updated_at' => $this->faker->date('Y-m-d H:i:s')
         ];

@@ -11,12 +11,11 @@ use Illuminate\Support\Facades\Auth;
 /**
  * Class Video
  * @package App\Models
- * @version December 23, 2020, 11:06 am UTC
+ * @version December 23, 2020, 11:18 am UTC
  *
  * @property integer $user_id
  * @property integer $type_id
- * @property integer $sport_id
- * @property string $skill_test
+ * @property integer $skill_test_id
  * @property string $url
  */
 class Video extends Model
@@ -35,8 +34,7 @@ class Video extends Model
     public $fillable = [
         'user_id',
         'type_id',
-        'sport_id',
-        'skill_test',
+        'skill_test_id',
         'url'
     ];
 
@@ -49,8 +47,7 @@ class Video extends Model
         'id' => 'integer',
         'user_id' => 'integer',
         'type_id' => 'integer',
-        'sport_id' => 'integer',
-        'skill_test' => 'string',
+        'skill_test_id' => 'integer',
         'url' => 'string'
     ];
 
@@ -62,8 +59,7 @@ class Video extends Model
     public static $rules = [
         'user_id' => 'required|integer',
         'type_id' => 'required|integer',
-        'sport_id' => 'required|integer',
-        'skill_test' => 'required|string|max:255',
+        'skill_test_id' => 'required|integer',
         'url' => 'required|string|max:255',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
@@ -73,7 +69,6 @@ class Video extends Model
     {
         return $this->belongsTo(User::Class);
     }
-
     protected static function boot()
     {
         parent::boot();
