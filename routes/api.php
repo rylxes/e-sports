@@ -35,24 +35,17 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
 
     Route::middleware('auth:api')->group(function () {
         Route::resource('club_assesments', App\Http\Controllers\API\ClubAssesmentAPIController::class);
+        Route::resource('personal_details', App\Http\Controllers\API\PersonalDetailsAPIController::class);
+        Route::resource('videos', App\Http\Controllers\API\VideoAPIController::class);
+        Route::resource('video_types', App\Http\Controllers\API\VideoTypeAPIController::class);
+        Route::resource('sports', App\Http\Controllers\API\SportAPIController::class);
+        Route::resource('health_predictors', App\Http\Controllers\API\HealthPredictorAPIController::class);
+        Route::resource('psych_predictors', App\Http\Controllers\API\PsychPredictorAPIController::class);
+        Route::resource('skill_reports', App\Http\Controllers\API\SkillReportAPIController::class);
+        Route::resource('skill_tests', App\Http\Controllers\API\SkillTestAPIController::class);
     });
 
 });
 
 
 
-Route::resource('personal_details', App\Http\Controllers\API\PersonalDetailsAPIController::class);
-Route::resource('videos', App\Http\Controllers\API\VideoAPIController::class);
-
-
-Route::resource('video_types', App\Http\Controllers\API\VideoTypeAPIController::class);
-
-Route::resource('sports', App\Http\Controllers\API\SportAPIController::class);
-
-Route::resource('health_predictors', App\Http\Controllers\API\HealthPredictorAPIController::class);
-
-Route::resource('psych_predictors', App\Http\Controllers\API\PsychPredictorAPIController::class);
-
-Route::resource('skill_reports', App\Http\Controllers\API\SkillReportAPIController::class);
-
-Route::resource('skill_tests', App\Http\Controllers\API\SkillTestAPIController::class);
