@@ -12,6 +12,7 @@ use Response;
 
 /**
  * Class SportController
+ * @group Sport
  * @package App\Http\Controllers\API
  */
 

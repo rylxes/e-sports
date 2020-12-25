@@ -10,11 +10,481 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "053b13b8-7000-4134-89ac-90c576776d97",
+        "_postman_id": "cad3b313-7d39-493a-bd17-b3f42974ab13",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
+        {
+            "name": "Auth",
+            "description": "",
+            "item": [
+                {
+                    "name": "Handle a login request to the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/login",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Log the user out of the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logout",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Handle a registration request for the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Send a reset link to the given user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/password\/email",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/email"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the password reset view for the given token.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/password\/reset\/:token",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/reset\/:token",
+                            "variable": [
+                                {
+                                    "id": "token",
+                                    "key": "token",
+                                    "value": "quae",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "If no token is present, display the link request form.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Reset the given user's password.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/password\/reset",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/reset"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Confirm the given user's password.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/password\/confirm",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/confirm"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Mark the authenticated user's email address as verified.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/email\/verify\/:id\/:hash",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/email\/verify\/:id\/:hash",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "amet",
+                                    "description": ""
+                                },
+                                {
+                                    "id": "hash",
+                                    "key": "hash",
+                                    "value": "nihil",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Resend the email verification notification.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/email\/resend",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/email\/resend"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Club Assesment",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the ClubAssesment.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/club_assesments",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/clubAssesments",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created ClubAssesment in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/club_assesments",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 12,\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"voluptas\",\n    \"motivation\": \"aut\",\n    \"achievement\": \"et\",\n    \"admired_sportsperson\": \"aut\",\n    \"top_athlete_plans\": \"rem\",\n    \"current_team\": \"rerum\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"consequatur\",\n    \"nickname\": \"ab\",\n    \"favourite_sports_team\": \"perferendis\",\n    \"why_like_team\": \"expedita\",\n    \"no_of_teams_played_for\": 6,\n    \"why_leave\": \"possimus\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"quia\",\n    \"preferred_foot\": \"quod\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "POST \/clubAssesments",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified ClubAssesment.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/club_assesments\/:club_assesment",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments\/:club_assesment",
+                            "variable": [
+                                {
+                                    "id": "club_assesment",
+                                    "key": "club_assesment",
+                                    "value": "perferendis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/clubAssesments\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified ClubAssesment in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/club_assesments\/:club_assesment",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments\/:club_assesment",
+                            "variable": [
+                                {
+                                    "id": "club_assesment",
+                                    "key": "club_assesment",
+                                    "value": "doloribus",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 5,\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"cupiditate\",\n    \"motivation\": \"possimus\",\n    \"achievement\": \"optio\",\n    \"admired_sportsperson\": \"id\",\n    \"top_athlete_plans\": \"fugit\",\n    \"current_team\": \"sunt\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"velit\",\n    \"nickname\": \"aliquam\",\n    \"favourite_sports_team\": \"vero\",\n    \"why_like_team\": \"quos\",\n    \"no_of_teams_played_for\": 4,\n    \"why_leave\": \"itaque\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"repellendus\",\n    \"preferred_foot\": \"perspiciatis\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/clubAssesments\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified ClubAssesment from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/club_assesments\/:club_assesment",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments\/:club_assesment",
+                            "variable": [
+                                {
+                                    "id": "club_assesment",
+                                    "key": "club_assesment",
+                                    "value": "tempora",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/clubAssesments\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
         {
             "name": "Endpoints",
             "description": "",
@@ -177,7 +647,7 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "voluptatem",
+                                    "value": "quibusdam",
                                     "description": ""
                                 }
                             ]
@@ -301,7 +771,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "aperiam",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -338,7 +808,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "excepturi",
+                                    "value": "consequatur",
                                     "description": ""
                                 }
                             ]
@@ -516,239 +986,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/login",
+                    "name": "\/",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/login",
+                            "path": "\/",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/login"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/logout",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/logout",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/logout"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/register",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/register",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/register"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Send a reset link to the given user.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/password\/email",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/email"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the password reset view for the given token.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/password\/reset\/:token",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/reset\/:token",
-                            "variable": [
-                                {
-                                    "id": "token",
-                                    "key": "token",
-                                    "value": "minima",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "If no token is present, display the link request form.",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Reset the given user's password.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/password\/reset",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/reset"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Confirm the given user's password.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/password\/confirm",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/password\/confirm"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Mark the authenticated user's email address as verified.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/email\/verify\/:id\/:hash",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/email\/verify\/:id\/:hash",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "fugit",
-                                    "description": ""
-                                },
-                                {
-                                    "id": "hash",
-                                    "key": "hash",
-                                    "value": "et",
-                                    "description": ""
-                                }
-                            ]
+                            "raw": "http:\/\/{{baseUrl}}\/\/"
                         },
                         "method": "GET",
                         "header": [
@@ -770,16 +1015,16 @@
                     "response": []
                 },
                 {
-                    "name": "Resend the email verification notification.",
+                    "name": "Show the application dashboard.",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/email\/resend",
+                            "path": "home",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/email\/resend"
+                            "raw": "http:\/\/{{baseUrl}}\/home"
                         },
-                        "method": "POST",
+                        "method": "GET",
                         "header": [
                             {
                                 "key": "Content-Type",
@@ -797,882 +1042,13 @@
                         }
                     },
                     "response": []
-                },
-                {
-                    "name": "Display a listing of the ClubAssesment.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/club_assesments",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/clubAssesments",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Store a newly created ClubAssesment in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/club_assesments",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"user_id\": 7,\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"sit\",\n    \"motivation\": \"aperiam\",\n    \"achievement\": \"fugiat\",\n    \"admired_sportsperson\": \"aut\",\n    \"top_athlete_plans\": \"ipsa\",\n    \"current_team\": \"similique\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"libero\",\n    \"nickname\": \"soluta\",\n    \"favourite_sports_team\": \"quam\",\n    \"why_like_team\": \"voluptas\",\n    \"no_of_teams_played_for\": 14,\n    \"why_leave\": \"neque\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"tenetur\",\n    \"preferred_foot\": \"rerum\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "POST \/clubAssesments",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified ClubAssesment.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/club_assesments\/:club_assesment",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments\/:club_assesment",
-                            "variable": [
-                                {
-                                    "id": "club_assesment",
-                                    "key": "club_assesment",
-                                    "value": "est",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/clubAssesments\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Update the specified ClubAssesment in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/club_assesments\/:club_assesment",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments\/:club_assesment",
-                            "variable": [
-                                {
-                                    "id": "club_assesment",
-                                    "key": "club_assesment",
-                                    "value": "placeat",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"user_id\": 2,\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"tempora\",\n    \"motivation\": \"assumenda\",\n    \"achievement\": \"unde\",\n    \"admired_sportsperson\": \"incidunt\",\n    \"top_athlete_plans\": \"ex\",\n    \"current_team\": \"aut\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"doloribus\",\n    \"nickname\": \"ut\",\n    \"favourite_sports_team\": \"et\",\n    \"why_like_team\": \"exercitationem\",\n    \"no_of_teams_played_for\": 19,\n    \"why_leave\": \"optio\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"omnis\",\n    \"preferred_foot\": \"rerum\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "PUT\/PATCH \/clubAssesments\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified ClubAssesment from storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/club_assesments\/:club_assesment",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/club_assesments\/:club_assesment",
-                            "variable": [
-                                {
-                                    "id": "club_assesment",
-                                    "key": "club_assesment",
-                                    "value": "qui",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "DELETE \/clubAssesments\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the PersonalDetails.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/personal_details",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/personalDetails",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Store a newly created PersonalDetails in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/personal_details",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"user_id\": 7,\n    \"first_name\": \"velit\",\n    \"marital_status\": \"corrupti\",\n    \"mother_maiden_name\": \"aspernatur\",\n    \"last_name\": \"dolor\",\n    \"height\": \"labore\",\n    \"body_weight\": \"praesentium\",\n    \"phone\": \"quibusdam\",\n    \"sm_handle\": \"earum\",\n    \"highest_education\": \"sint\",\n    \"place_of_birth\": \"aliquam\",\n    \"school\": \"officiis\",\n    \"career_preference\": \"doloremque\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"sit\",\n    \"dob\": {},\n    \"country_id\": 1,\n    \"state_of_origin\": 9,\n    \"zipcode\": 9,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "POST \/personalDetails",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified PersonalDetails.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/personal_details\/:personal_detail",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details\/:personal_detail",
-                            "variable": [
-                                {
-                                    "id": "personal_detail",
-                                    "key": "personal_detail",
-                                    "value": "nisi",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/personalDetails\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Update the specified PersonalDetails in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/personal_details\/:personal_detail",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details\/:personal_detail",
-                            "variable": [
-                                {
-                                    "id": "personal_detail",
-                                    "key": "personal_detail",
-                                    "value": "sed",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"user_id\": 11,\n    \"first_name\": \"beatae\",\n    \"marital_status\": \"omnis\",\n    \"mother_maiden_name\": \"omnis\",\n    \"last_name\": \"rerum\",\n    \"height\": \"voluptatibus\",\n    \"body_weight\": \"asperiores\",\n    \"phone\": \"dolor\",\n    \"sm_handle\": \"consequatur\",\n    \"highest_education\": \"quo\",\n    \"place_of_birth\": \"voluptates\",\n    \"school\": \"reprehenderit\",\n    \"career_preference\": \"dolorem\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"eaque\",\n    \"dob\": {},\n    \"country_id\": 1,\n    \"state_of_origin\": 12,\n    \"zipcode\": 11,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "PUT\/PATCH \/personalDetails\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified PersonalDetails from storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/personal_details\/:personal_detail",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details\/:personal_detail",
-                            "variable": [
-                                {
-                                    "id": "personal_detail",
-                                    "key": "personal_detail",
-                                    "value": "sed",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "DELETE \/personalDetails\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the Video.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/videos",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/videos"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/videos",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Store a newly created Video in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/videos",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/videos"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"user_id\": 3,\n    \"type_id\": 15,\n    \"skill_test_id\": 7,\n    \"url\": \"et\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "POST \/videos",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified Video.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/videos\/:video",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/videos\/:video",
-                            "variable": [
-                                {
-                                    "id": "video",
-                                    "key": "video",
-                                    "value": "tempora",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/videos\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Update the specified Video in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/videos\/:video",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/videos\/:video",
-                            "variable": [
-                                {
-                                    "id": "video",
-                                    "key": "video",
-                                    "value": "est",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"user_id\": 13,\n    \"type_id\": 15,\n    \"skill_test_id\": 4,\n    \"url\": \"et\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "PUT\/PATCH \/videos\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified Video from storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/videos\/:video",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/videos\/:video",
-                            "variable": [
-                                {
-                                    "id": "video",
-                                    "key": "video",
-                                    "value": "cum",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "DELETE \/videos\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the VideoType.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/video_types",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/videoTypes",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Store a newly created VideoType in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/video_types",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"name\": \"accusamus\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "POST \/videoTypes",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified VideoType.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/video_types\/:video_type",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types\/:video_type",
-                            "variable": [
-                                {
-                                    "id": "video_type",
-                                    "key": "video_type",
-                                    "value": "enim",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/videoTypes\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Update the specified VideoType in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/video_types\/:video_type",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types\/:video_type",
-                            "variable": [
-                                {
-                                    "id": "video_type",
-                                    "key": "video_type",
-                                    "value": "rem",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"name\": \"alias\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "PUT\/PATCH \/videoTypes\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified VideoType from storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/video_types\/:video_type",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types\/:video_type",
-                            "variable": [
-                                {
-                                    "id": "video_type",
-                                    "key": "video_type",
-                                    "value": "quos",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "DELETE \/videoTypes\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the Sport.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/sports",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/sports"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/sports",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Store a newly created Sport in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/sports",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/sports"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"name\": \"aut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "POST \/sports",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified Sport.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/sports\/:sport",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/sports\/:sport",
-                            "variable": [
-                                {
-                                    "id": "sport",
-                                    "key": "sport",
-                                    "value": "et",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/sports\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Update the specified Sport in storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/sports\/:sport",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/sports\/:sport",
-                            "variable": [
-                                {
-                                    "id": "sport",
-                                    "key": "sport",
-                                    "value": "rerum",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"name\": \"recusandae\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
-                        },
-                        "description": "PUT\/PATCH \/sports\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified Sport from storage.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/sports\/:sport",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/sports\/:sport",
-                            "variable": [
-                                {
-                                    "id": "sport",
-                                    "key": "sport",
-                                    "value": "consequuntur",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "DELETE \/sports\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
+                }
+            ]
+        },
+        {
+            "name": "Health Predictor",
+            "description": "",
+            "item": [
                 {
                     "name": "Display a listing of the HealthPredictor.",
                     "request": {
@@ -1725,7 +1101,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 16,\n    \"blood_group\": \"libero\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"porro\",\n    \"long_term_injury\": \"porro\",\n    \"treatment_type\": \"earum\",\n    \"current_health_injury\": \"qui\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"fugit\",\n    \"injury_seriousness\": \"quidem\",\n    \"medical_treatment\": \"mollitia\",\n    \"injury_location\": \"et\",\n    \"genotype\": \"dolorem\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 11,\n    \"blood_group\": \"et\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"sit\",\n    \"long_term_injury\": \"aut\",\n    \"treatment_type\": \"quibusdam\",\n    \"current_health_injury\": \"eaque\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"sed\",\n    \"injury_seriousness\": \"aut\",\n    \"medical_treatment\": \"voluptatem\",\n    \"injury_location\": \"quam\",\n    \"genotype\": \"incidunt\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/healthPredictors",
                         "auth": {
@@ -1747,7 +1123,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "exercitationem",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -1784,7 +1160,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "enim",
+                                    "value": "nobis",
                                     "description": ""
                                 }
                             ]
@@ -1802,7 +1178,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 11,\n    \"blood_group\": \"numquam\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"voluptatum\",\n    \"long_term_injury\": \"fugiat\",\n    \"treatment_type\": \"rerum\",\n    \"current_health_injury\": \"deserunt\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"ab\",\n    \"injury_seriousness\": \"numquam\",\n    \"medical_treatment\": \"consectetur\",\n    \"injury_location\": \"laborum\",\n    \"genotype\": \"saepe\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 15,\n    \"blood_group\": \"accusantium\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"aperiam\",\n    \"long_term_injury\": \"maxime\",\n    \"treatment_type\": \"iste\",\n    \"current_health_injury\": \"itaque\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"modi\",\n    \"injury_seriousness\": \"et\",\n    \"medical_treatment\": \"omnis\",\n    \"injury_location\": \"itaque\",\n    \"genotype\": \"quia\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/healthPredictors\/{id}",
                         "auth": {
@@ -1824,7 +1200,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "quo",
+                                    "value": "excepturi",
                                     "description": ""
                                 }
                             ]
@@ -1847,7 +1223,194 @@
                         }
                     },
                     "response": []
+                }
+            ]
+        },
+        {
+            "name": "Personal Details",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the PersonalDetails.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/personal_details",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/personalDetails",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
                 },
+                {
+                    "name": "Store a newly created PersonalDetails in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/personal_details",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 12,\n    \"first_name\": \"nihil\",\n    \"marital_status\": \"labore\",\n    \"mother_maiden_name\": \"et\",\n    \"last_name\": \"rerum\",\n    \"height\": \"provident\",\n    \"body_weight\": \"dolores\",\n    \"phone\": \"qui\",\n    \"sm_handle\": \"at\",\n    \"highest_education\": \"dolor\",\n    \"place_of_birth\": \"a\",\n    \"school\": \"a\",\n    \"career_preference\": \"ad\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"quia\",\n    \"dob\": {},\n    \"country_id\": 3,\n    \"state_of_origin\": 6,\n    \"zipcode\": 5,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "POST \/personalDetails",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified PersonalDetails.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/personal_details\/:personal_detail",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details\/:personal_detail",
+                            "variable": [
+                                {
+                                    "id": "personal_detail",
+                                    "key": "personal_detail",
+                                    "value": "ea",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/personalDetails\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified PersonalDetails in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/personal_details\/:personal_detail",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details\/:personal_detail",
+                            "variable": [
+                                {
+                                    "id": "personal_detail",
+                                    "key": "personal_detail",
+                                    "value": "voluptatem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 10,\n    \"first_name\": \"excepturi\",\n    \"marital_status\": \"quis\",\n    \"mother_maiden_name\": \"non\",\n    \"last_name\": \"praesentium\",\n    \"height\": \"est\",\n    \"body_weight\": \"voluptatum\",\n    \"phone\": \"sit\",\n    \"sm_handle\": \"eum\",\n    \"highest_education\": \"molestiae\",\n    \"place_of_birth\": \"eligendi\",\n    \"school\": \"nesciunt\",\n    \"career_preference\": \"quod\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"dolorem\",\n    \"dob\": {},\n    \"country_id\": 1,\n    \"state_of_origin\": 11,\n    \"zipcode\": 20,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/personalDetails\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified PersonalDetails from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/personal_details\/:personal_detail",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/personal_details\/:personal_detail",
+                            "variable": [
+                                {
+                                    "id": "personal_detail",
+                                    "key": "personal_detail",
+                                    "value": "nobis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/personalDetails\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Psych Predictor",
+            "description": "",
+            "item": [
                 {
                     "name": "Display a listing of the PsychPredictor.",
                     "request": {
@@ -1900,7 +1463,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 9,\n    \"time_practice_in_week\": 15,\n    \"hours_practice_in_week\": 8,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"nobis\",\n    \"challenges\": \"et\",\n    \"greatest_motivation\": \"placeat\",\n    \"strength\": \"iure\",\n    \"weakness\": \"sit\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"cumque\",\n    \"rating_sports\": \"alias\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 15,\n    \"time_practice_in_week\": 8,\n    \"hours_practice_in_week\": 14,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"recusandae\",\n    \"challenges\": \"reiciendis\",\n    \"greatest_motivation\": \"sit\",\n    \"strength\": \"eos\",\n    \"weakness\": \"saepe\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"assumenda\",\n    \"rating_sports\": \"iusto\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/psychPredictors",
                         "auth": {
@@ -1922,7 +1485,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "quidem",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -1959,7 +1522,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "possimus",
+                                    "value": "deserunt",
                                     "description": ""
                                 }
                             ]
@@ -1977,7 +1540,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 1,\n    \"time_practice_in_week\": 2,\n    \"hours_practice_in_week\": 19,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"fugiat\",\n    \"challenges\": \"non\",\n    \"greatest_motivation\": \"exercitationem\",\n    \"strength\": \"possimus\",\n    \"weakness\": \"nobis\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"distinctio\",\n    \"rating_sports\": \"ut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 16,\n    \"time_practice_in_week\": 9,\n    \"hours_practice_in_week\": 7,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"deserunt\",\n    \"challenges\": \"nam\",\n    \"greatest_motivation\": \"doloremque\",\n    \"strength\": \"officiis\",\n    \"weakness\": \"consectetur\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"nobis\",\n    \"rating_sports\": \"repudiandae\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/psychPredictors\/{id}",
                         "auth": {
@@ -1999,7 +1562,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "rerum",
+                                    "value": "repellat",
                                     "description": ""
                                 }
                             ]
@@ -2022,7 +1585,13 @@
                         }
                     },
                     "response": []
-                },
+                }
+            ]
+        },
+        {
+            "name": "Skill Report",
+            "description": "",
+            "item": [
                 {
                     "name": "Display a listing of the SkillReport.",
                     "request": {
@@ -2075,7 +1644,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 13,\n    \"speed\": \"voluptatem\",\n    \"passing\": \"dolores\",\n    \"shooting\": \"quo\",\n    \"dribbling\": \"maiores\",\n    \"heading\": \"sit\",\n    \"ball_control\": \"ipsam\",\n    \"fitness\": \"autem\",\n    \"movement\": \"autem\",\n    \"awareness\": \"et\",\n    \"decisions\": \"vitae\",\n    \"workrate\": \"quaerat\",\n    \"strength\": \"a\",\n    \"crossing\": \"eveniet\",\n    \"finishing\": \"saepe\",\n    \"positioning\": \"aut\",\n    \"anticipation\": \"nostrum\",\n    \"total\": \"provident\",\n    \"overall_grade\": \"perferendis\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 12,\n    \"speed\": \"totam\",\n    \"passing\": \"dignissimos\",\n    \"shooting\": \"incidunt\",\n    \"dribbling\": \"et\",\n    \"heading\": \"blanditiis\",\n    \"ball_control\": \"laborum\",\n    \"fitness\": \"error\",\n    \"movement\": \"quasi\",\n    \"awareness\": \"rerum\",\n    \"decisions\": \"eos\",\n    \"workrate\": \"nesciunt\",\n    \"strength\": \"qui\",\n    \"crossing\": \"non\",\n    \"finishing\": \"est\",\n    \"positioning\": \"corrupti\",\n    \"anticipation\": \"quod\",\n    \"total\": \"qui\",\n    \"overall_grade\": \"commodi\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillReports",
                         "auth": {
@@ -2097,7 +1666,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "sunt",
+                                    "value": "eum",
                                     "description": ""
                                 }
                             ]
@@ -2134,7 +1703,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "sunt",
+                                    "value": "fugiat",
                                     "description": ""
                                 }
                             ]
@@ -2152,7 +1721,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 10,\n    \"speed\": \"consectetur\",\n    \"passing\": \"accusamus\",\n    \"shooting\": \"voluptates\",\n    \"dribbling\": \"culpa\",\n    \"heading\": \"aut\",\n    \"ball_control\": \"dolorum\",\n    \"fitness\": \"deserunt\",\n    \"movement\": \"sed\",\n    \"awareness\": \"dolor\",\n    \"decisions\": \"error\",\n    \"workrate\": \"ad\",\n    \"strength\": \"nostrum\",\n    \"crossing\": \"voluptatem\",\n    \"finishing\": \"ad\",\n    \"positioning\": \"excepturi\",\n    \"anticipation\": \"possimus\",\n    \"total\": \"non\",\n    \"overall_grade\": \"aliquam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 17,\n    \"speed\": \"recusandae\",\n    \"passing\": \"tenetur\",\n    \"shooting\": \"neque\",\n    \"dribbling\": \"ipsum\",\n    \"heading\": \"excepturi\",\n    \"ball_control\": \"consequatur\",\n    \"fitness\": \"cum\",\n    \"movement\": \"non\",\n    \"awareness\": \"ut\",\n    \"decisions\": \"magni\",\n    \"workrate\": \"et\",\n    \"strength\": \"corrupti\",\n    \"crossing\": \"quis\",\n    \"finishing\": \"eum\",\n    \"positioning\": \"porro\",\n    \"anticipation\": \"alias\",\n    \"total\": \"reiciendis\",\n    \"overall_grade\": \"laudantium\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillReports\/{id}",
                         "auth": {
@@ -2174,7 +1743,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "id",
+                                    "value": "quia",
                                     "description": ""
                                 }
                             ]
@@ -2197,7 +1766,13 @@
                         }
                     },
                     "response": []
-                },
+                }
+            ]
+        },
+        {
+            "name": "Skill Test",
+            "description": "",
+            "item": [
                 {
                     "name": "Display a listing of the SkillTest.",
                     "request": {
@@ -2250,7 +1825,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"iure\",\n    \"sport_id\": 10,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"impedit\",\n    \"sport_id\": 12,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillTests",
                         "auth": {
@@ -2272,7 +1847,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "quaerat",
+                                    "value": "eos",
                                     "description": ""
                                 }
                             ]
@@ -2309,7 +1884,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "et",
+                                    "value": "nesciunt",
                                     "description": ""
                                 }
                             ]
@@ -2327,7 +1902,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"sint\",\n    \"sport_id\": 17,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"non\",\n    \"sport_id\": 14,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillTests\/{id}",
                         "auth": {
@@ -2349,7 +1924,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "vero",
+                                    "value": "non",
                                     "description": ""
                                 }
                             ]
@@ -2372,16 +1947,22 @@
                         }
                     },
                     "response": []
-                },
+                }
+            ]
+        },
+        {
+            "name": "Sport",
+            "description": "",
+            "item": [
                 {
-                    "name": "\/",
+                    "name": "Display a listing of the Sport.",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "\/",
+                            "path": "api\/sports",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/\/"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/sports"
                         },
                         "method": "GET",
                         "header": [
@@ -2395,7 +1976,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "GET|HEAD \/sports",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2403,14 +1984,54 @@
                     "response": []
                 },
                 {
-                    "name": "Show the application dashboard.",
+                    "name": "Store a newly created Sport in storage.",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "home",
+                            "path": "api\/sports",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/home"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/sports"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"quibusdam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "POST \/sports",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified Sport.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/sports\/:sport",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/sports\/:sport",
+                            "variable": [
+                                {
+                                    "id": "sport",
+                                    "key": "sport",
+                                    "value": "odio",
+                                    "description": ""
+                                }
+                            ]
                         },
                         "method": "GET",
                         "header": [
@@ -2424,7 +2045,446 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "GET|HEAD \/sports\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Sport in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/sports\/:sport",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/sports\/:sport",
+                            "variable": [
+                                {
+                                    "id": "sport",
+                                    "key": "sport",
+                                    "value": "quidem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"aut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/sports\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Sport from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/sports\/:sport",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/sports\/:sport",
+                            "variable": [
+                                {
+                                    "id": "sport",
+                                    "key": "sport",
+                                    "value": "repellat",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/sports\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Video",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the Video.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/videos",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/videos"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/videos",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created Video in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/videos",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/videos"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 6,\n    \"type_id\": 10,\n    \"skill_test_id\": 19,\n    \"url\": \"sequi\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "POST \/videos",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified Video.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/videos\/:video",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/videos\/:video",
+                            "variable": [
+                                {
+                                    "id": "video",
+                                    "key": "video",
+                                    "value": "nisi",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/videos\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Video in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/videos\/:video",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/videos\/:video",
+                            "variable": [
+                                {
+                                    "id": "video",
+                                    "key": "video",
+                                    "value": "et",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 1,\n    \"type_id\": 19,\n    \"skill_test_id\": 13,\n    \"url\": \"nulla\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/videos\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Video from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/videos\/:video",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/videos\/:video",
+                            "variable": [
+                                {
+                                    "id": "video",
+                                    "key": "video",
+                                    "value": "eaque",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/videos\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Video Type",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the VideoType.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/video_types",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/videoTypes",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created VideoType in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/video_types",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"rerum\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "POST \/videoTypes",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified VideoType.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/video_types\/:video_type",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types\/:video_type",
+                            "variable": [
+                                {
+                                    "id": "video_type",
+                                    "key": "video_type",
+                                    "value": "facere",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/videoTypes\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified VideoType in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/video_types\/:video_type",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types\/:video_type",
+                            "variable": [
+                                {
+                                    "id": "video_type",
+                                    "key": "video_type",
+                                    "value": "iure",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"aut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/videoTypes\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified VideoType from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/video_types\/:video_type",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/video_types\/:video_type",
+                            "variable": [
+                                {
+                                    "id": "video_type",
+                                    "key": "video_type",
+                                    "value": "minus",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/videoTypes\/{id}",
                         "auth": {
                             "type": "noauth"
                         }

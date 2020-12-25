@@ -5,7 +5,11 @@ namespace App\Http\Controllers\API\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\ResetsPasswords;
-
+/**
+ *
+ * @group Auth
+ *
+ */
 class ResetPasswordController extends Controller
 {
     /*

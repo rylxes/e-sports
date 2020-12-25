@@ -5,7 +5,11 @@ namespace App\Http\Controllers\API\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\VerifiesEmails;
-
+/**
+ *
+ * @group Auth
+ *
+ */
 class VerificationController extends Controller
 {
     /*

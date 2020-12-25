@@ -12,6 +12,7 @@ use Response;
 
 /**
  * Class PsychPredictorController
+ * @group Psych Predictor
  * @package App\Http\Controllers\API
  */
 

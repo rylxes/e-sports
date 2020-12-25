@@ -12,6 +12,7 @@ use Response;
 
 /**
  * Class HealthPredictorController
+ * @group Health Predictor
  * @package App\Http\Controllers\API
  */
 

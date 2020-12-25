@@ -12,6 +12,7 @@ use Response;
 
 /**
  * Class VideoTypeController
+ * @group Video Type
  * @package App\Http\Controllers\API
  */
 

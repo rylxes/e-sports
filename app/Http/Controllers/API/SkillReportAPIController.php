@@ -12,6 +12,7 @@ use Response;
 
 /**
  * Class SkillReportController
+ * @group Skill Report
  * @package App\Http\Controllers\API
  */
 

@@ -12,8 +12,11 @@ use Response;
 
 /**
  * Class ClubAssesmentController
+ * @group Club Assesment
  * @package App\Http\Controllers\API
  */
+
+
 
 class ClubAssesmentAPIController extends AppBaseController
 {

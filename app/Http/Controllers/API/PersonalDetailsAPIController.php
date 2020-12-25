@@ -12,6 +12,7 @@ use Response;
 
 /**
  * Class PersonalDetailsController
+ * @group Personal Details
  * @package App\Http\Controllers\API
  */
 
