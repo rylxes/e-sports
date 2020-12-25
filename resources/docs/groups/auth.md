@@ -226,14 +226,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/quae" \
+    -G "http://localhost/api/password/reset/quisquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/quae"
+    "http://localhost/api/password/reset/quisquam"
 );
 
 let headers = {
@@ -298,8 +298,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="LUC7uNJ954MQbN9pFhEuoC3PWAFxzxBemBv9HmWq">
-            <input type="hidden" name="token" value="quae">
+            <input type="hidden" name="_token" value="dRhl0CnLSqFTm9gvxCTtH6h2LFiKDUbA6QqxG9Me">
+            <input type="hidden" name="token" value="quisquam">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -495,14 +495,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/amet/nihil" \
+    -G "http://localhost/api/email/verify/iusto/nemo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/amet/nihil"
+    "http://localhost/api/email/verify/iusto/nemo"
 );
 
 let headers = {
