@@ -226,14 +226,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/quisquam" \
+    -G "http://localhost/api/password/reset/blanditiis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/quisquam"
+    "http://localhost/api/password/reset/blanditiis"
 );
 
 let headers = {
@@ -258,7 +258,7 @@ fetch(url, {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Laravel</title>
+    <title>E-sports</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -298,8 +298,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="dRhl0CnLSqFTm9gvxCTtH6h2LFiKDUbA6QqxG9Me">
-            <input type="hidden" name="token" value="quisquam">
+            <input type="hidden" name="_token" value="VaCZSYWJfU2Wv6CwTua5WSWcNubgSJP0XZcZaGHn">
+            <input type="hidden" name="token" value="blanditiis">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -495,14 +495,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/iusto/nemo" \
+    -G "http://localhost/api/email/verify/rem/ex" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/iusto/nemo"
+    "http://localhost/api/email/verify/rem/ex"
 );
 
 let headers = {

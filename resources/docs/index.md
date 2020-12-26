@@ -1,5 +1,5 @@
 ---
-title: Laravel Documentation
+title: E-sports App API Documentation
 
 language_tabs:
 - bash
@@ -23,7 +23,7 @@ toc_footers:
 
 # Introduction
 
-
+E-sports App API Documentation
 
 This documentation aims to provide all the information you need to work with our API.
 

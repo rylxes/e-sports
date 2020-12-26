@@ -3,10 +3,13 @@
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
+
+//phpinfo();
+
 define('LARAVEL_START', microtime(true));
 
 /*
-|--------------------------------------------------------------------------
+|--------------------------------------------4------------------------------
 | Check If Application Is Under Maintenance
 |--------------------------------------------------------------------------
 |
