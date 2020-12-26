@@ -41,3 +41,18 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
 
 
 
+
+
+Route::resource('folders', App\Http\Controllers\API\FolderAPIController::class);
+
+Route::resource('settings', App\Http\Controllers\API\SettingAPIController::class);
+
+Route::resource('tags', App\Http\Controllers\API\TagAPIController::class);
+
+Route::resource('files', App\Http\Controllers\API\FileAPIController::class);
+
+Route::resource('libraries', App\Http\Controllers\API\LibraryAPIController::class);
+
+Route::resource('companies', App\Http\Controllers\API\CompanyAPIController::class);
+
+Route::resource('profiles', App\Http\Controllers\API\ProfileAPIController::class);
