@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/health_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":10,"blood_group":"optio","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"accusantium","long_term_injury":"mollitia","treatment_type":"odio","current_health_injury":"et","is_personal_health_challenge":false,"personal_health_challenge":"commodi","injury_seriousness":"facere","medical_treatment":"veritatis","injury_location":"consequatur","genotype":"porro","created_at":{},"updated_at":{}}'
+    -d '{"user_id":1,"blood_group":"suscipit","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"et","long_term_injury":"adipisci","treatment_type":"tenetur","current_health_injury":"sapiente","is_personal_health_challenge":false,"personal_health_challenge":"ipsam","injury_seriousness":"expedita","medical_treatment":"ea","injury_location":"distinctio","genotype":"cum","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,22 +90,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 10,
-    "blood_group": "optio",
+    "user_id": 1,
+    "blood_group": "suscipit",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "accusantium",
-    "long_term_injury": "mollitia",
-    "treatment_type": "odio",
-    "current_health_injury": "et",
+    "hereditary_issue": "et",
+    "long_term_injury": "adipisci",
+    "treatment_type": "tenetur",
+    "current_health_injury": "sapiente",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "commodi",
-    "injury_seriousness": "facere",
-    "medical_treatment": "veritatis",
-    "injury_location": "consequatur",
-    "genotype": "porro",
+    "personal_health_challenge": "ipsam",
+    "injury_seriousness": "expedita",
+    "medical_treatment": "ea",
+    "injury_location": "distinctio",
+    "genotype": "cum",
     "created_at": {},
     "updated_at": {}
 }
@@ -246,14 +246,14 @@ GET|HEAD /healthPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/health_predictors/magnam" \
+    -G "http://localhost/api/health_predictors/cum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/magnam"
+    "http://localhost/api/health_predictors/cum"
 );
 
 let headers = {
@@ -314,16 +314,16 @@ PUT/PATCH /healthPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/health_predictors/consequuntur" \
+    "http://localhost/api/health_predictors/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":18,"blood_group":"qui","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"aliquam","long_term_injury":"nobis","treatment_type":"velit","current_health_injury":"unde","is_personal_health_challenge":false,"personal_health_challenge":"aut","injury_seriousness":"consequatur","medical_treatment":"laborum","injury_location":"eveniet","genotype":"tenetur","created_at":{},"updated_at":{}}'
+    -d '{"user_id":1,"blood_group":"modi","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"assumenda","long_term_injury":"quidem","treatment_type":"perspiciatis","current_health_injury":"odit","is_personal_health_challenge":false,"personal_health_challenge":"amet","injury_seriousness":"fuga","medical_treatment":"perspiciatis","injury_location":"commodi","genotype":"repellendus","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/consequuntur"
+    "http://localhost/api/health_predictors/molestiae"
 );
 
 let headers = {
@@ -332,22 +332,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 18,
-    "blood_group": "qui",
+    "user_id": 1,
+    "blood_group": "modi",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "aliquam",
-    "long_term_injury": "nobis",
-    "treatment_type": "velit",
-    "current_health_injury": "unde",
+    "hereditary_issue": "assumenda",
+    "long_term_injury": "quidem",
+    "treatment_type": "perspiciatis",
+    "current_health_injury": "odit",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "aut",
-    "injury_seriousness": "consequatur",
-    "medical_treatment": "laborum",
-    "injury_location": "eveniet",
-    "genotype": "tenetur",
+    "personal_health_challenge": "amet",
+    "injury_seriousness": "fuga",
+    "medical_treatment": "perspiciatis",
+    "injury_location": "commodi",
+    "genotype": "repellendus",
     "created_at": {},
     "updated_at": {}
 }
@@ -498,14 +498,14 @@ DELETE /healthPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/health_predictors/praesentium" \
+    "http://localhost/api/health_predictors/at" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/praesentium"
+    "http://localhost/api/health_predictors/at"
 );
 
 let headers = {

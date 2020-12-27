@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":18,"time_practice_in_week":8,"hours_practice_in_week":20,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"expedita","challenges":"et","greatest_motivation":"dolorem","strength":"quo","weakness":"assumenda","can_overcome_challenges":false,"time_start_sport":"eius","rating_sports":"adipisci","created_at":{},"updated_at":{}}'
+    -d '{"user_id":2,"time_practice_in_week":19,"hours_practice_in_week":17,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"rem","challenges":"fugit","greatest_motivation":"quis","strength":"laborum","weakness":"quia","can_overcome_challenges":false,"time_start_sport":"libero","rating_sports":"qui","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,19 +90,19 @@ let headers = {
 };
 
 let body = {
-    "user_id": 18,
-    "time_practice_in_week": 8,
-    "hours_practice_in_week": 20,
+    "user_id": 2,
+    "time_practice_in_week": 19,
+    "hours_practice_in_week": 17,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "expedita",
-    "challenges": "et",
-    "greatest_motivation": "dolorem",
-    "strength": "quo",
-    "weakness": "assumenda",
+    "parent_in_support_reason": "rem",
+    "challenges": "fugit",
+    "greatest_motivation": "quis",
+    "strength": "laborum",
+    "weakness": "quia",
     "can_overcome_challenges": false,
-    "time_start_sport": "eius",
-    "rating_sports": "adipisci",
+    "time_start_sport": "libero",
+    "rating_sports": "qui",
     "created_at": {},
     "updated_at": {}
 }
@@ -226,14 +226,14 @@ GET|HEAD /psychPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/psych_predictors/sit" \
+    -G "http://localhost/api/psych_predictors/nemo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/sit"
+    "http://localhost/api/psych_predictors/nemo"
 );
 
 let headers = {
@@ -294,16 +294,16 @@ PUT/PATCH /psychPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/psych_predictors/id" \
+    "http://localhost/api/psych_predictors/pariatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":3,"time_practice_in_week":7,"hours_practice_in_week":6,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"accusamus","challenges":"magni","greatest_motivation":"in","strength":"minus","weakness":"possimus","can_overcome_challenges":false,"time_start_sport":"qui","rating_sports":"sed","created_at":{},"updated_at":{}}'
+    -d '{"user_id":14,"time_practice_in_week":14,"hours_practice_in_week":10,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"deserunt","challenges":"voluptatibus","greatest_motivation":"consequatur","strength":"voluptatem","weakness":"enim","can_overcome_challenges":false,"time_start_sport":"consectetur","rating_sports":"sit","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/id"
+    "http://localhost/api/psych_predictors/pariatur"
 );
 
 let headers = {
@@ -312,19 +312,19 @@ let headers = {
 };
 
 let body = {
-    "user_id": 3,
-    "time_practice_in_week": 7,
-    "hours_practice_in_week": 6,
+    "user_id": 14,
+    "time_practice_in_week": 14,
+    "hours_practice_in_week": 10,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "accusamus",
-    "challenges": "magni",
-    "greatest_motivation": "in",
-    "strength": "minus",
-    "weakness": "possimus",
+    "parent_in_support_reason": "deserunt",
+    "challenges": "voluptatibus",
+    "greatest_motivation": "consequatur",
+    "strength": "voluptatem",
+    "weakness": "enim",
     "can_overcome_challenges": false,
-    "time_start_sport": "qui",
-    "rating_sports": "sed",
+    "time_start_sport": "consectetur",
+    "rating_sports": "sit",
     "created_at": {},
     "updated_at": {}
 }
@@ -458,14 +458,14 @@ DELETE /psychPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/psych_predictors/praesentium" \
+    "http://localhost/api/psych_predictors/aut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/praesentium"
+    "http://localhost/api/psych_predictors/aut"
 );
 
 let headers = {

@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"rerum","sport_id":20,"created_at":{},"updated_at":{}}'
+    -d '{"name":"qui","sport_id":17,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "rerum",
-    "sport_id": 20,
+    "name": "qui",
+    "sport_id": 17,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/aut" \
+    -G "http://localhost/api/skill_tests/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/aut"
+    "http://localhost/api/skill_tests/ut"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/dolorem" \
+    "http://localhost/api/skill_tests/ea" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"rem","sport_id":1,"created_at":{},"updated_at":{}}'
+    -d '{"name":"tenetur","sport_id":12,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/dolorem"
+    "http://localhost/api/skill_tests/ea"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "rem",
-    "sport_id": 1,
+    "name": "tenetur",
+    "sport_id": 12,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/et" \
+    "http://localhost/api/skill_tests/vitae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/et"
+    "http://localhost/api/skill_tests/vitae"
 );
 
 let headers = {

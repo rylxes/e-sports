@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"mhegmann@example.org","password":"nemo"}'
+    -d '{"email":"beau.mohr@example.org","password":"sit"}'
 
 ```
 
@@ -28,8 +28,8 @@ let headers = {
 };
 
 let body = {
-    "email": "mhegmann@example.org",
-    "password": "nemo"
+    "email": "beau.mohr@example.org",
+    "password": "sit"
 }
 
 fetch(url, {
@@ -140,7 +140,7 @@ curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"numquam","email":"nmcglynn@example.org","password":"et"}'
+    -d '{"first_name":"aut","last_name":"delectus","email":"xupton@example.org","password":"quo","password_confirmation":"consequuntur"}'
 
 ```
 
@@ -155,9 +155,11 @@ let headers = {
 };
 
 let body = {
-    "name": "numquam",
-    "email": "nmcglynn@example.org",
-    "password": "et"
+    "first_name": "aut",
+    "last_name": "delectus",
+    "email": "xupton@example.org",
+    "password": "quo",
+    "password_confirmation": "consequuntur"
 }
 
 fetch(url, {
@@ -189,8 +191,13 @@ fetch(url, {
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
-<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="name" data-endpoint="POSTapi-register" data-component="body" required  hidden>
+<b><code>first_name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="first_name" data-endpoint="POSTapi-register" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>last_name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="last_name" data-endpoint="POSTapi-register" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -201,6 +208,11 @@ The value must be a valid email address.</p>
 <p>
 <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="password" data-endpoint="POSTapi-register" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>password_confirmation</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password_confirmation" data-endpoint="POSTapi-register" data-component="body" required  hidden>
 <br>
 </p>
 
@@ -270,14 +282,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/minima" \
+    -G "http://localhost/api/password/reset/impedit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/minima"
+    "http://localhost/api/password/reset/impedit"
 );
 
 let headers = {
@@ -342,8 +354,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="SAjC8uAIDApkKq7SzbvPf8UyGmr08xBTrdnxlGQJ">
-            <input type="hidden" name="token" value="minima">
+            <input type="hidden" name="_token" value="6qR60BVifOreG4fpCLggRFm3qhN1Jts3nyDHiA27">
+            <input type="hidden" name="token" value="impedit">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -539,14 +551,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/perspiciatis/sit" \
+    -G "http://localhost/api/email/verify/ut/aut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/perspiciatis/sit"
+    "http://localhost/api/email/verify/ut/aut"
 );
 
 let headers = {
