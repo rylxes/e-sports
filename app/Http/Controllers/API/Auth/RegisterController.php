@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\API\Auth;
+use App\Http\Requests\API\RegisterRequest;
 use Illuminate\Auth\Events\Registered;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -83,7 +84,7 @@ class RegisterController extends Controller
      *
      */
 
-    public function register(Request $request)
+    public function register(RegisterRequest $request)
     {
         $data = [];
         $validator = $this->validator($request->all());

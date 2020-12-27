@@ -12,7 +12,9 @@
 curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
-    -H "Accept: application/json"
+    -H "Accept: application/json" \
+    -d '{"email":"mhegmann@example.org","password":"nemo"}'
+
 ```
 
 ```javascript
@@ -25,10 +27,15 @@ let headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "email": "mhegmann@example.org",
+    "password": "nemo"
+}
 
 fetch(url, {
     method: "POST",
     headers,
+    body: JSON.stringify(body),
 }).then(response => response.json());
 ```
 
@@ -52,6 +59,18 @@ fetch(url, {
 <small class="badge badge-black">POST</small>
  <b><code>api/login</code></b>
 </p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-login" data-component="body" required  hidden>
+<br>
+The value must be a valid email address.</p>
+<p>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-login" data-component="body" required  hidden>
+<br>
+</p>
+
 </form>
 
 
@@ -120,7 +139,9 @@ fetch(url, {
 curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
-    -H "Accept: application/json"
+    -H "Accept: application/json" \
+    -d '{"name":"numquam","email":"nmcglynn@example.org","password":"et"}'
+
 ```
 
 ```javascript
@@ -133,10 +154,16 @@ let headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "name": "numquam",
+    "email": "nmcglynn@example.org",
+    "password": "et"
+}
 
 fetch(url, {
     method: "POST",
     headers,
+    body: JSON.stringify(body),
 }).then(response => response.json());
 ```
 
@@ -160,6 +187,23 @@ fetch(url, {
 <small class="badge badge-black">POST</small>
  <b><code>api/register</code></b>
 </p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="name" data-endpoint="POSTapi-register" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-register" data-component="body" required  hidden>
+<br>
+The value must be a valid email address.</p>
+<p>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-register" data-component="body" required  hidden>
+<br>
+</p>
+
 </form>
 
 
@@ -226,14 +270,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/quisquam" \
+    -G "http://localhost/api/password/reset/minima" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/quisquam"
+    "http://localhost/api/password/reset/minima"
 );
 
 let headers = {
@@ -258,7 +302,7 @@ fetch(url, {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Laravel</title>
+    <title>E-sports</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -298,8 +342,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="dRhl0CnLSqFTm9gvxCTtH6h2LFiKDUbA6QqxG9Me">
-            <input type="hidden" name="token" value="quisquam">
+            <input type="hidden" name="_token" value="SAjC8uAIDApkKq7SzbvPf8UyGmr08xBTrdnxlGQJ">
+            <input type="hidden" name="token" value="minima">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -495,14 +539,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/iusto/nemo" \
+    -G "http://localhost/api/email/verify/perspiciatis/sit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/iusto/nemo"
+    "http://localhost/api/email/verify/perspiciatis/sit"
 );
 
 let headers = {

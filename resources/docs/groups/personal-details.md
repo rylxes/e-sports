@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/personal_details" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":13,"first_name":"recusandae","marital_status":"et","mother_maiden_name":"ut","last_name":"qui","height":"non","body_weight":"explicabo","phone":"optio","sm_handle":"cumque","highest_education":"minima","place_of_birth":"voluptatem","school":"qui","career_preference":"illo","is_still_schooling":false,"contact_address":"nesciunt","dob":{},"country_id":16,"state_of_origin":16,"zipcode":2,"created_at":{},"updated_at":{}}'
+    -d '{"user_id":2,"first_name":"ad","marital_status":"iusto","mother_maiden_name":"ratione","last_name":"rerum","height":"ipsum","body_weight":"molestiae","phone":"sit","sm_handle":"ipsa","highest_education":"odio","place_of_birth":"ipsa","school":"aut","career_preference":"aspernatur","is_still_schooling":false,"contact_address":"accusamus","dob":{},"country_id":6,"state_of_origin":9,"zipcode":19,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,25 +90,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 13,
-    "first_name": "recusandae",
-    "marital_status": "et",
-    "mother_maiden_name": "ut",
-    "last_name": "qui",
-    "height": "non",
-    "body_weight": "explicabo",
-    "phone": "optio",
-    "sm_handle": "cumque",
-    "highest_education": "minima",
-    "place_of_birth": "voluptatem",
-    "school": "qui",
-    "career_preference": "illo",
+    "user_id": 2,
+    "first_name": "ad",
+    "marital_status": "iusto",
+    "mother_maiden_name": "ratione",
+    "last_name": "rerum",
+    "height": "ipsum",
+    "body_weight": "molestiae",
+    "phone": "sit",
+    "sm_handle": "ipsa",
+    "highest_education": "odio",
+    "place_of_birth": "ipsa",
+    "school": "aut",
+    "career_preference": "aspernatur",
     "is_still_schooling": false,
-    "contact_address": "nesciunt",
+    "contact_address": "accusamus",
     "dob": {},
-    "country_id": 16,
-    "state_of_origin": 16,
-    "zipcode": 2,
+    "country_id": 6,
+    "state_of_origin": 9,
+    "zipcode": 19,
     "created_at": {},
     "updated_at": {}
 }
@@ -260,14 +260,14 @@ GET|HEAD /personalDetails/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/personal_details/ratione" \
+    -G "http://localhost/api/personal_details/vel" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/ratione"
+    "http://localhost/api/personal_details/vel"
 );
 
 let headers = {
@@ -328,16 +328,16 @@ PUT/PATCH /personalDetails/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/personal_details/laboriosam" \
+    "http://localhost/api/personal_details/fugit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":2,"first_name":"repellendus","marital_status":"recusandae","mother_maiden_name":"aut","last_name":"placeat","height":"deserunt","body_weight":"quia","phone":"totam","sm_handle":"in","highest_education":"et","place_of_birth":"voluptate","school":"inventore","career_preference":"error","is_still_schooling":false,"contact_address":"maiores","dob":{},"country_id":17,"state_of_origin":18,"zipcode":4,"created_at":{},"updated_at":{}}'
+    -d '{"user_id":2,"first_name":"fugiat","marital_status":"quas","mother_maiden_name":"quis","last_name":"quaerat","height":"ut","body_weight":"qui","phone":"aut","sm_handle":"non","highest_education":"qui","place_of_birth":"sed","school":"dolores","career_preference":"iusto","is_still_schooling":false,"contact_address":"nisi","dob":{},"country_id":17,"state_of_origin":18,"zipcode":13,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/laboriosam"
+    "http://localhost/api/personal_details/fugit"
 );
 
 let headers = {
@@ -347,24 +347,24 @@ let headers = {
 
 let body = {
     "user_id": 2,
-    "first_name": "repellendus",
-    "marital_status": "recusandae",
-    "mother_maiden_name": "aut",
-    "last_name": "placeat",
-    "height": "deserunt",
-    "body_weight": "quia",
-    "phone": "totam",
-    "sm_handle": "in",
-    "highest_education": "et",
-    "place_of_birth": "voluptate",
-    "school": "inventore",
-    "career_preference": "error",
+    "first_name": "fugiat",
+    "marital_status": "quas",
+    "mother_maiden_name": "quis",
+    "last_name": "quaerat",
+    "height": "ut",
+    "body_weight": "qui",
+    "phone": "aut",
+    "sm_handle": "non",
+    "highest_education": "qui",
+    "place_of_birth": "sed",
+    "school": "dolores",
+    "career_preference": "iusto",
     "is_still_schooling": false,
-    "contact_address": "maiores",
+    "contact_address": "nisi",
     "dob": {},
     "country_id": 17,
     "state_of_origin": 18,
-    "zipcode": 4,
+    "zipcode": 13,
     "created_at": {},
     "updated_at": {}
 }
@@ -526,14 +526,14 @@ DELETE /personalDetails/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/personal_details/voluptatem" \
+    "http://localhost/api/personal_details/iusto" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/voluptatem"
+    "http://localhost/api/personal_details/iusto"
 );
 
 let headers = {

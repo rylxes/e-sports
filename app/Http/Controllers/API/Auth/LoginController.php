@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\API\LoginRequest;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -51,7 +52,8 @@ class LoginController extends Controller
      *
      */
 
-    public function login(Request $request)
+    //public function login(Request $request)
+    public function login(LoginRequest $request)
     {
         $this->validateLogin($request);
         if (method_exists($this, 'hasTooManyLoginAttempts') &&
