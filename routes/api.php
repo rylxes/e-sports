@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::group(['middleware' => ['cors', 'json.response']], function () {
 Route::group(['middleware' => ['cors', 'json.response']], function () {
     Route::middleware('auth:api')->get('/user', function (Request $request) {
         return $request->user();
@@ -21,8 +22,6 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
 
 
 /// AUTH ROUTES
-
-
     Route::post('login', 'App\Http\Controllers\API\Auth\LoginController@login');
     Route::post('logout', 'App\Http\Controllers\API\Auth\LoginController@logout')->name('logout');
     Route::post('register', 'App\Http\Controllers\API\Auth\RegisterController@register');
