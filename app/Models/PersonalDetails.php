@@ -39,7 +39,7 @@ class PersonalDetails extends Model
     use HasFactory;
 
     public $table = 'personal_details';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
@@ -135,12 +135,16 @@ class PersonalDetails extends Model
         parent::boot();
         static::addGlobalScope(new UserScope());
         self::creating(function ($model) {
-            $model->user_id = Auth::user()->id;
+            if(Auth::check()){
+                $model->user_id = Auth::user()->id;
+            }
         });
         self::saving(function ($model) {
-            $model->user_id = Auth::user()->id;
+            if(Auth::check()){
+                $model->user_id = Auth::user()->id;
+            }
         });
     }
 
-    
+
 }

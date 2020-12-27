@@ -57,7 +57,6 @@ class PersonalDetailsAPIController extends AppBaseController
         $input = $request->all();
 
         $personalDetails = $this->personalDetailsRepository->create($input);
-
         return $this->sendResponse($personalDetails->toArray(), 'Personal Details saved successfully');
     }
 

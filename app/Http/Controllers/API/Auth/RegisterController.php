@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers\API\Auth;
+
 use App\Http\Requests\API\RegisterRequest;
+use App\Repositories\PersonalDetailsRepository;
 use Illuminate\Auth\Events\Registered;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -38,20 +40,21 @@ class RegisterController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+
+
+    /** @var  PersonalDetailsRepository */
+    private $personalDetailsRepository;
+
+    public function __construct(PersonalDetailsRepository $personalDetailsRepo)
     {
+        $this->personalDetailsRepository = $personalDetailsRepo;
         $this->middleware('guest');
     }
 
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -66,7 +69,7 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param array $data
      * @return \App\Models\User
      */
     protected function create(array $data)
@@ -87,13 +90,28 @@ class RegisterController extends Controller
     public function register(RegisterRequest $request)
     {
         $data = [];
-        $validator = $this->validator($request->all());
+        $data = $request->all();
+        $data['name'] = $request->input('last_name') . " " . $request->input('first_name');
+        $validator = $this->validator($data);
         if ($validator->fails()) {
             $data = $validator->errors()->all();
             $message = "There was Error in your form";
             return response()->json(compact('data', 'message'));
         }
-        event(new Registered($user = $this->create($request->all())));
+        $data = $request->all();
+        $data['name'] = $request->input('last_name') . " " . $request->input('first_name');
+
+        event(new Registered($user = $this->create($data)));
+        $data['user_id'] = $user->id;
+
+       // dd($data);
+        unset($data['password']);
+        unset($data['password_confirmation']);
+        unset($data['name']);
+
+       // dd($data);
+        $this->personalDetailsRepository->create($data);
+
 
         $this->guard()->login($user);
 
