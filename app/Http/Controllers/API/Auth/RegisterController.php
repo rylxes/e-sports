@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API\Auth;
 
 use App\Http\Requests\API\RegisterRequest;
 use App\Repositories\PersonalDetailsRepository;
+use App\Traits\ResponseTrait;
 use Illuminate\Auth\Events\Registered;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -32,6 +33,7 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+    use ResponseTrait;
 
     /**
      * Where to redirect users after registration.
@@ -121,6 +123,6 @@ class RegisterController extends Controller
 
         $data = $user;
         $message = "Successful Registration";
-        return response()->json(compact('data', 'message'));
+        return $this->sendResponse($data, $message);
     }
 }
