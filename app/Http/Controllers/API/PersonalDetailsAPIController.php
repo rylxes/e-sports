@@ -8,6 +8,7 @@ use App\Models\PersonalDetails;
 use App\Repositories\PersonalDetailsRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AppBaseController;
+use Illuminate\Support\Facades\Auth;
 use Response;
 
 /**
@@ -89,19 +90,17 @@ class PersonalDetailsAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdatePersonalDetailsAPIRequest $request)
+    public function update($id,UpdatePersonalDetailsAPIRequest $request)
     {
         $input = $request->all();
-
-        /** @var PersonalDetails $personalDetails */
-        $personalDetails = $this->personalDetailsRepository->find($id);
-
+       //$personalDetails = $this->personalDetailsRepository->find($id);
+        $personalDetails = PersonalDetails::all()->first();
         if (empty($personalDetails)) {
             return $this->sendError('Personal Details not found');
         }
-
-        $personalDetails = $this->personalDetailsRepository->update($input, $id);
-
+        //dd($input);
+        unset($input['user_id']);
+        $personalDetails = $this->personalDetailsRepository->update($input, $personalDetails->id);
         return $this->sendResponse($personalDetails->toArray(), 'PersonalDetails updated successfully');
     }
 

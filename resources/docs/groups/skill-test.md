@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"qui","sport_id":17,"created_at":{},"updated_at":{}}'
+    -d '{"name":"sed","sport_id":16,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "qui",
-    "sport_id": 17,
+    "name": "sed",
+    "sport_id": 16,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/ut" \
+    -G "http://localhost/api/skill_tests/repellendus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/ut"
+    "http://localhost/api/skill_tests/repellendus"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/ea" \
+    "http://localhost/api/skill_tests/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"tenetur","sport_id":12,"created_at":{},"updated_at":{}}'
+    -d '{"name":"beatae","sport_id":11,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/ea"
+    "http://localhost/api/skill_tests/nihil"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "tenetur",
-    "sport_id": 12,
+    "name": "beatae",
+    "sport_id": 11,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/vitae" \
+    "http://localhost/api/skill_tests/aspernatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/vitae"
+    "http://localhost/api/skill_tests/aspernatur"
 );
 
 let headers = {
