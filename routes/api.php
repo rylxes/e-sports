@@ -44,6 +44,7 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
         Route::resource('skill_tests', App\Http\Controllers\API\SkillTestAPIController::class);
         Route::resource('countries', App\Http\Controllers\API\CountryAPIController::class);
         Route::resource('states', App\Http\Controllers\API\StateAPIController::class);
+        Route::get('states/byCountry/{id}', 'App\Http\Controllers\API\StateAPIController@byCountry');
     });
 
 });

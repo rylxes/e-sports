@@ -81,6 +81,19 @@ class StateAPIController extends AppBaseController
         return $this->sendResponse($state->toArray(), 'State retrieved successfully');
     }
 
+    public function byCountry($id)
+    {
+        /** @var State $state */
+        //$state = $this->stateRepository->find($id);
+        $state = State::where('country_id',$id)->get();
+        if ($state->isEmpty()) {
+            return $this->sendError('State not found');
+        }
+        return $this->sendResponse($state->toArray(), 'State retrieved successfully');
+    }
+
+
+
     /**
      * Update the specified State in storage.
      * PUT/PATCH /states/{id}
