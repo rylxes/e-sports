@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/videos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":13,"type_id":19,"skill_test_id":15,"url":"sit","created_at":{},"updated_at":{}}'
+    -d '{"user_id":9,"type_id":5,"skill_test_id":19,"url":"ut","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,10 +90,10 @@ let headers = {
 };
 
 let body = {
-    "user_id": 13,
-    "type_id": 19,
-    "skill_test_id": 15,
-    "url": "sit",
+    "user_id": 9,
+    "type_id": 5,
+    "skill_test_id": 19,
+    "url": "ut",
     "created_at": {},
     "updated_at": {}
 }
@@ -169,14 +169,14 @@ GET|HEAD /videos/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/videos/delectus" \
+    -G "http://localhost/api/videos/pariatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/delectus"
+    "http://localhost/api/videos/pariatur"
 );
 
 let headers = {
@@ -237,16 +237,16 @@ PUT/PATCH /videos/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/videos/voluptatem" \
+    "http://localhost/api/videos/maiores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":16,"type_id":18,"skill_test_id":18,"url":"omnis","created_at":{},"updated_at":{}}'
+    -d '{"user_id":11,"type_id":6,"skill_test_id":17,"url":"cupiditate","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/voluptatem"
+    "http://localhost/api/videos/maiores"
 );
 
 let headers = {
@@ -255,10 +255,10 @@ let headers = {
 };
 
 let body = {
-    "user_id": 16,
-    "type_id": 18,
-    "skill_test_id": 18,
-    "url": "omnis",
+    "user_id": 11,
+    "type_id": 6,
+    "skill_test_id": 17,
+    "url": "cupiditate",
     "created_at": {},
     "updated_at": {}
 }
@@ -344,14 +344,14 @@ DELETE /videos/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/videos/cupiditate" \
+    "http://localhost/api/videos/modi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/cupiditate"
+    "http://localhost/api/videos/modi"
 );
 
 let headers = {

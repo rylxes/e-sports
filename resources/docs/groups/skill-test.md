@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"fuga","sport_id":9,"created_at":{},"updated_at":{}}'
+    -d '{"name":"est","sport_id":17,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "fuga",
-    "sport_id": 9,
+    "name": "est",
+    "sport_id": 17,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/iure" \
+    -G "http://localhost/api/skill_tests/ducimus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/iure"
+    "http://localhost/api/skill_tests/ducimus"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/omnis" \
+    "http://localhost/api/skill_tests/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"aperiam","sport_id":4,"created_at":{},"updated_at":{}}'
+    -d '{"name":"dolores","sport_id":20,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/omnis"
+    "http://localhost/api/skill_tests/autem"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "aperiam",
-    "sport_id": 4,
+    "name": "dolores",
+    "sport_id": 20,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/facilis" \
+    "http://localhost/api/skill_tests/corporis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/facilis"
+    "http://localhost/api/skill_tests/corporis"
 );
 
 let headers = {
