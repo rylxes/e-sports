@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/sports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"reiciendis","created_at":{},"updated_at":{}}'
+    -d '{"name":"esse","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "name": "reiciendis",
+    "name": "esse",
     "created_at": {},
     "updated_at": {}
 }
@@ -151,14 +151,14 @@ GET|HEAD /sports/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/sports/dolor" \
+    -G "http://localhost/api/sports/inventore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/sports/dolor"
+    "http://localhost/api/sports/inventore"
 );
 
 let headers = {
@@ -219,16 +219,16 @@ PUT/PATCH /sports/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/sports/enim" \
+    "http://localhost/api/sports/amet" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"in","created_at":{},"updated_at":{}}'
+    -d '{"name":"magnam","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/sports/enim"
+    "http://localhost/api/sports/amet"
 );
 
 let headers = {
@@ -237,7 +237,7 @@ let headers = {
 };
 
 let body = {
-    "name": "in",
+    "name": "magnam",
     "created_at": {},
     "updated_at": {}
 }
@@ -308,14 +308,14 @@ DELETE /sports/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/sports/modi" \
+    "http://localhost/api/sports/aut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/sports/modi"
+    "http://localhost/api/sports/aut"
 );
 
 let headers = {

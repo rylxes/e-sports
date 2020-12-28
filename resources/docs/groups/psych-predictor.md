@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":10,"time_practice_in_week":3,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"et","challenges":"id","greatest_motivation":"quo","strength":"sunt","weakness":"expedita","can_overcome_challenges":false,"time_start_sport":"dolores","rating_sports":"esse","created_at":{},"updated_at":{}}'
+    -d '{"user_id":15,"time_practice_in_week":4,"hours_practice_in_week":13,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"ea","challenges":"omnis","greatest_motivation":"autem","strength":"voluptatem","weakness":"nemo","can_overcome_challenges":false,"time_start_sport":"id","rating_sports":"dicta","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,19 +90,19 @@ let headers = {
 };
 
 let body = {
-    "user_id": 10,
-    "time_practice_in_week": 3,
-    "hours_practice_in_week": 19,
+    "user_id": 15,
+    "time_practice_in_week": 4,
+    "hours_practice_in_week": 13,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "et",
-    "challenges": "id",
-    "greatest_motivation": "quo",
-    "strength": "sunt",
-    "weakness": "expedita",
+    "parent_in_support_reason": "ea",
+    "challenges": "omnis",
+    "greatest_motivation": "autem",
+    "strength": "voluptatem",
+    "weakness": "nemo",
     "can_overcome_challenges": false,
-    "time_start_sport": "dolores",
-    "rating_sports": "esse",
+    "time_start_sport": "id",
+    "rating_sports": "dicta",
     "created_at": {},
     "updated_at": {}
 }
@@ -294,16 +294,16 @@ PUT/PATCH /psychPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/psych_predictors/praesentium" \
+    "http://localhost/api/psych_predictors/voluptatem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":17,"time_practice_in_week":1,"hours_practice_in_week":18,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"aut","challenges":"suscipit","greatest_motivation":"odio","strength":"sunt","weakness":"dicta","can_overcome_challenges":false,"time_start_sport":"et","rating_sports":"non","created_at":{},"updated_at":{}}'
+    -d '{"user_id":14,"time_practice_in_week":7,"hours_practice_in_week":14,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"velit","challenges":"doloremque","greatest_motivation":"et","strength":"qui","weakness":"corporis","can_overcome_challenges":false,"time_start_sport":"alias","rating_sports":"qui","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/praesentium"
+    "http://localhost/api/psych_predictors/voluptatem"
 );
 
 let headers = {
@@ -312,19 +312,19 @@ let headers = {
 };
 
 let body = {
-    "user_id": 17,
-    "time_practice_in_week": 1,
-    "hours_practice_in_week": 18,
+    "user_id": 14,
+    "time_practice_in_week": 7,
+    "hours_practice_in_week": 14,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "aut",
-    "challenges": "suscipit",
-    "greatest_motivation": "odio",
-    "strength": "sunt",
-    "weakness": "dicta",
+    "parent_in_support_reason": "velit",
+    "challenges": "doloremque",
+    "greatest_motivation": "et",
+    "strength": "qui",
+    "weakness": "corporis",
     "can_overcome_challenges": false,
-    "time_start_sport": "et",
-    "rating_sports": "non",
+    "time_start_sport": "alias",
+    "rating_sports": "qui",
     "created_at": {},
     "updated_at": {}
 }
@@ -458,14 +458,14 @@ DELETE /psychPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/psych_predictors/qui" \
+    "http://localhost/api/psych_predictors/animi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/qui"
+    "http://localhost/api/psych_predictors/animi"
 );
 
 let headers = {

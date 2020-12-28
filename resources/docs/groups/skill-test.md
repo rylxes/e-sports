@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"sed","sport_id":16,"created_at":{},"updated_at":{}}'
+    -d '{"name":"repellendus","sport_id":19,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "sed",
-    "sport_id": 16,
+    "name": "repellendus",
+    "sport_id": 19,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/repellendus" \
+    -G "http://localhost/api/skill_tests/iure" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/repellendus"
+    "http://localhost/api/skill_tests/iure"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/nihil" \
+    "http://localhost/api/skill_tests/nisi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"beatae","sport_id":11,"created_at":{},"updated_at":{}}'
+    -d '{"name":"ipsam","sport_id":13,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/nihil"
+    "http://localhost/api/skill_tests/nisi"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "beatae",
-    "sport_id": 11,
+    "name": "ipsam",
+    "sport_id": 13,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/aspernatur" \
+    "http://localhost/api/skill_tests/sit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/aspernatur"
+    "http://localhost/api/skill_tests/sit"
 );
 
 let headers = {

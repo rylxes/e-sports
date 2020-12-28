@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/personal_details" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":19,"first_name":"sunt","marital_status":"officiis","mother_maiden_name":"sapiente","last_name":"qui","height":"repellat","body_weight":"at","phone":"quam","sm_handle":"quia","highest_education":"dolorum","place_of_birth":"iure","school":"tempore","career_preference":"quasi","is_still_schooling":false,"contact_address":"odio","dob":{},"country_id":7,"state_of_origin":20,"zipcode":9,"created_at":{},"updated_at":{}}'
+    -d '{"user_id":3,"first_name":"rerum","marital_status":"enim","mother_maiden_name":"aut","last_name":"vel","height":"in","body_weight":"minima","phone":"voluptas","sm_handle":"mollitia","highest_education":"ut","place_of_birth":"aliquid","school":"tempora","career_preference":"voluptatem","is_still_schooling":false,"contact_address":"voluptate","dob":{},"country_id":4,"state_of_origin":5,"zipcode":17,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,25 +90,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 19,
-    "first_name": "sunt",
-    "marital_status": "officiis",
-    "mother_maiden_name": "sapiente",
-    "last_name": "qui",
-    "height": "repellat",
-    "body_weight": "at",
-    "phone": "quam",
-    "sm_handle": "quia",
-    "highest_education": "dolorum",
-    "place_of_birth": "iure",
-    "school": "tempore",
-    "career_preference": "quasi",
+    "user_id": 3,
+    "first_name": "rerum",
+    "marital_status": "enim",
+    "mother_maiden_name": "aut",
+    "last_name": "vel",
+    "height": "in",
+    "body_weight": "minima",
+    "phone": "voluptas",
+    "sm_handle": "mollitia",
+    "highest_education": "ut",
+    "place_of_birth": "aliquid",
+    "school": "tempora",
+    "career_preference": "voluptatem",
     "is_still_schooling": false,
-    "contact_address": "odio",
+    "contact_address": "voluptate",
     "dob": {},
-    "country_id": 7,
-    "state_of_origin": 20,
-    "zipcode": 9,
+    "country_id": 4,
+    "state_of_origin": 5,
+    "zipcode": 17,
     "created_at": {},
     "updated_at": {}
 }
@@ -260,14 +260,14 @@ GET|HEAD /personalDetails/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/personal_details/possimus" \
+    -G "http://localhost/api/personal_details/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/possimus"
+    "http://localhost/api/personal_details/rerum"
 );
 
 let headers = {
@@ -328,16 +328,16 @@ PUT/PATCH /personalDetails/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/personal_details/consequatur" \
+    "http://localhost/api/personal_details/accusamus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":8,"first_name":"rerum","marital_status":"eveniet","mother_maiden_name":"suscipit","last_name":"facere","height":"ex","body_weight":"minus","phone":"asperiores","sm_handle":"minus","highest_education":"numquam","place_of_birth":"eligendi","school":"recusandae","career_preference":"vel","is_still_schooling":false,"contact_address":"eum","dob":{},"country_id":12,"state_of_origin":13,"zipcode":7,"created_at":{},"updated_at":{}}'
+    -d '{"first_name":"est","marital_status":"commodi","mother_maiden_name":"beatae","last_name":"ipsa","height":"quaerat","body_weight":"dolor","phone":"amet","sm_handle":"est","highest_education":"dolores","place_of_birth":"porro","school":"tempora","career_preference":"maxime","is_still_schooling":false,"contact_address":"ut","dob":{},"country_id":4,"state_of_origin":5,"zipcode":15,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/consequatur"
+    "http://localhost/api/personal_details/accusamus"
 );
 
 let headers = {
@@ -346,25 +346,24 @@ let headers = {
 };
 
 let body = {
-    "user_id": 8,
-    "first_name": "rerum",
-    "marital_status": "eveniet",
-    "mother_maiden_name": "suscipit",
-    "last_name": "facere",
-    "height": "ex",
-    "body_weight": "minus",
-    "phone": "asperiores",
-    "sm_handle": "minus",
-    "highest_education": "numquam",
-    "place_of_birth": "eligendi",
-    "school": "recusandae",
-    "career_preference": "vel",
+    "first_name": "est",
+    "marital_status": "commodi",
+    "mother_maiden_name": "beatae",
+    "last_name": "ipsa",
+    "height": "quaerat",
+    "body_weight": "dolor",
+    "phone": "amet",
+    "sm_handle": "est",
+    "highest_education": "dolores",
+    "place_of_birth": "porro",
+    "school": "tempora",
+    "career_preference": "maxime",
     "is_still_schooling": false,
-    "contact_address": "eum",
+    "contact_address": "ut",
     "dob": {},
-    "country_id": 12,
-    "state_of_origin": 13,
-    "zipcode": 7,
+    "country_id": 4,
+    "state_of_origin": 5,
+    "zipcode": 15,
     "created_at": {},
     "updated_at": {}
 }
@@ -407,11 +406,6 @@ fetch(url, {
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="PUTapi-personal_details--personal_detail-" data-component="body" required  hidden>
-<br>
-</p>
 <p>
 <b><code>first_name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="first_name" data-endpoint="PUTapi-personal_details--personal_detail-" data-component="body"  hidden>
@@ -526,14 +520,14 @@ DELETE /personalDetails/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/personal_details/quibusdam" \
+    "http://localhost/api/personal_details/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/quibusdam"
+    "http://localhost/api/personal_details/nihil"
 );
 
 let headers = {
