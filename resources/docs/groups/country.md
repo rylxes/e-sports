@@ -72,14 +72,14 @@ GET|HEAD /countries/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/countries/dolorem" \
+    -G "http://localhost/api/countries/aut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/countries/dolorem"
+    "http://localhost/api/countries/aut"
 );
 
 let headers = {

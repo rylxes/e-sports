@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"fugit","sport_id":11,"created_at":{},"updated_at":{}}'
+    -d '{"name":"fuga","sport_id":9,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "fugit",
-    "sport_id": 11,
+    "name": "fuga",
+    "sport_id": 9,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/esse" \
+    -G "http://localhost/api/skill_tests/iure" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/esse"
+    "http://localhost/api/skill_tests/iure"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/vero" \
+    "http://localhost/api/skill_tests/omnis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"id","sport_id":14,"created_at":{},"updated_at":{}}'
+    -d '{"name":"aperiam","sport_id":4,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/vero"
+    "http://localhost/api/skill_tests/omnis"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "id",
-    "sport_id": 14,
+    "name": "aperiam",
+    "sport_id": 4,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/eligendi" \
+    "http://localhost/api/skill_tests/facilis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/eligendi"
+    "http://localhost/api/skill_tests/facilis"
 );
 
 let headers = {

@@ -81,6 +81,14 @@ class StateAPIController extends AppBaseController
         return $this->sendResponse($state->toArray(), 'State retrieved successfully');
     }
 
+    /**
+     * Display the States for a country ID.
+     *
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
     public function byCountry($id)
     {
         /** @var State $state */

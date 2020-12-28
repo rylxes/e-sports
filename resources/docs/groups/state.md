@@ -72,14 +72,14 @@ GET|HEAD /states/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/states/corrupti" \
+    -G "http://localhost/api/states/velit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/states/corrupti"
+    "http://localhost/api/states/velit"
 );
 
 let headers = {
@@ -131,7 +131,7 @@ fetch(url, {
 </form>
 
 
-## api/states/byCountry/{id}
+## Display the States for a country ID.
 
 
 
@@ -140,14 +140,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/states/byCountry/culpa" \
+    -G "http://localhost/api/states/byCountry/minima" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/states/byCountry/culpa"
+    "http://localhost/api/states/byCountry/minima"
 );
 
 let headers = {

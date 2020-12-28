@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"camilla12@example.net","password":"et"}'
+    -d '{"email":"rod.gottlieb@example.org","password":"architecto"}'
 
 ```
 
@@ -28,8 +28,8 @@ let headers = {
 };
 
 let body = {
-    "email": "camilla12@example.net",
-    "password": "et"
+    "email": "rod.gottlieb@example.org",
+    "password": "architecto"
 }
 
 fetch(url, {
@@ -140,7 +140,7 @@ curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"voluptatum","last_name":"delectus","email":"jkuvalis@example.net","password":"maiores","password_confirmation":"doloremque"}'
+    -d '{"first_name":"quam","last_name":"excepturi","email":"yschultz@example.net","password":"ab","password_confirmation":"aut"}'
 
 ```
 
@@ -155,11 +155,11 @@ let headers = {
 };
 
 let body = {
-    "first_name": "voluptatum",
-    "last_name": "delectus",
-    "email": "jkuvalis@example.net",
-    "password": "maiores",
-    "password_confirmation": "doloremque"
+    "first_name": "quam",
+    "last_name": "excepturi",
+    "email": "yschultz@example.net",
+    "password": "ab",
+    "password_confirmation": "aut"
 }
 
 fetch(url, {
@@ -282,14 +282,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/porro" \
+    -G "http://localhost/api/password/reset/nobis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/porro"
+    "http://localhost/api/password/reset/nobis"
 );
 
 let headers = {
@@ -354,8 +354,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="c82GzeQpgRQFE7XH09UY7nJrbCREowcUPmWBFy0F">
-            <input type="hidden" name="token" value="porro">
+            <input type="hidden" name="_token" value="yXdm2DrW8BvZCVaogGU4UIP8lBuatEGkNwvti3Jw">
+            <input type="hidden" name="token" value="nobis">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -551,14 +551,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/velit/qui" \
+    -G "http://localhost/api/email/verify/quia/occaecati" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/velit/qui"
+    "http://localhost/api/email/verify/quia/occaecati"
 );
 
 let headers = {

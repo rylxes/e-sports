@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/video_types" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"facilis","created_at":{},"updated_at":{}}'
+    -d '{"name":"exercitationem","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "name": "facilis",
+    "name": "exercitationem",
     "created_at": {},
     "updated_at": {}
 }
@@ -151,14 +151,14 @@ GET|HEAD /videoTypes/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/video_types/ratione" \
+    -G "http://localhost/api/video_types/ex" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/video_types/ratione"
+    "http://localhost/api/video_types/ex"
 );
 
 let headers = {
@@ -219,16 +219,16 @@ PUT/PATCH /videoTypes/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/video_types/debitis" \
+    "http://localhost/api/video_types/modi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"sed","created_at":{},"updated_at":{}}'
+    -d '{"name":"nulla","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/video_types/debitis"
+    "http://localhost/api/video_types/modi"
 );
 
 let headers = {
@@ -237,7 +237,7 @@ let headers = {
 };
 
 let body = {
-    "name": "sed",
+    "name": "nulla",
     "created_at": {},
     "updated_at": {}
 }
@@ -308,14 +308,14 @@ DELETE /videoTypes/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/video_types/voluptatem" \
+    "http://localhost/api/video_types/numquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/video_types/voluptatem"
+    "http://localhost/api/video_types/numquam"
 );
 
 let headers = {
