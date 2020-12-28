@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_reports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":12,"speed":"dolore","passing":"iure","shooting":"dignissimos","dribbling":"repellendus","heading":"beatae","ball_control":"autem","fitness":"laudantium","movement":"minus","awareness":"necessitatibus","decisions":"quis","workrate":"dolores","strength":"fuga","crossing":"incidunt","finishing":"recusandae","positioning":"est","anticipation":"rerum","total":"voluptas","overall_grade":"illo","created_at":{},"updated_at":{}}'
+    -d '{"user_id":6,"speed":"et","passing":"fugit","shooting":"in","dribbling":"sit","heading":"ipsum","ball_control":"modi","fitness":"vel","movement":"aut","awareness":"mollitia","decisions":"molestiae","workrate":"tenetur","strength":"quo","crossing":"qui","finishing":"labore","positioning":"omnis","anticipation":"laboriosam","total":"rerum","overall_grade":"voluptatem","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,25 +90,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 12,
-    "speed": "dolore",
-    "passing": "iure",
-    "shooting": "dignissimos",
-    "dribbling": "repellendus",
-    "heading": "beatae",
-    "ball_control": "autem",
-    "fitness": "laudantium",
-    "movement": "minus",
-    "awareness": "necessitatibus",
-    "decisions": "quis",
-    "workrate": "dolores",
-    "strength": "fuga",
-    "crossing": "incidunt",
-    "finishing": "recusandae",
-    "positioning": "est",
-    "anticipation": "rerum",
-    "total": "voluptas",
-    "overall_grade": "illo",
+    "user_id": 6,
+    "speed": "et",
+    "passing": "fugit",
+    "shooting": "in",
+    "dribbling": "sit",
+    "heading": "ipsum",
+    "ball_control": "modi",
+    "fitness": "vel",
+    "movement": "aut",
+    "awareness": "mollitia",
+    "decisions": "molestiae",
+    "workrate": "tenetur",
+    "strength": "quo",
+    "crossing": "qui",
+    "finishing": "labore",
+    "positioning": "omnis",
+    "anticipation": "laboriosam",
+    "total": "rerum",
+    "overall_grade": "voluptatem",
     "created_at": {},
     "updated_at": {}
 }
@@ -259,14 +259,14 @@ GET|HEAD /skillReports/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_reports/architecto" \
+    -G "http://localhost/api/skill_reports/inventore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_reports/architecto"
+    "http://localhost/api/skill_reports/inventore"
 );
 
 let headers = {
@@ -327,16 +327,16 @@ PUT/PATCH /skillReports/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_reports/voluptas" \
+    "http://localhost/api/skill_reports/omnis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":9,"speed":"veritatis","passing":"nam","shooting":"possimus","dribbling":"consectetur","heading":"ratione","ball_control":"dolore","fitness":"quaerat","movement":"voluptas","awareness":"soluta","decisions":"officiis","workrate":"expedita","strength":"sequi","crossing":"architecto","finishing":"magnam","positioning":"enim","anticipation":"expedita","total":"voluptate","overall_grade":"ullam","created_at":{},"updated_at":{}}'
+    -d '{"user_id":4,"speed":"et","passing":"molestias","shooting":"soluta","dribbling":"voluptatem","heading":"libero","ball_control":"cum","fitness":"accusantium","movement":"reiciendis","awareness":"eligendi","decisions":"maiores","workrate":"nam","strength":"autem","crossing":"ab","finishing":"minus","positioning":"consequatur","anticipation":"consectetur","total":"illo","overall_grade":"voluptas","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_reports/voluptas"
+    "http://localhost/api/skill_reports/omnis"
 );
 
 let headers = {
@@ -345,25 +345,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 9,
-    "speed": "veritatis",
-    "passing": "nam",
-    "shooting": "possimus",
-    "dribbling": "consectetur",
-    "heading": "ratione",
-    "ball_control": "dolore",
-    "fitness": "quaerat",
-    "movement": "voluptas",
-    "awareness": "soluta",
-    "decisions": "officiis",
-    "workrate": "expedita",
-    "strength": "sequi",
-    "crossing": "architecto",
-    "finishing": "magnam",
-    "positioning": "enim",
-    "anticipation": "expedita",
-    "total": "voluptate",
-    "overall_grade": "ullam",
+    "user_id": 4,
+    "speed": "et",
+    "passing": "molestias",
+    "shooting": "soluta",
+    "dribbling": "voluptatem",
+    "heading": "libero",
+    "ball_control": "cum",
+    "fitness": "accusantium",
+    "movement": "reiciendis",
+    "awareness": "eligendi",
+    "decisions": "maiores",
+    "workrate": "nam",
+    "strength": "autem",
+    "crossing": "ab",
+    "finishing": "minus",
+    "positioning": "consequatur",
+    "anticipation": "consectetur",
+    "total": "illo",
+    "overall_grade": "voluptas",
     "created_at": {},
     "updated_at": {}
 }
@@ -524,14 +524,14 @@ DELETE /skillReports/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_reports/ad" \
+    "http://localhost/api/skill_reports/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_reports/ad"
+    "http://localhost/api/skill_reports/molestiae"
 );
 
 let headers = {

@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"est","sport_id":17,"created_at":{},"updated_at":{}}'
+    -d '{"name":"nostrum","sport_id":17,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "name": "est",
+    "name": "nostrum",
     "sport_id": 17,
     "created_at": {},
     "updated_at": {}
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/ducimus" \
+    -G "http://localhost/api/skill_tests/iure" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/ducimus"
+    "http://localhost/api/skill_tests/iure"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/autem" \
+    "http://localhost/api/skill_tests/enim" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"dolores","sport_id":20,"created_at":{},"updated_at":{}}'
+    -d '{"name":"natus","sport_id":17,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/autem"
+    "http://localhost/api/skill_tests/enim"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "dolores",
-    "sport_id": 20,
+    "name": "natus",
+    "sport_id": 17,
     "created_at": {},
     "updated_at": {}
 }
