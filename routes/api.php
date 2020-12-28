@@ -42,9 +42,13 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
         Route::resource('psych_predictors', App\Http\Controllers\API\PsychPredictorAPIController::class);
         Route::resource('skill_reports', App\Http\Controllers\API\SkillReportAPIController::class);
         Route::resource('skill_tests', App\Http\Controllers\API\SkillTestAPIController::class);
+        Route::resource('countries', App\Http\Controllers\API\CountryAPIController::class);
+        Route::resource('states', App\Http\Controllers\API\StateAPIController::class);
     });
 
 });
+
+
 
 
 

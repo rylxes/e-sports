@@ -44,8 +44,6 @@ class PersonalDetails extends Model
     const UPDATED_AT = 'updated_at';
 
 
-
-
     public $fillable = [
         'user_id',
         'first_name',
@@ -130,17 +128,27 @@ class PersonalDetails extends Model
         return $this->belongsTo(User::Class);
     }
 
+    public function country()
+    {
+        return $this->belongsTo(Country::Class);
+    }
+
+    public function state()
+    {
+        return $this->belongsTo(State::Class, 'state_of_origin');
+    }
+
     protected static function boot()
     {
         parent::boot();
         static::addGlobalScope(new UserScope());
         self::creating(function ($model) {
-            if(Auth::check()){
+            if (Auth::check()) {
                 $model->user_id = Auth::user()->id;
             }
         });
         self::saving(function ($model) {
-            if(Auth::check()){
+            if (Auth::check()) {
                 $model->user_id = Auth::user()->id;
             }
         });

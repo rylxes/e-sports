@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/club_assesments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":13,"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"quas","motivation":"in","achievement":"autem","admired_sportsperson":"aliquid","top_athlete_plans":"ut","current_team":"dolores","date_joined_team":{},"favourite_jersey_number":"itaque","nickname":"quam","favourite_sports_team":"impedit","why_like_team":"vitae","no_of_teams_played_for":9,"why_leave":"aliquid","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"maiores","preferred_foot":"fuga","created_at":{},"updated_at":{}}'
+    -d '{"user_id":1,"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"voluptatum","motivation":"iusto","achievement":"quibusdam","admired_sportsperson":"nostrum","top_athlete_plans":"dolores","current_team":"voluptatem","date_joined_team":{},"favourite_jersey_number":"voluptas","nickname":"fugiat","favourite_sports_team":"et","why_like_team":"esse","no_of_teams_played_for":11,"why_leave":"accusamus","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"dolor","preferred_foot":"vitae","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,27 +90,27 @@ let headers = {
 };
 
 let body = {
-    "user_id": 13,
+    "user_id": 1,
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "quas",
-    "motivation": "in",
-    "achievement": "autem",
-    "admired_sportsperson": "aliquid",
-    "top_athlete_plans": "ut",
-    "current_team": "dolores",
+    "competitions": "voluptatum",
+    "motivation": "iusto",
+    "achievement": "quibusdam",
+    "admired_sportsperson": "nostrum",
+    "top_athlete_plans": "dolores",
+    "current_team": "voluptatem",
     "date_joined_team": {},
-    "favourite_jersey_number": "itaque",
-    "nickname": "quam",
-    "favourite_sports_team": "impedit",
-    "why_like_team": "vitae",
-    "no_of_teams_played_for": 9,
-    "why_leave": "aliquid",
+    "favourite_jersey_number": "voluptas",
+    "nickname": "fugiat",
+    "favourite_sports_team": "et",
+    "why_like_team": "esse",
+    "no_of_teams_played_for": 11,
+    "why_leave": "accusamus",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "maiores",
-    "preferred_foot": "fuga",
+    "positions_play": "dolor",
+    "preferred_foot": "vitae",
     "created_at": {},
     "updated_at": {}
 }
@@ -276,14 +276,14 @@ GET|HEAD /clubAssesments/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/club_assesments/ea" \
+    -G "http://localhost/api/club_assesments/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/club_assesments/ea"
+    "http://localhost/api/club_assesments/et"
 );
 
 let headers = {
@@ -344,16 +344,16 @@ PUT/PATCH /clubAssesments/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/club_assesments/saepe" \
+    "http://localhost/api/club_assesments/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":2,"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"fuga","motivation":"cupiditate","achievement":"esse","admired_sportsperson":"exercitationem","top_athlete_plans":"iste","current_team":"aut","date_joined_team":{},"favourite_jersey_number":"molestiae","nickname":"accusamus","favourite_sports_team":"quas","why_like_team":"natus","no_of_teams_played_for":10,"why_leave":"aut","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"laudantium","preferred_foot":"blanditiis","created_at":{},"updated_at":{}}'
+    -d '{"user_id":15,"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"atque","motivation":"qui","achievement":"unde","admired_sportsperson":"rem","top_athlete_plans":"veniam","current_team":"repellat","date_joined_team":{},"favourite_jersey_number":"rem","nickname":"sint","favourite_sports_team":"ut","why_like_team":"omnis","no_of_teams_played_for":8,"why_leave":"aspernatur","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"alias","preferred_foot":"laborum","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/club_assesments/saepe"
+    "http://localhost/api/club_assesments/ut"
 );
 
 let headers = {
@@ -362,27 +362,27 @@ let headers = {
 };
 
 let body = {
-    "user_id": 2,
+    "user_id": 15,
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "fuga",
-    "motivation": "cupiditate",
-    "achievement": "esse",
-    "admired_sportsperson": "exercitationem",
-    "top_athlete_plans": "iste",
-    "current_team": "aut",
+    "competitions": "atque",
+    "motivation": "qui",
+    "achievement": "unde",
+    "admired_sportsperson": "rem",
+    "top_athlete_plans": "veniam",
+    "current_team": "repellat",
     "date_joined_team": {},
-    "favourite_jersey_number": "molestiae",
-    "nickname": "accusamus",
-    "favourite_sports_team": "quas",
-    "why_like_team": "natus",
-    "no_of_teams_played_for": 10,
-    "why_leave": "aut",
+    "favourite_jersey_number": "rem",
+    "nickname": "sint",
+    "favourite_sports_team": "ut",
+    "why_like_team": "omnis",
+    "no_of_teams_played_for": 8,
+    "why_leave": "aspernatur",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "laudantium",
-    "preferred_foot": "blanditiis",
+    "positions_play": "alias",
+    "preferred_foot": "laborum",
     "created_at": {},
     "updated_at": {}
 }
@@ -558,14 +558,14 @@ DELETE /clubAssesments/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/club_assesments/nulla" \
+    "http://localhost/api/club_assesments/blanditiis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/club_assesments/nulla"
+    "http://localhost/api/club_assesments/blanditiis"
 );
 
 let headers = {
