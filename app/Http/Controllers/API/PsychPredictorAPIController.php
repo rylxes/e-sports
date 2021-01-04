@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Requests\API\CreatePsychPredictorAPIRequest;
 use App\Http\Requests\API\UpdatePsychPredictorAPIRequest;
+use App\Models\ClubAssesment;
 use App\Models\PsychPredictor;
 use App\Repositories\PsychPredictorRepository;
 use Illuminate\Http\Request;
@@ -92,17 +93,16 @@ class PsychPredictorAPIController extends AppBaseController
      */
     public function update($id, UpdatePsychPredictorAPIRequest $request)
     {
-        $input = $request->all();
 
-        /** @var PsychPredictor $psychPredictor */
-        $psychPredictor = $this->psychPredictorRepository->find($id);
+        $input = $request->all();
+        unset($input['user_id']);
+        $psychPredictor = PsychPredictor::all()->first();;
 
         if (empty($psychPredictor)) {
-            return $this->sendError('Psych Predictor not found');
+            $psychPredictor = $this->psychPredictorRepository->create($input);
+        }else{
+            $psychPredictor = $this->psychPredictorRepository->update($input, $psychPredictor->id);
         }
-
-        $psychPredictor = $this->psychPredictorRepository->update($input, $id);
-
         return $this->sendResponse($psychPredictor->toArray(), 'PsychPredictor updated successfully');
     }
 
