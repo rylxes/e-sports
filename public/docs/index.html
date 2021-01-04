@@ -44,7 +44,7 @@
                             <li><a href='http://github.com/knuckleswtf/scribe'>Documentation powered by Scribe ✍</a></li>
                     </ul>
             <ul class="toc-footer" id="last-updated">
-            <li>Last updated: December 28 2020</li>
+            <li>Last updated: January 4 2021</li>
         </ul>
 </div>
 <div class="page-wrapper">
@@ -73,7 +73,7 @@ You can switch the language used with the tabs at the top right (or from the nav
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"grady.marilou@example.com","password":"dolores"}'
+    -d '{"email":"ofeil@example.org","password":"exercitationem"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/login"
@@ -85,8 +85,8 @@ let headers = {
 };
 
 let body = {
-    "email": "grady.marilou@example.com",
-    "password": "dolores"
+    "email": "ofeil@example.org",
+    "password": "exercitationem"
 }
 
 fetch(url, {
@@ -175,7 +175,7 @@ fetch(url, {
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"velit","last_name":"doloremque","email":"wabbott@example.net","password":"assumenda","password_confirmation":"minus"}'
+    -d '{"first_name":"vitae","last_name":"ab","email":"herzog.emie@example.net","password":"laboriosam","password_confirmation":"amet"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/register"
@@ -187,11 +187,11 @@ let headers = {
 };
 
 let body = {
-    "first_name": "velit",
-    "last_name": "doloremque",
-    "email": "wabbott@example.net",
-    "password": "assumenda",
-    "password_confirmation": "minus"
+    "first_name": "vitae",
+    "last_name": "ab",
+    "email": "herzog.emie@example.net",
+    "password": "laboriosam",
+    "password_confirmation": "amet"
 }
 
 fetch(url, {
@@ -254,7 +254,7 @@ The value must be a valid email address.</p>
     "http://localhost/api/password/email" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"unique.bins@example.net"}'
+    -d '{"email":"gianni82@example.com"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/password/email"
@@ -266,7 +266,7 @@ let headers = {
 };
 
 let body = {
-    "email": "unique.bins@example.net"
+    "email": "gianni82@example.com"
 }
 
 fetch(url, {
@@ -307,11 +307,11 @@ The value must be a valid email address.</p>
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/password/reset/blanditiis" \
+    -G "http://localhost/api/password/reset/possimus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/password/reset/blanditiis"
+    "http://localhost/api/password/reset/possimus"
 );
 
 let headers = {
@@ -372,8 +372,8 @@ fetch(url, {
         &lt;p class="login-box-msg"&gt;Reset your password&lt;/p&gt;
 
         &lt;form method="post" action="http://localhost/password/reset"&gt;
-            &lt;input type="hidden" name="_token" value="NutYXVwviqFB89ueWbt8QELPl3WxClNwnEgVYDW3"&gt;
-            &lt;input type="hidden" name="token" value="blanditiis"&gt;
+            &lt;input type="hidden" name="_token" value="ZJAuKwZYGh57gLmN5uvx8FXwgQ1BnuaEndYB8r42"&gt;
+            &lt;input type="hidden" name="token" value="possimus"&gt;
 
             &lt;div class="form-group has-feedback "&gt;
                 &lt;input type="email" class="form-control" name="email" value="" placeholder="Email"&gt;
@@ -536,11 +536,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/email/verify/sit/quisquam" \
+    -G "http://localhost/api/email/verify/omnis/sit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/email/verify/sit/quisquam"
+    "http://localhost/api/email/verify/omnis/sit"
 );
 
 let headers = {
@@ -689,7 +689,7 @@ fetch(url, {
     "http://localhost/api/club_assesments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":7,"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"dolore","motivation":"ut","achievement":"nihil","admired_sportsperson":"corrupti","top_athlete_plans":"autem","current_team":"alias","date_joined_team":{},"favourite_jersey_number":"sed","nickname":"omnis","favourite_sports_team":"odit","why_like_team":"sit","no_of_teams_played_for":1,"why_leave":"corrupti","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"voluptatem","preferred_foot":"dignissimos","created_at":{},"updated_at":{}}'
+    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"dolorum","motivation":"tempore","achievement":"maxime","admired_sportsperson":"officiis","top_athlete_plans":"doloremque","current_team":"harum","date_joined_team":{},"favourite_jersey_number":"ipsam","nickname":"incidunt","favourite_sports_team":"optio","why_like_team":"velit","no_of_teams_played_for":12,"why_leave":"ad","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"et","preferred_foot":"et","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/club_assesments"
@@ -701,27 +701,26 @@ let headers = {
 };
 
 let body = {
-    "user_id": 7,
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "dolore",
-    "motivation": "ut",
-    "achievement": "nihil",
-    "admired_sportsperson": "corrupti",
-    "top_athlete_plans": "autem",
-    "current_team": "alias",
+    "competitions": "dolorum",
+    "motivation": "tempore",
+    "achievement": "maxime",
+    "admired_sportsperson": "officiis",
+    "top_athlete_plans": "doloremque",
+    "current_team": "harum",
     "date_joined_team": {},
-    "favourite_jersey_number": "sed",
-    "nickname": "omnis",
-    "favourite_sports_team": "odit",
-    "why_like_team": "sit",
-    "no_of_teams_played_for": 1,
-    "why_leave": "corrupti",
+    "favourite_jersey_number": "ipsam",
+    "nickname": "incidunt",
+    "favourite_sports_team": "optio",
+    "why_like_team": "velit",
+    "no_of_teams_played_for": 12,
+    "why_leave": "ad",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "voluptatem",
-    "preferred_foot": "dignissimos",
+    "positions_play": "et",
+    "preferred_foot": "et",
     "created_at": {},
     "updated_at": {}
 }
@@ -751,11 +750,6 @@ fetch(url, {
  <b><code>api/club_assesments</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="POSTapi-club_assesments" data-component="body" required  hidden>
-<br>
-</p>
 <p>
 <b><code>enjoy_practice_routines</code></b>&nbsp;&nbsp;<small>boolean</small>     <i>optional</i> &nbsp;
 <label data-endpoint="POSTapi-club_assesments" hidden><input type="radio" name="enjoy_practice_routines" value="true" data-endpoint="POSTapi-club_assesments" data-component="body" ><code>true</code></label>
@@ -879,11 +873,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/club_assesments/ut" \
+    -G "http://localhost/api/club_assesments/optio" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/club_assesments/ut"
+    "http://localhost/api/club_assesments/optio"
 );
 
 let headers = {
@@ -934,13 +928,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/club_assesments/et" \
+    "http://localhost/api/club_assesments/voluptate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":10,"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"voluptatem","motivation":"ut","achievement":"voluptatem","admired_sportsperson":"autem","top_athlete_plans":"rerum","current_team":"facilis","date_joined_team":{},"favourite_jersey_number":"ex","nickname":"eius","favourite_sports_team":"ut","why_like_team":"inventore","no_of_teams_played_for":15,"why_leave":"ipsam","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"omnis","preferred_foot":"et","created_at":{},"updated_at":{}}'
+    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"nulla","motivation":"aperiam","achievement":"voluptatibus","admired_sportsperson":"quae","top_athlete_plans":"ab","current_team":"molestiae","date_joined_team":{},"favourite_jersey_number":"cumque","nickname":"exercitationem","favourite_sports_team":"minus","why_like_team":"voluptatem","no_of_teams_played_for":13,"why_leave":"velit","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"numquam","preferred_foot":"incidunt","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/club_assesments/et"
+    "http://localhost/api/club_assesments/voluptate"
 );
 
 let headers = {
@@ -949,27 +943,26 @@ let headers = {
 };
 
 let body = {
-    "user_id": 10,
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "voluptatem",
-    "motivation": "ut",
-    "achievement": "voluptatem",
-    "admired_sportsperson": "autem",
-    "top_athlete_plans": "rerum",
-    "current_team": "facilis",
+    "competitions": "nulla",
+    "motivation": "aperiam",
+    "achievement": "voluptatibus",
+    "admired_sportsperson": "quae",
+    "top_athlete_plans": "ab",
+    "current_team": "molestiae",
     "date_joined_team": {},
-    "favourite_jersey_number": "ex",
-    "nickname": "eius",
-    "favourite_sports_team": "ut",
-    "why_like_team": "inventore",
-    "no_of_teams_played_for": 15,
-    "why_leave": "ipsam",
+    "favourite_jersey_number": "cumque",
+    "nickname": "exercitationem",
+    "favourite_sports_team": "minus",
+    "why_like_team": "voluptatem",
+    "no_of_teams_played_for": 13,
+    "why_leave": "velit",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "omnis",
-    "preferred_foot": "et",
+    "positions_play": "numquam",
+    "preferred_foot": "incidunt",
     "created_at": {},
     "updated_at": {}
 }
@@ -1009,11 +1002,6 @@ fetch(url, {
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="PUTapi-club_assesments--club_assesment-" data-component="body" required  hidden>
-<br>
-</p>
 <p>
 <b><code>enjoy_practice_routines</code></b>&nbsp;&nbsp;<small>boolean</small>     <i>optional</i> &nbsp;
 <label data-endpoint="PUTapi-club_assesments--club_assesment-" hidden><input type="radio" name="enjoy_practice_routines" value="true" data-endpoint="PUTapi-club_assesments--club_assesment-" data-component="body" ><code>true</code></label>
@@ -1137,11 +1125,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/club_assesments/ut" \
+    "http://localhost/api/club_assesments/eveniet" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/club_assesments/ut"
+    "http://localhost/api/club_assesments/eveniet"
 );
 
 let headers = {
@@ -1234,11 +1222,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/countries/id" \
+    -G "http://localhost/api/countries/maiores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/countries/id"
+    "http://localhost/api/countries/maiores"
 );
 
 let headers = {
@@ -1507,11 +1495,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/oauth/tokens/odit" \
+    "http://localhost/oauth/tokens/similique" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/tokens/odit"
+    "http://localhost/oauth/tokens/similique"
 );
 
 let headers = {
@@ -1684,11 +1672,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/oauth/clients/officiis" \
+    "http://localhost/oauth/clients/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/clients/officiis"
+    "http://localhost/oauth/clients/nulla"
 );
 
 let headers = {
@@ -1731,11 +1719,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/oauth/clients/voluptas" \
+    "http://localhost/oauth/clients/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/clients/voluptas"
+    "http://localhost/oauth/clients/nihil"
 );
 
 let headers = {
@@ -1915,11 +1903,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/oauth/personal-access-tokens/illum" \
+    "http://localhost/oauth/personal-access-tokens/maxime" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/personal-access-tokens/illum"
+    "http://localhost/oauth/personal-access-tokens/maxime"
 );
 
 let headers = {
@@ -2176,11 +2164,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/password/reset/qui" \
+    -G "http://localhost/password/reset/similique" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/password/reset/qui"
+    "http://localhost/password/reset/similique"
 );
 
 let headers = {
@@ -2241,8 +2229,8 @@ fetch(url, {
         &lt;p class="login-box-msg"&gt;Reset your password&lt;/p&gt;
 
         &lt;form method="post" action="http://localhost/password/reset"&gt;
-            &lt;input type="hidden" name="_token" value="NutYXVwviqFB89ueWbt8QELPl3WxClNwnEgVYDW3"&gt;
-            &lt;input type="hidden" name="token" value="qui"&gt;
+            &lt;input type="hidden" name="_token" value="ZJAuKwZYGh57gLmN5uvx8FXwgQ1BnuaEndYB8r42"&gt;
+            &lt;input type="hidden" name="token" value="similique"&gt;
 
             &lt;div class="form-group has-feedback "&gt;
                 &lt;input type="email" class="form-control" name="email" value="" placeholder="Email"&gt;
@@ -2424,7 +2412,7 @@ fetch(url, {
     "http://localhost/api/health_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":9,"blood_group":"culpa","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"beatae","long_term_injury":"iste","treatment_type":"quam","current_health_injury":"fuga","is_personal_health_challenge":false,"personal_health_challenge":"velit","injury_seriousness":"alias","medical_treatment":"voluptate","injury_location":"consequatur","genotype":"molestiae","created_at":{},"updated_at":{}}'
+    -d '{"user_id":19,"blood_group":"neque","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"quia","long_term_injury":"quia","treatment_type":"qui","current_health_injury":"rerum","is_personal_health_challenge":false,"personal_health_challenge":"sed","injury_seriousness":"sed","medical_treatment":"aut","injury_location":"ipsam","genotype":"voluptatibus","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/health_predictors"
@@ -2436,22 +2424,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 9,
-    "blood_group": "culpa",
+    "user_id": 19,
+    "blood_group": "neque",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "beatae",
-    "long_term_injury": "iste",
-    "treatment_type": "quam",
-    "current_health_injury": "fuga",
+    "hereditary_issue": "quia",
+    "long_term_injury": "quia",
+    "treatment_type": "qui",
+    "current_health_injury": "rerum",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "velit",
-    "injury_seriousness": "alias",
-    "medical_treatment": "voluptate",
-    "injury_location": "consequatur",
-    "genotype": "molestiae",
+    "personal_health_challenge": "sed",
+    "injury_seriousness": "sed",
+    "medical_treatment": "aut",
+    "injury_location": "ipsam",
+    "genotype": "voluptatibus",
     "created_at": {},
     "updated_at": {}
 }
@@ -2584,11 +2572,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/health_predictors/cum" \
+    -G "http://localhost/api/health_predictors/minus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/health_predictors/cum"
+    "http://localhost/api/health_predictors/minus"
 );
 
 let headers = {
@@ -2639,13 +2627,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/health_predictors/magni" \
+    "http://localhost/api/health_predictors/harum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":5,"blood_group":"qui","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"sit","long_term_injury":"quibusdam","treatment_type":"reiciendis","current_health_injury":"vero","is_personal_health_challenge":false,"personal_health_challenge":"soluta","injury_seriousness":"ipsam","medical_treatment":"aliquam","injury_location":"sint","genotype":"enim","created_at":{},"updated_at":{}}'
+    -d '{"user_id":19,"blood_group":"omnis","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"ad","long_term_injury":"aliquam","treatment_type":"sit","current_health_injury":"ea","is_personal_health_challenge":false,"personal_health_challenge":"et","injury_seriousness":"ipsa","medical_treatment":"id","injury_location":"excepturi","genotype":"ratione","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/health_predictors/magni"
+    "http://localhost/api/health_predictors/harum"
 );
 
 let headers = {
@@ -2654,22 +2642,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 5,
-    "blood_group": "qui",
+    "user_id": 19,
+    "blood_group": "omnis",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "sit",
-    "long_term_injury": "quibusdam",
-    "treatment_type": "reiciendis",
-    "current_health_injury": "vero",
+    "hereditary_issue": "ad",
+    "long_term_injury": "aliquam",
+    "treatment_type": "sit",
+    "current_health_injury": "ea",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "soluta",
-    "injury_seriousness": "ipsam",
-    "medical_treatment": "aliquam",
-    "injury_location": "sint",
-    "genotype": "enim",
+    "personal_health_challenge": "et",
+    "injury_seriousness": "ipsa",
+    "medical_treatment": "id",
+    "injury_location": "excepturi",
+    "genotype": "ratione",
     "created_at": {},
     "updated_at": {}
 }
@@ -2812,11 +2800,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/health_predictors/qui" \
+    "http://localhost/api/health_predictors/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/health_predictors/qui"
+    "http://localhost/api/health_predictors/quia"
 );
 
 let headers = {
@@ -2912,7 +2900,7 @@ fetch(url, {
     "http://localhost/api/personal_details" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":10,"first_name":"itaque","marital_status":"in","mother_maiden_name":"cupiditate","last_name":"distinctio","height":"aut","body_weight":"molestias","phone":"veniam","sm_handle":"sit","highest_education":"est","place_of_birth":"aliquam","school":"id","career_preference":"illo","is_still_schooling":false,"contact_address":"impedit","dob":{},"country_id":12,"state_of_origin":1,"zipcode":20,"created_at":{},"updated_at":{}}'
+    -d '{"user_id":5,"first_name":"aliquid","marital_status":"qui","mother_maiden_name":"sed","last_name":"minus","height":"non","body_weight":"omnis","phone":"est","sm_handle":"voluptatem","highest_education":"sed","place_of_birth":"assumenda","school":"et","career_preference":"ea","is_still_schooling":false,"contact_address":"quo","dob":{},"country_id":10,"state_of_origin":19,"zipcode":7,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/personal_details"
@@ -2924,25 +2912,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 10,
-    "first_name": "itaque",
-    "marital_status": "in",
-    "mother_maiden_name": "cupiditate",
-    "last_name": "distinctio",
-    "height": "aut",
-    "body_weight": "molestias",
-    "phone": "veniam",
-    "sm_handle": "sit",
-    "highest_education": "est",
-    "place_of_birth": "aliquam",
-    "school": "id",
-    "career_preference": "illo",
+    "user_id": 5,
+    "first_name": "aliquid",
+    "marital_status": "qui",
+    "mother_maiden_name": "sed",
+    "last_name": "minus",
+    "height": "non",
+    "body_weight": "omnis",
+    "phone": "est",
+    "sm_handle": "voluptatem",
+    "highest_education": "sed",
+    "place_of_birth": "assumenda",
+    "school": "et",
+    "career_preference": "ea",
     "is_still_schooling": false,
-    "contact_address": "impedit",
+    "contact_address": "quo",
     "dob": {},
-    "country_id": 12,
-    "state_of_origin": 1,
-    "zipcode": 20,
+    "country_id": 10,
+    "state_of_origin": 19,
+    "zipcode": 7,
     "created_at": {},
     "updated_at": {}
 }
@@ -3086,11 +3074,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/personal_details/quo" \
+    -G "http://localhost/api/personal_details/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/personal_details/quo"
+    "http://localhost/api/personal_details/et"
 );
 
 let headers = {
@@ -3141,13 +3129,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/personal_details/tempore" \
+    "http://localhost/api/personal_details/libero" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"numquam","marital_status":"ea","mother_maiden_name":"optio","last_name":"nemo","height":"veniam","body_weight":"blanditiis","phone":"neque","sm_handle":"sit","highest_education":"hic","place_of_birth":"consequuntur","school":"sit","career_preference":"occaecati","is_still_schooling":false,"contact_address":"et","dob":{},"country_id":18,"state_of_origin":13,"zipcode":6,"created_at":{},"updated_at":{}}'
+    -d '{"first_name":"fugiat","marital_status":"unde","mother_maiden_name":"accusamus","last_name":"sit","height":"nam","body_weight":"totam","phone":"voluptas","sm_handle":"vero","highest_education":"libero","place_of_birth":"nulla","school":"aut","career_preference":"non","is_still_schooling":false,"contact_address":"ea","dob":{},"country_id":2,"state_of_origin":9,"zipcode":3,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/personal_details/tempore"
+    "http://localhost/api/personal_details/libero"
 );
 
 let headers = {
@@ -3156,24 +3144,24 @@ let headers = {
 };
 
 let body = {
-    "first_name": "numquam",
-    "marital_status": "ea",
-    "mother_maiden_name": "optio",
-    "last_name": "nemo",
-    "height": "veniam",
-    "body_weight": "blanditiis",
-    "phone": "neque",
-    "sm_handle": "sit",
-    "highest_education": "hic",
-    "place_of_birth": "consequuntur",
-    "school": "sit",
-    "career_preference": "occaecati",
+    "first_name": "fugiat",
+    "marital_status": "unde",
+    "mother_maiden_name": "accusamus",
+    "last_name": "sit",
+    "height": "nam",
+    "body_weight": "totam",
+    "phone": "voluptas",
+    "sm_handle": "vero",
+    "highest_education": "libero",
+    "place_of_birth": "nulla",
+    "school": "aut",
+    "career_preference": "non",
     "is_still_schooling": false,
-    "contact_address": "et",
+    "contact_address": "ea",
     "dob": {},
-    "country_id": 18,
-    "state_of_origin": 13,
-    "zipcode": 6,
+    "country_id": 2,
+    "state_of_origin": 9,
+    "zipcode": 3,
     "created_at": {},
     "updated_at": {}
 }
@@ -3322,11 +3310,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/personal_details/adipisci" \
+    "http://localhost/api/personal_details/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/personal_details/adipisci"
+    "http://localhost/api/personal_details/ut"
 );
 
 let headers = {
@@ -3422,7 +3410,7 @@ fetch(url, {
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":11,"time_practice_in_week":1,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"eius","challenges":"harum","greatest_motivation":"qui","strength":"qui","weakness":"incidunt","can_overcome_challenges":false,"time_start_sport":"et","rating_sports":"ullam","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":13,"hours_practice_in_week":5,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"minus","challenges":"consequatur","greatest_motivation":"iure","strength":"quos","weakness":"accusamus","can_overcome_challenges":false,"time_start_sport":"error","rating_sports":"asperiores","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/psych_predictors"
@@ -3434,19 +3422,18 @@ let headers = {
 };
 
 let body = {
-    "user_id": 11,
-    "time_practice_in_week": 1,
-    "hours_practice_in_week": 19,
+    "time_practice_in_week": 13,
+    "hours_practice_in_week": 5,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "eius",
-    "challenges": "harum",
-    "greatest_motivation": "qui",
-    "strength": "qui",
-    "weakness": "incidunt",
+    "parent_in_support_reason": "minus",
+    "challenges": "consequatur",
+    "greatest_motivation": "iure",
+    "strength": "quos",
+    "weakness": "accusamus",
     "can_overcome_challenges": false,
-    "time_start_sport": "et",
-    "rating_sports": "ullam",
+    "time_start_sport": "error",
+    "rating_sports": "asperiores",
     "created_at": {},
     "updated_at": {}
 }
@@ -3476,11 +3463,6 @@ fetch(url, {
  <b><code>api/psych_predictors</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="POSTapi-psych_predictors" data-component="body" required  hidden>
-<br>
-</p>
 <p>
 <b><code>time_practice_in_week</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
 <input type="number" name="time_practice_in_week" data-endpoint="POSTapi-psych_predictors" data-component="body" required  hidden>
@@ -3562,11 +3544,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/psych_predictors/laborum" \
+    -G "http://localhost/api/psych_predictors/doloribus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/psych_predictors/laborum"
+    "http://localhost/api/psych_predictors/doloribus"
 );
 
 let headers = {
@@ -3617,13 +3599,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/psych_predictors/repellat" \
+    "http://localhost/api/psych_predictors/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":5,"time_practice_in_week":18,"hours_practice_in_week":15,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"culpa","challenges":"est","greatest_motivation":"et","strength":"ipsam","weakness":"eos","can_overcome_challenges":false,"time_start_sport":"et","rating_sports":"dolore","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":3,"hours_practice_in_week":11,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"sequi","challenges":"ut","greatest_motivation":"deleniti","strength":"et","weakness":"similique","can_overcome_challenges":false,"time_start_sport":"sit","rating_sports":"nihil","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/psych_predictors/repellat"
+    "http://localhost/api/psych_predictors/autem"
 );
 
 let headers = {
@@ -3632,19 +3614,18 @@ let headers = {
 };
 
 let body = {
-    "user_id": 5,
-    "time_practice_in_week": 18,
-    "hours_practice_in_week": 15,
+    "time_practice_in_week": 3,
+    "hours_practice_in_week": 11,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "culpa",
-    "challenges": "est",
-    "greatest_motivation": "et",
-    "strength": "ipsam",
-    "weakness": "eos",
+    "parent_in_support_reason": "sequi",
+    "challenges": "ut",
+    "greatest_motivation": "deleniti",
+    "strength": "et",
+    "weakness": "similique",
     "can_overcome_challenges": false,
-    "time_start_sport": "et",
-    "rating_sports": "dolore",
+    "time_start_sport": "sit",
+    "rating_sports": "nihil",
     "created_at": {},
     "updated_at": {}
 }
@@ -3684,11 +3665,6 @@ fetch(url, {
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="PUTapi-psych_predictors--psych_predictor-" data-component="body" required  hidden>
-<br>
-</p>
 <p>
 <b><code>time_practice_in_week</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
 <input type="number" name="time_practice_in_week" data-endpoint="PUTapi-psych_predictors--psych_predictor-" data-component="body" required  hidden>
@@ -3770,11 +3746,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/psych_predictors/voluptate" \
+    "http://localhost/api/psych_predictors/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/psych_predictors/voluptate"
+    "http://localhost/api/psych_predictors/et"
 );
 
 let headers = {
@@ -3870,7 +3846,7 @@ fetch(url, {
     "http://localhost/api/skill_reports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":6,"speed":"et","passing":"fugit","shooting":"in","dribbling":"sit","heading":"ipsum","ball_control":"modi","fitness":"vel","movement":"aut","awareness":"mollitia","decisions":"molestiae","workrate":"tenetur","strength":"quo","crossing":"qui","finishing":"labore","positioning":"omnis","anticipation":"laboriosam","total":"rerum","overall_grade":"voluptatem","created_at":{},"updated_at":{}}'
+    -d '{"user_id":14,"speed":"ut","passing":"ea","shooting":"cumque","dribbling":"voluptatem","heading":"quos","ball_control":"consequatur","fitness":"recusandae","movement":"et","awareness":"et","decisions":"animi","workrate":"facilis","strength":"et","crossing":"cum","finishing":"temporibus","positioning":"repellat","anticipation":"ea","total":"aliquid","overall_grade":"quae","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/skill_reports"
@@ -3882,25 +3858,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 6,
-    "speed": "et",
-    "passing": "fugit",
-    "shooting": "in",
-    "dribbling": "sit",
-    "heading": "ipsum",
-    "ball_control": "modi",
-    "fitness": "vel",
-    "movement": "aut",
-    "awareness": "mollitia",
-    "decisions": "molestiae",
-    "workrate": "tenetur",
-    "strength": "quo",
-    "crossing": "qui",
-    "finishing": "labore",
-    "positioning": "omnis",
-    "anticipation": "laboriosam",
-    "total": "rerum",
-    "overall_grade": "voluptatem",
+    "user_id": 14,
+    "speed": "ut",
+    "passing": "ea",
+    "shooting": "cumque",
+    "dribbling": "voluptatem",
+    "heading": "quos",
+    "ball_control": "consequatur",
+    "fitness": "recusandae",
+    "movement": "et",
+    "awareness": "et",
+    "decisions": "animi",
+    "workrate": "facilis",
+    "strength": "et",
+    "crossing": "cum",
+    "finishing": "temporibus",
+    "positioning": "repellat",
+    "anticipation": "ea",
+    "total": "aliquid",
+    "overall_grade": "quae",
     "created_at": {},
     "updated_at": {}
 }
@@ -4043,11 +4019,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/skill_reports/inventore" \
+    -G "http://localhost/api/skill_reports/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_reports/inventore"
+    "http://localhost/api/skill_reports/molestiae"
 );
 
 let headers = {
@@ -4098,13 +4074,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/skill_reports/omnis" \
+    "http://localhost/api/skill_reports/tempore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":4,"speed":"et","passing":"molestias","shooting":"soluta","dribbling":"voluptatem","heading":"libero","ball_control":"cum","fitness":"accusantium","movement":"reiciendis","awareness":"eligendi","decisions":"maiores","workrate":"nam","strength":"autem","crossing":"ab","finishing":"minus","positioning":"consequatur","anticipation":"consectetur","total":"illo","overall_grade":"voluptas","created_at":{},"updated_at":{}}'
+    -d '{"user_id":19,"speed":"tempore","passing":"expedita","shooting":"est","dribbling":"tempore","heading":"reprehenderit","ball_control":"perferendis","fitness":"unde","movement":"perspiciatis","awareness":"nemo","decisions":"sequi","workrate":"asperiores","strength":"unde","crossing":"aliquam","finishing":"aut","positioning":"debitis","anticipation":"quas","total":"dolorem","overall_grade":"aliquam","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_reports/omnis"
+    "http://localhost/api/skill_reports/tempore"
 );
 
 let headers = {
@@ -4113,25 +4089,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 4,
-    "speed": "et",
-    "passing": "molestias",
-    "shooting": "soluta",
-    "dribbling": "voluptatem",
-    "heading": "libero",
-    "ball_control": "cum",
-    "fitness": "accusantium",
-    "movement": "reiciendis",
-    "awareness": "eligendi",
-    "decisions": "maiores",
-    "workrate": "nam",
-    "strength": "autem",
-    "crossing": "ab",
-    "finishing": "minus",
-    "positioning": "consequatur",
-    "anticipation": "consectetur",
-    "total": "illo",
-    "overall_grade": "voluptas",
+    "user_id": 19,
+    "speed": "tempore",
+    "passing": "expedita",
+    "shooting": "est",
+    "dribbling": "tempore",
+    "heading": "reprehenderit",
+    "ball_control": "perferendis",
+    "fitness": "unde",
+    "movement": "perspiciatis",
+    "awareness": "nemo",
+    "decisions": "sequi",
+    "workrate": "asperiores",
+    "strength": "unde",
+    "crossing": "aliquam",
+    "finishing": "aut",
+    "positioning": "debitis",
+    "anticipation": "quas",
+    "total": "dolorem",
+    "overall_grade": "aliquam",
     "created_at": {},
     "updated_at": {}
 }
@@ -4284,11 +4260,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/skill_reports/molestiae" \
+    "http://localhost/api/skill_reports/quam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_reports/molestiae"
+    "http://localhost/api/skill_reports/quam"
 );
 
 let headers = {
@@ -4384,7 +4360,7 @@ fetch(url, {
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"nostrum","sport_id":17,"created_at":{},"updated_at":{}}'
+    -d '{"name":"neque","sport_id":10,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/skill_tests"
@@ -4396,8 +4372,8 @@ let headers = {
 };
 
 let body = {
-    "name": "nostrum",
-    "sport_id": 17,
+    "name": "neque",
+    "sport_id": 10,
     "created_at": {},
     "updated_at": {}
 }
@@ -4455,11 +4431,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/skill_tests/iure" \
+    -G "http://localhost/api/skill_tests/voluptatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_tests/iure"
+    "http://localhost/api/skill_tests/voluptatibus"
 );
 
 let headers = {
@@ -4510,13 +4486,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/skill_tests/enim" \
+    "http://localhost/api/skill_tests/alias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"natus","sport_id":17,"created_at":{},"updated_at":{}}'
+    -d '{"name":"reprehenderit","sport_id":3,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_tests/enim"
+    "http://localhost/api/skill_tests/alias"
 );
 
 let headers = {
@@ -4525,8 +4501,8 @@ let headers = {
 };
 
 let body = {
-    "name": "natus",
-    "sport_id": 17,
+    "name": "reprehenderit",
+    "sport_id": 3,
     "created_at": {},
     "updated_at": {}
 }
@@ -4594,11 +4570,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/skill_tests/corporis" \
+    "http://localhost/api/skill_tests/aliquid" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_tests/corporis"
+    "http://localhost/api/skill_tests/aliquid"
 );
 
 let headers = {
@@ -4694,7 +4670,7 @@ fetch(url, {
     "http://localhost/api/sports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"exercitationem","created_at":{},"updated_at":{}}'
+    -d '{"name":"voluptatibus","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/sports"
@@ -4706,7 +4682,7 @@ let headers = {
 };
 
 let body = {
-    "name": "exercitationem",
+    "name": "voluptatibus",
     "created_at": {},
     "updated_at": {}
 }
@@ -4759,11 +4735,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/sports/minus" \
+    -G "http://localhost/api/sports/est" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/sports/minus"
+    "http://localhost/api/sports/est"
 );
 
 let headers = {
@@ -4814,13 +4790,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/sports/iusto" \
+    "http://localhost/api/sports/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"officia","created_at":{},"updated_at":{}}'
+    -d '{"name":"ducimus","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/sports/iusto"
+    "http://localhost/api/sports/voluptas"
 );
 
 let headers = {
@@ -4829,7 +4805,7 @@ let headers = {
 };
 
 let body = {
-    "name": "officia",
+    "name": "ducimus",
     "created_at": {},
     "updated_at": {}
 }
@@ -4892,11 +4868,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/sports/dicta" \
+    "http://localhost/api/sports/cum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/sports/dicta"
+    "http://localhost/api/sports/cum"
 );
 
 let headers = {
@@ -4989,11 +4965,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/states/natus" \
+    -G "http://localhost/api/states/pariatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/states/natus"
+    "http://localhost/api/states/pariatur"
 );
 
 let headers = {
@@ -5043,11 +5019,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/states/byCountry/omnis" \
+    -G "http://localhost/api/states/byCountry/aperiam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/states/byCountry/omnis"
+    "http://localhost/api/states/byCountry/aperiam"
 );
 
 let headers = {
@@ -5150,7 +5126,7 @@ fetch(url, {
     "http://localhost/api/video_types" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"recusandae","created_at":{},"updated_at":{}}'
+    -d '{"name":"nam","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/video_types"
@@ -5162,7 +5138,7 @@ let headers = {
 };
 
 let body = {
-    "name": "recusandae",
+    "name": "nam",
     "created_at": {},
     "updated_at": {}
 }
@@ -5215,11 +5191,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/video_types/aut" \
+    -G "http://localhost/api/video_types/non" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/video_types/aut"
+    "http://localhost/api/video_types/non"
 );
 
 let headers = {
@@ -5270,13 +5246,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/video_types/ducimus" \
+    "http://localhost/api/video_types/fugit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"earum","created_at":{},"updated_at":{}}'
+    -d '{"name":"est","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/video_types/ducimus"
+    "http://localhost/api/video_types/fugit"
 );
 
 let headers = {
@@ -5285,7 +5261,7 @@ let headers = {
 };
 
 let body = {
-    "name": "earum",
+    "name": "est",
     "created_at": {},
     "updated_at": {}
 }
@@ -5348,11 +5324,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/video_types/enim" \
+    "http://localhost/api/video_types/corporis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/video_types/enim"
+    "http://localhost/api/video_types/corporis"
 );
 
 let headers = {
@@ -5448,7 +5424,7 @@ fetch(url, {
     "http://localhost/api/videos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":7,"type_id":18,"skill_test_id":1,"url":"aut","created_at":{},"updated_at":{}}'
+    -d '{"user_id":10,"type_id":7,"skill_test_id":5,"url":"laboriosam","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/videos"
@@ -5460,10 +5436,10 @@ let headers = {
 };
 
 let body = {
-    "user_id": 7,
-    "type_id": 18,
-    "skill_test_id": 1,
-    "url": "aut",
+    "user_id": 10,
+    "type_id": 7,
+    "skill_test_id": 5,
+    "url": "laboriosam",
     "created_at": {},
     "updated_at": {}
 }
@@ -5531,11 +5507,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/videos/ut" \
+    -G "http://localhost/api/videos/eum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/videos/ut"
+    "http://localhost/api/videos/eum"
 );
 
 let headers = {
@@ -5586,13 +5562,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/videos/id" \
+    "http://localhost/api/videos/quas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":3,"type_id":9,"skill_test_id":2,"url":"quasi","created_at":{},"updated_at":{}}'
+    -d '{"user_id":17,"type_id":12,"skill_test_id":12,"url":"molestiae","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/videos/id"
+    "http://localhost/api/videos/quas"
 );
 
 let headers = {
@@ -5601,10 +5577,10 @@ let headers = {
 };
 
 let body = {
-    "user_id": 3,
-    "type_id": 9,
-    "skill_test_id": 2,
-    "url": "quasi",
+    "user_id": 17,
+    "type_id": 12,
+    "skill_test_id": 12,
+    "url": "molestiae",
     "created_at": {},
     "updated_at": {}
 }
@@ -5682,11 +5658,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/videos/qui" \
+    "http://localhost/api/videos/enim" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/videos/qui"
+    "http://localhost/api/videos/enim"
 );
 
 let headers = {

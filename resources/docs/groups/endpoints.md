@@ -296,14 +296,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/oauth/tokens/odit" \
+    "http://localhost/oauth/tokens/similique" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/tokens/odit"
+    "http://localhost/oauth/tokens/similique"
 );
 
 let headers = {
@@ -526,14 +526,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/oauth/clients/officiis" \
+    "http://localhost/oauth/clients/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/clients/officiis"
+    "http://localhost/oauth/clients/nulla"
 );
 
 let headers = {
@@ -586,14 +586,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/oauth/clients/voluptas" \
+    "http://localhost/oauth/clients/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/clients/voluptas"
+    "http://localhost/oauth/clients/nihil"
 );
 
 let headers = {
@@ -824,14 +824,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/oauth/personal-access-tokens/illum" \
+    "http://localhost/oauth/personal-access-tokens/maxime" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/personal-access-tokens/illum"
+    "http://localhost/oauth/personal-access-tokens/maxime"
 );
 
 let headers = {
@@ -1125,14 +1125,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/password/reset/qui" \
+    -G "http://localhost/password/reset/similique" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/password/reset/qui"
+    "http://localhost/password/reset/similique"
 );
 
 let headers = {
@@ -1197,8 +1197,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="NutYXVwviqFB89ueWbt8QELPl3WxClNwnEgVYDW3">
-            <input type="hidden" name="token" value="qui">
+            <input type="hidden" name="_token" value="ZJAuKwZYGh57gLmN5uvx8FXwgQ1BnuaEndYB8r42">
+            <input type="hidden" name="token" value="similique">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">

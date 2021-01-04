@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"nostrum","sport_id":17,"created_at":{},"updated_at":{}}'
+    -d '{"name":"neque","sport_id":10,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "nostrum",
-    "sport_id": 17,
+    "name": "neque",
+    "sport_id": 10,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/iure" \
+    -G "http://localhost/api/skill_tests/voluptatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/iure"
+    "http://localhost/api/skill_tests/voluptatibus"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/enim" \
+    "http://localhost/api/skill_tests/alias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"natus","sport_id":17,"created_at":{},"updated_at":{}}'
+    -d '{"name":"reprehenderit","sport_id":3,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/enim"
+    "http://localhost/api/skill_tests/alias"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "natus",
-    "sport_id": 17,
+    "name": "reprehenderit",
+    "sport_id": 3,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/corporis" \
+    "http://localhost/api/skill_tests/aliquid" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/corporis"
+    "http://localhost/api/skill_tests/aliquid"
 );
 
 let headers = {

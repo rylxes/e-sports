@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/health_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":9,"blood_group":"culpa","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"beatae","long_term_injury":"iste","treatment_type":"quam","current_health_injury":"fuga","is_personal_health_challenge":false,"personal_health_challenge":"velit","injury_seriousness":"alias","medical_treatment":"voluptate","injury_location":"consequatur","genotype":"molestiae","created_at":{},"updated_at":{}}'
+    -d '{"user_id":19,"blood_group":"neque","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"quia","long_term_injury":"quia","treatment_type":"qui","current_health_injury":"rerum","is_personal_health_challenge":false,"personal_health_challenge":"sed","injury_seriousness":"sed","medical_treatment":"aut","injury_location":"ipsam","genotype":"voluptatibus","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,22 +90,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 9,
-    "blood_group": "culpa",
+    "user_id": 19,
+    "blood_group": "neque",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "beatae",
-    "long_term_injury": "iste",
-    "treatment_type": "quam",
-    "current_health_injury": "fuga",
+    "hereditary_issue": "quia",
+    "long_term_injury": "quia",
+    "treatment_type": "qui",
+    "current_health_injury": "rerum",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "velit",
-    "injury_seriousness": "alias",
-    "medical_treatment": "voluptate",
-    "injury_location": "consequatur",
-    "genotype": "molestiae",
+    "personal_health_challenge": "sed",
+    "injury_seriousness": "sed",
+    "medical_treatment": "aut",
+    "injury_location": "ipsam",
+    "genotype": "voluptatibus",
     "created_at": {},
     "updated_at": {}
 }
@@ -246,14 +246,14 @@ GET|HEAD /healthPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/health_predictors/cum" \
+    -G "http://localhost/api/health_predictors/minus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/cum"
+    "http://localhost/api/health_predictors/minus"
 );
 
 let headers = {
@@ -314,16 +314,16 @@ PUT/PATCH /healthPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/health_predictors/magni" \
+    "http://localhost/api/health_predictors/harum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":5,"blood_group":"qui","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"sit","long_term_injury":"quibusdam","treatment_type":"reiciendis","current_health_injury":"vero","is_personal_health_challenge":false,"personal_health_challenge":"soluta","injury_seriousness":"ipsam","medical_treatment":"aliquam","injury_location":"sint","genotype":"enim","created_at":{},"updated_at":{}}'
+    -d '{"user_id":19,"blood_group":"omnis","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"ad","long_term_injury":"aliquam","treatment_type":"sit","current_health_injury":"ea","is_personal_health_challenge":false,"personal_health_challenge":"et","injury_seriousness":"ipsa","medical_treatment":"id","injury_location":"excepturi","genotype":"ratione","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/magni"
+    "http://localhost/api/health_predictors/harum"
 );
 
 let headers = {
@@ -332,22 +332,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 5,
-    "blood_group": "qui",
+    "user_id": 19,
+    "blood_group": "omnis",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "sit",
-    "long_term_injury": "quibusdam",
-    "treatment_type": "reiciendis",
-    "current_health_injury": "vero",
+    "hereditary_issue": "ad",
+    "long_term_injury": "aliquam",
+    "treatment_type": "sit",
+    "current_health_injury": "ea",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "soluta",
-    "injury_seriousness": "ipsam",
-    "medical_treatment": "aliquam",
-    "injury_location": "sint",
-    "genotype": "enim",
+    "personal_health_challenge": "et",
+    "injury_seriousness": "ipsa",
+    "medical_treatment": "id",
+    "injury_location": "excepturi",
+    "genotype": "ratione",
     "created_at": {},
     "updated_at": {}
 }
@@ -498,14 +498,14 @@ DELETE /healthPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/health_predictors/qui" \
+    "http://localhost/api/health_predictors/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/qui"
+    "http://localhost/api/health_predictors/quia"
 );
 
 let headers = {
