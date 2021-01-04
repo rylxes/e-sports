@@ -57,7 +57,6 @@ class ClubAssesmentAPIController extends AppBaseController
     public function store(CreateClubAssesmentAPIRequest $request)
     {
         $input = $request->all();
-
         $clubAssesment = $this->clubAssesmentRepository->create($input);
 
         return $this->sendResponse($clubAssesment->toArray(), 'Club Assesment saved successfully');
@@ -95,15 +94,15 @@ class ClubAssesmentAPIController extends AppBaseController
     public function update($id, UpdateClubAssesmentAPIRequest $request)
     {
         $input = $request->all();
-        unset($input['user_id']);
         /** @var ClubAssesment $clubAssesment */
-        //$clubAssesment = $this->clubAssesmentRepository->find($id);
-        $clubAssesment = ClubAssesment::all()->first();
+        $clubAssesment = $this->clubAssesmentRepository->find($id);
+
         if (empty($clubAssesment)) {
-            $clubAssesment = $this->clubAssesmentRepository->create($input);
-        }else{
-            $clubAssesment = $this->clubAssesmentRepository->update($input, $clubAssesment->id);
+            return $this->sendError('Club Assesment not found');
         }
+
+        $clubAssesment = $this->clubAssesmentRepository->update($input, $id);
+
         return $this->sendResponse($clubAssesment->toArray(), 'ClubAssesment updated successfully');
     }
 

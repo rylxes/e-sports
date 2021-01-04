@@ -24,8 +24,21 @@ class UpdatePsychPredictorAPIRequest extends APIRequest
      */
     public function rules()
     {
-        $rules = PsychPredictor::$rules;
-        
-        return $rules;
+        return [
+            'time_practice_in_week' => 'required|integer',
+            'hours_practice_in_week' => 'required|integer',
+            'is_parent_in_support' => 'nullable|boolean',
+            'is_team_player' => 'nullable|boolean',
+            'parent_in_support_reason' => 'nullable|string|max:255',
+            'challenges' => 'nullable|string|max:255',
+            'greatest_motivation' => 'nullable|string|max:255',
+            'strength' => 'nullable|string|max:255',
+            'weakness' => 'nullable|string|max:255',
+            'can_overcome_challenges' => 'nullable|boolean',
+            'time_start_sport' => 'nullable|string',
+            'rating_sports' => 'nullable|string',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable'
+        ];;
     }
 }
