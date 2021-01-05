@@ -95,13 +95,13 @@ class HealthPredictorAPIController extends AppBaseController
         $input = $request->all();
 
         /** @var HealthPredictor $healthPredictor */
-        $healthPredictor = $this->healthPredictorRepository->find($id);
-
+        //$healthPredictor = $this->healthPredictorRepository->find($id);
+        $healthPredictor = HealthPredictor::all()->first();
         if (empty($healthPredictor)) {
             return $this->sendError('Health Predictor not found');
         }
 
-        $healthPredictor = $this->healthPredictorRepository->update($input, $id);
+        $healthPredictor = $this->healthPredictorRepository->update($input, $healthPredictor->id);
 
         return $this->sendResponse($healthPredictor->toArray(), 'HealthPredictor updated successfully');
     }

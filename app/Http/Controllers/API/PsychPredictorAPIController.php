@@ -96,13 +96,13 @@ class PsychPredictorAPIController extends AppBaseController
         $input = $request->all();
 
         /** @var PsychPredictor $psychPredictor */
-        $psychPredictor = $this->psychPredictorRepository->find($id);
-
+        //$psychPredictor = $this->psychPredictorRepository->find($id);
+        $psychPredictor = PsychPredictor::all()->first();
         if (empty($psychPredictor)) {
             return $this->sendError('Psych Predictor not found');
         }
 
-        $psychPredictor = $this->psychPredictorRepository->update($input, $id);
+        $psychPredictor = $this->psychPredictorRepository->update($input, $psychPredictor->id);
 
         return $this->sendResponse($psychPredictor->toArray(), 'PsychPredictor updated successfully');
     }

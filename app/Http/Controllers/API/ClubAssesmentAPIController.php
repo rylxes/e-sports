@@ -95,13 +95,12 @@ class ClubAssesmentAPIController extends AppBaseController
     {
         $input = $request->all();
         /** @var ClubAssesment $clubAssesment */
-        $clubAssesment = $this->clubAssesmentRepository->find($id);
-
+        //$clubAssesment = $this->clubAssesmentRepository->find($id);
+        $clubAssesment = ClubAssesment::all()->first();
         if (empty($clubAssesment)) {
             return $this->sendError('Club Assesment not found');
         }
-
-        $clubAssesment = $this->clubAssesmentRepository->update($input, $id);
+        $clubAssesment = $this->clubAssesmentRepository->update($input, $clubAssesment->id);
 
         return $this->sendResponse($clubAssesment->toArray(), 'ClubAssesment updated successfully');
     }

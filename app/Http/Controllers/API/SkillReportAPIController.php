@@ -95,13 +95,13 @@ class SkillReportAPIController extends AppBaseController
         $input = $request->all();
 
         /** @var SkillReport $skillReport */
-        $skillReport = $this->skillReportRepository->find($id);
-
+        //$skillReport = $this->skillReportRepository->find($id);
+        $skillReport = SkillReport::all()->first();
         if (empty($skillReport)) {
             return $this->sendError('Skill Report not found');
         }
 
-        $skillReport = $this->skillReportRepository->update($input, $id);
+        $skillReport = $this->skillReportRepository->update($input, $skillReport->id);
 
         return $this->sendResponse($skillReport->toArray(), 'SkillReport updated successfully');
     }

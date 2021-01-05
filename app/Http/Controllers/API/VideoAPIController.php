@@ -95,13 +95,13 @@ class VideoAPIController extends AppBaseController
         $input = $request->all();
 
         /** @var Video $video */
-        $video = $this->videoRepository->find($id);
-
+        //$video = $this->videoRepository->find($id);
+        $video = Video::all()->first();
         if (empty($video)) {
             return $this->sendError('Video not found');
         }
 
-        $video = $this->videoRepository->update($input, $id);
+        $video = $this->videoRepository->update($input, $video->id);
 
         return $this->sendResponse($video->toArray(), 'Video updated successfully');
     }
