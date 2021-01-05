@@ -39,11 +39,11 @@ paths:
                                 email:
                                     type: string
                                     description: 'The value must be a valid email address.'
-                                    example: ofeil@example.org
+                                    example: alaina07@example.org
                                 password:
                                     type: string
                                     description: ''
-                                    example: exercitationem
+                                    example: voluptate
                             required:
                                 - email
                                 - password
@@ -103,23 +103,23 @@ paths:
                                 first_name:
                                     type: string
                                     description: ''
-                                    example: vitae
+                                    example: culpa
                                 last_name:
                                     type: string
                                     description: ''
-                                    example: ab
+                                    example: ratione
                                 email:
                                     type: string
                                     description: 'The value must be a valid email address.'
-                                    example: herzog.emie@example.net
+                                    example: lilian.becker@example.com
                                 password:
                                     type: string
                                     description: ''
-                                    example: laboriosam
+                                    example: quis
                                 password_confirmation:
                                     type: string
                                     description: ''
-                                    example: amet
+                                    example: expedita
                             required:
                                 - first_name
                                 - last_name
@@ -159,7 +159,7 @@ paths:
                                 email:
                                     type: string
                                     description: 'The value must be a valid email address.'
-                                    example: gianni82@example.com
+                                    example: nbradtke@example.com
                             required:
                                 - email
             security: []
@@ -189,7 +189,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>E-sports</title>\n\n    <!-- Tell the browser to be responsive to screen width -->\n    <meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">\n\n    <!-- Bootstrap 3.3.7 -->\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n\n    <!-- Font Awesome -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n    <!-- Ionicons -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css\">\n\n    <!-- Theme style -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css\">\n\n    <!-- iCheck -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css\">\n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n    <!--[if lt IE 9]>\n    <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>\n    <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n</head>\n<body class=\"hold-transition login-page\">\n<div class=\"login-box\">\n    <div class=\"login-logo\">\n        <a href=\"http://localhost/home\"><b>InfyOm </b>Generator</a>\n    </div>\n\n    <!-- /.login-logo -->\n    <div class=\"login-box-body\">\n        <p class=\"login-box-msg\">Reset your password</p>\n\n        <form method=\"post\" action=\"http://localhost/password/reset\">\n            <input type=\"hidden\" name=\"_token\" value=\"ZJAuKwZYGh57gLmN5uvx8FXwgQ1BnuaEndYB8r42\">\n            <input type=\"hidden\" name=\"token\" value=\"possimus\">\n\n            <div class=\"form-group has-feedback \">\n                <input type=\"email\" class=\"form-control\" name=\"email\" value=\"\" placeholder=\"Email\">\n                <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span>\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" name=\"password_confirmation\" class=\"form-control\" placeholder=\"Confirm password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <button type=\"submit\" class=\"btn btn-primary pull-right\">\n                        <i class=\"fa fa-btn fa-refresh\"></i>Reset Password\n                    </button>\n                </div>\n            </div>\n        </form>\n\n    </div>\n</div>\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n\n<!-- AdminLTE App -->\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js\"></script>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js\"></script>\n<script>\n    $(function () {\n        $('input').iCheck({\n            checkboxClass: 'icheckbox_square-blue',\n            radioClass: 'iradio_square-blue',\n            increaseArea: '20%' // optional\n        });\n    });\n</script>\n</body>\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>E-sports</title>\n\n    <!-- Tell the browser to be responsive to screen width -->\n    <meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">\n\n    <!-- Bootstrap 3.3.7 -->\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n\n    <!-- Font Awesome -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n    <!-- Ionicons -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css\">\n\n    <!-- Theme style -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css\">\n\n    <!-- iCheck -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css\">\n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n    <!--[if lt IE 9]>\n    <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>\n    <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n</head>\n<body class=\"hold-transition login-page\">\n<div class=\"login-box\">\n    <div class=\"login-logo\">\n        <a href=\"http://localhost/home\"><b>InfyOm </b>Generator</a>\n    </div>\n\n    <!-- /.login-logo -->\n    <div class=\"login-box-body\">\n        <p class=\"login-box-msg\">Reset your password</p>\n\n        <form method=\"post\" action=\"http://localhost/password/reset\">\n            <input type=\"hidden\" name=\"_token\" value=\"aDrzreswTMTbFCvvJXIugox2NihgCLbmVi8zvLpz\">\n            <input type=\"hidden\" name=\"token\" value=\"accusamus\">\n\n            <div class=\"form-group has-feedback \">\n                <input type=\"email\" class=\"form-control\" name=\"email\" value=\"\" placeholder=\"Email\">\n                <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span>\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" name=\"password_confirmation\" class=\"form-control\" placeholder=\"Confirm password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <button type=\"submit\" class=\"btn btn-primary pull-right\">\n                        <i class=\"fa fa-btn fa-refresh\"></i>Reset Password\n                    </button>\n                </div>\n            </div>\n        </form>\n\n    </div>\n</div>\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n\n<!-- AdminLTE App -->\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js\"></script>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js\"></script>\n<script>\n    $(function () {\n        $('input').iCheck({\n            checkboxClass: 'icheckbox_square-blue',\n            radioClass: 'iradio_square-blue',\n            increaseArea: '20%' // optional\n        });\n    });\n</script>\n</body>\n</html>\n"
             tags:
                 - Auth
             security: []
@@ -198,7 +198,7 @@ paths:
                 in: path
                 name: token
                 description: ''
-                example: possimus
+                example: accusamus
                 required: true
                 schema:
                     type: string
@@ -288,7 +288,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: omnis
+                example: et
                 required: true
                 schema:
                     type: string
@@ -296,7 +296,7 @@ paths:
                 in: path
                 name: hash
                 description: ''
-                example: sit
+                example: dolores
                 required: true
                 schema:
                     type: string
@@ -401,27 +401,27 @@ paths:
                                 competitions:
                                     type: string
                                     description: ''
-                                    example: dolorum
+                                    example: in
                                 motivation:
                                     type: string
                                     description: ''
-                                    example: tempore
+                                    example: molestiae
                                 achievement:
                                     type: string
                                     description: ''
-                                    example: maxime
+                                    example: accusantium
                                 admired_sportsperson:
                                     type: string
                                     description: ''
-                                    example: officiis
+                                    example: reprehenderit
                                 top_athlete_plans:
                                     type: string
                                     description: ''
-                                    example: doloremque
+                                    example: sunt
                                 current_team:
                                     type: string
                                     description: ''
-                                    example: harum
+                                    example: eos
                                 date_joined_team:
                                     type: string
                                     description: ''
@@ -429,27 +429,27 @@ paths:
                                 favourite_jersey_number:
                                     type: string
                                     description: ''
-                                    example: ipsam
+                                    example: et
                                 nickname:
                                     type: string
                                     description: ''
-                                    example: incidunt
+                                    example: dolorem
                                 favourite_sports_team:
                                     type: string
                                     description: ''
-                                    example: optio
+                                    example: repellat
                                 why_like_team:
                                     type: string
                                     description: ''
-                                    example: velit
+                                    example: nemo
                                 no_of_teams_played_for:
                                     type: integer
                                     description: ''
-                                    example: 12
+                                    example: 13
                                 why_leave:
                                     type: string
                                     description: ''
-                                    example: ad
+                                    example: quo
                                 can_improve_in_team:
                                     type: boolean
                                     description: ''
@@ -461,11 +461,11 @@ paths:
                                 positions_play:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: quae
                                 preferred_foot:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: sunt
                                 created_at:
                                     type: string
                                     description: ''
@@ -553,27 +553,27 @@ paths:
                                 competitions:
                                     type: string
                                     description: ''
-                                    example: nulla
+                                    example: illum
                                 motivation:
                                     type: string
                                     description: ''
-                                    example: aperiam
+                                    example: modi
                                 achievement:
                                     type: string
                                     description: ''
-                                    example: voluptatibus
+                                    example: cupiditate
                                 admired_sportsperson:
                                     type: string
                                     description: ''
-                                    example: quae
+                                    example: sunt
                                 top_athlete_plans:
                                     type: string
                                     description: ''
-                                    example: ab
+                                    example: officiis
                                 current_team:
                                     type: string
                                     description: ''
-                                    example: molestiae
+                                    example: ea
                                 date_joined_team:
                                     type: string
                                     description: ''
@@ -581,27 +581,27 @@ paths:
                                 favourite_jersey_number:
                                     type: string
                                     description: ''
-                                    example: cumque
+                                    example: amet
                                 nickname:
                                     type: string
                                     description: ''
-                                    example: exercitationem
+                                    example: consequatur
                                 favourite_sports_team:
                                     type: string
                                     description: ''
-                                    example: minus
+                                    example: velit
                                 why_like_team:
                                     type: string
                                     description: ''
-                                    example: voluptatem
+                                    example: molestiae
                                 no_of_teams_played_for:
                                     type: integer
                                     description: ''
-                                    example: 13
+                                    example: 1
                                 why_leave:
                                     type: string
                                     description: ''
-                                    example: velit
+                                    example: nobis
                                 can_improve_in_team:
                                     type: boolean
                                     description: ''
@@ -613,11 +613,11 @@ paths:
                                 positions_play:
                                     type: string
                                     description: ''
-                                    example: numquam
+                                    example: pariatur
                                 preferred_foot:
                                     type: string
                                     description: ''
-                                    example: incidunt
+                                    example: nam
                                 created_at:
                                     type: string
                                     description: ''
@@ -654,7 +654,7 @@ paths:
                 in: path
                 name: club_assesment
                 description: ''
-                example: optio
+                example: quam
                 required: true
                 schema:
                     type: string
@@ -733,7 +733,7 @@ paths:
                 in: path
                 name: country
                 description: ''
-                example: maiores
+                example: voluptas
                 required: true
                 schema:
                     type: string
@@ -902,7 +902,7 @@ paths:
                 in: path
                 name: token_id
                 description: ''
-                example: similique
+                example: doloremque
                 required: true
                 schema:
                     type: string
@@ -1036,7 +1036,7 @@ paths:
                 in: path
                 name: client_id
                 description: ''
-                example: nulla
+                example: ad
                 required: true
                 schema:
                     type: string
@@ -1160,7 +1160,7 @@ paths:
                 in: path
                 name: token_id
                 description: ''
-                example: maxime
+                example: sit
                 required: true
                 schema:
                     type: string
@@ -1255,7 +1255,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>E-sports</title>\n\n    <!-- Tell the browser to be responsive to screen width -->\n    <meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">\n\n    <!-- Bootstrap 3.3.7 -->\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n\n    <!-- Font Awesome -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n    <!-- Ionicons -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css\">\n\n    <!-- Theme style -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css\">\n\n    <!-- iCheck -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css\">\n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n    <!--[if lt IE 9]>\n    <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>\n    <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n</head>\n<body class=\"hold-transition login-page\">\n<div class=\"login-box\">\n    <div class=\"login-logo\">\n        <a href=\"http://localhost/home\"><b>InfyOm </b>Generator</a>\n    </div>\n\n    <!-- /.login-logo -->\n    <div class=\"login-box-body\">\n        <p class=\"login-box-msg\">Reset your password</p>\n\n        <form method=\"post\" action=\"http://localhost/password/reset\">\n            <input type=\"hidden\" name=\"_token\" value=\"ZJAuKwZYGh57gLmN5uvx8FXwgQ1BnuaEndYB8r42\">\n            <input type=\"hidden\" name=\"token\" value=\"similique\">\n\n            <div class=\"form-group has-feedback \">\n                <input type=\"email\" class=\"form-control\" name=\"email\" value=\"\" placeholder=\"Email\">\n                <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span>\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" name=\"password_confirmation\" class=\"form-control\" placeholder=\"Confirm password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <button type=\"submit\" class=\"btn btn-primary pull-right\">\n                        <i class=\"fa fa-btn fa-refresh\"></i>Reset Password\n                    </button>\n                </div>\n            </div>\n        </form>\n\n    </div>\n</div>\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n\n<!-- AdminLTE App -->\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js\"></script>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js\"></script>\n<script>\n    $(function () {\n        $('input').iCheck({\n            checkboxClass: 'icheckbox_square-blue',\n            radioClass: 'iradio_square-blue',\n            increaseArea: '20%' // optional\n        });\n    });\n</script>\n</body>\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>E-sports</title>\n\n    <!-- Tell the browser to be responsive to screen width -->\n    <meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">\n\n    <!-- Bootstrap 3.3.7 -->\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n\n    <!-- Font Awesome -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n    <!-- Ionicons -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css\">\n\n    <!-- Theme style -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css\">\n\n    <!-- iCheck -->\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css\">\n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n    <!--[if lt IE 9]>\n    <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>\n    <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n</head>\n<body class=\"hold-transition login-page\">\n<div class=\"login-box\">\n    <div class=\"login-logo\">\n        <a href=\"http://localhost/home\"><b>InfyOm </b>Generator</a>\n    </div>\n\n    <!-- /.login-logo -->\n    <div class=\"login-box-body\">\n        <p class=\"login-box-msg\">Reset your password</p>\n\n        <form method=\"post\" action=\"http://localhost/password/reset\">\n            <input type=\"hidden\" name=\"_token\" value=\"aDrzreswTMTbFCvvJXIugox2NihgCLbmVi8zvLpz\">\n            <input type=\"hidden\" name=\"token\" value=\"accusantium\">\n\n            <div class=\"form-group has-feedback \">\n                <input type=\"email\" class=\"form-control\" name=\"email\" value=\"\" placeholder=\"Email\">\n                <span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span>\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"form-group has-feedback\">\n                <input type=\"password\" name=\"password_confirmation\" class=\"form-control\" placeholder=\"Confirm password\">\n                <span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n\n                            </div>\n\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <button type=\"submit\" class=\"btn btn-primary pull-right\">\n                        <i class=\"fa fa-btn fa-refresh\"></i>Reset Password\n                    </button>\n                </div>\n            </div>\n        </form>\n\n    </div>\n</div>\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n\n<!-- AdminLTE App -->\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js\"></script>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js\"></script>\n<script>\n    $(function () {\n        $('input').iCheck({\n            checkboxClass: 'icheckbox_square-blue',\n            radioClass: 'iradio_square-blue',\n            increaseArea: '20%' // optional\n        });\n    });\n</script>\n</body>\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -1264,7 +1264,7 @@ paths:
                 in: path
                 name: token
                 description: ''
-                example: similique
+                example: accusantium
                 required: true
                 schema:
                     type: string
@@ -1360,20 +1360,16 @@ paths:
             tags:
                 - 'Health Predictor'
             requestBody:
-                required: true
+                required: false
                 content:
                     application/json:
                         schema:
                             type: object
                             properties:
-                                user_id:
-                                    type: integer
-                                    description: ''
-                                    example: 19
                                 blood_group:
                                     type: string
                                     description: ''
-                                    example: neque
+                                    example: alias
                                 is_hereditary_issue:
                                     type: boolean
                                     description: ''
@@ -1393,19 +1389,19 @@ paths:
                                 hereditary_issue:
                                     type: string
                                     description: ''
-                                    example: quia
+                                    example: qui
                                 long_term_injury:
                                     type: string
                                     description: ''
-                                    example: quia
+                                    example: libero
                                 treatment_type:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: deserunt
                                 current_health_injury:
                                     type: string
                                     description: ''
-                                    example: rerum
+                                    example: quisquam
                                 is_personal_health_challenge:
                                     type: boolean
                                     description: ''
@@ -1413,23 +1409,23 @@ paths:
                                 personal_health_challenge:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: rem
                                 injury_seriousness:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: aspernatur
                                 medical_treatment:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: iusto
                                 injury_location:
                                     type: string
                                     description: ''
-                                    example: ipsam
+                                    example: incidunt
                                 genotype:
                                     type: string
                                     description: ''
-                                    example: voluptatibus
+                                    example: reprehenderit
                                 created_at:
                                     type: string
                                     description: ''
@@ -1438,8 +1434,6 @@ paths:
                                     type: string
                                     description: ''
                                     example: {  }
-                            required:
-                                - user_id
             security: []
     '/api/health_predictors/{health_predictor}':
         get:
@@ -1507,11 +1501,11 @@ paths:
                                 user_id:
                                     type: integer
                                     description: ''
-                                    example: 19
+                                    example: 17
                                 blood_group:
                                     type: string
                                     description: ''
-                                    example: omnis
+                                    example: et
                                 is_hereditary_issue:
                                     type: boolean
                                     description: ''
@@ -1531,19 +1525,19 @@ paths:
                                 hereditary_issue:
                                     type: string
                                     description: ''
-                                    example: ad
+                                    example: aspernatur
                                 long_term_injury:
                                     type: string
                                     description: ''
-                                    example: aliquam
+                                    example: et
                                 treatment_type:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: suscipit
                                 current_health_injury:
                                     type: string
                                     description: ''
-                                    example: ea
+                                    example: omnis
                                 is_personal_health_challenge:
                                     type: boolean
                                     description: ''
@@ -1551,23 +1545,23 @@ paths:
                                 personal_health_challenge:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: debitis
                                 injury_seriousness:
                                     type: string
                                     description: ''
-                                    example: ipsa
+                                    example: sed
                                 medical_treatment:
                                     type: string
                                     description: ''
-                                    example: id
+                                    example: ut
                                 injury_location:
                                     type: string
                                     description: ''
-                                    example: excepturi
+                                    example: nulla
                                 genotype:
                                     type: string
                                     description: ''
-                                    example: ratione
+                                    example: ut
                                 created_at:
                                     type: string
                                     description: ''
@@ -1606,7 +1600,7 @@ paths:
                 in: path
                 name: health_predictor
                 description: ''
-                example: minus
+                example: quia
                 required: true
                 schema:
                     type: string
@@ -1676,55 +1670,55 @@ paths:
                                 user_id:
                                     type: integer
                                     description: ''
-                                    example: 5
+                                    example: 10
                                 first_name:
                                     type: string
                                     description: ''
-                                    example: aliquid
+                                    example: impedit
                                 marital_status:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: officiis
                                 mother_maiden_name:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: non
                                 last_name:
                                     type: string
                                     description: ''
-                                    example: minus
+                                    example: dolorem
                                 height:
                                     type: string
                                     description: ''
-                                    example: non
+                                    example: aliquam
                                 body_weight:
                                     type: string
                                     description: ''
-                                    example: omnis
+                                    example: aliquam
                                 phone:
                                     type: string
                                     description: ''
-                                    example: est
+                                    example: repellat
                                 sm_handle:
                                     type: string
                                     description: ''
-                                    example: voluptatem
+                                    example: et
                                 highest_education:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: voluptas
                                 place_of_birth:
                                     type: string
                                     description: ''
-                                    example: assumenda
+                                    example: rem
                                 school:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: rerum
                                 career_preference:
                                     type: string
                                     description: ''
-                                    example: ea
+                                    example: accusantium
                                 is_still_schooling:
                                     type: boolean
                                     description: ''
@@ -1732,7 +1726,7 @@ paths:
                                 contact_address:
                                     type: string
                                     description: ''
-                                    example: quo
+                                    example: est
                                 dob:
                                     type: string
                                     description: ''
@@ -1740,15 +1734,15 @@ paths:
                                 country_id:
                                     type: integer
                                     description: ''
-                                    example: 10
+                                    example: 9
                                 state_of_origin:
                                     type: integer
                                     description: ''
-                                    example: 19
+                                    example: 10
                                 zipcode:
                                     type: integer
                                     description: ''
-                                    example: 7
+                                    example: 20
                                 created_at:
                                     type: string
                                     description: ''
@@ -1826,51 +1820,51 @@ paths:
                                 first_name:
                                     type: string
                                     description: ''
-                                    example: fugiat
+                                    example: nihil
                                 marital_status:
                                     type: string
                                     description: ''
-                                    example: unde
+                                    example: minima
                                 mother_maiden_name:
                                     type: string
                                     description: ''
-                                    example: accusamus
+                                    example: necessitatibus
                                 last_name:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: quo
                                 height:
                                     type: string
                                     description: ''
-                                    example: nam
+                                    example: sed
                                 body_weight:
                                     type: string
                                     description: ''
-                                    example: totam
+                                    example: dolore
                                 phone:
                                     type: string
                                     description: ''
-                                    example: voluptas
+                                    example: officiis
                                 sm_handle:
                                     type: string
                                     description: ''
-                                    example: vero
+                                    example: exercitationem
                                 highest_education:
                                     type: string
                                     description: ''
-                                    example: libero
+                                    example: inventore
                                 place_of_birth:
                                     type: string
                                     description: ''
-                                    example: nulla
+                                    example: eum
                                 school:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: eius
                                 career_preference:
                                     type: string
                                     description: ''
-                                    example: non
+                                    example: tempora
                                 is_still_schooling:
                                     type: boolean
                                     description: ''
@@ -1878,7 +1872,7 @@ paths:
                                 contact_address:
                                     type: string
                                     description: ''
-                                    example: ea
+                                    example: est
                                 dob:
                                     type: string
                                     description: ''
@@ -1894,7 +1888,7 @@ paths:
                                 zipcode:
                                     type: integer
                                     description: ''
-                                    example: 3
+                                    example: 14
                                 created_at:
                                     type: string
                                     description: ''
@@ -1931,7 +1925,7 @@ paths:
                 in: path
                 name: personal_detail
                 description: ''
-                example: et
+                example: molestias
                 required: true
                 schema:
                     type: string
@@ -2001,11 +1995,11 @@ paths:
                                 time_practice_in_week:
                                     type: integer
                                     description: ''
-                                    example: 13
+                                    example: 12
                                 hours_practice_in_week:
                                     type: integer
                                     description: ''
-                                    example: 5
+                                    example: 7
                                 is_parent_in_support:
                                     type: boolean
                                     description: ''
@@ -2017,23 +2011,23 @@ paths:
                                 parent_in_support_reason:
                                     type: string
                                     description: ''
-                                    example: minus
+                                    example: qui
                                 challenges:
                                     type: string
                                     description: ''
-                                    example: consequatur
+                                    example: numquam
                                 greatest_motivation:
                                     type: string
                                     description: ''
-                                    example: iure
+                                    example: ea
                                 strength:
                                     type: string
                                     description: ''
-                                    example: quos
+                                    example: veniam
                                 weakness:
                                     type: string
                                     description: ''
-                                    example: accusamus
+                                    example: eos
                                 can_overcome_challenges:
                                     type: boolean
                                     description: ''
@@ -2041,11 +2035,11 @@ paths:
                                 time_start_sport:
                                     type: string
                                     description: ''
-                                    example: error
+                                    example: velit
                                 rating_sports:
                                     type: string
                                     description: ''
-                                    example: asperiores
+                                    example: consequuntur
                                 created_at:
                                     type: string
                                     description: ''
@@ -2124,11 +2118,11 @@ paths:
                                 time_practice_in_week:
                                     type: integer
                                     description: ''
-                                    example: 3
+                                    example: 8
                                 hours_practice_in_week:
                                     type: integer
                                     description: ''
-                                    example: 11
+                                    example: 6
                                 is_parent_in_support:
                                     type: boolean
                                     description: ''
@@ -2140,19 +2134,19 @@ paths:
                                 parent_in_support_reason:
                                     type: string
                                     description: ''
-                                    example: sequi
+                                    example: vero
                                 challenges:
                                     type: string
                                     description: ''
-                                    example: ut
+                                    example: molestiae
                                 greatest_motivation:
                                     type: string
                                     description: ''
-                                    example: deleniti
+                                    example: excepturi
                                 strength:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: error
                                 weakness:
                                     type: string
                                     description: ''
@@ -2164,11 +2158,11 @@ paths:
                                 time_start_sport:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: eaque
                                 rating_sports:
                                     type: string
                                     description: ''
-                                    example: nihil
+                                    example: expedita
                                 created_at:
                                     type: string
                                     description: ''
@@ -2208,7 +2202,7 @@ paths:
                 in: path
                 name: psych_predictor
                 description: ''
-                example: doloribus
+                example: alias
                 required: true
                 schema:
                     type: string
@@ -2269,88 +2263,84 @@ paths:
             tags:
                 - 'Skill Report'
             requestBody:
-                required: true
+                required: false
                 content:
                     application/json:
                         schema:
                             type: object
                             properties:
-                                user_id:
-                                    type: integer
-                                    description: ''
-                                    example: 14
                                 speed:
                                     type: string
                                     description: ''
-                                    example: ut
+                                    example: ratione
                                 passing:
                                     type: string
                                     description: ''
-                                    example: ea
+                                    example: dolorum
                                 shooting:
                                     type: string
                                     description: ''
-                                    example: cumque
+                                    example: ut
                                 dribbling:
                                     type: string
                                     description: ''
-                                    example: voluptatem
+                                    example: beatae
                                 heading:
                                     type: string
                                     description: ''
-                                    example: quos
+                                    example: totam
                                 ball_control:
                                     type: string
                                     description: ''
-                                    example: consequatur
+                                    example: ut
                                 fitness:
                                     type: string
                                     description: ''
-                                    example: recusandae
+                                    example: itaque
                                 movement:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: fugiat
                                 awareness:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: nihil
                                 decisions:
                                     type: string
                                     description: ''
-                                    example: animi
+                                    example: vel
                                 workrate:
                                     type: string
                                     description: ''
-                                    example: facilis
+                                    example: ullam
                                 strength:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: provident
                                 crossing:
                                     type: string
                                     description: ''
-                                    example: cum
+                                    example: facere
                                 finishing:
                                     type: string
                                     description: ''
-                                    example: temporibus
+                                    example: quae
                                 positioning:
                                     type: string
                                     description: ''
-                                    example: repellat
+                                    example: accusantium
                                 anticipation:
                                     type: string
                                     description: ''
-                                    example: ea
+                                    example: voluptas
                                 total:
                                     type: string
                                     description: ''
-                                    example: aliquid
+                                    example: tempore
                                 overall_grade:
                                     type: string
                                     description: ''
-                                    example: quae
+                                    example: nesciunt
                                 created_at:
                                     type: string
                                     description: ''
@@ -2359,8 +2349,6 @@ paths:
                                     type: string
                                     description: ''
                                     example: {  }
-                            required:
-                                - user_id
             security: []
     '/api/skill_reports/{skill_report}':
         get:
@@ -2428,79 +2416,79 @@ paths:
                                 user_id:
                                     type: integer
                                     description: ''
-                                    example: 19
+                                    example: 18
                                 speed:
                                     type: string
                                     description: ''
-                                    example: tempore
+                                    example: id
                                 passing:
                                     type: string
                                     description: ''
-                                    example: expedita
+                                    example: impedit
                                 shooting:
                                     type: string
                                     description: ''
-                                    example: est
+                                    example: ut
                                 dribbling:
                                     type: string
                                     description: ''
-                                    example: tempore
+                                    example: quam
                                 heading:
                                     type: string
                                     description: ''
-                                    example: reprehenderit
+                                    example: vero
                                 ball_control:
                                     type: string
                                     description: ''
-                                    example: perferendis
+                                    example: est
                                 fitness:
                                     type: string
                                     description: ''
-                                    example: unde
+                                    example: modi
                                 movement:
                                     type: string
                                     description: ''
-                                    example: perspiciatis
+                                    example: nam
                                 awareness:
                                     type: string
                                     description: ''
-                                    example: nemo
+                                    example: veniam
                                 decisions:
                                     type: string
                                     description: ''
-                                    example: sequi
+                                    example: excepturi
                                 workrate:
                                     type: string
                                     description: ''
-                                    example: asperiores
+                                    example: ducimus
                                 strength:
                                     type: string
                                     description: ''
-                                    example: unde
+                                    example: ipsa
                                 crossing:
                                     type: string
                                     description: ''
-                                    example: aliquam
+                                    example: aut
                                 finishing:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: voluptatibus
                                 positioning:
                                     type: string
                                     description: ''
-                                    example: debitis
+                                    example: voluptas
                                 anticipation:
                                     type: string
                                     description: ''
-                                    example: quas
+                                    example: animi
                                 total:
                                     type: string
                                     description: ''
-                                    example: dolorem
+                                    example: cumque
                                 overall_grade:
                                     type: string
                                     description: ''
-                                    example: aliquam
+                                    example: dolor
                                 created_at:
                                     type: string
                                     description: ''
@@ -2539,7 +2527,7 @@ paths:
                 in: path
                 name: skill_report
                 description: ''
-                example: molestiae
+                example: rerum
                 required: true
                 schema:
                     type: string
@@ -2609,11 +2597,11 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: neque
+                                    example: ea
                                 sport_id:
                                     type: integer
                                     description: ''
-                                    example: 10
+                                    example: 11
                                 created_at:
                                     type: string
                                     description: ''
@@ -2692,11 +2680,11 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: reprehenderit
+                                    example: ea
                                 sport_id:
                                     type: integer
                                     description: ''
-                                    example: 3
+                                    example: 1
                                 created_at:
                                     type: string
                                     description: ''
@@ -2736,7 +2724,7 @@ paths:
                 in: path
                 name: skill_test
                 description: ''
-                example: voluptatibus
+                example: repellendus
                 required: true
                 schema:
                     type: string
@@ -2806,7 +2794,7 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: voluptatibus
+                                    example: nisi
                                 created_at:
                                     type: string
                                     description: ''
@@ -2884,7 +2872,7 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: ducimus
+                                    example: dolores
                                 created_at:
                                     type: string
                                     description: ''
@@ -2923,7 +2911,7 @@ paths:
                 in: path
                 name: sport
                 description: ''
-                example: est
+                example: beatae
                 required: true
                 schema:
                     type: string
@@ -3002,7 +2990,7 @@ paths:
                 in: path
                 name: state
                 description: ''
-                example: pariatur
+                example: aliquid
                 required: true
                 schema:
                     type: string
@@ -3046,7 +3034,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: aperiam
+                example: porro
                 required: true
                 schema:
                     type: string
@@ -3113,22 +3101,18 @@ paths:
                         schema:
                             type: object
                             properties:
-                                user_id:
-                                    type: integer
-                                    description: ''
-                                    example: 10
                                 type_id:
                                     type: integer
                                     description: ''
-                                    example: 7
+                                    example: 17
                                 skill_test_id:
                                     type: integer
                                     description: ''
-                                    example: 5
+                                    example: 13
                                 url:
                                     type: string
                                     description: ''
-                                    example: laboriosam
+                                    example: aut
                                 created_at:
                                     type: string
                                     description: ''
@@ -3138,7 +3122,6 @@ paths:
                                     description: ''
                                     example: {  }
                             required:
-                                - user_id
                                 - type_id
                                 - skill_test_id
                                 - url
@@ -3206,22 +3189,18 @@ paths:
                         schema:
                             type: object
                             properties:
-                                user_id:
-                                    type: integer
-                                    description: ''
-                                    example: 17
                                 type_id:
                                     type: integer
                                     description: ''
-                                    example: 12
+                                    example: 18
                                 skill_test_id:
                                     type: integer
                                     description: ''
-                                    example: 12
+                                    example: 6
                                 url:
                                     type: string
                                     description: ''
-                                    example: molestiae
+                                    example: nihil
                                 created_at:
                                     type: string
                                     description: ''
@@ -3231,7 +3210,6 @@ paths:
                                     description: ''
                                     example: {  }
                             required:
-                                - user_id
                                 - type_id
                                 - skill_test_id
                                 - url
@@ -3263,7 +3241,7 @@ paths:
                 in: path
                 name: video
                 description: ''
-                example: eum
+                example: dolore
                 required: true
                 schema:
                     type: string
@@ -3333,7 +3311,7 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: nam
+                                    example: unde
                                 created_at:
                                     type: string
                                     description: ''
@@ -3411,7 +3389,7 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: est
+                                    example: totam
                                 created_at:
                                     type: string
                                     description: ''
@@ -3450,7 +3428,7 @@ paths:
                 in: path
                 name: video_type
                 description: ''
-                example: non
+                example: facere
                 required: true
                 schema:
                     type: string

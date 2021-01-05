@@ -24,6 +24,27 @@ class CreateSkillReportAPIRequest extends APIRequest
      */
     public function rules()
     {
-        return SkillReport::$rules;
+        return [
+            'speed' => 'nullable|string',
+            'passing' => 'nullable|string',
+            'shooting' => 'nullable|string',
+            'dribbling' => 'nullable|string',
+            'heading' => 'nullable|string',
+            'ball_control' => 'nullable|string',
+            'fitness' => 'nullable|string',
+            'movement' => 'nullable|string',
+            'awareness' => 'nullable|string',
+            'decisions' => 'nullable|string',
+            'workrate' => 'nullable|string',
+            'strength' => 'nullable|string',
+            'crossing' => 'nullable|string',
+            'finishing' => 'nullable|string',
+            'positioning' => 'nullable|string',
+            'anticipation' => 'nullable|string',
+            'total' => 'nullable|string|max:255',
+            'overall_grade' => 'nullable|string',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable'
+        ];
     }
 }

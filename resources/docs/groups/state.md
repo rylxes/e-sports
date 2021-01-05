@@ -72,14 +72,14 @@ GET|HEAD /states/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/states/pariatur" \
+    -G "http://localhost/api/states/aliquid" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/states/pariatur"
+    "http://localhost/api/states/aliquid"
 );
 
 let headers = {
@@ -140,14 +140,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/states/byCountry/aperiam" \
+    -G "http://localhost/api/states/byCountry/porro" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/states/byCountry/aperiam"
+    "http://localhost/api/states/byCountry/porro"
 );
 
 let headers = {

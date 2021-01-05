@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/videos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":10,"type_id":7,"skill_test_id":5,"url":"laboriosam","created_at":{},"updated_at":{}}'
+    -d '{"type_id":17,"skill_test_id":13,"url":"aut","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,10 +90,9 @@ let headers = {
 };
 
 let body = {
-    "user_id": 10,
-    "type_id": 7,
-    "skill_test_id": 5,
-    "url": "laboriosam",
+    "type_id": 17,
+    "skill_test_id": 13,
+    "url": "aut",
     "created_at": {},
     "updated_at": {}
 }
@@ -126,11 +125,6 @@ fetch(url, {
  <b><code>api/videos</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="POSTapi-videos" data-component="body" required  hidden>
-<br>
-</p>
 <p>
 <b><code>type_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
 <input type="number" name="type_id" data-endpoint="POSTapi-videos" data-component="body" required  hidden>
@@ -169,14 +163,14 @@ GET|HEAD /videos/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/videos/eum" \
+    -G "http://localhost/api/videos/dolore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/eum"
+    "http://localhost/api/videos/dolore"
 );
 
 let headers = {
@@ -237,16 +231,16 @@ PUT/PATCH /videos/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/videos/quas" \
+    "http://localhost/api/videos/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":17,"type_id":12,"skill_test_id":12,"url":"molestiae","created_at":{},"updated_at":{}}'
+    -d '{"type_id":18,"skill_test_id":6,"url":"nihil","created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/quas"
+    "http://localhost/api/videos/rerum"
 );
 
 let headers = {
@@ -255,10 +249,9 @@ let headers = {
 };
 
 let body = {
-    "user_id": 17,
-    "type_id": 12,
-    "skill_test_id": 12,
-    "url": "molestiae",
+    "type_id": 18,
+    "skill_test_id": 6,
+    "url": "nihil",
     "created_at": {},
     "updated_at": {}
 }
@@ -302,11 +295,6 @@ fetch(url, {
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="PUTapi-videos--video-" data-component="body" required  hidden>
-<br>
-</p>
-<p>
 <b><code>type_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
 <input type="number" name="type_id" data-endpoint="PUTapi-videos--video-" data-component="body" required  hidden>
 <br>
@@ -344,14 +332,14 @@ DELETE /videos/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/videos/enim" \
+    "http://localhost/api/videos/a" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/enim"
+    "http://localhost/api/videos/a"
 );
 
 let headers = {

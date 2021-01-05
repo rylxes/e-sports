@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"ofeil@example.org","password":"exercitationem"}'
+    -d '{"email":"alaina07@example.org","password":"voluptate"}'
 
 ```
 
@@ -28,8 +28,8 @@ let headers = {
 };
 
 let body = {
-    "email": "ofeil@example.org",
-    "password": "exercitationem"
+    "email": "alaina07@example.org",
+    "password": "voluptate"
 }
 
 fetch(url, {
@@ -140,7 +140,7 @@ curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"vitae","last_name":"ab","email":"herzog.emie@example.net","password":"laboriosam","password_confirmation":"amet"}'
+    -d '{"first_name":"culpa","last_name":"ratione","email":"lilian.becker@example.com","password":"quis","password_confirmation":"expedita"}'
 
 ```
 
@@ -155,11 +155,11 @@ let headers = {
 };
 
 let body = {
-    "first_name": "vitae",
-    "last_name": "ab",
-    "email": "herzog.emie@example.net",
-    "password": "laboriosam",
-    "password_confirmation": "amet"
+    "first_name": "culpa",
+    "last_name": "ratione",
+    "email": "lilian.becker@example.com",
+    "password": "quis",
+    "password_confirmation": "expedita"
 }
 
 fetch(url, {
@@ -231,7 +231,7 @@ curl -X POST \
     "http://localhost/api/password/email" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"gianni82@example.com"}'
+    -d '{"email":"nbradtke@example.com"}'
 
 ```
 
@@ -246,7 +246,7 @@ let headers = {
 };
 
 let body = {
-    "email": "gianni82@example.com"
+    "email": "nbradtke@example.com"
 }
 
 fetch(url, {
@@ -295,14 +295,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/possimus" \
+    -G "http://localhost/api/password/reset/accusamus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/possimus"
+    "http://localhost/api/password/reset/accusamus"
 );
 
 let headers = {
@@ -367,8 +367,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="ZJAuKwZYGh57gLmN5uvx8FXwgQ1BnuaEndYB8r42">
-            <input type="hidden" name="token" value="possimus">
+            <input type="hidden" name="_token" value="aDrzreswTMTbFCvvJXIugox2NihgCLbmVi8zvLpz">
+            <input type="hidden" name="token" value="accusamus">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -564,14 +564,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/omnis/sit" \
+    -G "http://localhost/api/email/verify/et/dolores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/omnis/sit"
+    "http://localhost/api/email/verify/et/dolores"
 );
 
 let headers = {

@@ -24,6 +24,12 @@ class CreateVideoAPIRequest extends APIRequest
      */
     public function rules()
     {
-        return Video::$rules;
+        return [
+            'type_id' => 'required|integer',
+            'skill_test_id' => 'required|integer',
+            'url' => 'required|string|max:255',
+            'created_at' => 'nullable',
+            'updated_at' => 'nullable'
+        ];
     }
 }

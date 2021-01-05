@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"neque","sport_id":10,"created_at":{},"updated_at":{}}'
+    -d '{"name":"ea","sport_id":11,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "name": "neque",
-    "sport_id": 10,
+    "name": "ea",
+    "sport_id": 11,
     "created_at": {},
     "updated_at": {}
 }
@@ -157,14 +157,14 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/voluptatibus" \
+    -G "http://localhost/api/skill_tests/repellendus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/voluptatibus"
+    "http://localhost/api/skill_tests/repellendus"
 );
 
 let headers = {
@@ -225,16 +225,16 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/alias" \
+    "http://localhost/api/skill_tests/repellat" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"reprehenderit","sport_id":3,"created_at":{},"updated_at":{}}'
+    -d '{"name":"ea","sport_id":1,"created_at":{},"updated_at":{}}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/alias"
+    "http://localhost/api/skill_tests/repellat"
 );
 
 let headers = {
@@ -243,8 +243,8 @@ let headers = {
 };
 
 let body = {
-    "name": "reprehenderit",
-    "sport_id": 3,
+    "name": "ea",
+    "sport_id": 1,
     "created_at": {},
     "updated_at": {}
 }
@@ -320,14 +320,14 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/aliquid" \
+    "http://localhost/api/skill_tests/neque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/aliquid"
+    "http://localhost/api/skill_tests/neque"
 );
 
 let headers = {

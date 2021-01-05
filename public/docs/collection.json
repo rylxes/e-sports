@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "E-sports App API Documentation",
-        "_postman_id": "d0e457d3-904a-4c4c-b84e-40dc143e1eba",
+        "_postman_id": "22986bc0-a66b-4f91-8958-52fb2ac5f3ed",
         "description": "E-sports App API Documentation",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -42,7 +42,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"ofeil@example.org\",\n    \"password\": \"exercitationem\"\n}"
+                            "raw": "{\n    \"email\": \"alaina07@example.org\",\n    \"password\": \"voluptate\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -103,7 +103,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"vitae\",\n    \"last_name\": \"ab\",\n    \"email\": \"herzog.emie@example.net\",\n    \"password\": \"laboriosam\",\n    \"password_confirmation\": \"amet\"\n}"
+                            "raw": "{\n    \"first_name\": \"culpa\",\n    \"last_name\": \"ratione\",\n    \"email\": \"lilian.becker@example.com\",\n    \"password\": \"quis\",\n    \"password_confirmation\": \"expedita\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -135,7 +135,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"gianni82@example.com\"\n}"
+                            "raw": "{\n    \"email\": \"nbradtke@example.com\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -157,7 +157,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "possimus",
+                                    "value": "accusamus",
                                     "description": ""
                                 }
                             ]
@@ -252,13 +252,13 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "omnis",
+                                    "value": "et",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "sit",
+                                    "value": "dolores",
                                     "description": ""
                                 }
                             ]
@@ -369,7 +369,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"dolorum\",\n    \"motivation\": \"tempore\",\n    \"achievement\": \"maxime\",\n    \"admired_sportsperson\": \"officiis\",\n    \"top_athlete_plans\": \"doloremque\",\n    \"current_team\": \"harum\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"ipsam\",\n    \"nickname\": \"incidunt\",\n    \"favourite_sports_team\": \"optio\",\n    \"why_like_team\": \"velit\",\n    \"no_of_teams_played_for\": 12,\n    \"why_leave\": \"ad\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"et\",\n    \"preferred_foot\": \"et\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"in\",\n    \"motivation\": \"molestiae\",\n    \"achievement\": \"accusantium\",\n    \"admired_sportsperson\": \"reprehenderit\",\n    \"top_athlete_plans\": \"sunt\",\n    \"current_team\": \"eos\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"et\",\n    \"nickname\": \"dolorem\",\n    \"favourite_sports_team\": \"repellat\",\n    \"why_like_team\": \"nemo\",\n    \"no_of_teams_played_for\": 13,\n    \"why_leave\": \"quo\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"quae\",\n    \"preferred_foot\": \"sunt\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/clubAssesments",
                         "auth": {
@@ -391,7 +391,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "optio",
+                                    "value": "quam",
                                     "description": ""
                                 }
                             ]
@@ -428,7 +428,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "voluptate",
+                                    "value": "ab",
                                     "description": ""
                                 }
                             ]
@@ -446,7 +446,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"nulla\",\n    \"motivation\": \"aperiam\",\n    \"achievement\": \"voluptatibus\",\n    \"admired_sportsperson\": \"quae\",\n    \"top_athlete_plans\": \"ab\",\n    \"current_team\": \"molestiae\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"cumque\",\n    \"nickname\": \"exercitationem\",\n    \"favourite_sports_team\": \"minus\",\n    \"why_like_team\": \"voluptatem\",\n    \"no_of_teams_played_for\": 13,\n    \"why_leave\": \"velit\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"numquam\",\n    \"preferred_foot\": \"incidunt\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"illum\",\n    \"motivation\": \"modi\",\n    \"achievement\": \"cupiditate\",\n    \"admired_sportsperson\": \"sunt\",\n    \"top_athlete_plans\": \"officiis\",\n    \"current_team\": \"ea\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"amet\",\n    \"nickname\": \"consequatur\",\n    \"favourite_sports_team\": \"velit\",\n    \"why_like_team\": \"molestiae\",\n    \"no_of_teams_played_for\": 1,\n    \"why_leave\": \"nobis\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"pariatur\",\n    \"preferred_foot\": \"nam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/clubAssesments\/{id}",
                         "auth": {
@@ -468,7 +468,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "eveniet",
+                                    "value": "aut",
                                     "description": ""
                                 }
                             ]
@@ -540,7 +540,7 @@
                                 {
                                     "id": "country",
                                     "key": "country",
-                                    "value": "maiores",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -728,7 +728,7 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "similique",
+                                    "value": "doloremque",
                                     "description": ""
                                 }
                             ]
@@ -852,7 +852,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "nulla",
+                                    "value": "ad",
                                     "description": ""
                                 }
                             ]
@@ -889,7 +889,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "nihil",
+                                    "value": "autem",
                                     "description": ""
                                 }
                             ]
@@ -1013,7 +1013,7 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "maxime",
+                                    "value": "sit",
                                     "description": ""
                                 }
                             ]
@@ -1108,7 +1108,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "similique",
+                                    "value": "accusantium",
                                     "description": ""
                                 }
                             ]
@@ -1219,7 +1219,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 19,\n    \"blood_group\": \"neque\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"quia\",\n    \"long_term_injury\": \"quia\",\n    \"treatment_type\": \"qui\",\n    \"current_health_injury\": \"rerum\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"sed\",\n    \"injury_seriousness\": \"sed\",\n    \"medical_treatment\": \"aut\",\n    \"injury_location\": \"ipsam\",\n    \"genotype\": \"voluptatibus\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"blood_group\": \"alias\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"qui\",\n    \"long_term_injury\": \"libero\",\n    \"treatment_type\": \"deserunt\",\n    \"current_health_injury\": \"quisquam\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"rem\",\n    \"injury_seriousness\": \"aspernatur\",\n    \"medical_treatment\": \"iusto\",\n    \"injury_location\": \"incidunt\",\n    \"genotype\": \"reprehenderit\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/healthPredictors",
                         "auth": {
@@ -1241,7 +1241,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "minus",
+                                    "value": "quia",
                                     "description": ""
                                 }
                             ]
@@ -1278,7 +1278,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "harum",
+                                    "value": "veniam",
                                     "description": ""
                                 }
                             ]
@@ -1296,7 +1296,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 19,\n    \"blood_group\": \"omnis\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"ad\",\n    \"long_term_injury\": \"aliquam\",\n    \"treatment_type\": \"sit\",\n    \"current_health_injury\": \"ea\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"et\",\n    \"injury_seriousness\": \"ipsa\",\n    \"medical_treatment\": \"id\",\n    \"injury_location\": \"excepturi\",\n    \"genotype\": \"ratione\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 17,\n    \"blood_group\": \"et\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"aspernatur\",\n    \"long_term_injury\": \"et\",\n    \"treatment_type\": \"suscipit\",\n    \"current_health_injury\": \"omnis\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"debitis\",\n    \"injury_seriousness\": \"sed\",\n    \"medical_treatment\": \"ut\",\n    \"injury_location\": \"nulla\",\n    \"genotype\": \"ut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/healthPredictors\/{id}",
                         "auth": {
@@ -1318,7 +1318,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "quia",
+                                    "value": "dolore",
                                     "description": ""
                                 }
                             ]
@@ -1400,7 +1400,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 5,\n    \"first_name\": \"aliquid\",\n    \"marital_status\": \"qui\",\n    \"mother_maiden_name\": \"sed\",\n    \"last_name\": \"minus\",\n    \"height\": \"non\",\n    \"body_weight\": \"omnis\",\n    \"phone\": \"est\",\n    \"sm_handle\": \"voluptatem\",\n    \"highest_education\": \"sed\",\n    \"place_of_birth\": \"assumenda\",\n    \"school\": \"et\",\n    \"career_preference\": \"ea\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"quo\",\n    \"dob\": {},\n    \"country_id\": 10,\n    \"state_of_origin\": 19,\n    \"zipcode\": 7,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 10,\n    \"first_name\": \"impedit\",\n    \"marital_status\": \"officiis\",\n    \"mother_maiden_name\": \"non\",\n    \"last_name\": \"dolorem\",\n    \"height\": \"aliquam\",\n    \"body_weight\": \"aliquam\",\n    \"phone\": \"repellat\",\n    \"sm_handle\": \"et\",\n    \"highest_education\": \"voluptas\",\n    \"place_of_birth\": \"rem\",\n    \"school\": \"rerum\",\n    \"career_preference\": \"accusantium\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"est\",\n    \"dob\": {},\n    \"country_id\": 9,\n    \"state_of_origin\": 10,\n    \"zipcode\": 20,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/personalDetails",
                         "auth": {
@@ -1422,7 +1422,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "et",
+                                    "value": "molestias",
                                     "description": ""
                                 }
                             ]
@@ -1459,7 +1459,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "libero",
+                                    "value": "omnis",
                                     "description": ""
                                 }
                             ]
@@ -1477,7 +1477,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"fugiat\",\n    \"marital_status\": \"unde\",\n    \"mother_maiden_name\": \"accusamus\",\n    \"last_name\": \"sit\",\n    \"height\": \"nam\",\n    \"body_weight\": \"totam\",\n    \"phone\": \"voluptas\",\n    \"sm_handle\": \"vero\",\n    \"highest_education\": \"libero\",\n    \"place_of_birth\": \"nulla\",\n    \"school\": \"aut\",\n    \"career_preference\": \"non\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"ea\",\n    \"dob\": {},\n    \"country_id\": 2,\n    \"state_of_origin\": 9,\n    \"zipcode\": 3,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"first_name\": \"nihil\",\n    \"marital_status\": \"minima\",\n    \"mother_maiden_name\": \"necessitatibus\",\n    \"last_name\": \"quo\",\n    \"height\": \"sed\",\n    \"body_weight\": \"dolore\",\n    \"phone\": \"officiis\",\n    \"sm_handle\": \"exercitationem\",\n    \"highest_education\": \"inventore\",\n    \"place_of_birth\": \"eum\",\n    \"school\": \"eius\",\n    \"career_preference\": \"tempora\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"est\",\n    \"dob\": {},\n    \"country_id\": 2,\n    \"state_of_origin\": 9,\n    \"zipcode\": 14,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/personalDetails\/{id}",
                         "auth": {
@@ -1499,7 +1499,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "ut",
+                                    "value": "velit",
                                     "description": ""
                                 }
                             ]
@@ -1581,7 +1581,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"time_practice_in_week\": 13,\n    \"hours_practice_in_week\": 5,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"minus\",\n    \"challenges\": \"consequatur\",\n    \"greatest_motivation\": \"iure\",\n    \"strength\": \"quos\",\n    \"weakness\": \"accusamus\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"error\",\n    \"rating_sports\": \"asperiores\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"time_practice_in_week\": 12,\n    \"hours_practice_in_week\": 7,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"qui\",\n    \"challenges\": \"numquam\",\n    \"greatest_motivation\": \"ea\",\n    \"strength\": \"veniam\",\n    \"weakness\": \"eos\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"velit\",\n    \"rating_sports\": \"consequuntur\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/psychPredictors",
                         "auth": {
@@ -1603,7 +1603,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "doloribus",
+                                    "value": "alias",
                                     "description": ""
                                 }
                             ]
@@ -1640,7 +1640,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "autem",
+                                    "value": "sint",
                                     "description": ""
                                 }
                             ]
@@ -1658,7 +1658,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"time_practice_in_week\": 3,\n    \"hours_practice_in_week\": 11,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"sequi\",\n    \"challenges\": \"ut\",\n    \"greatest_motivation\": \"deleniti\",\n    \"strength\": \"et\",\n    \"weakness\": \"similique\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"sit\",\n    \"rating_sports\": \"nihil\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"time_practice_in_week\": 8,\n    \"hours_practice_in_week\": 6,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"vero\",\n    \"challenges\": \"molestiae\",\n    \"greatest_motivation\": \"excepturi\",\n    \"strength\": \"error\",\n    \"weakness\": \"similique\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"eaque\",\n    \"rating_sports\": \"expedita\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/psychPredictors\/{id}",
                         "auth": {
@@ -1680,7 +1680,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "et",
+                                    "value": "dolorum",
                                     "description": ""
                                 }
                             ]
@@ -1762,7 +1762,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 14,\n    \"speed\": \"ut\",\n    \"passing\": \"ea\",\n    \"shooting\": \"cumque\",\n    \"dribbling\": \"voluptatem\",\n    \"heading\": \"quos\",\n    \"ball_control\": \"consequatur\",\n    \"fitness\": \"recusandae\",\n    \"movement\": \"et\",\n    \"awareness\": \"et\",\n    \"decisions\": \"animi\",\n    \"workrate\": \"facilis\",\n    \"strength\": \"et\",\n    \"crossing\": \"cum\",\n    \"finishing\": \"temporibus\",\n    \"positioning\": \"repellat\",\n    \"anticipation\": \"ea\",\n    \"total\": \"aliquid\",\n    \"overall_grade\": \"quae\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"speed\": \"ratione\",\n    \"passing\": \"dolorum\",\n    \"shooting\": \"ut\",\n    \"dribbling\": \"beatae\",\n    \"heading\": \"totam\",\n    \"ball_control\": \"ut\",\n    \"fitness\": \"itaque\",\n    \"movement\": \"fugiat\",\n    \"awareness\": \"nihil\",\n    \"decisions\": \"vel\",\n    \"workrate\": \"ullam\",\n    \"strength\": \"provident\",\n    \"crossing\": \"facere\",\n    \"finishing\": \"quae\",\n    \"positioning\": \"accusantium\",\n    \"anticipation\": \"voluptas\",\n    \"total\": \"tempore\",\n    \"overall_grade\": \"nesciunt\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillReports",
                         "auth": {
@@ -1784,7 +1784,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "molestiae",
+                                    "value": "rerum",
                                     "description": ""
                                 }
                             ]
@@ -1821,7 +1821,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "tempore",
+                                    "value": "rerum",
                                     "description": ""
                                 }
                             ]
@@ -1839,7 +1839,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 19,\n    \"speed\": \"tempore\",\n    \"passing\": \"expedita\",\n    \"shooting\": \"est\",\n    \"dribbling\": \"tempore\",\n    \"heading\": \"reprehenderit\",\n    \"ball_control\": \"perferendis\",\n    \"fitness\": \"unde\",\n    \"movement\": \"perspiciatis\",\n    \"awareness\": \"nemo\",\n    \"decisions\": \"sequi\",\n    \"workrate\": \"asperiores\",\n    \"strength\": \"unde\",\n    \"crossing\": \"aliquam\",\n    \"finishing\": \"aut\",\n    \"positioning\": \"debitis\",\n    \"anticipation\": \"quas\",\n    \"total\": \"dolorem\",\n    \"overall_grade\": \"aliquam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 18,\n    \"speed\": \"id\",\n    \"passing\": \"impedit\",\n    \"shooting\": \"ut\",\n    \"dribbling\": \"quam\",\n    \"heading\": \"vero\",\n    \"ball_control\": \"est\",\n    \"fitness\": \"modi\",\n    \"movement\": \"nam\",\n    \"awareness\": \"veniam\",\n    \"decisions\": \"excepturi\",\n    \"workrate\": \"ducimus\",\n    \"strength\": \"ipsa\",\n    \"crossing\": \"aut\",\n    \"finishing\": \"voluptatibus\",\n    \"positioning\": \"voluptas\",\n    \"anticipation\": \"animi\",\n    \"total\": \"cumque\",\n    \"overall_grade\": \"dolor\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillReports\/{id}",
                         "auth": {
@@ -1861,7 +1861,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "quam",
+                                    "value": "aut",
                                     "description": ""
                                 }
                             ]
@@ -1943,7 +1943,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"neque\",\n    \"sport_id\": 10,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"ea\",\n    \"sport_id\": 11,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillTests",
                         "auth": {
@@ -1965,7 +1965,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "voluptatibus",
+                                    "value": "repellendus",
                                     "description": ""
                                 }
                             ]
@@ -2002,7 +2002,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "alias",
+                                    "value": "repellat",
                                     "description": ""
                                 }
                             ]
@@ -2020,7 +2020,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"reprehenderit\",\n    \"sport_id\": 3,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"ea\",\n    \"sport_id\": 1,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillTests\/{id}",
                         "auth": {
@@ -2042,7 +2042,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "aliquid",
+                                    "value": "neque",
                                     "description": ""
                                 }
                             ]
@@ -2124,7 +2124,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"voluptatibus\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"nisi\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/sports",
                         "auth": {
@@ -2146,7 +2146,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "est",
+                                    "value": "beatae",
                                     "description": ""
                                 }
                             ]
@@ -2183,7 +2183,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "voluptas",
+                                    "value": "sunt",
                                     "description": ""
                                 }
                             ]
@@ -2201,7 +2201,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"ducimus\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"dolores\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/sports\/{id}",
                         "auth": {
@@ -2223,7 +2223,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "cum",
+                                    "value": "dolore",
                                     "description": ""
                                 }
                             ]
@@ -2295,7 +2295,7 @@
                                 {
                                     "id": "state",
                                     "key": "state",
-                                    "value": "pariatur",
+                                    "value": "aliquid",
                                     "description": ""
                                 }
                             ]
@@ -2332,7 +2332,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "aperiam",
+                                    "value": "porro",
                                     "description": ""
                                 }
                             ]
@@ -2414,7 +2414,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 10,\n    \"type_id\": 7,\n    \"skill_test_id\": 5,\n    \"url\": \"laboriosam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"type_id\": 17,\n    \"skill_test_id\": 13,\n    \"url\": \"aut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/videos",
                         "auth": {
@@ -2436,7 +2436,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "eum",
+                                    "value": "dolore",
                                     "description": ""
                                 }
                             ]
@@ -2473,7 +2473,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "quas",
+                                    "value": "rerum",
                                     "description": ""
                                 }
                             ]
@@ -2491,7 +2491,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 17,\n    \"type_id\": 12,\n    \"skill_test_id\": 12,\n    \"url\": \"molestiae\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"type_id\": 18,\n    \"skill_test_id\": 6,\n    \"url\": \"nihil\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/videos\/{id}",
                         "auth": {
@@ -2513,7 +2513,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "enim",
+                                    "value": "a",
                                     "description": ""
                                 }
                             ]
@@ -2595,7 +2595,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"nam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"unde\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/videoTypes",
                         "auth": {
@@ -2617,7 +2617,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "non",
+                                    "value": "facere",
                                     "description": ""
                                 }
                             ]
@@ -2654,7 +2654,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "fugit",
+                                    "value": "debitis",
                                     "description": ""
                                 }
                             ]
@@ -2672,7 +2672,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"est\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"totam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/videoTypes\/{id}",
                         "auth": {
@@ -2694,7 +2694,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "corporis",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
