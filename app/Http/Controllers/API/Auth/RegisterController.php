@@ -95,8 +95,10 @@ class RegisterController extends Controller
         $data = $request->all();
         $data['name'] = $request->input('last_name') . " " . $request->input('first_name');
         $validator = $this->validator($data);
+
         if ($validator->fails()) {
-            $data = $validator->errors()->all();
+            $data = collect($validator->errors()->all());
+            $data = $data->flatten();
             $message = "There was Error in your form";
             return response()->json(compact('data', 'message'));
         }
