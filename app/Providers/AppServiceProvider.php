@@ -25,8 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (App::environment('heroku')) {
-            Log::useFiles('php://stderr');
-        }
+//        if (App::environment('heroku')) {
+//            Log::useFiles('php://stderr');
+//        }
     }
 }
