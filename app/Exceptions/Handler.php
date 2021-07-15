@@ -36,13 +36,15 @@ class Handler extends ExceptionHandler
     public function register()
     {
         $this->reportable(function (Throwable $e) {
-            //
+            if ($this->shouldReport($e) && app()->bound('sentry')) {
+                app('sentry')->captureException($e);
+            }
         });
     }
 
     public function render($request, Throwable $exception)
     {
-       // dd($exception->getMessage());
+        // dd($exception->getMessage());
         if ($request->wantsJson()) {   //add Accept: application/json in request
             return $this->handleApiException($request, $exception);
         } else {
@@ -75,7 +77,7 @@ class Handler extends ExceptionHandler
     {
         $data = [];
         $message = $exception->getMessage();
-        return response()->json(compact('data', 'message'),401);
+        return response()->json(compact('data', 'message'), 401);
 
     }
 
