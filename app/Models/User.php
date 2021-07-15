@@ -28,7 +28,7 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-
+    protected $guard_name = 'api';
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -51,7 +51,7 @@ class User extends Authenticatable
     /**
      * Send the password reset notification.
      *
-     * @param  string $token
+     * @param string $token
      * @return void
      */
     public function sendPasswordResetNotification($token)

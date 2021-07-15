@@ -3,6 +3,7 @@ title: E-sports App API Documentation
 
 language_tabs:
 - bash
+- php
 - javascript
 
 includes:

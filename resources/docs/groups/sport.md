@@ -15,6 +15,22 @@ curl -X GET \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/sports',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
     "http://localhost/api/sports"
@@ -75,8 +91,37 @@ curl -X POST \
     "http://localhost/api/sports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"nisi","created_at":{},"updated_at":{}}'
+    -d '{"name":"neque","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/sports',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'name' => 'neque',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -90,7 +135,7 @@ let headers = {
 };
 
 let body = {
-    "name": "nisi",
+    "name": "neque",
     "created_at": {},
     "updated_at": {}
 }
@@ -151,14 +196,30 @@ GET|HEAD /sports/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/sports/beatae" \
+    -G "http://localhost/api/sports/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/sports/ut',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/sports/beatae"
+    "http://localhost/api/sports/ut"
 );
 
 let headers = {
@@ -219,16 +280,45 @@ PUT/PATCH /sports/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/sports/sunt" \
+    "http://localhost/api/sports/aliquid" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"dolores","created_at":{},"updated_at":{}}'
+    -d '{"name":"porro","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->put(
+    'http://localhost/api/sports/aliquid',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'name' => 'porro',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/sports/sunt"
+    "http://localhost/api/sports/aliquid"
 );
 
 let headers = {
@@ -237,7 +327,7 @@ let headers = {
 };
 
 let body = {
-    "name": "dolores",
+    "name": "porro",
     "created_at": {},
     "updated_at": {}
 }
@@ -308,14 +398,30 @@ DELETE /sports/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/sports/dolore" \
+    "http://localhost/api/sports/libero" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->delete(
+    'http://localhost/api/sports/libero',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/sports/dolore"
+    "http://localhost/api/sports/libero"
 );
 
 let headers = {

@@ -23,7 +23,8 @@ class StateFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-        'country_id' => $this->faker->randomDigitNotNull
+        'country_id' => $this->faker->randomDigitNotNull,
+        'region' => $this->faker->word
         ];
     }
 }

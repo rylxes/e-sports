@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "E-sports App API Documentation",
-        "_postman_id": "22986bc0-a66b-4f91-8958-52fb2ac5f3ed",
+        "_postman_id": "b817bdd5-c2c2-4a0c-8217-897b5552c946",
         "description": "E-sports App API Documentation",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -42,7 +42,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"alaina07@example.org\",\n    \"password\": \"voluptate\"\n}"
+                            "raw": "{\n    \"email\": \"federico58@example.com\",\n    \"password\": \"laudantium\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -103,7 +103,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"culpa\",\n    \"last_name\": \"ratione\",\n    \"email\": \"lilian.becker@example.com\",\n    \"password\": \"quis\",\n    \"password_confirmation\": \"expedita\"\n}"
+                            "raw": "{\n    \"first_name\": \"omnis\",\n    \"last_name\": \"repellat\",\n    \"email\": \"toney23@example.net\",\n    \"password\": \"consequatur\",\n    \"password_confirmation\": \"dolores\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -135,7 +135,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"nbradtke@example.com\"\n}"
+                            "raw": "{\n    \"email\": \"geovanni62@example.com\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -157,7 +157,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "accusamus",
+                                    "value": "quia",
                                     "description": ""
                                 }
                             ]
@@ -252,13 +252,13 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "et",
+                                    "value": "tempore",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "dolores",
+                                    "value": "nemo",
                                     "description": ""
                                 }
                             ]
@@ -304,6 +304,44 @@
                             }
                         ],
                         "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "City",
+            "description": "",
+            "item": [
+                {
+                    "name": "By State.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/cities\/byState",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/cities\/byState"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"state_id\": \"molestias\"\n}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -369,7 +407,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"in\",\n    \"motivation\": \"molestiae\",\n    \"achievement\": \"accusantium\",\n    \"admired_sportsperson\": \"reprehenderit\",\n    \"top_athlete_plans\": \"sunt\",\n    \"current_team\": \"eos\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"et\",\n    \"nickname\": \"dolorem\",\n    \"favourite_sports_team\": \"repellat\",\n    \"why_like_team\": \"nemo\",\n    \"no_of_teams_played_for\": 13,\n    \"why_leave\": \"quo\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"quae\",\n    \"preferred_foot\": \"sunt\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"error\",\n    \"motivation\": \"commodi\",\n    \"achievement\": \"ut\",\n    \"admired_sportsperson\": \"nostrum\",\n    \"top_athlete_plans\": \"voluptatem\",\n    \"current_team\": \"quisquam\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"voluptatibus\",\n    \"nickname\": \"ut\",\n    \"favourite_sports_team\": \"libero\",\n    \"why_like_team\": \"eius\",\n    \"no_of_teams_played_for\": 10,\n    \"why_leave\": \"molestiae\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"facilis\",\n    \"preferred_foot\": \"earum\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/clubAssesments",
                         "auth": {
@@ -391,7 +429,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "quam",
+                                    "value": "quia",
                                     "description": ""
                                 }
                             ]
@@ -428,7 +466,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "ab",
+                                    "value": "dolorem",
                                     "description": ""
                                 }
                             ]
@@ -446,7 +484,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"illum\",\n    \"motivation\": \"modi\",\n    \"achievement\": \"cupiditate\",\n    \"admired_sportsperson\": \"sunt\",\n    \"top_athlete_plans\": \"officiis\",\n    \"current_team\": \"ea\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"amet\",\n    \"nickname\": \"consequatur\",\n    \"favourite_sports_team\": \"velit\",\n    \"why_like_team\": \"molestiae\",\n    \"no_of_teams_played_for\": 1,\n    \"why_leave\": \"nobis\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"pariatur\",\n    \"preferred_foot\": \"nam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"debitis\",\n    \"motivation\": \"quae\",\n    \"achievement\": \"distinctio\",\n    \"admired_sportsperson\": \"ut\",\n    \"top_athlete_plans\": \"enim\",\n    \"current_team\": \"quod\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"error\",\n    \"nickname\": \"quibusdam\",\n    \"favourite_sports_team\": \"neque\",\n    \"why_like_team\": \"pariatur\",\n    \"no_of_teams_played_for\": 18,\n    \"why_leave\": \"voluptas\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"quos\",\n    \"preferred_foot\": \"ab\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/clubAssesments\/{id}",
                         "auth": {
@@ -468,7 +506,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "aut",
+                                    "value": "sunt",
                                     "description": ""
                                 }
                             ]
@@ -486,6 +524,219 @@
                         ],
                         "body": null,
                         "description": "DELETE \/clubAssesments\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Coach",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store a newly created Coach in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/coaches\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"et\",\n    \"email\": \"nihil\",\n    \"first_name\": \"repudiandae\",\n    \"middle_name\": \"quam\",\n    \"last_name\": \"minus\",\n    \"dob\": {},\n    \"gender\": \"perspiciatis\",\n    \"coaching_age\": \"officiis\",\n    \"coaching_gender\": \"ut\",\n    \"sports\": \"quam\",\n    \"specialization\": \"sed\",\n    \"language\": \"eos\",\n    \"nationality\": \"aut\",\n    \"city_id\": \"velit\",\n    \"employment_type\": \"eum\",\n    \"team_club\": \"corporis\"\n}"
+                        },
+                        "description": "POST \/coaches",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the Coach.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/coaches",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/coaches",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created Coach in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/coaches",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"odit\",\n    \"email\": \"rem\",\n    \"first_name\": \"quidem\",\n    \"middle_name\": \"quis\",\n    \"last_name\": \"doloribus\",\n    \"dob\": {},\n    \"gender\": \"quasi\",\n    \"coaching_age\": \"commodi\",\n    \"coaching_gender\": \"assumenda\",\n    \"sports\": \"culpa\",\n    \"specialization\": \"exercitationem\",\n    \"language\": \"est\",\n    \"nationality\": \"est\",\n    \"city_id\": \"dolorum\",\n    \"employment_type\": \"voluptas\",\n    \"team_club\": \"labore\"\n}"
+                        },
+                        "description": "POST \/coaches",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified Coach.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/coaches\/:coach",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches\/:coach",
+                            "variable": [
+                                {
+                                    "id": "coach",
+                                    "key": "coach",
+                                    "value": "corporis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/coaches\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Coach in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/coaches\/:coach",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches\/:coach",
+                            "variable": [
+                                {
+                                    "id": "coach",
+                                    "key": "coach",
+                                    "value": "vel",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"profile_url\": \"delectus\",\n    \"qualifications\": \"harum\",\n    \"user_id\": 15,\n    \"email\": \"omnis\",\n    \"first_name\": \"quo\",\n    \"middle_name\": \"qui\",\n    \"last_name\": \"vitae\",\n    \"dob\": {},\n    \"gender\": \"itaque\",\n    \"coaching_age\": \"beatae\",\n    \"coaching_gender\": \"enim\",\n    \"sports\": \"at\",\n    \"specialization\": \"tempora\",\n    \"language\": \"corporis\",\n    \"nationality\": \"architecto\",\n    \"city_id\": \"sint\",\n    \"employment_type\": \"possimus\",\n    \"team_club\": \"consequatur\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/coaches\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Coach from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/coaches\/:coach",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches\/:coach",
+                            "variable": [
+                                {
+                                    "id": "coach",
+                                    "key": "coach",
+                                    "value": "dolore",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/coaches\/{id}",
                         "auth": {
                             "type": "noauth"
                         }
@@ -528,6 +779,38 @@
                     "response": []
                 },
                 {
+                    "name": "Store a newly created Country in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/countries"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"sortname\": \"omnis\",\n    \"name\": \"suscipit\",\n    \"phonecode\": 17\n}"
+                        },
+                        "description": "POST \/countries",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
                     "name": "Display the specified Country.",
                     "request": {
                         "url": {
@@ -540,7 +823,7 @@
                                 {
                                     "id": "country",
                                     "key": "country",
-                                    "value": "voluptas",
+                                    "value": "architecto",
                                     "description": ""
                                 }
                             ]
@@ -558,6 +841,83 @@
                         ],
                         "body": null,
                         "description": "GET|HEAD \/countries\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Country in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries\/:country",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/countries\/:country",
+                            "variable": [
+                                {
+                                    "id": "country",
+                                    "key": "country",
+                                    "value": "totam",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"sortname\": \"aut\",\n    \"name\": \"mollitia\",\n    \"phonecode\": 8\n}"
+                        },
+                        "description": "PUT\/PATCH \/countries\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Country from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries\/:country",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/countries\/:country",
+                            "variable": [
+                                {
+                                    "id": "country",
+                                    "key": "country",
+                                    "value": "amet",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/countries\/{id}",
                         "auth": {
                             "type": "noauth"
                         }
@@ -728,7 +1088,7 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "doloremque",
+                                    "value": "eos",
                                     "description": ""
                                 }
                             ]
@@ -852,7 +1212,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "ad",
+                                    "value": "at",
                                     "description": ""
                                 }
                             ]
@@ -889,7 +1249,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "autem",
+                                    "value": "aut",
                                     "description": ""
                                 }
                             ]
@@ -1013,136 +1373,12 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "sit",
+                                    "value": "soluta",
                                     "description": ""
                                 }
                             ]
                         },
                         "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/user",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/user",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/user"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "\/",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "\/",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/\/"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the password reset view for the given token.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "password\/reset\/:token",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/password\/reset\/:token",
-                            "variable": [
-                                {
-                                    "id": "token",
-                                    "key": "token",
-                                    "value": "accusantium",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "If no token is present, display the link request form.",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Show the application dashboard.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "home",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/home"
-                        },
-                        "method": "GET",
                         "header": [
                             {
                                 "key": "Content-Type",
@@ -1219,7 +1455,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"blood_group\": \"alias\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"qui\",\n    \"long_term_injury\": \"libero\",\n    \"treatment_type\": \"deserunt\",\n    \"current_health_injury\": \"quisquam\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"rem\",\n    \"injury_seriousness\": \"aspernatur\",\n    \"medical_treatment\": \"iusto\",\n    \"injury_location\": \"incidunt\",\n    \"genotype\": \"reprehenderit\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"blood_group\": \"assumenda\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"ut\",\n    \"long_term_injury\": \"accusamus\",\n    \"treatment_type\": \"nesciunt\",\n    \"current_health_injury\": \"esse\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"harum\",\n    \"injury_seriousness\": \"est\",\n    \"medical_treatment\": \"libero\",\n    \"injury_location\": \"et\",\n    \"genotype\": \"non\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/healthPredictors",
                         "auth": {
@@ -1241,7 +1477,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "quia",
+                                    "value": "delectus",
                                     "description": ""
                                 }
                             ]
@@ -1278,7 +1514,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "veniam",
+                                    "value": "esse",
                                     "description": ""
                                 }
                             ]
@@ -1296,7 +1532,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 17,\n    \"blood_group\": \"et\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"aspernatur\",\n    \"long_term_injury\": \"et\",\n    \"treatment_type\": \"suscipit\",\n    \"current_health_injury\": \"omnis\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"debitis\",\n    \"injury_seriousness\": \"sed\",\n    \"medical_treatment\": \"ut\",\n    \"injury_location\": \"nulla\",\n    \"genotype\": \"ut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 14,\n    \"blood_group\": \"exercitationem\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"eaque\",\n    \"long_term_injury\": \"eum\",\n    \"treatment_type\": \"ipsum\",\n    \"current_health_injury\": \"aut\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"provident\",\n    \"injury_seriousness\": \"quasi\",\n    \"medical_treatment\": \"sed\",\n    \"injury_location\": \"delectus\",\n    \"genotype\": \"dolor\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/healthPredictors\/{id}",
                         "auth": {
@@ -1318,7 +1554,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "dolore",
+                                    "value": "natus",
                                     "description": ""
                                 }
                             ]
@@ -1400,7 +1636,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 10,\n    \"first_name\": \"impedit\",\n    \"marital_status\": \"officiis\",\n    \"mother_maiden_name\": \"non\",\n    \"last_name\": \"dolorem\",\n    \"height\": \"aliquam\",\n    \"body_weight\": \"aliquam\",\n    \"phone\": \"repellat\",\n    \"sm_handle\": \"et\",\n    \"highest_education\": \"voluptas\",\n    \"place_of_birth\": \"rem\",\n    \"school\": \"rerum\",\n    \"career_preference\": \"accusantium\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"est\",\n    \"dob\": {},\n    \"country_id\": 9,\n    \"state_of_origin\": 10,\n    \"zipcode\": 20,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 10,\n    \"first_name\": \"est\",\n    \"marital_status\": \"delectus\",\n    \"mother_maiden_name\": \"voluptatem\",\n    \"last_name\": \"ipsa\",\n    \"height\": \"commodi\",\n    \"body_weight\": \"sed\",\n    \"phone\": \"ratione\",\n    \"sm_handle\": \"magni\",\n    \"highest_education\": \"maiores\",\n    \"place_of_birth\": \"laboriosam\",\n    \"school\": \"aut\",\n    \"career_preference\": \"dolores\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"magnam\",\n    \"dob\": {},\n    \"country_id\": 13,\n    \"state_of_origin\": 7,\n    \"zipcode\": 9,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/personalDetails",
                         "auth": {
@@ -1422,7 +1658,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "molestias",
+                                    "value": "aut",
                                     "description": ""
                                 }
                             ]
@@ -1459,7 +1695,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "omnis",
+                                    "value": "vel",
                                     "description": ""
                                 }
                             ]
@@ -1477,7 +1713,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"nihil\",\n    \"marital_status\": \"minima\",\n    \"mother_maiden_name\": \"necessitatibus\",\n    \"last_name\": \"quo\",\n    \"height\": \"sed\",\n    \"body_weight\": \"dolore\",\n    \"phone\": \"officiis\",\n    \"sm_handle\": \"exercitationem\",\n    \"highest_education\": \"inventore\",\n    \"place_of_birth\": \"eum\",\n    \"school\": \"eius\",\n    \"career_preference\": \"tempora\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"est\",\n    \"dob\": {},\n    \"country_id\": 2,\n    \"state_of_origin\": 9,\n    \"zipcode\": 14,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"first_name\": \"voluptas\",\n    \"marital_status\": \"nisi\",\n    \"mother_maiden_name\": \"enim\",\n    \"last_name\": \"voluptates\",\n    \"height\": \"nostrum\",\n    \"body_weight\": \"quo\",\n    \"phone\": \"aspernatur\",\n    \"sm_handle\": \"et\",\n    \"highest_education\": \"officiis\",\n    \"place_of_birth\": \"nesciunt\",\n    \"school\": \"occaecati\",\n    \"career_preference\": \"provident\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"sint\",\n    \"dob\": {},\n    \"country_id\": 12,\n    \"state_of_origin\": 1,\n    \"zipcode\": 13,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/personalDetails\/{id}",
                         "auth": {
@@ -1499,7 +1735,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "velit",
+                                    "value": "autem",
                                     "description": ""
                                 }
                             ]
@@ -1581,7 +1817,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"time_practice_in_week\": 12,\n    \"hours_practice_in_week\": 7,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"qui\",\n    \"challenges\": \"numquam\",\n    \"greatest_motivation\": \"ea\",\n    \"strength\": \"veniam\",\n    \"weakness\": \"eos\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"velit\",\n    \"rating_sports\": \"consequuntur\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"time_practice_in_week\": 17,\n    \"hours_practice_in_week\": 19,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"ut\",\n    \"challenges\": \"rerum\",\n    \"greatest_motivation\": \"quidem\",\n    \"strength\": \"minima\",\n    \"weakness\": \"facere\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"ducimus\",\n    \"rating_sports\": \"est\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/psychPredictors",
                         "auth": {
@@ -1603,7 +1839,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "alias",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -1640,7 +1876,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "sint",
+                                    "value": "cupiditate",
                                     "description": ""
                                 }
                             ]
@@ -1658,7 +1894,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"time_practice_in_week\": 8,\n    \"hours_practice_in_week\": 6,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"vero\",\n    \"challenges\": \"molestiae\",\n    \"greatest_motivation\": \"excepturi\",\n    \"strength\": \"error\",\n    \"weakness\": \"similique\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"eaque\",\n    \"rating_sports\": \"expedita\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"time_practice_in_week\": 15,\n    \"hours_practice_in_week\": 4,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"hic\",\n    \"challenges\": \"quis\",\n    \"greatest_motivation\": \"eligendi\",\n    \"strength\": \"excepturi\",\n    \"weakness\": \"voluptatem\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"labore\",\n    \"rating_sports\": \"rem\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/psychPredictors\/{id}",
                         "auth": {
@@ -1680,7 +1916,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "dolorum",
+                                    "value": "ab",
                                     "description": ""
                                 }
                             ]
@@ -1762,7 +1998,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"speed\": \"ratione\",\n    \"passing\": \"dolorum\",\n    \"shooting\": \"ut\",\n    \"dribbling\": \"beatae\",\n    \"heading\": \"totam\",\n    \"ball_control\": \"ut\",\n    \"fitness\": \"itaque\",\n    \"movement\": \"fugiat\",\n    \"awareness\": \"nihil\",\n    \"decisions\": \"vel\",\n    \"workrate\": \"ullam\",\n    \"strength\": \"provident\",\n    \"crossing\": \"facere\",\n    \"finishing\": \"quae\",\n    \"positioning\": \"accusantium\",\n    \"anticipation\": \"voluptas\",\n    \"total\": \"tempore\",\n    \"overall_grade\": \"nesciunt\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"speed\": \"illo\",\n    \"passing\": \"illum\",\n    \"shooting\": \"maxime\",\n    \"dribbling\": \"amet\",\n    \"heading\": \"perferendis\",\n    \"ball_control\": \"rerum\",\n    \"fitness\": \"voluptatem\",\n    \"movement\": \"et\",\n    \"awareness\": \"accusantium\",\n    \"decisions\": \"minima\",\n    \"workrate\": \"reiciendis\",\n    \"strength\": \"aliquam\",\n    \"crossing\": \"consequatur\",\n    \"finishing\": \"corrupti\",\n    \"positioning\": \"iure\",\n    \"anticipation\": \"optio\",\n    \"total\": \"et\",\n    \"overall_grade\": \"fugit\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillReports",
                         "auth": {
@@ -1784,7 +2020,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "rerum",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -1821,7 +2057,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "rerum",
+                                    "value": "nemo",
                                     "description": ""
                                 }
                             ]
@@ -1839,7 +2075,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 18,\n    \"speed\": \"id\",\n    \"passing\": \"impedit\",\n    \"shooting\": \"ut\",\n    \"dribbling\": \"quam\",\n    \"heading\": \"vero\",\n    \"ball_control\": \"est\",\n    \"fitness\": \"modi\",\n    \"movement\": \"nam\",\n    \"awareness\": \"veniam\",\n    \"decisions\": \"excepturi\",\n    \"workrate\": \"ducimus\",\n    \"strength\": \"ipsa\",\n    \"crossing\": \"aut\",\n    \"finishing\": \"voluptatibus\",\n    \"positioning\": \"voluptas\",\n    \"anticipation\": \"animi\",\n    \"total\": \"cumque\",\n    \"overall_grade\": \"dolor\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 20,\n    \"speed\": \"dignissimos\",\n    \"passing\": \"cupiditate\",\n    \"shooting\": \"consequatur\",\n    \"dribbling\": \"exercitationem\",\n    \"heading\": \"delectus\",\n    \"ball_control\": \"soluta\",\n    \"fitness\": \"maxime\",\n    \"movement\": \"vel\",\n    \"awareness\": \"odio\",\n    \"decisions\": \"dolor\",\n    \"workrate\": \"harum\",\n    \"strength\": \"minus\",\n    \"crossing\": \"soluta\",\n    \"finishing\": \"velit\",\n    \"positioning\": \"sed\",\n    \"anticipation\": \"exercitationem\",\n    \"total\": \"nesciunt\",\n    \"overall_grade\": \"corrupti\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillReports\/{id}",
                         "auth": {
@@ -1861,7 +2097,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "aut",
+                                    "value": "dolorum",
                                     "description": ""
                                 }
                             ]
@@ -1943,7 +2179,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"ea\",\n    \"sport_id\": 11,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"voluptatum\",\n    \"sport_id\": 10,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillTests",
                         "auth": {
@@ -1965,7 +2201,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "repellendus",
+                                    "value": "voluptates",
                                     "description": ""
                                 }
                             ]
@@ -2002,7 +2238,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "repellat",
+                                    "value": "aut",
                                     "description": ""
                                 }
                             ]
@@ -2020,7 +2256,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"ea\",\n    \"sport_id\": 1,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"commodi\",\n    \"sport_id\": 8,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillTests\/{id}",
                         "auth": {
@@ -2042,7 +2278,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "neque",
+                                    "value": "ab",
                                     "description": ""
                                 }
                             ]
@@ -2124,7 +2360,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"nisi\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"neque\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/sports",
                         "auth": {
@@ -2146,7 +2382,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "beatae",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -2183,7 +2419,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "sunt",
+                                    "value": "aliquid",
                                     "description": ""
                                 }
                             ]
@@ -2201,7 +2437,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"dolores\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"porro\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/sports\/{id}",
                         "auth": {
@@ -2223,7 +2459,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "dolore",
+                                    "value": "libero",
                                     "description": ""
                                 }
                             ]
@@ -2254,73 +2490,7 @@
             "description": "",
             "item": [
                 {
-                    "name": "Display a listing of the State.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/states",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/states"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/states",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified State.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/states\/:state",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/states\/:state",
-                            "variable": [
-                                {
-                                    "id": "state",
-                                    "key": "state",
-                                    "value": "aliquid",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "GET|HEAD \/states\/{id}",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the States for a country ID.",
+                    "name": "api\/states\/byCountry\/{id}",
                     "request": {
                         "url": {
                             "protocol": "http",
@@ -2332,7 +2502,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "porro",
+                                    "value": "nam",
                                     "description": ""
                                 }
                             ]
@@ -2350,6 +2520,219 @@
                         ],
                         "body": null,
                         "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Talent",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store a newly created Talent in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/talent\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"soluta\",\n    \"scheme\": \"et\",\n    \"email\": \"veniam\",\n    \"first_name\": \"officiis\",\n    \"middle_name\": \"non\",\n    \"last_name\": \"architecto\",\n    \"dob\": {},\n    \"age\": 2,\n    \"gender\": \"placeat\",\n    \"languages\": \"iure\",\n    \"city_id\": \"excepturi\",\n    \"genotype\": \"autem\",\n    \"blood_group\": \"voluptatem\",\n    \"sports\": \"pariatur\",\n    \"positions\": \"earum\",\n    \"educational_background\": \"doloribus\",\n    \"nationality\": \"qui\",\n    \"height\": 18.446,\n    \"weight\": 2.883983267\n}"
+                        },
+                        "description": "POST \/talent",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the Talent.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/talent",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/talent",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created Talent in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/talent",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"atque\",\n    \"scheme\": \"quis\",\n    \"email\": \"repellat\",\n    \"first_name\": \"autem\",\n    \"middle_name\": \"tenetur\",\n    \"last_name\": \"odio\",\n    \"dob\": {},\n    \"age\": 3,\n    \"gender\": \"quia\",\n    \"languages\": \"repudiandae\",\n    \"city_id\": \"aut\",\n    \"genotype\": \"enim\",\n    \"blood_group\": \"voluptatem\",\n    \"sports\": \"nam\",\n    \"positions\": \"eveniet\",\n    \"educational_background\": \"et\",\n    \"nationality\": \"odit\",\n    \"height\": 2444521.595,\n    \"weight\": 1852671.632\n}"
+                        },
+                        "description": "POST \/talent",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified Talent.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/talent\/:talent",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent\/:talent",
+                            "variable": [
+                                {
+                                    "id": "talent",
+                                    "key": "talent",
+                                    "value": "modi",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/talent\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Talent in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/talent\/:talent",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent\/:talent",
+                            "variable": [
+                                {
+                                    "id": "talent",
+                                    "key": "talent",
+                                    "value": "blanditiis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"profile_url\": \"quia\",\n    \"qualifications\": \"temporibus\",\n    \"scheme\": \"earum\",\n    \"user_id\": 17,\n    \"email\": \"et\",\n    \"first_name\": \"neque\",\n    \"middle_name\": \"quia\",\n    \"last_name\": \"et\",\n    \"dob\": {},\n    \"age\": 18,\n    \"gender\": \"quibusdam\",\n    \"languages\": \"alias\",\n    \"city_id\": \"dolorem\",\n    \"genotype\": \"in\",\n    \"blood_group\": \"enim\",\n    \"sports\": \"nesciunt\",\n    \"positions\": \"est\",\n    \"educational_background\": \"omnis\",\n    \"nationality\": \"nobis\",\n    \"height\": 41407807.513,\n    \"weight\": 261.8184,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/talent\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Talent from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/talent\/:talent",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent\/:talent",
+                            "variable": [
+                                {
+                                    "id": "talent",
+                                    "key": "talent",
+                                    "value": "quasi",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/talent\/{id}",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2414,7 +2797,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"type_id\": 17,\n    \"skill_test_id\": 13,\n    \"url\": \"aut\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"type_id\": 3,\n    \"skill_test_id\": 8,\n    \"url\": \"rem\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/videos",
                         "auth": {
@@ -2436,7 +2819,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "dolore",
+                                    "value": "id",
                                     "description": ""
                                 }
                             ]
@@ -2473,7 +2856,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "rerum",
+                                    "value": "illo",
                                     "description": ""
                                 }
                             ]
@@ -2491,7 +2874,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"type_id\": 18,\n    \"skill_test_id\": 6,\n    \"url\": \"nihil\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"type_id\": 2,\n    \"skill_test_id\": 12,\n    \"url\": \"magnam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/videos\/{id}",
                         "auth": {
@@ -2513,7 +2896,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "a",
+                                    "value": "est",
                                     "description": ""
                                 }
                             ]
@@ -2595,7 +2978,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"unde\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"velit\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/videoTypes",
                         "auth": {
@@ -2617,7 +3000,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "facere",
+                                    "value": "ab",
                                     "description": ""
                                 }
                             ]
@@ -2654,7 +3037,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "debitis",
+                                    "value": "consequatur",
                                     "description": ""
                                 }
                             ]
@@ -2672,7 +3055,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"totam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"perspiciatis\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/videoTypes\/{id}",
                         "auth": {
@@ -2694,7 +3077,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "et",
+                                    "value": "eveniet",
                                     "description": ""
                                 }
                             ]
@@ -2722,6 +3105,18 @@
         }
     ],
     "auth": {
-        "type": "noauth"
+        "type": "apikey",
+        "apikey": [
+            {
+                "key": "in",
+                "value": "Bearer",
+                "type": "string"
+            },
+            {
+                "key": "key",
+                "value": "key",
+                "type": "string"
+            }
+        ]
     }
 }

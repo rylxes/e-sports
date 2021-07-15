@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 //Route::group(['middleware' => ['cors', 'json.response']], function () {
 Route::group(['middleware' => ['cors', 'json.response']], function () {
-    Route::middleware('auth:api')->get('/user', function (Request $request) {
-        return $request->user();
-    });
+//    Route::middleware('auth:api')->get('/user', function (Request $request) {
+//        return $request->user();
+//    });
 
 
 /// AUTH ROUTES
@@ -32,6 +32,17 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
     Route::get('email/verify/{id}/{hash}', 'App\Http\Controllers\API\Auth\VerificationController@verify')->name('verification.verify');
     Route::post('email/resend', 'App\Http\Controllers\API\Auth\VerificationController@resend')->name('verification.resend');
 
+
+    Route::get('states/byCountry/{id}', 'App\Http\Controllers\API\StateAPIController@byCountry');
+    Route::post('cities/byState', 'App\Http\Controllers\API\CityAPIController@byState');
+    Route::resource('countries', App\Http\Controllers\API\CountryAPIController::class);
+    //Route::resource('states', App\Http\Controllers\API\StateAPIController::class);
+    //Route::resource('cities', App\Http\Controllers\API\CityAPIController::class);
+//
+//
+    Route::post('talent/register', 'App\Http\Controllers\API\TalentAPIController@store');
+    Route::post('coaches/register', 'App\Http\Controllers\API\CoachAPIController@store');
+
     Route::middleware('auth:api')->group(function () {
         Route::resource('club_assesments', App\Http\Controllers\API\ClubAssesmentAPIController::class);
         Route::resource('personal_details', App\Http\Controllers\API\PersonalDetailsAPIController::class);
@@ -42,12 +53,15 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
         Route::resource('psych_predictors', App\Http\Controllers\API\PsychPredictorAPIController::class);
         Route::resource('skill_reports', App\Http\Controllers\API\SkillReportAPIController::class);
         Route::resource('skill_tests', App\Http\Controllers\API\SkillTestAPIController::class);
-        Route::resource('countries', App\Http\Controllers\API\CountryAPIController::class);
-        Route::resource('states', App\Http\Controllers\API\StateAPIController::class);
-        Route::get('states/byCountry/{id}', 'App\Http\Controllers\API\StateAPIController@byCountry');
+
+        Route::resource('talent', App\Http\Controllers\API\TalentAPIController::class);
+        Route::resource('coaches', App\Http\Controllers\API\CoachAPIController::class);
     });
 
 });
+
+
+
 
 
 

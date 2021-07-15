@@ -15,6 +15,22 @@ curl -X GET \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/club_assesments',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
     "http://localhost/api/club_assesments"
@@ -75,8 +91,56 @@ curl -X POST \
     "http://localhost/api/club_assesments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"in","motivation":"molestiae","achievement":"accusantium","admired_sportsperson":"reprehenderit","top_athlete_plans":"sunt","current_team":"eos","date_joined_team":{},"favourite_jersey_number":"et","nickname":"dolorem","favourite_sports_team":"repellat","why_like_team":"nemo","no_of_teams_played_for":13,"why_leave":"quo","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"quae","preferred_foot":"sunt","created_at":{},"updated_at":{}}'
+    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"error","motivation":"commodi","achievement":"ut","admired_sportsperson":"nostrum","top_athlete_plans":"voluptatem","current_team":"quisquam","date_joined_team":{},"favourite_jersey_number":"voluptatibus","nickname":"ut","favourite_sports_team":"libero","why_like_team":"eius","no_of_teams_played_for":10,"why_leave":"molestiae","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"facilis","preferred_foot":"earum","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/club_assesments',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'enjoy_practice_routines' => false,
+                'is_participated_in_competitions' => false,
+                'is_selected_to_represent' => false,
+                'competitions' => 'error',
+                'motivation' => 'commodi',
+                'achievement' => 'ut',
+                'admired_sportsperson' => 'nostrum',
+                'top_athlete_plans' => 'voluptatem',
+                'current_team' => 'quisquam',
+                'date_joined_team' => $o[0],
+                'favourite_jersey_number' => 'voluptatibus',
+                'nickname' => 'ut',
+                'favourite_sports_team' => 'libero',
+                'why_like_team' => 'eius',
+                'no_of_teams_played_for' => 10,
+                'why_leave' => 'molestiae',
+                'can_improve_in_team' => false,
+                'is_like_coach_team' => false,
+                'positions_play' => 'facilis',
+                'preferred_foot' => 'earum',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -93,23 +157,23 @@ let body = {
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "in",
-    "motivation": "molestiae",
-    "achievement": "accusantium",
-    "admired_sportsperson": "reprehenderit",
-    "top_athlete_plans": "sunt",
-    "current_team": "eos",
+    "competitions": "error",
+    "motivation": "commodi",
+    "achievement": "ut",
+    "admired_sportsperson": "nostrum",
+    "top_athlete_plans": "voluptatem",
+    "current_team": "quisquam",
     "date_joined_team": {},
-    "favourite_jersey_number": "et",
-    "nickname": "dolorem",
-    "favourite_sports_team": "repellat",
-    "why_like_team": "nemo",
-    "no_of_teams_played_for": 13,
-    "why_leave": "quo",
+    "favourite_jersey_number": "voluptatibus",
+    "nickname": "ut",
+    "favourite_sports_team": "libero",
+    "why_like_team": "eius",
+    "no_of_teams_played_for": 10,
+    "why_leave": "molestiae",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "quae",
-    "preferred_foot": "sunt",
+    "positions_play": "facilis",
+    "preferred_foot": "earum",
     "created_at": {},
     "updated_at": {}
 }
@@ -270,14 +334,30 @@ GET|HEAD /clubAssesments/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/club_assesments/quam" \
+    -G "http://localhost/api/club_assesments/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/club_assesments/quia',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/club_assesments/quam"
+    "http://localhost/api/club_assesments/quia"
 );
 
 let headers = {
@@ -338,16 +418,64 @@ PUT/PATCH /clubAssesments/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/club_assesments/ab" \
+    "http://localhost/api/club_assesments/dolorem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"illum","motivation":"modi","achievement":"cupiditate","admired_sportsperson":"sunt","top_athlete_plans":"officiis","current_team":"ea","date_joined_team":{},"favourite_jersey_number":"amet","nickname":"consequatur","favourite_sports_team":"velit","why_like_team":"molestiae","no_of_teams_played_for":1,"why_leave":"nobis","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"pariatur","preferred_foot":"nam","created_at":{},"updated_at":{}}'
+    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"debitis","motivation":"quae","achievement":"distinctio","admired_sportsperson":"ut","top_athlete_plans":"enim","current_team":"quod","date_joined_team":{},"favourite_jersey_number":"error","nickname":"quibusdam","favourite_sports_team":"neque","why_like_team":"pariatur","no_of_teams_played_for":18,"why_leave":"voluptas","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"quos","preferred_foot":"ab","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->put(
+    'http://localhost/api/club_assesments/dolorem',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'enjoy_practice_routines' => false,
+                'is_participated_in_competitions' => false,
+                'is_selected_to_represent' => false,
+                'competitions' => 'debitis',
+                'motivation' => 'quae',
+                'achievement' => 'distinctio',
+                'admired_sportsperson' => 'ut',
+                'top_athlete_plans' => 'enim',
+                'current_team' => 'quod',
+                'date_joined_team' => $o[0],
+                'favourite_jersey_number' => 'error',
+                'nickname' => 'quibusdam',
+                'favourite_sports_team' => 'neque',
+                'why_like_team' => 'pariatur',
+                'no_of_teams_played_for' => 18,
+                'why_leave' => 'voluptas',
+                'can_improve_in_team' => false,
+                'is_like_coach_team' => false,
+                'positions_play' => 'quos',
+                'preferred_foot' => 'ab',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/club_assesments/ab"
+    "http://localhost/api/club_assesments/dolorem"
 );
 
 let headers = {
@@ -359,23 +487,23 @@ let body = {
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "illum",
-    "motivation": "modi",
-    "achievement": "cupiditate",
-    "admired_sportsperson": "sunt",
-    "top_athlete_plans": "officiis",
-    "current_team": "ea",
+    "competitions": "debitis",
+    "motivation": "quae",
+    "achievement": "distinctio",
+    "admired_sportsperson": "ut",
+    "top_athlete_plans": "enim",
+    "current_team": "quod",
     "date_joined_team": {},
-    "favourite_jersey_number": "amet",
-    "nickname": "consequatur",
-    "favourite_sports_team": "velit",
-    "why_like_team": "molestiae",
-    "no_of_teams_played_for": 1,
-    "why_leave": "nobis",
+    "favourite_jersey_number": "error",
+    "nickname": "quibusdam",
+    "favourite_sports_team": "neque",
+    "why_like_team": "pariatur",
+    "no_of_teams_played_for": 18,
+    "why_leave": "voluptas",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "pariatur",
-    "preferred_foot": "nam",
+    "positions_play": "quos",
+    "preferred_foot": "ab",
     "created_at": {},
     "updated_at": {}
 }
@@ -546,14 +674,30 @@ DELETE /clubAssesments/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/club_assesments/aut" \
+    "http://localhost/api/club_assesments/sunt" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->delete(
+    'http://localhost/api/club_assesments/sunt',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/club_assesments/aut"
+    "http://localhost/api/club_assesments/sunt"
 );
 
 let headers = {

@@ -15,6 +15,22 @@ curl -X GET \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/psych_predictors',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
     "http://localhost/api/psych_predictors"
@@ -75,8 +91,48 @@ curl -X POST \
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":12,"hours_practice_in_week":7,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"qui","challenges":"numquam","greatest_motivation":"ea","strength":"veniam","weakness":"eos","can_overcome_challenges":false,"time_start_sport":"velit","rating_sports":"consequuntur","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":17,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"ut","challenges":"rerum","greatest_motivation":"quidem","strength":"minima","weakness":"facere","can_overcome_challenges":false,"time_start_sport":"ducimus","rating_sports":"est","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/psych_predictors',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'time_practice_in_week' => 17,
+                'hours_practice_in_week' => 19,
+                'is_parent_in_support' => false,
+                'is_team_player' => false,
+                'parent_in_support_reason' => 'ut',
+                'challenges' => 'rerum',
+                'greatest_motivation' => 'quidem',
+                'strength' => 'minima',
+                'weakness' => 'facere',
+                'can_overcome_challenges' => false,
+                'time_start_sport' => 'ducimus',
+                'rating_sports' => 'est',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -90,18 +146,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 12,
-    "hours_practice_in_week": 7,
+    "time_practice_in_week": 17,
+    "hours_practice_in_week": 19,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "qui",
-    "challenges": "numquam",
-    "greatest_motivation": "ea",
-    "strength": "veniam",
-    "weakness": "eos",
+    "parent_in_support_reason": "ut",
+    "challenges": "rerum",
+    "greatest_motivation": "quidem",
+    "strength": "minima",
+    "weakness": "facere",
     "can_overcome_challenges": false,
-    "time_start_sport": "velit",
-    "rating_sports": "consequuntur",
+    "time_start_sport": "ducimus",
+    "rating_sports": "est",
     "created_at": {},
     "updated_at": {}
 }
@@ -220,14 +276,30 @@ GET|HEAD /psychPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/psych_predictors/alias" \
+    -G "http://localhost/api/psych_predictors/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/psych_predictors/et',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/alias"
+    "http://localhost/api/psych_predictors/et"
 );
 
 let headers = {
@@ -288,16 +360,56 @@ PUT/PATCH /psychPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/psych_predictors/sint" \
+    "http://localhost/api/psych_predictors/cupiditate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":8,"hours_practice_in_week":6,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"vero","challenges":"molestiae","greatest_motivation":"excepturi","strength":"error","weakness":"similique","can_overcome_challenges":false,"time_start_sport":"eaque","rating_sports":"expedita","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":15,"hours_practice_in_week":4,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"hic","challenges":"quis","greatest_motivation":"eligendi","strength":"excepturi","weakness":"voluptatem","can_overcome_challenges":false,"time_start_sport":"labore","rating_sports":"rem","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->put(
+    'http://localhost/api/psych_predictors/cupiditate',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'time_practice_in_week' => 15,
+                'hours_practice_in_week' => 4,
+                'is_parent_in_support' => false,
+                'is_team_player' => false,
+                'parent_in_support_reason' => 'hic',
+                'challenges' => 'quis',
+                'greatest_motivation' => 'eligendi',
+                'strength' => 'excepturi',
+                'weakness' => 'voluptatem',
+                'can_overcome_challenges' => false,
+                'time_start_sport' => 'labore',
+                'rating_sports' => 'rem',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/sint"
+    "http://localhost/api/psych_predictors/cupiditate"
 );
 
 let headers = {
@@ -306,18 +418,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 8,
-    "hours_practice_in_week": 6,
+    "time_practice_in_week": 15,
+    "hours_practice_in_week": 4,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "vero",
-    "challenges": "molestiae",
-    "greatest_motivation": "excepturi",
-    "strength": "error",
-    "weakness": "similique",
+    "parent_in_support_reason": "hic",
+    "challenges": "quis",
+    "greatest_motivation": "eligendi",
+    "strength": "excepturi",
+    "weakness": "voluptatem",
     "can_overcome_challenges": false,
-    "time_start_sport": "eaque",
-    "rating_sports": "expedita",
+    "time_start_sport": "labore",
+    "rating_sports": "rem",
     "created_at": {},
     "updated_at": {}
 }
@@ -446,14 +558,30 @@ DELETE /psychPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/psych_predictors/dolorum" \
+    "http://localhost/api/psych_predictors/ab" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->delete(
+    'http://localhost/api/psych_predictors/ab',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/dolorum"
+    "http://localhost/api/psych_predictors/ab"
 );
 
 let headers = {

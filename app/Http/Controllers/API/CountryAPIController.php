@@ -52,7 +52,7 @@ class CountryAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function store3(CreateCountryAPIRequest $request)
+    public function store(CreateCountryAPIRequest $request)
     {
         $input = $request->all();
 
@@ -90,7 +90,7 @@ class CountryAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function update3($id, UpdateCountryAPIRequest $request)
+    public function update($id, UpdateCountryAPIRequest $request)
     {
         $input = $request->all();
 
@@ -116,7 +116,7 @@ class CountryAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function destroy3($id)
+    public function destroy($id)
     {
         /** @var Country $country */
         $country = $this->countryRepository->find($id);

@@ -13,8 +13,28 @@ curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"alaina07@example.org","password":"voluptate"}'
+    -d '{"email":"federico58@example.com","password":"laudantium"}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/login',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => [
+            'email' => 'federico58@example.com',
+            'password' => 'laudantium',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -28,8 +48,8 @@ let headers = {
 };
 
 let body = {
-    "email": "alaina07@example.org",
-    "password": "voluptate"
+    "email": "federico58@example.com",
+    "password": "laudantium"
 }
 
 fetch(url, {
@@ -64,7 +84,7 @@ fetch(url, {
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-login" data-component="body" required  hidden>
 <br>
-The value must be a valid email address.</p>
+validation.email.</p>
 <p>
 <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="password" data-endpoint="POSTapi-login" data-component="body" required  hidden>
@@ -86,6 +106,22 @@ curl -X POST \
     "http://localhost/api/logout" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/logout',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -140,8 +176,31 @@ curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"culpa","last_name":"ratione","email":"lilian.becker@example.com","password":"quis","password_confirmation":"expedita"}'
+    -d '{"first_name":"omnis","last_name":"repellat","email":"toney23@example.net","password":"consequatur","password_confirmation":"dolores"}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/register',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => [
+            'first_name' => 'omnis',
+            'last_name' => 'repellat',
+            'email' => 'toney23@example.net',
+            'password' => 'consequatur',
+            'password_confirmation' => 'dolores',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -155,11 +214,11 @@ let headers = {
 };
 
 let body = {
-    "first_name": "culpa",
-    "last_name": "ratione",
-    "email": "lilian.becker@example.com",
-    "password": "quis",
-    "password_confirmation": "expedita"
+    "first_name": "omnis",
+    "last_name": "repellat",
+    "email": "toney23@example.net",
+    "password": "consequatur",
+    "password_confirmation": "dolores"
 }
 
 fetch(url, {
@@ -204,7 +263,7 @@ fetch(url, {
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-register" data-component="body" required  hidden>
 <br>
-The value must be a valid email address.</p>
+validation.email.</p>
 <p>
 <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="password" data-endpoint="POSTapi-register" data-component="body" required  hidden>
@@ -231,8 +290,27 @@ curl -X POST \
     "http://localhost/api/password/email" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"nbradtke@example.com"}'
+    -d '{"email":"geovanni62@example.com"}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/password/email',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => [
+            'email' => 'geovanni62@example.com',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -246,7 +324,7 @@ let headers = {
 };
 
 let body = {
-    "email": "nbradtke@example.com"
+    "email": "geovanni62@example.com"
 }
 
 fetch(url, {
@@ -281,7 +359,7 @@ fetch(url, {
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-password-email" data-component="body" required  hidden>
 <br>
-The value must be a valid email address.</p>
+validation.email.</p>
 
 </form>
 
@@ -295,14 +373,30 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/accusamus" \
+    -G "http://localhost/api/password/reset/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/password/reset/quia',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/accusamus"
+    "http://localhost/api/password/reset/quia"
 );
 
 let headers = {
@@ -318,106 +412,13 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (500):
 
 ```json
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>E-sports</title>
-
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-    <!-- Theme style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css">
-
-    <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body class="hold-transition login-page">
-<div class="login-box">
-    <div class="login-logo">
-        <a href="http://localhost/home"><b>InfyOm </b>Generator</a>
-    </div>
-
-    <!-- /.login-logo -->
-    <div class="login-box-body">
-        <p class="login-box-msg">Reset your password</p>
-
-        <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="aDrzreswTMTbFCvvJXIugox2NihgCLbmVi8zvLpz">
-            <input type="hidden" name="token" value="accusamus">
-
-            <div class="form-group has-feedback ">
-                <input type="email" class="form-control" name="email" value="" placeholder="Email">
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                            </div>
-
-            <div class="form-group has-feedback">
-                <input type="password" class="form-control" name="password" placeholder="Password">
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-
-                            </div>
-
-            <div class="form-group has-feedback">
-                <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm password">
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-
-                            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary pull-right">
-                        <i class="fa fa-btn fa-refresh"></i>Reset Password
-                    </button>
-                </div>
-            </div>
-        </form>
-
-    </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- AdminLTE App -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
-<script>
-    $(function () {
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
-            radioClass: 'iradio_square-blue',
-            increaseArea: '20%' // optional
-        });
-    });
-</script>
-</body>
-</html>
-
+{
+    "message": "Whoops, looks like something went wrong",
+    "status": 500
+}
 ```
 <div id="execution-results-GETapi-password-reset--token-" hidden>
     <blockquote>Received response<span id="execution-response-status-GETapi-password-reset--token-"></span>:</blockquote>
@@ -459,6 +460,22 @@ curl -X POST \
     "http://localhost/api/password/reset" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/password/reset',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -515,6 +532,22 @@ curl -X POST \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/password/confirm',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
     "http://localhost/api/password/confirm"
@@ -564,14 +597,30 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/et/dolores" \
+    -G "http://localhost/api/email/verify/tempore/nemo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/email/verify/tempore/nemo',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/et/dolores"
+    "http://localhost/api/email/verify/tempore/nemo"
 );
 
 let headers = {
@@ -640,6 +689,22 @@ curl -X POST \
     "http://localhost/api/email/resend" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/email/resend',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript

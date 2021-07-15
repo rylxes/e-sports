@@ -15,7 +15,6 @@ use Response;
  * @group State
  * @package App\Http\Controllers\API
  */
-
 class StateAPIController extends AppBaseController
 {
     /** @var  StateRepository */
@@ -52,7 +51,7 @@ class StateAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function store3(CreateStateAPIRequest $request)
+    public function store(CreateStateAPIRequest $request)
     {
         $input = $request->all();
 
@@ -81,26 +80,17 @@ class StateAPIController extends AppBaseController
         return $this->sendResponse($state->toArray(), 'State retrieved successfully');
     }
 
-    /**
-     * Display the States for a country ID.
-     *
-     *
-     * @param int $id
-     *
-     * @return Response
-     */
+
     public function byCountry($id)
     {
         /** @var State $state */
         //$state = $this->stateRepository->find($id);
-        $state = State::where('country_id',$id)->get();
+        $state = State::where('country_id', $id)->get();
         if ($state->isEmpty()) {
             return $this->sendError('State not found');
         }
         return $this->sendResponse($state->toArray(), 'State retrieved successfully');
     }
-
-
 
     /**
      * Update the specified State in storage.
@@ -111,7 +101,7 @@ class StateAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function update3($id, UpdateStateAPIRequest $request)
+    public function update($id, UpdateStateAPIRequest $request)
     {
         $input = $request->all();
 
@@ -133,11 +123,11 @@ class StateAPIController extends AppBaseController
      *
      * @param int $id
      *
+     * @return Response
      * @throws \Exception
      *
-     * @return Response
      */
-    public function destroy3($id)
+    public function destroy($id)
     {
         /** @var State $state */
         $state = $this->stateRepository->find($id);

@@ -15,6 +15,22 @@ curl -X GET \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/videos',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
     "http://localhost/api/videos"
@@ -75,8 +91,39 @@ curl -X POST \
     "http://localhost/api/videos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"type_id":17,"skill_test_id":13,"url":"aut","created_at":{},"updated_at":{}}'
+    -d '{"type_id":3,"skill_test_id":8,"url":"rem","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/videos',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'type_id' => 3,
+                'skill_test_id' => 8,
+                'url' => 'rem',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
@@ -90,9 +137,9 @@ let headers = {
 };
 
 let body = {
-    "type_id": 17,
-    "skill_test_id": 13,
-    "url": "aut",
+    "type_id": 3,
+    "skill_test_id": 8,
+    "url": "rem",
     "created_at": {},
     "updated_at": {}
 }
@@ -163,14 +210,30 @@ GET|HEAD /videos/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/videos/dolore" \
+    -G "http://localhost/api/videos/id" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/videos/id',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/dolore"
+    "http://localhost/api/videos/id"
 );
 
 let headers = {
@@ -231,16 +294,47 @@ PUT/PATCH /videos/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/videos/rerum" \
+    "http://localhost/api/videos/illo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"type_id":18,"skill_test_id":6,"url":"nihil","created_at":{},"updated_at":{}}'
+    -d '{"type_id":2,"skill_test_id":12,"url":"magnam","created_at":{},"updated_at":{}}'
 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->put(
+    'http://localhost/api/videos/illo',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'type_id' => 2,
+                'skill_test_id' => 12,
+                'url' => 'magnam',
+                'created_at' => $o[0],
+                'updated_at' => $o[0],
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/rerum"
+    "http://localhost/api/videos/illo"
 );
 
 let headers = {
@@ -249,9 +343,9 @@ let headers = {
 };
 
 let body = {
-    "type_id": 18,
-    "skill_test_id": 6,
-    "url": "nihil",
+    "type_id": 2,
+    "skill_test_id": 12,
+    "url": "magnam",
     "created_at": {},
     "updated_at": {}
 }
@@ -332,14 +426,30 @@ DELETE /videos/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/videos/a" \
+    "http://localhost/api/videos/est" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->delete(
+    'http://localhost/api/videos/est',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/a"
+    "http://localhost/api/videos/est"
 );
 
 let headers = {
