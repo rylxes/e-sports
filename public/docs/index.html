@@ -45,7 +45,7 @@
                             <li><a href='http://github.com/knuckleswtf/scribe'>Documentation powered by Scribe ✍</a></li>
                     </ul>
             <ul class="toc-footer" id="last-updated">
-            <li>Last updated: July 15 2021</li>
+            <li>Last updated: July 16 2021</li>
         </ul>
 </div>
 <div class="page-wrapper">
@@ -76,7 +76,7 @@ You can switch the language used with the tabs at the top right (or from the nav
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"federico58@example.com","password":"laudantium"}'
+    -d '{"email":"opacocha@example.com","password":"quos"}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -88,8 +88,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'federico58@example.com',
-            'password' =&gt; 'laudantium',
+            'email' =&gt; 'opacocha@example.com',
+            'password' =&gt; 'quos',
         ],
     ]
 );
@@ -105,8 +105,8 @@ let headers = {
 };
 
 let body = {
-    "email": "federico58@example.com",
-    "password": "laudantium"
+    "email": "opacocha@example.com",
+    "password": "quos"
 }
 
 fetch(url, {
@@ -138,7 +138,7 @@ fetch(url, {
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-login" data-component="body" required  hidden>
 <br>
-validation.email.</p>
+The value must be a valid email address.</p>
 <p>
 <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="password" data-endpoint="POSTapi-login" data-component="body" required  hidden>
@@ -208,7 +208,7 @@ fetch(url, {
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"omnis","last_name":"repellat","email":"toney23@example.net","password":"consequatur","password_confirmation":"dolores"}'
+    -d '{"first_name":"ut","last_name":"placeat","email":"jacobs.demarco@example.com","password":"occaecati","password_confirmation":"aut"}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -220,11 +220,11 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'first_name' =&gt; 'omnis',
-            'last_name' =&gt; 'repellat',
-            'email' =&gt; 'toney23@example.net',
-            'password' =&gt; 'consequatur',
-            'password_confirmation' =&gt; 'dolores',
+            'first_name' =&gt; 'ut',
+            'last_name' =&gt; 'placeat',
+            'email' =&gt; 'jacobs.demarco@example.com',
+            'password' =&gt; 'occaecati',
+            'password_confirmation' =&gt; 'aut',
         ],
     ]
 );
@@ -240,11 +240,11 @@ let headers = {
 };
 
 let body = {
-    "first_name": "omnis",
-    "last_name": "repellat",
-    "email": "toney23@example.net",
-    "password": "consequatur",
-    "password_confirmation": "dolores"
+    "first_name": "ut",
+    "last_name": "placeat",
+    "email": "jacobs.demarco@example.com",
+    "password": "occaecati",
+    "password_confirmation": "aut"
 }
 
 fetch(url, {
@@ -286,7 +286,7 @@ fetch(url, {
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-register" data-component="body" required  hidden>
 <br>
-validation.email.</p>
+The value must be a valid email address.</p>
 <p>
 <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="password" data-endpoint="POSTapi-register" data-component="body" required  hidden>
@@ -307,7 +307,7 @@ validation.email.</p>
     "http://localhost/api/password/email" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"geovanni62@example.com"}'
+    -d '{"email":"jamarcus20@example.com"}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -319,7 +319,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'geovanni62@example.com',
+            'email' =&gt; 'jamarcus20@example.com',
         ],
     ]
 );
@@ -335,7 +335,7 @@ let headers = {
 };
 
 let body = {
-    "email": "geovanni62@example.com"
+    "email": "jamarcus20@example.com"
 }
 
 fetch(url, {
@@ -367,7 +367,7 @@ fetch(url, {
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-password-email" data-component="body" required  hidden>
 <br>
-validation.email.</p>
+The value must be a valid email address.</p>
 
 </form>
 <h2>Display the password reset view for the given token.</h2>
@@ -376,13 +376,13 @@ validation.email.</p>
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/password/reset/quia" \
+    -G "http://localhost/api/password/reset/accusamus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/password/reset/quia',
+    'http://localhost/api/password/reset/accusamus',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -393,7 +393,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/password/reset/quia"
+    "http://localhost/api/password/reset/accusamus"
 );
 
 let headers = {
@@ -406,12 +406,105 @@ fetch(url, {
     headers,
 }).then(response =&gt; response.json());</code></pre>
 <blockquote>
-<p>Example response (500):</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "message": "Whoops, looks like something went wrong",
-    "status": 500
-}</code></pre>
+<pre><code class="language-json">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;title&gt;E-sports&lt;/title&gt;
+
+    &lt;!-- Tell the browser to be responsive to screen width --&gt;
+    &lt;meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"&gt;
+
+    &lt;!-- Bootstrap 3.3.7 --&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+
+    &lt;!-- Font Awesome --&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+    &lt;!-- Ionicons --&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"&gt;
+
+    &lt;!-- Theme style --&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css"&gt;
+
+    &lt;!-- iCheck --&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css"&gt;
+
+    &lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+&lt;/head&gt;
+&lt;body class="hold-transition login-page"&gt;
+&lt;div class="login-box"&gt;
+    &lt;div class="login-logo"&gt;
+        &lt;a href="http://localhost/home"&gt;&lt;b&gt;E-sports &lt;/b&gt;Generator&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- /.login-logo --&gt;
+    &lt;div class="login-box-body"&gt;
+        &lt;p class="login-box-msg"&gt;Reset your password&lt;/p&gt;
+
+        &lt;form method="post" action="http://localhost/password/reset"&gt;
+            &lt;input type="hidden" name="_token" value="CWo8DlECnjyyZDQkGyn9QjuriATKoSI48XMttXKx"&gt;
+            &lt;input type="hidden" name="token" value="accusamus"&gt;
+
+            &lt;div class="form-group has-feedback "&gt;
+                &lt;input type="email" class="form-control" name="email" value="" placeholder="Email"&gt;
+                &lt;span class="glyphicon glyphicon-envelope form-control-feedback"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+
+            &lt;div class="form-group has-feedback"&gt;
+                &lt;input type="password" class="form-control" name="password" placeholder="Password"&gt;
+                &lt;span class="glyphicon glyphicon-lock form-control-feedback"&gt;&lt;/span&gt;
+
+                            &lt;/div&gt;
+
+            &lt;div class="form-group has-feedback"&gt;
+                &lt;input type="password" name="password_confirmation" class="form-control" placeholder="Confirm password"&gt;
+                &lt;span class="glyphicon glyphicon-lock form-control-feedback"&gt;&lt;/span&gt;
+
+                            &lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-12"&gt;
+                    &lt;button type="submit" class="btn btn-primary pull-right"&gt;
+                        &lt;i class="fa fa-btn fa-refresh"&gt;&lt;/i&gt;Reset Password
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- AdminLTE App --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"&gt;&lt;/script&gt;
+
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <div id="execution-results-GETapi-password-reset--token-" hidden>
     <blockquote>Received response<span id="execution-response-status-GETapi-password-reset--token-"></span>:</blockquote>
     <pre class="json"><code id="execution-response-content-GETapi-password-reset--token-"></code></pre>
@@ -551,13 +644,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/email/verify/tempore/nemo" \
+    -G "http://localhost/api/email/verify/nostrum/qui" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/email/verify/tempore/nemo',
+    'http://localhost/api/email/verify/nostrum/qui',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -568,7 +661,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/email/verify/tempore/nemo"
+    "http://localhost/api/email/verify/nostrum/qui"
 );
 
 let headers = {
@@ -680,7 +773,7 @@ fetch(url, {
     "http://localhost/api/cities/byState" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"state_id":"molestias"}'
+    -d '{"state_id":"quasi"}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -692,7 +785,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'state_id' =&gt; 'molestias',
+            'state_id' =&gt; 'quasi',
         ],
     ]
 );
@@ -708,7 +801,7 @@ let headers = {
 };
 
 let body = {
-    "state_id": "molestias"
+    "state_id": "quasi"
 }
 
 fetch(url, {
@@ -814,7 +907,7 @@ fetch(url, {
     "http://localhost/api/club_assesments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"error","motivation":"commodi","achievement":"ut","admired_sportsperson":"nostrum","top_athlete_plans":"voluptatem","current_team":"quisquam","date_joined_team":{},"favourite_jersey_number":"voluptatibus","nickname":"ut","favourite_sports_team":"libero","why_like_team":"eius","no_of_teams_played_for":10,"why_leave":"molestiae","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"facilis","preferred_foot":"earum","created_at":{},"updated_at":{}}'
+    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"enim","motivation":"sunt","achievement":"consequatur","admired_sportsperson":"eum","top_athlete_plans":"aut","current_team":"eum","date_joined_team":{},"favourite_jersey_number":"autem","nickname":"beatae","favourite_sports_team":"eveniet","why_like_team":"et","no_of_teams_played_for":20,"why_leave":"est","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"quisquam","preferred_foot":"dolores","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -835,23 +928,23 @@ $response = $client-&gt;post(
                 'enjoy_practice_routines' =&gt; false,
                 'is_participated_in_competitions' =&gt; false,
                 'is_selected_to_represent' =&gt; false,
-                'competitions' =&gt; 'error',
-                'motivation' =&gt; 'commodi',
-                'achievement' =&gt; 'ut',
-                'admired_sportsperson' =&gt; 'nostrum',
-                'top_athlete_plans' =&gt; 'voluptatem',
-                'current_team' =&gt; 'quisquam',
+                'competitions' =&gt; 'enim',
+                'motivation' =&gt; 'sunt',
+                'achievement' =&gt; 'consequatur',
+                'admired_sportsperson' =&gt; 'eum',
+                'top_athlete_plans' =&gt; 'aut',
+                'current_team' =&gt; 'eum',
                 'date_joined_team' =&gt; $o[0],
-                'favourite_jersey_number' =&gt; 'voluptatibus',
-                'nickname' =&gt; 'ut',
-                'favourite_sports_team' =&gt; 'libero',
-                'why_like_team' =&gt; 'eius',
-                'no_of_teams_played_for' =&gt; 10,
-                'why_leave' =&gt; 'molestiae',
+                'favourite_jersey_number' =&gt; 'autem',
+                'nickname' =&gt; 'beatae',
+                'favourite_sports_team' =&gt; 'eveniet',
+                'why_like_team' =&gt; 'et',
+                'no_of_teams_played_for' =&gt; 20,
+                'why_leave' =&gt; 'est',
                 'can_improve_in_team' =&gt; false,
                 'is_like_coach_team' =&gt; false,
-                'positions_play' =&gt; 'facilis',
-                'preferred_foot' =&gt; 'earum',
+                'positions_play' =&gt; 'quisquam',
+                'preferred_foot' =&gt; 'dolores',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -874,23 +967,23 @@ let body = {
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "error",
-    "motivation": "commodi",
-    "achievement": "ut",
-    "admired_sportsperson": "nostrum",
-    "top_athlete_plans": "voluptatem",
-    "current_team": "quisquam",
+    "competitions": "enim",
+    "motivation": "sunt",
+    "achievement": "consequatur",
+    "admired_sportsperson": "eum",
+    "top_athlete_plans": "aut",
+    "current_team": "eum",
     "date_joined_team": {},
-    "favourite_jersey_number": "voluptatibus",
-    "nickname": "ut",
-    "favourite_sports_team": "libero",
-    "why_like_team": "eius",
-    "no_of_teams_played_for": 10,
-    "why_leave": "molestiae",
+    "favourite_jersey_number": "autem",
+    "nickname": "beatae",
+    "favourite_sports_team": "eveniet",
+    "why_like_team": "et",
+    "no_of_teams_played_for": 20,
+    "why_leave": "est",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "facilis",
-    "preferred_foot": "earum",
+    "positions_play": "quisquam",
+    "preferred_foot": "dolores",
     "created_at": {},
     "updated_at": {}
 }
@@ -1043,13 +1136,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/club_assesments/quia" \
+    -G "http://localhost/api/club_assesments/aut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/club_assesments/quia',
+    'http://localhost/api/club_assesments/aut',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1060,7 +1153,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/club_assesments/quia"
+    "http://localhost/api/club_assesments/aut"
 );
 
 let headers = {
@@ -1111,15 +1204,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/club_assesments/dolorem" \
+    "http://localhost/api/club_assesments/ab" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"debitis","motivation":"quae","achievement":"distinctio","admired_sportsperson":"ut","top_athlete_plans":"enim","current_team":"quod","date_joined_team":{},"favourite_jersey_number":"error","nickname":"quibusdam","favourite_sports_team":"neque","why_like_team":"pariatur","no_of_teams_played_for":18,"why_leave":"voluptas","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"quos","preferred_foot":"ab","created_at":{},"updated_at":{}}'
+    -d '{"enjoy_practice_routines":false,"is_participated_in_competitions":false,"is_selected_to_represent":false,"competitions":"voluptatem","motivation":"rerum","achievement":"ex","admired_sportsperson":"qui","top_athlete_plans":"quo","current_team":"quaerat","date_joined_team":{},"favourite_jersey_number":"officia","nickname":"ullam","favourite_sports_team":"sequi","why_like_team":"a","no_of_teams_played_for":19,"why_leave":"numquam","can_improve_in_team":false,"is_like_coach_team":false,"positions_play":"aut","preferred_foot":"quam","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/club_assesments/dolorem',
+    'http://localhost/api/club_assesments/ab',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1135,23 +1228,23 @@ $response = $client-&gt;put(
                 'enjoy_practice_routines' =&gt; false,
                 'is_participated_in_competitions' =&gt; false,
                 'is_selected_to_represent' =&gt; false,
-                'competitions' =&gt; 'debitis',
-                'motivation' =&gt; 'quae',
-                'achievement' =&gt; 'distinctio',
-                'admired_sportsperson' =&gt; 'ut',
-                'top_athlete_plans' =&gt; 'enim',
-                'current_team' =&gt; 'quod',
+                'competitions' =&gt; 'voluptatem',
+                'motivation' =&gt; 'rerum',
+                'achievement' =&gt; 'ex',
+                'admired_sportsperson' =&gt; 'qui',
+                'top_athlete_plans' =&gt; 'quo',
+                'current_team' =&gt; 'quaerat',
                 'date_joined_team' =&gt; $o[0],
-                'favourite_jersey_number' =&gt; 'error',
-                'nickname' =&gt; 'quibusdam',
-                'favourite_sports_team' =&gt; 'neque',
-                'why_like_team' =&gt; 'pariatur',
-                'no_of_teams_played_for' =&gt; 18,
-                'why_leave' =&gt; 'voluptas',
+                'favourite_jersey_number' =&gt; 'officia',
+                'nickname' =&gt; 'ullam',
+                'favourite_sports_team' =&gt; 'sequi',
+                'why_like_team' =&gt; 'a',
+                'no_of_teams_played_for' =&gt; 19,
+                'why_leave' =&gt; 'numquam',
                 'can_improve_in_team' =&gt; false,
                 'is_like_coach_team' =&gt; false,
-                'positions_play' =&gt; 'quos',
-                'preferred_foot' =&gt; 'ab',
+                'positions_play' =&gt; 'aut',
+                'preferred_foot' =&gt; 'quam',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -1162,7 +1255,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/club_assesments/dolorem"
+    "http://localhost/api/club_assesments/ab"
 );
 
 let headers = {
@@ -1174,23 +1267,23 @@ let body = {
     "enjoy_practice_routines": false,
     "is_participated_in_competitions": false,
     "is_selected_to_represent": false,
-    "competitions": "debitis",
-    "motivation": "quae",
-    "achievement": "distinctio",
-    "admired_sportsperson": "ut",
-    "top_athlete_plans": "enim",
-    "current_team": "quod",
+    "competitions": "voluptatem",
+    "motivation": "rerum",
+    "achievement": "ex",
+    "admired_sportsperson": "qui",
+    "top_athlete_plans": "quo",
+    "current_team": "quaerat",
     "date_joined_team": {},
-    "favourite_jersey_number": "error",
-    "nickname": "quibusdam",
-    "favourite_sports_team": "neque",
-    "why_like_team": "pariatur",
-    "no_of_teams_played_for": 18,
-    "why_leave": "voluptas",
+    "favourite_jersey_number": "officia",
+    "nickname": "ullam",
+    "favourite_sports_team": "sequi",
+    "why_like_team": "a",
+    "no_of_teams_played_for": 19,
+    "why_leave": "numquam",
     "can_improve_in_team": false,
     "is_like_coach_team": false,
-    "positions_play": "quos",
-    "preferred_foot": "ab",
+    "positions_play": "aut",
+    "preferred_foot": "quam",
     "created_at": {},
     "updated_at": {}
 }
@@ -1353,13 +1446,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/club_assesments/sunt" \
+    "http://localhost/api/club_assesments/iure" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/club_assesments/sunt',
+    'http://localhost/api/club_assesments/iure',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1370,7 +1463,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/club_assesments/sunt"
+    "http://localhost/api/club_assesments/iure"
 );
 
 let headers = {
@@ -1417,7 +1510,7 @@ fetch(url, {
     "http://localhost/api/coaches/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"et","email":"nihil","first_name":"repudiandae","middle_name":"quam","last_name":"minus","dob":{},"gender":"perspiciatis","coaching_age":"officiis","coaching_gender":"ut","sports":"quam","specialization":"sed","language":"eos","nationality":"aut","city_id":"velit","employment_type":"eum","team_club":"corporis"}'
+    -d '{"password":"fuga","email":"quas","first_name":"autem","middle_name":"autem","last_name":"odit","dob":{},"gender":"eligendi","coaching_age":"aspernatur","coaching_gender":"aut","sports":"illum","specialization":"veniam","language":"odit","nationality":"vel","city_id":"omnis","employment_type":"laborum","team_club":"aut"}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -1435,22 +1528,22 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'password' =&gt; 'et',
-                'email' =&gt; 'nihil',
-                'first_name' =&gt; 'repudiandae',
-                'middle_name' =&gt; 'quam',
-                'last_name' =&gt; 'minus',
+                'password' =&gt; 'fuga',
+                'email' =&gt; 'quas',
+                'first_name' =&gt; 'autem',
+                'middle_name' =&gt; 'autem',
+                'last_name' =&gt; 'odit',
                 'dob' =&gt; $o[0],
-                'gender' =&gt; 'perspiciatis',
-                'coaching_age' =&gt; 'officiis',
-                'coaching_gender' =&gt; 'ut',
-                'sports' =&gt; 'quam',
-                'specialization' =&gt; 'sed',
-                'language' =&gt; 'eos',
-                'nationality' =&gt; 'aut',
-                'city_id' =&gt; 'velit',
-                'employment_type' =&gt; 'eum',
-                'team_club' =&gt; 'corporis',
+                'gender' =&gt; 'eligendi',
+                'coaching_age' =&gt; 'aspernatur',
+                'coaching_gender' =&gt; 'aut',
+                'sports' =&gt; 'illum',
+                'specialization' =&gt; 'veniam',
+                'language' =&gt; 'odit',
+                'nationality' =&gt; 'vel',
+                'city_id' =&gt; 'omnis',
+                'employment_type' =&gt; 'laborum',
+                'team_club' =&gt; 'aut',
             ],
             []
         ),
@@ -1468,22 +1561,22 @@ let headers = {
 };
 
 let body = {
-    "password": "et",
-    "email": "nihil",
-    "first_name": "repudiandae",
-    "middle_name": "quam",
-    "last_name": "minus",
+    "password": "fuga",
+    "email": "quas",
+    "first_name": "autem",
+    "middle_name": "autem",
+    "last_name": "odit",
     "dob": {},
-    "gender": "perspiciatis",
-    "coaching_age": "officiis",
-    "coaching_gender": "ut",
-    "sports": "quam",
-    "specialization": "sed",
-    "language": "eos",
-    "nationality": "aut",
-    "city_id": "velit",
-    "employment_type": "eum",
-    "team_club": "corporis"
+    "gender": "eligendi",
+    "coaching_age": "aspernatur",
+    "coaching_gender": "aut",
+    "sports": "illum",
+    "specialization": "veniam",
+    "language": "odit",
+    "nationality": "vel",
+    "city_id": "omnis",
+    "employment_type": "laborum",
+    "team_club": "aut"
 }
 
 fetch(url, {
@@ -1664,7 +1757,7 @@ fetch(url, {
     "http://localhost/api/coaches" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"odit","email":"rem","first_name":"quidem","middle_name":"quis","last_name":"doloribus","dob":{},"gender":"quasi","coaching_age":"commodi","coaching_gender":"assumenda","sports":"culpa","specialization":"exercitationem","language":"est","nationality":"est","city_id":"dolorum","employment_type":"voluptas","team_club":"labore"}'
+    -d '{"password":"dolores","email":"possimus","first_name":"consequatur","middle_name":"ut","last_name":"ipsum","dob":{},"gender":"ad","coaching_age":"facilis","coaching_gender":"earum","sports":"praesentium","specialization":"et","language":"vel","nationality":"ipsam","city_id":"voluptas","employment_type":"voluptatem","team_club":"adipisci"}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -1682,22 +1775,22 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'password' =&gt; 'odit',
-                'email' =&gt; 'rem',
-                'first_name' =&gt; 'quidem',
-                'middle_name' =&gt; 'quis',
-                'last_name' =&gt; 'doloribus',
+                'password' =&gt; 'dolores',
+                'email' =&gt; 'possimus',
+                'first_name' =&gt; 'consequatur',
+                'middle_name' =&gt; 'ut',
+                'last_name' =&gt; 'ipsum',
                 'dob' =&gt; $o[0],
-                'gender' =&gt; 'quasi',
-                'coaching_age' =&gt; 'commodi',
-                'coaching_gender' =&gt; 'assumenda',
-                'sports' =&gt; 'culpa',
-                'specialization' =&gt; 'exercitationem',
-                'language' =&gt; 'est',
-                'nationality' =&gt; 'est',
-                'city_id' =&gt; 'dolorum',
-                'employment_type' =&gt; 'voluptas',
-                'team_club' =&gt; 'labore',
+                'gender' =&gt; 'ad',
+                'coaching_age' =&gt; 'facilis',
+                'coaching_gender' =&gt; 'earum',
+                'sports' =&gt; 'praesentium',
+                'specialization' =&gt; 'et',
+                'language' =&gt; 'vel',
+                'nationality' =&gt; 'ipsam',
+                'city_id' =&gt; 'voluptas',
+                'employment_type' =&gt; 'voluptatem',
+                'team_club' =&gt; 'adipisci',
             ],
             []
         ),
@@ -1715,22 +1808,22 @@ let headers = {
 };
 
 let body = {
-    "password": "odit",
-    "email": "rem",
-    "first_name": "quidem",
-    "middle_name": "quis",
-    "last_name": "doloribus",
+    "password": "dolores",
+    "email": "possimus",
+    "first_name": "consequatur",
+    "middle_name": "ut",
+    "last_name": "ipsum",
     "dob": {},
-    "gender": "quasi",
-    "coaching_age": "commodi",
-    "coaching_gender": "assumenda",
-    "sports": "culpa",
-    "specialization": "exercitationem",
-    "language": "est",
-    "nationality": "est",
-    "city_id": "dolorum",
-    "employment_type": "voluptas",
-    "team_club": "labore"
+    "gender": "ad",
+    "coaching_age": "facilis",
+    "coaching_gender": "earum",
+    "sports": "praesentium",
+    "specialization": "et",
+    "language": "vel",
+    "nationality": "ipsam",
+    "city_id": "voluptas",
+    "employment_type": "voluptatem",
+    "team_club": "adipisci"
 }
 
 fetch(url, {
@@ -1846,13 +1939,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/coaches/corporis" \
+    -G "http://localhost/api/coaches/eveniet" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/coaches/corporis',
+    'http://localhost/api/coaches/eveniet',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1863,7 +1956,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/coaches/corporis"
+    "http://localhost/api/coaches/eveniet"
 );
 
 let headers = {
@@ -1914,15 +2007,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/coaches/vel" \
+    "http://localhost/api/coaches/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"delectus","qualifications":"harum","user_id":15,"email":"omnis","first_name":"quo","middle_name":"qui","last_name":"vitae","dob":{},"gender":"itaque","coaching_age":"beatae","coaching_gender":"enim","sports":"at","specialization":"tempora","language":"corporis","nationality":"architecto","city_id":"sint","employment_type":"possimus","team_club":"consequatur","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"dignissimos","qualifications":"ea","user_id":15,"email":"facilis","first_name":"unde","middle_name":"id","last_name":"veniam","dob":{},"gender":"et","coaching_age":"id","coaching_gender":"nobis","sports":"libero","specialization":"quam","language":"iste","nationality":"molestiae","city_id":"sequi","employment_type":"enim","team_club":"quae","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/coaches/vel',
+    'http://localhost/api/coaches/voluptas',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1935,24 +2028,24 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'profile_url' =&gt; 'delectus',
-                'qualifications' =&gt; 'harum',
+                'profile_url' =&gt; 'dignissimos',
+                'qualifications' =&gt; 'ea',
                 'user_id' =&gt; 15,
-                'email' =&gt; 'omnis',
-                'first_name' =&gt; 'quo',
-                'middle_name' =&gt; 'qui',
-                'last_name' =&gt; 'vitae',
+                'email' =&gt; 'facilis',
+                'first_name' =&gt; 'unde',
+                'middle_name' =&gt; 'id',
+                'last_name' =&gt; 'veniam',
                 'dob' =&gt; $o[0],
-                'gender' =&gt; 'itaque',
-                'coaching_age' =&gt; 'beatae',
-                'coaching_gender' =&gt; 'enim',
-                'sports' =&gt; 'at',
-                'specialization' =&gt; 'tempora',
-                'language' =&gt; 'corporis',
-                'nationality' =&gt; 'architecto',
-                'city_id' =&gt; 'sint',
-                'employment_type' =&gt; 'possimus',
-                'team_club' =&gt; 'consequatur',
+                'gender' =&gt; 'et',
+                'coaching_age' =&gt; 'id',
+                'coaching_gender' =&gt; 'nobis',
+                'sports' =&gt; 'libero',
+                'specialization' =&gt; 'quam',
+                'language' =&gt; 'iste',
+                'nationality' =&gt; 'molestiae',
+                'city_id' =&gt; 'sequi',
+                'employment_type' =&gt; 'enim',
+                'team_club' =&gt; 'quae',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -1963,7 +2056,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/coaches/vel"
+    "http://localhost/api/coaches/voluptas"
 );
 
 let headers = {
@@ -1972,24 +2065,24 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "delectus",
-    "qualifications": "harum",
+    "profile_url": "dignissimos",
+    "qualifications": "ea",
     "user_id": 15,
-    "email": "omnis",
-    "first_name": "quo",
-    "middle_name": "qui",
-    "last_name": "vitae",
+    "email": "facilis",
+    "first_name": "unde",
+    "middle_name": "id",
+    "last_name": "veniam",
     "dob": {},
-    "gender": "itaque",
-    "coaching_age": "beatae",
-    "coaching_gender": "enim",
-    "sports": "at",
-    "specialization": "tempora",
-    "language": "corporis",
-    "nationality": "architecto",
-    "city_id": "sint",
-    "employment_type": "possimus",
-    "team_club": "consequatur",
+    "gender": "et",
+    "coaching_age": "id",
+    "coaching_gender": "nobis",
+    "sports": "libero",
+    "specialization": "quam",
+    "language": "iste",
+    "nationality": "molestiae",
+    "city_id": "sequi",
+    "employment_type": "enim",
+    "team_club": "quae",
     "created_at": {},
     "updated_at": {}
 }
@@ -2137,13 +2230,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/coaches/dolore" \
+    "http://localhost/api/coaches/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/coaches/dolore',
+    'http://localhost/api/coaches/quia',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -2154,7 +2247,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/coaches/dolore"
+    "http://localhost/api/coaches/quia"
 );
 
 let headers = {
@@ -3741,7 +3834,7 @@ fetch(url, {
     "http://localhost/api/countries" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"sortname":"omnis","name":"suscipit","phonecode":17}'
+    -d '{"sortname":"et","name":"impedit","phonecode":16}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -3753,9 +3846,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'sortname' =&gt; 'omnis',
-            'name' =&gt; 'suscipit',
-            'phonecode' =&gt; 17,
+            'sortname' =&gt; 'et',
+            'name' =&gt; 'impedit',
+            'phonecode' =&gt; 16,
         ],
     ]
 );
@@ -3771,9 +3864,9 @@ let headers = {
 };
 
 let body = {
-    "sortname": "omnis",
-    "name": "suscipit",
-    "phonecode": 17
+    "sortname": "et",
+    "name": "impedit",
+    "phonecode": 16
 }
 
 fetch(url, {
@@ -3824,13 +3917,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/countries/architecto" \
+    -G "http://localhost/api/countries/atque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/countries/architecto',
+    'http://localhost/api/countries/atque',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -3841,7 +3934,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/countries/architecto"
+    "http://localhost/api/countries/atque"
 );
 
 let headers = {
@@ -3892,31 +3985,31 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/countries/totam" \
+    "http://localhost/api/countries/necessitatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"sortname":"aut","name":"mollitia","phonecode":8}'
+    -d '{"sortname":"qui","name":"dolorem","phonecode":12}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/countries/totam',
+    'http://localhost/api/countries/necessitatibus',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'sortname' =&gt; 'aut',
-            'name' =&gt; 'mollitia',
-            'phonecode' =&gt; 8,
+            'sortname' =&gt; 'qui',
+            'name' =&gt; 'dolorem',
+            'phonecode' =&gt; 12,
         ],
     ]
 );
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/countries/totam"
+    "http://localhost/api/countries/necessitatibus"
 );
 
 let headers = {
@@ -3925,9 +4018,9 @@ let headers = {
 };
 
 let body = {
-    "sortname": "aut",
-    "name": "mollitia",
-    "phonecode": 8
+    "sortname": "qui",
+    "name": "dolorem",
+    "phonecode": 12
 }
 
 fetch(url, {
@@ -3988,13 +4081,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/countries/amet" \
+    "http://localhost/api/countries/nam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/countries/amet',
+    'http://localhost/api/countries/nam',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -4005,7 +4098,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/countries/amet"
+    "http://localhost/api/countries/nam"
 );
 
 let headers = {
@@ -4332,13 +4425,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/oauth/tokens/eos" \
+    "http://localhost/oauth/tokens/esse" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/oauth/tokens/eos',
+    'http://localhost/oauth/tokens/esse',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -4349,7 +4442,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/tokens/eos"
+    "http://localhost/oauth/tokens/esse"
 );
 
 let headers = {
@@ -4561,13 +4654,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/oauth/clients/at" \
+    "http://localhost/oauth/clients/tenetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/oauth/clients/at',
+    'http://localhost/oauth/clients/tenetur',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -4578,7 +4671,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/clients/at"
+    "http://localhost/oauth/clients/tenetur"
 );
 
 let headers = {
@@ -4621,13 +4714,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/oauth/clients/aut" \
+    "http://localhost/oauth/clients/qui" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/oauth/clients/aut',
+    'http://localhost/oauth/clients/qui',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -4638,7 +4731,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/clients/aut"
+    "http://localhost/oauth/clients/qui"
 );
 
 let headers = {
@@ -4857,13 +4950,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/oauth/personal-access-tokens/soluta" \
+    "http://localhost/oauth/personal-access-tokens/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/oauth/personal-access-tokens/soluta',
+    'http://localhost/oauth/personal-access-tokens/nihil',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -4874,7 +4967,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/oauth/personal-access-tokens/soluta"
+    "http://localhost/oauth/personal-access-tokens/nihil"
 );
 
 let headers = {
@@ -4983,7 +5076,7 @@ fetch(url, {
     "http://localhost/api/health_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"blood_group":"assumenda","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"ut","long_term_injury":"accusamus","treatment_type":"nesciunt","current_health_injury":"esse","is_personal_health_challenge":false,"personal_health_challenge":"harum","injury_seriousness":"est","medical_treatment":"libero","injury_location":"et","genotype":"non","created_at":{},"updated_at":{}}'
+    -d '{"blood_group":"voluptas","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"qui","long_term_injury":"aliquam","treatment_type":"ad","current_health_injury":"nihil","is_personal_health_challenge":false,"personal_health_challenge":"ipsum","injury_seriousness":"non","medical_treatment":"nulla","injury_location":"modi","genotype":"ipsam","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -5001,21 +5094,21 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'blood_group' =&gt; 'assumenda',
+                'blood_group' =&gt; 'voluptas',
                 'is_hereditary_issue' =&gt; false,
                 'is_current_health_injury' =&gt; false,
                 'is_receiving_treatment' =&gt; false,
                 'is_long_term_injury' =&gt; false,
-                'hereditary_issue' =&gt; 'ut',
-                'long_term_injury' =&gt; 'accusamus',
-                'treatment_type' =&gt; 'nesciunt',
-                'current_health_injury' =&gt; 'esse',
+                'hereditary_issue' =&gt; 'qui',
+                'long_term_injury' =&gt; 'aliquam',
+                'treatment_type' =&gt; 'ad',
+                'current_health_injury' =&gt; 'nihil',
                 'is_personal_health_challenge' =&gt; false,
-                'personal_health_challenge' =&gt; 'harum',
-                'injury_seriousness' =&gt; 'est',
-                'medical_treatment' =&gt; 'libero',
-                'injury_location' =&gt; 'et',
-                'genotype' =&gt; 'non',
+                'personal_health_challenge' =&gt; 'ipsum',
+                'injury_seriousness' =&gt; 'non',
+                'medical_treatment' =&gt; 'nulla',
+                'injury_location' =&gt; 'modi',
+                'genotype' =&gt; 'ipsam',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -5035,21 +5128,21 @@ let headers = {
 };
 
 let body = {
-    "blood_group": "assumenda",
+    "blood_group": "voluptas",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "ut",
-    "long_term_injury": "accusamus",
-    "treatment_type": "nesciunt",
-    "current_health_injury": "esse",
+    "hereditary_issue": "qui",
+    "long_term_injury": "aliquam",
+    "treatment_type": "ad",
+    "current_health_injury": "nihil",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "harum",
-    "injury_seriousness": "est",
-    "medical_treatment": "libero",
-    "injury_location": "et",
-    "genotype": "non",
+    "personal_health_challenge": "ipsum",
+    "injury_seriousness": "non",
+    "medical_treatment": "nulla",
+    "injury_location": "modi",
+    "genotype": "ipsam",
     "created_at": {},
     "updated_at": {}
 }
@@ -5177,13 +5270,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/health_predictors/delectus" \
+    -G "http://localhost/api/health_predictors/corrupti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/health_predictors/delectus',
+    'http://localhost/api/health_predictors/corrupti',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -5194,7 +5287,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/health_predictors/delectus"
+    "http://localhost/api/health_predictors/corrupti"
 );
 
 let headers = {
@@ -5245,15 +5338,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/health_predictors/esse" \
+    "http://localhost/api/health_predictors/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":14,"blood_group":"exercitationem","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"eaque","long_term_injury":"eum","treatment_type":"ipsum","current_health_injury":"aut","is_personal_health_challenge":false,"personal_health_challenge":"provident","injury_seriousness":"quasi","medical_treatment":"sed","injury_location":"delectus","genotype":"dolor","created_at":{},"updated_at":{}}'
+    -d '{"user_id":19,"blood_group":"explicabo","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"atque","long_term_injury":"omnis","treatment_type":"a","current_health_injury":"culpa","is_personal_health_challenge":false,"personal_health_challenge":"dolore","injury_seriousness":"amet","medical_treatment":"perspiciatis","injury_location":"ullam","genotype":"magni","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/health_predictors/esse',
+    'http://localhost/api/health_predictors/quia',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -5266,22 +5359,22 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'user_id' =&gt; 14,
-                'blood_group' =&gt; 'exercitationem',
+                'user_id' =&gt; 19,
+                'blood_group' =&gt; 'explicabo',
                 'is_hereditary_issue' =&gt; false,
                 'is_current_health_injury' =&gt; false,
                 'is_receiving_treatment' =&gt; false,
                 'is_long_term_injury' =&gt; false,
-                'hereditary_issue' =&gt; 'eaque',
-                'long_term_injury' =&gt; 'eum',
-                'treatment_type' =&gt; 'ipsum',
-                'current_health_injury' =&gt; 'aut',
+                'hereditary_issue' =&gt; 'atque',
+                'long_term_injury' =&gt; 'omnis',
+                'treatment_type' =&gt; 'a',
+                'current_health_injury' =&gt; 'culpa',
                 'is_personal_health_challenge' =&gt; false,
-                'personal_health_challenge' =&gt; 'provident',
-                'injury_seriousness' =&gt; 'quasi',
-                'medical_treatment' =&gt; 'sed',
-                'injury_location' =&gt; 'delectus',
-                'genotype' =&gt; 'dolor',
+                'personal_health_challenge' =&gt; 'dolore',
+                'injury_seriousness' =&gt; 'amet',
+                'medical_treatment' =&gt; 'perspiciatis',
+                'injury_location' =&gt; 'ullam',
+                'genotype' =&gt; 'magni',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -5292,7 +5385,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/health_predictors/esse"
+    "http://localhost/api/health_predictors/quia"
 );
 
 let headers = {
@@ -5301,22 +5394,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 14,
-    "blood_group": "exercitationem",
+    "user_id": 19,
+    "blood_group": "explicabo",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "eaque",
-    "long_term_injury": "eum",
-    "treatment_type": "ipsum",
-    "current_health_injury": "aut",
+    "hereditary_issue": "atque",
+    "long_term_injury": "omnis",
+    "treatment_type": "a",
+    "current_health_injury": "culpa",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "provident",
-    "injury_seriousness": "quasi",
-    "medical_treatment": "sed",
-    "injury_location": "delectus",
-    "genotype": "dolor",
+    "personal_health_challenge": "dolore",
+    "injury_seriousness": "amet",
+    "medical_treatment": "perspiciatis",
+    "injury_location": "ullam",
+    "genotype": "magni",
     "created_at": {},
     "updated_at": {}
 }
@@ -5459,13 +5552,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/health_predictors/natus" \
+    "http://localhost/api/health_predictors/est" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/health_predictors/natus',
+    'http://localhost/api/health_predictors/est',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -5476,7 +5569,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/health_predictors/natus"
+    "http://localhost/api/health_predictors/est"
 );
 
 let headers = {
@@ -5585,7 +5678,7 @@ fetch(url, {
     "http://localhost/api/personal_details" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":10,"first_name":"est","marital_status":"delectus","mother_maiden_name":"voluptatem","last_name":"ipsa","height":"commodi","body_weight":"sed","phone":"ratione","sm_handle":"magni","highest_education":"maiores","place_of_birth":"laboriosam","school":"aut","career_preference":"dolores","is_still_schooling":false,"contact_address":"magnam","dob":{},"country_id":13,"state_of_origin":7,"zipcode":9,"created_at":{},"updated_at":{}}'
+    -d '{"user_id":5,"first_name":"accusamus","marital_status":"necessitatibus","mother_maiden_name":"beatae","last_name":"architecto","height":"consectetur","body_weight":"quam","phone":"assumenda","sm_handle":"deserunt","highest_education":"magni","place_of_birth":"et","school":"qui","career_preference":"temporibus","is_still_schooling":false,"contact_address":"commodi","dob":{},"country_id":11,"state_of_origin":7,"zipcode":20,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -5603,25 +5696,25 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'user_id' =&gt; 10,
-                'first_name' =&gt; 'est',
-                'marital_status' =&gt; 'delectus',
-                'mother_maiden_name' =&gt; 'voluptatem',
-                'last_name' =&gt; 'ipsa',
-                'height' =&gt; 'commodi',
-                'body_weight' =&gt; 'sed',
-                'phone' =&gt; 'ratione',
-                'sm_handle' =&gt; 'magni',
-                'highest_education' =&gt; 'maiores',
-                'place_of_birth' =&gt; 'laboriosam',
-                'school' =&gt; 'aut',
-                'career_preference' =&gt; 'dolores',
+                'user_id' =&gt; 5,
+                'first_name' =&gt; 'accusamus',
+                'marital_status' =&gt; 'necessitatibus',
+                'mother_maiden_name' =&gt; 'beatae',
+                'last_name' =&gt; 'architecto',
+                'height' =&gt; 'consectetur',
+                'body_weight' =&gt; 'quam',
+                'phone' =&gt; 'assumenda',
+                'sm_handle' =&gt; 'deserunt',
+                'highest_education' =&gt; 'magni',
+                'place_of_birth' =&gt; 'et',
+                'school' =&gt; 'qui',
+                'career_preference' =&gt; 'temporibus',
                 'is_still_schooling' =&gt; false,
-                'contact_address' =&gt; 'magnam',
+                'contact_address' =&gt; 'commodi',
                 'dob' =&gt; $o[0],
-                'country_id' =&gt; 13,
+                'country_id' =&gt; 11,
                 'state_of_origin' =&gt; 7,
-                'zipcode' =&gt; 9,
+                'zipcode' =&gt; 20,
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -5641,25 +5734,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 10,
-    "first_name": "est",
-    "marital_status": "delectus",
-    "mother_maiden_name": "voluptatem",
-    "last_name": "ipsa",
-    "height": "commodi",
-    "body_weight": "sed",
-    "phone": "ratione",
-    "sm_handle": "magni",
-    "highest_education": "maiores",
-    "place_of_birth": "laboriosam",
-    "school": "aut",
-    "career_preference": "dolores",
+    "user_id": 5,
+    "first_name": "accusamus",
+    "marital_status": "necessitatibus",
+    "mother_maiden_name": "beatae",
+    "last_name": "architecto",
+    "height": "consectetur",
+    "body_weight": "quam",
+    "phone": "assumenda",
+    "sm_handle": "deserunt",
+    "highest_education": "magni",
+    "place_of_birth": "et",
+    "school": "qui",
+    "career_preference": "temporibus",
     "is_still_schooling": false,
-    "contact_address": "magnam",
+    "contact_address": "commodi",
     "dob": {},
-    "country_id": 13,
+    "country_id": 11,
     "state_of_origin": 7,
-    "zipcode": 9,
+    "zipcode": 20,
     "created_at": {},
     "updated_at": {}
 }
@@ -5803,13 +5896,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/personal_details/aut" \
+    -G "http://localhost/api/personal_details/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/personal_details/aut',
+    'http://localhost/api/personal_details/et',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -5820,7 +5913,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/personal_details/aut"
+    "http://localhost/api/personal_details/et"
 );
 
 let headers = {
@@ -5871,15 +5964,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/personal_details/vel" \
+    "http://localhost/api/personal_details/omnis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"voluptas","marital_status":"nisi","mother_maiden_name":"enim","last_name":"voluptates","height":"nostrum","body_weight":"quo","phone":"aspernatur","sm_handle":"et","highest_education":"officiis","place_of_birth":"nesciunt","school":"occaecati","career_preference":"provident","is_still_schooling":false,"contact_address":"sint","dob":{},"country_id":12,"state_of_origin":1,"zipcode":13,"created_at":{},"updated_at":{}}'
+    -d '{"first_name":"qui","marital_status":"accusantium","mother_maiden_name":"non","last_name":"eligendi","height":"quia","body_weight":"aut","phone":"et","sm_handle":"occaecati","highest_education":"quaerat","place_of_birth":"dicta","school":"explicabo","career_preference":"iusto","is_still_schooling":false,"contact_address":"sint","dob":{},"country_id":4,"state_of_origin":9,"zipcode":18,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/personal_details/vel',
+    'http://localhost/api/personal_details/omnis',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -5892,24 +5985,24 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'first_name' =&gt; 'voluptas',
-                'marital_status' =&gt; 'nisi',
-                'mother_maiden_name' =&gt; 'enim',
-                'last_name' =&gt; 'voluptates',
-                'height' =&gt; 'nostrum',
-                'body_weight' =&gt; 'quo',
-                'phone' =&gt; 'aspernatur',
-                'sm_handle' =&gt; 'et',
-                'highest_education' =&gt; 'officiis',
-                'place_of_birth' =&gt; 'nesciunt',
-                'school' =&gt; 'occaecati',
-                'career_preference' =&gt; 'provident',
+                'first_name' =&gt; 'qui',
+                'marital_status' =&gt; 'accusantium',
+                'mother_maiden_name' =&gt; 'non',
+                'last_name' =&gt; 'eligendi',
+                'height' =&gt; 'quia',
+                'body_weight' =&gt; 'aut',
+                'phone' =&gt; 'et',
+                'sm_handle' =&gt; 'occaecati',
+                'highest_education' =&gt; 'quaerat',
+                'place_of_birth' =&gt; 'dicta',
+                'school' =&gt; 'explicabo',
+                'career_preference' =&gt; 'iusto',
                 'is_still_schooling' =&gt; false,
                 'contact_address' =&gt; 'sint',
                 'dob' =&gt; $o[0],
-                'country_id' =&gt; 12,
-                'state_of_origin' =&gt; 1,
-                'zipcode' =&gt; 13,
+                'country_id' =&gt; 4,
+                'state_of_origin' =&gt; 9,
+                'zipcode' =&gt; 18,
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -5920,7 +6013,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/personal_details/vel"
+    "http://localhost/api/personal_details/omnis"
 );
 
 let headers = {
@@ -5929,24 +6022,24 @@ let headers = {
 };
 
 let body = {
-    "first_name": "voluptas",
-    "marital_status": "nisi",
-    "mother_maiden_name": "enim",
-    "last_name": "voluptates",
-    "height": "nostrum",
-    "body_weight": "quo",
-    "phone": "aspernatur",
-    "sm_handle": "et",
-    "highest_education": "officiis",
-    "place_of_birth": "nesciunt",
-    "school": "occaecati",
-    "career_preference": "provident",
+    "first_name": "qui",
+    "marital_status": "accusantium",
+    "mother_maiden_name": "non",
+    "last_name": "eligendi",
+    "height": "quia",
+    "body_weight": "aut",
+    "phone": "et",
+    "sm_handle": "occaecati",
+    "highest_education": "quaerat",
+    "place_of_birth": "dicta",
+    "school": "explicabo",
+    "career_preference": "iusto",
     "is_still_schooling": false,
     "contact_address": "sint",
     "dob": {},
-    "country_id": 12,
-    "state_of_origin": 1,
-    "zipcode": 13,
+    "country_id": 4,
+    "state_of_origin": 9,
+    "zipcode": 18,
     "created_at": {},
     "updated_at": {}
 }
@@ -6095,13 +6188,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/personal_details/autem" \
+    "http://localhost/api/personal_details/nemo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/personal_details/autem',
+    'http://localhost/api/personal_details/nemo',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -6112,7 +6205,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/personal_details/autem"
+    "http://localhost/api/personal_details/nemo"
 );
 
 let headers = {
@@ -6221,7 +6314,7 @@ fetch(url, {
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":17,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"ut","challenges":"rerum","greatest_motivation":"quidem","strength":"minima","weakness":"facere","can_overcome_challenges":false,"time_start_sport":"ducimus","rating_sports":"est","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":7,"hours_practice_in_week":4,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"magni","challenges":"voluptas","greatest_motivation":"quia","strength":"facilis","weakness":"enim","can_overcome_challenges":false,"time_start_sport":"sed","rating_sports":"voluptatem","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -6239,18 +6332,18 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'time_practice_in_week' =&gt; 17,
-                'hours_practice_in_week' =&gt; 19,
+                'time_practice_in_week' =&gt; 7,
+                'hours_practice_in_week' =&gt; 4,
                 'is_parent_in_support' =&gt; false,
                 'is_team_player' =&gt; false,
-                'parent_in_support_reason' =&gt; 'ut',
-                'challenges' =&gt; 'rerum',
-                'greatest_motivation' =&gt; 'quidem',
-                'strength' =&gt; 'minima',
-                'weakness' =&gt; 'facere',
+                'parent_in_support_reason' =&gt; 'magni',
+                'challenges' =&gt; 'voluptas',
+                'greatest_motivation' =&gt; 'quia',
+                'strength' =&gt; 'facilis',
+                'weakness' =&gt; 'enim',
                 'can_overcome_challenges' =&gt; false,
-                'time_start_sport' =&gt; 'ducimus',
-                'rating_sports' =&gt; 'est',
+                'time_start_sport' =&gt; 'sed',
+                'rating_sports' =&gt; 'voluptatem',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -6270,18 +6363,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 17,
-    "hours_practice_in_week": 19,
+    "time_practice_in_week": 7,
+    "hours_practice_in_week": 4,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "ut",
-    "challenges": "rerum",
-    "greatest_motivation": "quidem",
-    "strength": "minima",
-    "weakness": "facere",
+    "parent_in_support_reason": "magni",
+    "challenges": "voluptas",
+    "greatest_motivation": "quia",
+    "strength": "facilis",
+    "weakness": "enim",
     "can_overcome_challenges": false,
-    "time_start_sport": "ducimus",
-    "rating_sports": "est",
+    "time_start_sport": "sed",
+    "rating_sports": "voluptatem",
     "created_at": {},
     "updated_at": {}
 }
@@ -6392,13 +6485,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/psych_predictors/et" \
+    -G "http://localhost/api/psych_predictors/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/psych_predictors/et',
+    'http://localhost/api/psych_predictors/voluptas',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -6409,7 +6502,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/psych_predictors/et"
+    "http://localhost/api/psych_predictors/voluptas"
 );
 
 let headers = {
@@ -6460,15 +6553,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/psych_predictors/cupiditate" \
+    "http://localhost/api/psych_predictors/deleniti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":15,"hours_practice_in_week":4,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"hic","challenges":"quis","greatest_motivation":"eligendi","strength":"excepturi","weakness":"voluptatem","can_overcome_challenges":false,"time_start_sport":"labore","rating_sports":"rem","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":20,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"est","challenges":"laborum","greatest_motivation":"dolor","strength":"laudantium","weakness":"necessitatibus","can_overcome_challenges":false,"time_start_sport":"et","rating_sports":"inventore","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/psych_predictors/cupiditate',
+    'http://localhost/api/psych_predictors/deleniti',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -6481,18 +6574,18 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'time_practice_in_week' =&gt; 15,
-                'hours_practice_in_week' =&gt; 4,
+                'time_practice_in_week' =&gt; 20,
+                'hours_practice_in_week' =&gt; 19,
                 'is_parent_in_support' =&gt; false,
                 'is_team_player' =&gt; false,
-                'parent_in_support_reason' =&gt; 'hic',
-                'challenges' =&gt; 'quis',
-                'greatest_motivation' =&gt; 'eligendi',
-                'strength' =&gt; 'excepturi',
-                'weakness' =&gt; 'voluptatem',
+                'parent_in_support_reason' =&gt; 'est',
+                'challenges' =&gt; 'laborum',
+                'greatest_motivation' =&gt; 'dolor',
+                'strength' =&gt; 'laudantium',
+                'weakness' =&gt; 'necessitatibus',
                 'can_overcome_challenges' =&gt; false,
-                'time_start_sport' =&gt; 'labore',
-                'rating_sports' =&gt; 'rem',
+                'time_start_sport' =&gt; 'et',
+                'rating_sports' =&gt; 'inventore',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -6503,7 +6596,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/psych_predictors/cupiditate"
+    "http://localhost/api/psych_predictors/deleniti"
 );
 
 let headers = {
@@ -6512,18 +6605,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 15,
-    "hours_practice_in_week": 4,
+    "time_practice_in_week": 20,
+    "hours_practice_in_week": 19,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "hic",
-    "challenges": "quis",
-    "greatest_motivation": "eligendi",
-    "strength": "excepturi",
-    "weakness": "voluptatem",
+    "parent_in_support_reason": "est",
+    "challenges": "laborum",
+    "greatest_motivation": "dolor",
+    "strength": "laudantium",
+    "weakness": "necessitatibus",
     "can_overcome_challenges": false,
-    "time_start_sport": "labore",
-    "rating_sports": "rem",
+    "time_start_sport": "et",
+    "rating_sports": "inventore",
     "created_at": {},
     "updated_at": {}
 }
@@ -6644,13 +6737,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/psych_predictors/ab" \
+    "http://localhost/api/psych_predictors/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/psych_predictors/ab',
+    'http://localhost/api/psych_predictors/sint',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -6661,7 +6754,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/psych_predictors/ab"
+    "http://localhost/api/psych_predictors/sint"
 );
 
 let headers = {
@@ -6770,7 +6863,7 @@ fetch(url, {
     "http://localhost/api/skill_reports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"speed":"illo","passing":"illum","shooting":"maxime","dribbling":"amet","heading":"perferendis","ball_control":"rerum","fitness":"voluptatem","movement":"et","awareness":"accusantium","decisions":"minima","workrate":"reiciendis","strength":"aliquam","crossing":"consequatur","finishing":"corrupti","positioning":"iure","anticipation":"optio","total":"et","overall_grade":"fugit","created_at":{},"updated_at":{}}'
+    -d '{"speed":"officia","passing":"qui","shooting":"natus","dribbling":"facere","heading":"perferendis","ball_control":"alias","fitness":"sed","movement":"ut","awareness":"aperiam","decisions":"rerum","workrate":"pariatur","strength":"nisi","crossing":"velit","finishing":"quidem","positioning":"reprehenderit","anticipation":"et","total":"mollitia","overall_grade":"minima","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -6788,24 +6881,24 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'speed' =&gt; 'illo',
-                'passing' =&gt; 'illum',
-                'shooting' =&gt; 'maxime',
-                'dribbling' =&gt; 'amet',
+                'speed' =&gt; 'officia',
+                'passing' =&gt; 'qui',
+                'shooting' =&gt; 'natus',
+                'dribbling' =&gt; 'facere',
                 'heading' =&gt; 'perferendis',
-                'ball_control' =&gt; 'rerum',
-                'fitness' =&gt; 'voluptatem',
-                'movement' =&gt; 'et',
-                'awareness' =&gt; 'accusantium',
-                'decisions' =&gt; 'minima',
-                'workrate' =&gt; 'reiciendis',
-                'strength' =&gt; 'aliquam',
-                'crossing' =&gt; 'consequatur',
-                'finishing' =&gt; 'corrupti',
-                'positioning' =&gt; 'iure',
-                'anticipation' =&gt; 'optio',
-                'total' =&gt; 'et',
-                'overall_grade' =&gt; 'fugit',
+                'ball_control' =&gt; 'alias',
+                'fitness' =&gt; 'sed',
+                'movement' =&gt; 'ut',
+                'awareness' =&gt; 'aperiam',
+                'decisions' =&gt; 'rerum',
+                'workrate' =&gt; 'pariatur',
+                'strength' =&gt; 'nisi',
+                'crossing' =&gt; 'velit',
+                'finishing' =&gt; 'quidem',
+                'positioning' =&gt; 'reprehenderit',
+                'anticipation' =&gt; 'et',
+                'total' =&gt; 'mollitia',
+                'overall_grade' =&gt; 'minima',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -6825,24 +6918,24 @@ let headers = {
 };
 
 let body = {
-    "speed": "illo",
-    "passing": "illum",
-    "shooting": "maxime",
-    "dribbling": "amet",
+    "speed": "officia",
+    "passing": "qui",
+    "shooting": "natus",
+    "dribbling": "facere",
     "heading": "perferendis",
-    "ball_control": "rerum",
-    "fitness": "voluptatem",
-    "movement": "et",
-    "awareness": "accusantium",
-    "decisions": "minima",
-    "workrate": "reiciendis",
-    "strength": "aliquam",
-    "crossing": "consequatur",
-    "finishing": "corrupti",
-    "positioning": "iure",
-    "anticipation": "optio",
-    "total": "et",
-    "overall_grade": "fugit",
+    "ball_control": "alias",
+    "fitness": "sed",
+    "movement": "ut",
+    "awareness": "aperiam",
+    "decisions": "rerum",
+    "workrate": "pariatur",
+    "strength": "nisi",
+    "crossing": "velit",
+    "finishing": "quidem",
+    "positioning": "reprehenderit",
+    "anticipation": "et",
+    "total": "mollitia",
+    "overall_grade": "minima",
     "created_at": {},
     "updated_at": {}
 }
@@ -6980,13 +7073,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/skill_reports/voluptas" \
+    -G "http://localhost/api/skill_reports/officiis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/skill_reports/voluptas',
+    'http://localhost/api/skill_reports/officiis',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -6997,7 +7090,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_reports/voluptas"
+    "http://localhost/api/skill_reports/officiis"
 );
 
 let headers = {
@@ -7048,15 +7141,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/skill_reports/nemo" \
+    "http://localhost/api/skill_reports/inventore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":20,"speed":"dignissimos","passing":"cupiditate","shooting":"consequatur","dribbling":"exercitationem","heading":"delectus","ball_control":"soluta","fitness":"maxime","movement":"vel","awareness":"odio","decisions":"dolor","workrate":"harum","strength":"minus","crossing":"soluta","finishing":"velit","positioning":"sed","anticipation":"exercitationem","total":"nesciunt","overall_grade":"corrupti","created_at":{},"updated_at":{}}'
+    -d '{"user_id":6,"speed":"dicta","passing":"non","shooting":"qui","dribbling":"magnam","heading":"qui","ball_control":"nisi","fitness":"harum","movement":"autem","awareness":"fuga","decisions":"quis","workrate":"modi","strength":"eos","crossing":"itaque","finishing":"magni","positioning":"molestiae","anticipation":"repellendus","total":"nemo","overall_grade":"impedit","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/skill_reports/nemo',
+    'http://localhost/api/skill_reports/inventore',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7069,25 +7162,25 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'user_id' =&gt; 20,
-                'speed' =&gt; 'dignissimos',
-                'passing' =&gt; 'cupiditate',
-                'shooting' =&gt; 'consequatur',
-                'dribbling' =&gt; 'exercitationem',
-                'heading' =&gt; 'delectus',
-                'ball_control' =&gt; 'soluta',
-                'fitness' =&gt; 'maxime',
-                'movement' =&gt; 'vel',
-                'awareness' =&gt; 'odio',
-                'decisions' =&gt; 'dolor',
-                'workrate' =&gt; 'harum',
-                'strength' =&gt; 'minus',
-                'crossing' =&gt; 'soluta',
-                'finishing' =&gt; 'velit',
-                'positioning' =&gt; 'sed',
-                'anticipation' =&gt; 'exercitationem',
-                'total' =&gt; 'nesciunt',
-                'overall_grade' =&gt; 'corrupti',
+                'user_id' =&gt; 6,
+                'speed' =&gt; 'dicta',
+                'passing' =&gt; 'non',
+                'shooting' =&gt; 'qui',
+                'dribbling' =&gt; 'magnam',
+                'heading' =&gt; 'qui',
+                'ball_control' =&gt; 'nisi',
+                'fitness' =&gt; 'harum',
+                'movement' =&gt; 'autem',
+                'awareness' =&gt; 'fuga',
+                'decisions' =&gt; 'quis',
+                'workrate' =&gt; 'modi',
+                'strength' =&gt; 'eos',
+                'crossing' =&gt; 'itaque',
+                'finishing' =&gt; 'magni',
+                'positioning' =&gt; 'molestiae',
+                'anticipation' =&gt; 'repellendus',
+                'total' =&gt; 'nemo',
+                'overall_grade' =&gt; 'impedit',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -7098,7 +7191,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_reports/nemo"
+    "http://localhost/api/skill_reports/inventore"
 );
 
 let headers = {
@@ -7107,25 +7200,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 20,
-    "speed": "dignissimos",
-    "passing": "cupiditate",
-    "shooting": "consequatur",
-    "dribbling": "exercitationem",
-    "heading": "delectus",
-    "ball_control": "soluta",
-    "fitness": "maxime",
-    "movement": "vel",
-    "awareness": "odio",
-    "decisions": "dolor",
-    "workrate": "harum",
-    "strength": "minus",
-    "crossing": "soluta",
-    "finishing": "velit",
-    "positioning": "sed",
-    "anticipation": "exercitationem",
-    "total": "nesciunt",
-    "overall_grade": "corrupti",
+    "user_id": 6,
+    "speed": "dicta",
+    "passing": "non",
+    "shooting": "qui",
+    "dribbling": "magnam",
+    "heading": "qui",
+    "ball_control": "nisi",
+    "fitness": "harum",
+    "movement": "autem",
+    "awareness": "fuga",
+    "decisions": "quis",
+    "workrate": "modi",
+    "strength": "eos",
+    "crossing": "itaque",
+    "finishing": "magni",
+    "positioning": "molestiae",
+    "anticipation": "repellendus",
+    "total": "nemo",
+    "overall_grade": "impedit",
     "created_at": {},
     "updated_at": {}
 }
@@ -7278,13 +7371,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/skill_reports/dolorum" \
+    "http://localhost/api/skill_reports/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/skill_reports/dolorum',
+    'http://localhost/api/skill_reports/rerum',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7295,7 +7388,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_reports/dolorum"
+    "http://localhost/api/skill_reports/rerum"
 );
 
 let headers = {
@@ -7404,7 +7497,7 @@ fetch(url, {
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"voluptatum","sport_id":10,"created_at":{},"updated_at":{}}'
+    -d '{"name":"ad","sport_id":14,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -7422,8 +7515,8 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'name' =&gt; 'voluptatum',
-                'sport_id' =&gt; 10,
+                'name' =&gt; 'ad',
+                'sport_id' =&gt; 14,
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -7443,8 +7536,8 @@ let headers = {
 };
 
 let body = {
-    "name": "voluptatum",
-    "sport_id": 10,
+    "name": "ad",
+    "sport_id": 14,
     "created_at": {},
     "updated_at": {}
 }
@@ -7502,13 +7595,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/skill_tests/voluptates" \
+    -G "http://localhost/api/skill_tests/debitis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/skill_tests/voluptates',
+    'http://localhost/api/skill_tests/debitis',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7519,7 +7612,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_tests/voluptates"
+    "http://localhost/api/skill_tests/debitis"
 );
 
 let headers = {
@@ -7570,15 +7663,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/skill_tests/aut" \
+    "http://localhost/api/skill_tests/nostrum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"commodi","sport_id":8,"created_at":{},"updated_at":{}}'
+    -d '{"name":"sapiente","sport_id":6,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/skill_tests/aut',
+    'http://localhost/api/skill_tests/nostrum',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7591,8 +7684,8 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'name' =&gt; 'commodi',
-                'sport_id' =&gt; 8,
+                'name' =&gt; 'sapiente',
+                'sport_id' =&gt; 6,
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -7603,7 +7696,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_tests/aut"
+    "http://localhost/api/skill_tests/nostrum"
 );
 
 let headers = {
@@ -7612,8 +7705,8 @@ let headers = {
 };
 
 let body = {
-    "name": "commodi",
-    "sport_id": 8,
+    "name": "sapiente",
+    "sport_id": 6,
     "created_at": {},
     "updated_at": {}
 }
@@ -7681,13 +7774,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/skill_tests/ab" \
+    "http://localhost/api/skill_tests/praesentium" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/skill_tests/ab',
+    'http://localhost/api/skill_tests/praesentium',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7698,7 +7791,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/skill_tests/ab"
+    "http://localhost/api/skill_tests/praesentium"
 );
 
 let headers = {
@@ -7807,7 +7900,7 @@ fetch(url, {
     "http://localhost/api/sports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"neque","created_at":{},"updated_at":{}}'
+    -d '{"name":"nesciunt","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -7825,7 +7918,7 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'name' =&gt; 'neque',
+                'name' =&gt; 'nesciunt',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -7845,7 +7938,7 @@ let headers = {
 };
 
 let body = {
-    "name": "neque",
+    "name": "nesciunt",
     "created_at": {},
     "updated_at": {}
 }
@@ -7898,13 +7991,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/sports/ut" \
+    -G "http://localhost/api/sports/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/sports/ut',
+    'http://localhost/api/sports/quia',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7915,7 +8008,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/sports/ut"
+    "http://localhost/api/sports/quia"
 );
 
 let headers = {
@@ -7966,15 +8059,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/sports/aliquid" \
+    "http://localhost/api/sports/quibusdam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"porro","created_at":{},"updated_at":{}}'
+    -d '{"name":"laboriosam","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/sports/aliquid',
+    'http://localhost/api/sports/quibusdam',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -7987,7 +8080,7 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'name' =&gt; 'porro',
+                'name' =&gt; 'laboriosam',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -7998,7 +8091,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/sports/aliquid"
+    "http://localhost/api/sports/quibusdam"
 );
 
 let headers = {
@@ -8007,7 +8100,7 @@ let headers = {
 };
 
 let body = {
-    "name": "porro",
+    "name": "laboriosam",
     "created_at": {},
     "updated_at": {}
 }
@@ -8070,13 +8163,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/sports/libero" \
+    "http://localhost/api/sports/iusto" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/sports/libero',
+    'http://localhost/api/sports/iusto',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -8087,7 +8180,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/sports/libero"
+    "http://localhost/api/sports/iusto"
 );
 
 let headers = {
@@ -8130,13 +8223,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/states/byCountry/nam" \
+    -G "http://localhost/api/states/byCountry/quis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/states/byCountry/nam',
+    'http://localhost/api/states/byCountry/quis',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -8147,7 +8240,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/states/byCountry/nam"
+    "http://localhost/api/states/byCountry/quis"
 );
 
 let headers = {
@@ -8201,7 +8294,7 @@ fetch(url, {
     "http://localhost/api/talent/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"soluta","scheme":"et","email":"veniam","first_name":"officiis","middle_name":"non","last_name":"architecto","dob":{},"age":2,"gender":"placeat","languages":"iure","city_id":"excepturi","genotype":"autem","blood_group":"voluptatem","sports":"pariatur","positions":"earum","educational_background":"doloribus","nationality":"qui","height":18.446,"weight":2.883983267}'
+    -d '{"password":"ullam","scheme":"voluptatem","email":"sit","first_name":"aut","middle_name":"voluptas","last_name":"velit","dob":{},"age":11,"gender":"enim","languages":"accusamus","city_id":"est","genotype":"pariatur","blood_group":"deleniti","sports":"fugiat","positions":"non","educational_background":"non","nationality":"autem","height":1949,"weight":17645590.384833995}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -8219,25 +8312,25 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'password' =&gt; 'soluta',
-                'scheme' =&gt; 'et',
-                'email' =&gt; 'veniam',
-                'first_name' =&gt; 'officiis',
-                'middle_name' =&gt; 'non',
-                'last_name' =&gt; 'architecto',
+                'password' =&gt; 'ullam',
+                'scheme' =&gt; 'voluptatem',
+                'email' =&gt; 'sit',
+                'first_name' =&gt; 'aut',
+                'middle_name' =&gt; 'voluptas',
+                'last_name' =&gt; 'velit',
                 'dob' =&gt; $o[0],
-                'age' =&gt; 2,
-                'gender' =&gt; 'placeat',
-                'languages' =&gt; 'iure',
-                'city_id' =&gt; 'excepturi',
-                'genotype' =&gt; 'autem',
-                'blood_group' =&gt; 'voluptatem',
-                'sports' =&gt; 'pariatur',
-                'positions' =&gt; 'earum',
-                'educational_background' =&gt; 'doloribus',
-                'nationality' =&gt; 'qui',
-                'height' =&gt; 18.446,
-                'weight' =&gt; 2.883983267,
+                'age' =&gt; 11,
+                'gender' =&gt; 'enim',
+                'languages' =&gt; 'accusamus',
+                'city_id' =&gt; 'est',
+                'genotype' =&gt; 'pariatur',
+                'blood_group' =&gt; 'deleniti',
+                'sports' =&gt; 'fugiat',
+                'positions' =&gt; 'non',
+                'educational_background' =&gt; 'non',
+                'nationality' =&gt; 'autem',
+                'height' =&gt; 1949.0,
+                'weight' =&gt; 17645590.384833995,
             ],
             []
         ),
@@ -8255,25 +8348,25 @@ let headers = {
 };
 
 let body = {
-    "password": "soluta",
-    "scheme": "et",
-    "email": "veniam",
-    "first_name": "officiis",
-    "middle_name": "non",
-    "last_name": "architecto",
+    "password": "ullam",
+    "scheme": "voluptatem",
+    "email": "sit",
+    "first_name": "aut",
+    "middle_name": "voluptas",
+    "last_name": "velit",
     "dob": {},
-    "age": 2,
-    "gender": "placeat",
-    "languages": "iure",
-    "city_id": "excepturi",
-    "genotype": "autem",
-    "blood_group": "voluptatem",
-    "sports": "pariatur",
-    "positions": "earum",
-    "educational_background": "doloribus",
-    "nationality": "qui",
-    "height": 18.446,
-    "weight": 2.883983267
+    "age": 11,
+    "gender": "enim",
+    "languages": "accusamus",
+    "city_id": "est",
+    "genotype": "pariatur",
+    "blood_group": "deleniti",
+    "sports": "fugiat",
+    "positions": "non",
+    "educational_background": "non",
+    "nationality": "autem",
+    "height": 1949,
+    "weight": 17645590.384833995
 }
 
 fetch(url, {
@@ -8469,7 +8562,7 @@ fetch(url, {
     "http://localhost/api/talent" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"atque","scheme":"quis","email":"repellat","first_name":"autem","middle_name":"tenetur","last_name":"odio","dob":{},"age":3,"gender":"quia","languages":"repudiandae","city_id":"aut","genotype":"enim","blood_group":"voluptatem","sports":"nam","positions":"eveniet","educational_background":"et","nationality":"odit","height":2444521.595,"weight":1852671.632}'
+    -d '{"password":"error","scheme":"eum","email":"quis","first_name":"velit","middle_name":"modi","last_name":"culpa","dob":{},"age":8,"gender":"qui","languages":"excepturi","city_id":"aspernatur","genotype":"itaque","blood_group":"similique","sports":"iure","positions":"veniam","educational_background":"delectus","nationality":"occaecati","height":365.63339609,"weight":69480747.94223398}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -8487,25 +8580,25 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'password' =&gt; 'atque',
-                'scheme' =&gt; 'quis',
-                'email' =&gt; 'repellat',
-                'first_name' =&gt; 'autem',
-                'middle_name' =&gt; 'tenetur',
-                'last_name' =&gt; 'odio',
+                'password' =&gt; 'error',
+                'scheme' =&gt; 'eum',
+                'email' =&gt; 'quis',
+                'first_name' =&gt; 'velit',
+                'middle_name' =&gt; 'modi',
+                'last_name' =&gt; 'culpa',
                 'dob' =&gt; $o[0],
-                'age' =&gt; 3,
-                'gender' =&gt; 'quia',
-                'languages' =&gt; 'repudiandae',
-                'city_id' =&gt; 'aut',
-                'genotype' =&gt; 'enim',
-                'blood_group' =&gt; 'voluptatem',
-                'sports' =&gt; 'nam',
-                'positions' =&gt; 'eveniet',
-                'educational_background' =&gt; 'et',
-                'nationality' =&gt; 'odit',
-                'height' =&gt; 2444521.595,
-                'weight' =&gt; 1852671.632,
+                'age' =&gt; 8,
+                'gender' =&gt; 'qui',
+                'languages' =&gt; 'excepturi',
+                'city_id' =&gt; 'aspernatur',
+                'genotype' =&gt; 'itaque',
+                'blood_group' =&gt; 'similique',
+                'sports' =&gt; 'iure',
+                'positions' =&gt; 'veniam',
+                'educational_background' =&gt; 'delectus',
+                'nationality' =&gt; 'occaecati',
+                'height' =&gt; 365.63339609,
+                'weight' =&gt; 69480747.94223398,
             ],
             []
         ),
@@ -8523,25 +8616,25 @@ let headers = {
 };
 
 let body = {
-    "password": "atque",
-    "scheme": "quis",
-    "email": "repellat",
-    "first_name": "autem",
-    "middle_name": "tenetur",
-    "last_name": "odio",
+    "password": "error",
+    "scheme": "eum",
+    "email": "quis",
+    "first_name": "velit",
+    "middle_name": "modi",
+    "last_name": "culpa",
     "dob": {},
-    "age": 3,
-    "gender": "quia",
-    "languages": "repudiandae",
-    "city_id": "aut",
-    "genotype": "enim",
-    "blood_group": "voluptatem",
-    "sports": "nam",
-    "positions": "eveniet",
-    "educational_background": "et",
-    "nationality": "odit",
-    "height": 2444521.595,
-    "weight": 1852671.632
+    "age": 8,
+    "gender": "qui",
+    "languages": "excepturi",
+    "city_id": "aspernatur",
+    "genotype": "itaque",
+    "blood_group": "similique",
+    "sports": "iure",
+    "positions": "veniam",
+    "educational_background": "delectus",
+    "nationality": "occaecati",
+    "height": 365.63339609,
+    "weight": 69480747.94223398
 }
 
 fetch(url, {
@@ -8672,13 +8765,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/talent/modi" \
+    -G "http://localhost/api/talent/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/talent/modi',
+    'http://localhost/api/talent/sint',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -8689,7 +8782,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/talent/modi"
+    "http://localhost/api/talent/sint"
 );
 
 let headers = {
@@ -8740,15 +8833,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/talent/blanditiis" \
+    "http://localhost/api/talent/velit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"quia","qualifications":"temporibus","scheme":"earum","user_id":17,"email":"et","first_name":"neque","middle_name":"quia","last_name":"et","dob":{},"age":18,"gender":"quibusdam","languages":"alias","city_id":"dolorem","genotype":"in","blood_group":"enim","sports":"nesciunt","positions":"est","educational_background":"omnis","nationality":"nobis","height":41407807.513,"weight":261.8184,"created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"tenetur","qualifications":"sed","scheme":"ipsa","user_id":17,"email":"animi","first_name":"qui","middle_name":"mollitia","last_name":"cupiditate","dob":{},"age":20,"gender":"nostrum","languages":"voluptas","city_id":"illum","genotype":"corrupti","blood_group":"aspernatur","sports":"reprehenderit","positions":"non","educational_background":"dolor","nationality":"repellat","height":865.76592424,"weight":19754822.2,"created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/talent/blanditiis',
+    'http://localhost/api/talent/velit',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -8761,27 +8854,27 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'profile_url' =&gt; 'quia',
-                'qualifications' =&gt; 'temporibus',
-                'scheme' =&gt; 'earum',
+                'profile_url' =&gt; 'tenetur',
+                'qualifications' =&gt; 'sed',
+                'scheme' =&gt; 'ipsa',
                 'user_id' =&gt; 17,
-                'email' =&gt; 'et',
-                'first_name' =&gt; 'neque',
-                'middle_name' =&gt; 'quia',
-                'last_name' =&gt; 'et',
+                'email' =&gt; 'animi',
+                'first_name' =&gt; 'qui',
+                'middle_name' =&gt; 'mollitia',
+                'last_name' =&gt; 'cupiditate',
                 'dob' =&gt; $o[0],
-                'age' =&gt; 18,
-                'gender' =&gt; 'quibusdam',
-                'languages' =&gt; 'alias',
-                'city_id' =&gt; 'dolorem',
-                'genotype' =&gt; 'in',
-                'blood_group' =&gt; 'enim',
-                'sports' =&gt; 'nesciunt',
-                'positions' =&gt; 'est',
-                'educational_background' =&gt; 'omnis',
-                'nationality' =&gt; 'nobis',
-                'height' =&gt; 41407807.513,
-                'weight' =&gt; 261.8184,
+                'age' =&gt; 20,
+                'gender' =&gt; 'nostrum',
+                'languages' =&gt; 'voluptas',
+                'city_id' =&gt; 'illum',
+                'genotype' =&gt; 'corrupti',
+                'blood_group' =&gt; 'aspernatur',
+                'sports' =&gt; 'reprehenderit',
+                'positions' =&gt; 'non',
+                'educational_background' =&gt; 'dolor',
+                'nationality' =&gt; 'repellat',
+                'height' =&gt; 865.76592424,
+                'weight' =&gt; 19754822.2,
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -8792,7 +8885,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/talent/blanditiis"
+    "http://localhost/api/talent/velit"
 );
 
 let headers = {
@@ -8801,27 +8894,27 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "quia",
-    "qualifications": "temporibus",
-    "scheme": "earum",
+    "profile_url": "tenetur",
+    "qualifications": "sed",
+    "scheme": "ipsa",
     "user_id": 17,
-    "email": "et",
-    "first_name": "neque",
-    "middle_name": "quia",
-    "last_name": "et",
+    "email": "animi",
+    "first_name": "qui",
+    "middle_name": "mollitia",
+    "last_name": "cupiditate",
     "dob": {},
-    "age": 18,
-    "gender": "quibusdam",
-    "languages": "alias",
-    "city_id": "dolorem",
-    "genotype": "in",
-    "blood_group": "enim",
-    "sports": "nesciunt",
-    "positions": "est",
-    "educational_background": "omnis",
-    "nationality": "nobis",
-    "height": 41407807.513,
-    "weight": 261.8184,
+    "age": 20,
+    "gender": "nostrum",
+    "languages": "voluptas",
+    "city_id": "illum",
+    "genotype": "corrupti",
+    "blood_group": "aspernatur",
+    "sports": "reprehenderit",
+    "positions": "non",
+    "educational_background": "dolor",
+    "nationality": "repellat",
+    "height": 865.76592424,
+    "weight": 19754822.2,
     "created_at": {},
     "updated_at": {}
 }
@@ -8984,13 +9077,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/talent/quasi" \
+    "http://localhost/api/talent/inventore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/talent/quasi',
+    'http://localhost/api/talent/inventore',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9001,7 +9094,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/talent/quasi"
+    "http://localhost/api/talent/inventore"
 );
 
 let headers = {
@@ -9110,7 +9203,7 @@ fetch(url, {
     "http://localhost/api/video_types" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"velit","created_at":{},"updated_at":{}}'
+    -d '{"name":"odio","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -9128,7 +9221,7 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'name' =&gt; 'velit',
+                'name' =&gt; 'odio',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -9148,7 +9241,7 @@ let headers = {
 };
 
 let body = {
-    "name": "velit",
+    "name": "odio",
     "created_at": {},
     "updated_at": {}
 }
@@ -9201,13 +9294,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/video_types/ab" \
+    -G "http://localhost/api/video_types/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/video_types/ab',
+    'http://localhost/api/video_types/molestiae',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9218,7 +9311,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/video_types/ab"
+    "http://localhost/api/video_types/molestiae"
 );
 
 let headers = {
@@ -9269,15 +9362,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/video_types/consequatur" \
+    "http://localhost/api/video_types/necessitatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"perspiciatis","created_at":{},"updated_at":{}}'
+    -d '{"name":"nesciunt","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/video_types/consequatur',
+    'http://localhost/api/video_types/necessitatibus',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9290,7 +9383,7 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'name' =&gt; 'perspiciatis',
+                'name' =&gt; 'nesciunt',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -9301,7 +9394,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/video_types/consequatur"
+    "http://localhost/api/video_types/necessitatibus"
 );
 
 let headers = {
@@ -9310,7 +9403,7 @@ let headers = {
 };
 
 let body = {
-    "name": "perspiciatis",
+    "name": "nesciunt",
     "created_at": {},
     "updated_at": {}
 }
@@ -9373,13 +9466,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/video_types/eveniet" \
+    "http://localhost/api/video_types/architecto" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/video_types/eveniet',
+    'http://localhost/api/video_types/architecto',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9390,7 +9483,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/video_types/eveniet"
+    "http://localhost/api/video_types/architecto"
 );
 
 let headers = {
@@ -9499,7 +9592,7 @@ fetch(url, {
     "http://localhost/api/videos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"type_id":3,"skill_test_id":8,"url":"rem","created_at":{},"updated_at":{}}'
+    -d '{"type_id":4,"skill_test_id":1,"url":"impedit","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
@@ -9517,9 +9610,9 @@ $response = $client-&gt;post(
             null,
             [],
             [
-                'type_id' =&gt; 3,
-                'skill_test_id' =&gt; 8,
-                'url' =&gt; 'rem',
+                'type_id' =&gt; 4,
+                'skill_test_id' =&gt; 1,
+                'url' =&gt; 'impedit',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -9539,9 +9632,9 @@ let headers = {
 };
 
 let body = {
-    "type_id": 3,
-    "skill_test_id": 8,
-    "url": "rem",
+    "type_id": 4,
+    "skill_test_id": 1,
+    "url": "impedit",
     "created_at": {},
     "updated_at": {}
 }
@@ -9604,13 +9697,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/videos/id" \
+    -G "http://localhost/api/videos/sit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://localhost/api/videos/id',
+    'http://localhost/api/videos/sit',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9621,7 +9714,7 @@ $response = $client-&gt;get(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/videos/id"
+    "http://localhost/api/videos/sit"
 );
 
 let headers = {
@@ -9672,15 +9765,15 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/videos/illo" \
+    "http://localhost/api/videos/aliquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"type_id":2,"skill_test_id":12,"url":"magnam","created_at":{},"updated_at":{}}'
+    -d '{"type_id":6,"skill_test_id":8,"url":"sed","created_at":{},"updated_at":{}}'
 </code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://localhost/api/videos/illo',
+    'http://localhost/api/videos/aliquam',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9693,9 +9786,9 @@ $response = $client-&gt;put(
             null,
             [],
             [
-                'type_id' =&gt; 2,
-                'skill_test_id' =&gt; 12,
-                'url' =&gt; 'magnam',
+                'type_id' =&gt; 6,
+                'skill_test_id' =&gt; 8,
+                'url' =&gt; 'sed',
                 'created_at' =&gt; $o[0],
                 'updated_at' =&gt; $o[0],
             ],
@@ -9706,7 +9799,7 @@ $response = $client-&gt;put(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/videos/illo"
+    "http://localhost/api/videos/aliquam"
 );
 
 let headers = {
@@ -9715,9 +9808,9 @@ let headers = {
 };
 
 let body = {
-    "type_id": 2,
-    "skill_test_id": 12,
-    "url": "magnam",
+    "type_id": 6,
+    "skill_test_id": 8,
+    "url": "sed",
     "created_at": {},
     "updated_at": {}
 }
@@ -9790,13 +9883,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost/api/videos/est" \
+    "http://localhost/api/videos/sunt" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-php">
 $client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/videos/est',
+    'http://localhost/api/videos/sunt',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -9807,7 +9900,7 @@ $response = $client-&gt;delete(
 $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/videos/est"
+    "http://localhost/api/videos/sunt"
 );
 
 let headers = {

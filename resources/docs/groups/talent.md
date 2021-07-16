@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/talent/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"soluta","scheme":"et","email":"veniam","first_name":"officiis","middle_name":"non","last_name":"architecto","dob":{},"age":2,"gender":"placeat","languages":"iure","city_id":"excepturi","genotype":"autem","blood_group":"voluptatem","sports":"pariatur","positions":"earum","educational_background":"doloribus","nationality":"qui","height":18.446,"weight":2.883983267}'
+    -d '{"password":"ullam","scheme":"voluptatem","email":"sit","first_name":"aut","middle_name":"voluptas","last_name":"velit","dob":{},"age":11,"gender":"enim","languages":"accusamus","city_id":"est","genotype":"pariatur","blood_group":"deleniti","sports":"fugiat","positions":"non","educational_background":"non","nationality":"autem","height":1949,"weight":17645590.384833995}'
 
 ```
 
@@ -34,25 +34,25 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'soluta',
-                'scheme' => 'et',
-                'email' => 'veniam',
-                'first_name' => 'officiis',
-                'middle_name' => 'non',
-                'last_name' => 'architecto',
+                'password' => 'ullam',
+                'scheme' => 'voluptatem',
+                'email' => 'sit',
+                'first_name' => 'aut',
+                'middle_name' => 'voluptas',
+                'last_name' => 'velit',
                 'dob' => $o[0],
-                'age' => 2,
-                'gender' => 'placeat',
-                'languages' => 'iure',
-                'city_id' => 'excepturi',
-                'genotype' => 'autem',
-                'blood_group' => 'voluptatem',
-                'sports' => 'pariatur',
-                'positions' => 'earum',
-                'educational_background' => 'doloribus',
-                'nationality' => 'qui',
-                'height' => 18.446,
-                'weight' => 2.883983267,
+                'age' => 11,
+                'gender' => 'enim',
+                'languages' => 'accusamus',
+                'city_id' => 'est',
+                'genotype' => 'pariatur',
+                'blood_group' => 'deleniti',
+                'sports' => 'fugiat',
+                'positions' => 'non',
+                'educational_background' => 'non',
+                'nationality' => 'autem',
+                'height' => 1949.0,
+                'weight' => 17645590.384833995,
             ],
             []
         ),
@@ -73,25 +73,25 @@ let headers = {
 };
 
 let body = {
-    "password": "soluta",
-    "scheme": "et",
-    "email": "veniam",
-    "first_name": "officiis",
-    "middle_name": "non",
-    "last_name": "architecto",
+    "password": "ullam",
+    "scheme": "voluptatem",
+    "email": "sit",
+    "first_name": "aut",
+    "middle_name": "voluptas",
+    "last_name": "velit",
     "dob": {},
-    "age": 2,
-    "gender": "placeat",
-    "languages": "iure",
-    "city_id": "excepturi",
-    "genotype": "autem",
-    "blood_group": "voluptatem",
-    "sports": "pariatur",
-    "positions": "earum",
-    "educational_background": "doloribus",
-    "nationality": "qui",
-    "height": 18.446,
-    "weight": 2.883983267
+    "age": 11,
+    "gender": "enim",
+    "languages": "accusamus",
+    "city_id": "est",
+    "genotype": "pariatur",
+    "blood_group": "deleniti",
+    "sports": "fugiat",
+    "positions": "non",
+    "educational_background": "non",
+    "nationality": "autem",
+    "height": 1949,
+    "weight": 17645590.384833995
 }
 
 fetch(url, {
@@ -311,7 +311,7 @@ curl -X POST \
     "http://localhost/api/talent" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"atque","scheme":"quis","email":"repellat","first_name":"autem","middle_name":"tenetur","last_name":"odio","dob":{},"age":3,"gender":"quia","languages":"repudiandae","city_id":"aut","genotype":"enim","blood_group":"voluptatem","sports":"nam","positions":"eveniet","educational_background":"et","nationality":"odit","height":2444521.595,"weight":1852671.632}'
+    -d '{"password":"error","scheme":"eum","email":"quis","first_name":"velit","middle_name":"modi","last_name":"culpa","dob":{},"age":8,"gender":"qui","languages":"excepturi","city_id":"aspernatur","genotype":"itaque","blood_group":"similique","sports":"iure","positions":"veniam","educational_background":"delectus","nationality":"occaecati","height":365.63339609,"weight":69480747.94223398}'
 
 ```
 
@@ -332,25 +332,25 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'atque',
-                'scheme' => 'quis',
-                'email' => 'repellat',
-                'first_name' => 'autem',
-                'middle_name' => 'tenetur',
-                'last_name' => 'odio',
+                'password' => 'error',
+                'scheme' => 'eum',
+                'email' => 'quis',
+                'first_name' => 'velit',
+                'middle_name' => 'modi',
+                'last_name' => 'culpa',
                 'dob' => $o[0],
-                'age' => 3,
-                'gender' => 'quia',
-                'languages' => 'repudiandae',
-                'city_id' => 'aut',
-                'genotype' => 'enim',
-                'blood_group' => 'voluptatem',
-                'sports' => 'nam',
-                'positions' => 'eveniet',
-                'educational_background' => 'et',
-                'nationality' => 'odit',
-                'height' => 2444521.595,
-                'weight' => 1852671.632,
+                'age' => 8,
+                'gender' => 'qui',
+                'languages' => 'excepturi',
+                'city_id' => 'aspernatur',
+                'genotype' => 'itaque',
+                'blood_group' => 'similique',
+                'sports' => 'iure',
+                'positions' => 'veniam',
+                'educational_background' => 'delectus',
+                'nationality' => 'occaecati',
+                'height' => 365.63339609,
+                'weight' => 69480747.94223398,
             ],
             []
         ),
@@ -371,25 +371,25 @@ let headers = {
 };
 
 let body = {
-    "password": "atque",
-    "scheme": "quis",
-    "email": "repellat",
-    "first_name": "autem",
-    "middle_name": "tenetur",
-    "last_name": "odio",
+    "password": "error",
+    "scheme": "eum",
+    "email": "quis",
+    "first_name": "velit",
+    "middle_name": "modi",
+    "last_name": "culpa",
     "dob": {},
-    "age": 3,
-    "gender": "quia",
-    "languages": "repudiandae",
-    "city_id": "aut",
-    "genotype": "enim",
-    "blood_group": "voluptatem",
-    "sports": "nam",
-    "positions": "eveniet",
-    "educational_background": "et",
-    "nationality": "odit",
-    "height": 2444521.595,
-    "weight": 1852671.632
+    "age": 8,
+    "gender": "qui",
+    "languages": "excepturi",
+    "city_id": "aspernatur",
+    "genotype": "itaque",
+    "blood_group": "similique",
+    "sports": "iure",
+    "positions": "veniam",
+    "educational_background": "delectus",
+    "nationality": "occaecati",
+    "height": 365.63339609,
+    "weight": 69480747.94223398
 }
 
 fetch(url, {
@@ -528,7 +528,7 @@ GET|HEAD /talent/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/talent/modi" \
+    -G "http://localhost/api/talent/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -537,7 +537,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/talent/modi',
+    'http://localhost/api/talent/sint',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -551,7 +551,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/modi"
+    "http://localhost/api/talent/sint"
 );
 
 let headers = {
@@ -612,10 +612,10 @@ PUT/PATCH /talent/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/talent/blanditiis" \
+    "http://localhost/api/talent/velit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"quia","qualifications":"temporibus","scheme":"earum","user_id":17,"email":"et","first_name":"neque","middle_name":"quia","last_name":"et","dob":{},"age":18,"gender":"quibusdam","languages":"alias","city_id":"dolorem","genotype":"in","blood_group":"enim","sports":"nesciunt","positions":"est","educational_background":"omnis","nationality":"nobis","height":41407807.513,"weight":261.8184,"created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"tenetur","qualifications":"sed","scheme":"ipsa","user_id":17,"email":"animi","first_name":"qui","middle_name":"mollitia","last_name":"cupiditate","dob":{},"age":20,"gender":"nostrum","languages":"voluptas","city_id":"illum","genotype":"corrupti","blood_group":"aspernatur","sports":"reprehenderit","positions":"non","educational_background":"dolor","nationality":"repellat","height":865.76592424,"weight":19754822.2,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -623,7 +623,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/talent/blanditiis',
+    'http://localhost/api/talent/velit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -636,27 +636,27 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'quia',
-                'qualifications' => 'temporibus',
-                'scheme' => 'earum',
+                'profile_url' => 'tenetur',
+                'qualifications' => 'sed',
+                'scheme' => 'ipsa',
                 'user_id' => 17,
-                'email' => 'et',
-                'first_name' => 'neque',
-                'middle_name' => 'quia',
-                'last_name' => 'et',
+                'email' => 'animi',
+                'first_name' => 'qui',
+                'middle_name' => 'mollitia',
+                'last_name' => 'cupiditate',
                 'dob' => $o[0],
-                'age' => 18,
-                'gender' => 'quibusdam',
-                'languages' => 'alias',
-                'city_id' => 'dolorem',
-                'genotype' => 'in',
-                'blood_group' => 'enim',
-                'sports' => 'nesciunt',
-                'positions' => 'est',
-                'educational_background' => 'omnis',
-                'nationality' => 'nobis',
-                'height' => 41407807.513,
-                'weight' => 261.8184,
+                'age' => 20,
+                'gender' => 'nostrum',
+                'languages' => 'voluptas',
+                'city_id' => 'illum',
+                'genotype' => 'corrupti',
+                'blood_group' => 'aspernatur',
+                'sports' => 'reprehenderit',
+                'positions' => 'non',
+                'educational_background' => 'dolor',
+                'nationality' => 'repellat',
+                'height' => 865.76592424,
+                'weight' => 19754822.2,
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -670,7 +670,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/blanditiis"
+    "http://localhost/api/talent/velit"
 );
 
 let headers = {
@@ -679,27 +679,27 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "quia",
-    "qualifications": "temporibus",
-    "scheme": "earum",
+    "profile_url": "tenetur",
+    "qualifications": "sed",
+    "scheme": "ipsa",
     "user_id": 17,
-    "email": "et",
-    "first_name": "neque",
-    "middle_name": "quia",
-    "last_name": "et",
+    "email": "animi",
+    "first_name": "qui",
+    "middle_name": "mollitia",
+    "last_name": "cupiditate",
     "dob": {},
-    "age": 18,
-    "gender": "quibusdam",
-    "languages": "alias",
-    "city_id": "dolorem",
-    "genotype": "in",
-    "blood_group": "enim",
-    "sports": "nesciunt",
-    "positions": "est",
-    "educational_background": "omnis",
-    "nationality": "nobis",
-    "height": 41407807.513,
-    "weight": 261.8184,
+    "age": 20,
+    "gender": "nostrum",
+    "languages": "voluptas",
+    "city_id": "illum",
+    "genotype": "corrupti",
+    "blood_group": "aspernatur",
+    "sports": "reprehenderit",
+    "positions": "non",
+    "educational_background": "dolor",
+    "nationality": "repellat",
+    "height": 865.76592424,
+    "weight": 19754822.2,
     "created_at": {},
     "updated_at": {}
 }
@@ -870,7 +870,7 @@ DELETE /talent/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/talent/quasi" \
+    "http://localhost/api/talent/inventore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -879,7 +879,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/talent/quasi',
+    'http://localhost/api/talent/inventore',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -893,7 +893,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/quasi"
+    "http://localhost/api/talent/inventore"
 );
 
 let headers = {

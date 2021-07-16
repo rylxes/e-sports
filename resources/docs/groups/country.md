@@ -1569,7 +1569,7 @@ curl -X POST \
     "http://localhost/api/countries" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"sortname":"omnis","name":"suscipit","phonecode":17}'
+    -d '{"sortname":"et","name":"impedit","phonecode":16}'
 
 ```
 
@@ -1584,9 +1584,9 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'sortname' => 'omnis',
-            'name' => 'suscipit',
-            'phonecode' => 17,
+            'sortname' => 'et',
+            'name' => 'impedit',
+            'phonecode' => 16,
         ],
     ]
 );
@@ -1605,9 +1605,9 @@ let headers = {
 };
 
 let body = {
-    "sortname": "omnis",
-    "name": "suscipit",
-    "phonecode": 17
+    "sortname": "et",
+    "name": "impedit",
+    "phonecode": 16
 }
 
 fetch(url, {
@@ -1666,7 +1666,7 @@ GET|HEAD /countries/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/countries/architecto" \
+    -G "http://localhost/api/countries/atque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -1675,7 +1675,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/countries/architecto',
+    'http://localhost/api/countries/atque',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1689,7 +1689,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/countries/architecto"
+    "http://localhost/api/countries/atque"
 );
 
 let headers = {
@@ -1750,10 +1750,10 @@ PUT/PATCH /countries/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/countries/totam" \
+    "http://localhost/api/countries/necessitatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"sortname":"aut","name":"mollitia","phonecode":8}'
+    -d '{"sortname":"qui","name":"dolorem","phonecode":12}'
 
 ```
 
@@ -1761,16 +1761,16 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/countries/totam',
+    'http://localhost/api/countries/necessitatibus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'sortname' => 'aut',
-            'name' => 'mollitia',
-            'phonecode' => 8,
+            'sortname' => 'qui',
+            'name' => 'dolorem',
+            'phonecode' => 12,
         ],
     ]
 );
@@ -1780,7 +1780,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/countries/totam"
+    "http://localhost/api/countries/necessitatibus"
 );
 
 let headers = {
@@ -1789,9 +1789,9 @@ let headers = {
 };
 
 let body = {
-    "sortname": "aut",
-    "name": "mollitia",
-    "phonecode": 8
+    "sortname": "qui",
+    "name": "dolorem",
+    "phonecode": 12
 }
 
 fetch(url, {
@@ -1860,7 +1860,7 @@ DELETE /countries/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/countries/amet" \
+    "http://localhost/api/countries/nam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -1869,7 +1869,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/countries/amet',
+    'http://localhost/api/countries/nam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1883,7 +1883,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/countries/amet"
+    "http://localhost/api/countries/nam"
 );
 
 let headers = {

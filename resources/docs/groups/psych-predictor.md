@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":17,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"ut","challenges":"rerum","greatest_motivation":"quidem","strength":"minima","weakness":"facere","can_overcome_challenges":false,"time_start_sport":"ducimus","rating_sports":"est","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":7,"hours_practice_in_week":4,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"magni","challenges":"voluptas","greatest_motivation":"quia","strength":"facilis","weakness":"enim","can_overcome_challenges":false,"time_start_sport":"sed","rating_sports":"voluptatem","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,18 +112,18 @@ $response = $client->post(
             null,
             [],
             [
-                'time_practice_in_week' => 17,
-                'hours_practice_in_week' => 19,
+                'time_practice_in_week' => 7,
+                'hours_practice_in_week' => 4,
                 'is_parent_in_support' => false,
                 'is_team_player' => false,
-                'parent_in_support_reason' => 'ut',
-                'challenges' => 'rerum',
-                'greatest_motivation' => 'quidem',
-                'strength' => 'minima',
-                'weakness' => 'facere',
+                'parent_in_support_reason' => 'magni',
+                'challenges' => 'voluptas',
+                'greatest_motivation' => 'quia',
+                'strength' => 'facilis',
+                'weakness' => 'enim',
                 'can_overcome_challenges' => false,
-                'time_start_sport' => 'ducimus',
-                'rating_sports' => 'est',
+                'time_start_sport' => 'sed',
+                'rating_sports' => 'voluptatem',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -146,18 +146,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 17,
-    "hours_practice_in_week": 19,
+    "time_practice_in_week": 7,
+    "hours_practice_in_week": 4,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "ut",
-    "challenges": "rerum",
-    "greatest_motivation": "quidem",
-    "strength": "minima",
-    "weakness": "facere",
+    "parent_in_support_reason": "magni",
+    "challenges": "voluptas",
+    "greatest_motivation": "quia",
+    "strength": "facilis",
+    "weakness": "enim",
     "can_overcome_challenges": false,
-    "time_start_sport": "ducimus",
-    "rating_sports": "est",
+    "time_start_sport": "sed",
+    "rating_sports": "voluptatem",
     "created_at": {},
     "updated_at": {}
 }
@@ -276,7 +276,7 @@ GET|HEAD /psychPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/psych_predictors/et" \
+    -G "http://localhost/api/psych_predictors/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -285,7 +285,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/psych_predictors/et',
+    'http://localhost/api/psych_predictors/voluptas',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -299,7 +299,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/et"
+    "http://localhost/api/psych_predictors/voluptas"
 );
 
 let headers = {
@@ -360,10 +360,10 @@ PUT/PATCH /psychPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/psych_predictors/cupiditate" \
+    "http://localhost/api/psych_predictors/deleniti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":15,"hours_practice_in_week":4,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"hic","challenges":"quis","greatest_motivation":"eligendi","strength":"excepturi","weakness":"voluptatem","can_overcome_challenges":false,"time_start_sport":"labore","rating_sports":"rem","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":20,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"est","challenges":"laborum","greatest_motivation":"dolor","strength":"laudantium","weakness":"necessitatibus","can_overcome_challenges":false,"time_start_sport":"et","rating_sports":"inventore","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -371,7 +371,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/psych_predictors/cupiditate',
+    'http://localhost/api/psych_predictors/deleniti',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -384,18 +384,18 @@ $response = $client->put(
             null,
             [],
             [
-                'time_practice_in_week' => 15,
-                'hours_practice_in_week' => 4,
+                'time_practice_in_week' => 20,
+                'hours_practice_in_week' => 19,
                 'is_parent_in_support' => false,
                 'is_team_player' => false,
-                'parent_in_support_reason' => 'hic',
-                'challenges' => 'quis',
-                'greatest_motivation' => 'eligendi',
-                'strength' => 'excepturi',
-                'weakness' => 'voluptatem',
+                'parent_in_support_reason' => 'est',
+                'challenges' => 'laborum',
+                'greatest_motivation' => 'dolor',
+                'strength' => 'laudantium',
+                'weakness' => 'necessitatibus',
                 'can_overcome_challenges' => false,
-                'time_start_sport' => 'labore',
-                'rating_sports' => 'rem',
+                'time_start_sport' => 'et',
+                'rating_sports' => 'inventore',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -409,7 +409,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/cupiditate"
+    "http://localhost/api/psych_predictors/deleniti"
 );
 
 let headers = {
@@ -418,18 +418,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 15,
-    "hours_practice_in_week": 4,
+    "time_practice_in_week": 20,
+    "hours_practice_in_week": 19,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "hic",
-    "challenges": "quis",
-    "greatest_motivation": "eligendi",
-    "strength": "excepturi",
-    "weakness": "voluptatem",
+    "parent_in_support_reason": "est",
+    "challenges": "laborum",
+    "greatest_motivation": "dolor",
+    "strength": "laudantium",
+    "weakness": "necessitatibus",
     "can_overcome_challenges": false,
-    "time_start_sport": "labore",
-    "rating_sports": "rem",
+    "time_start_sport": "et",
+    "rating_sports": "inventore",
     "created_at": {},
     "updated_at": {}
 }
@@ -558,7 +558,7 @@ DELETE /psychPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/psych_predictors/ab" \
+    "http://localhost/api/psych_predictors/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -567,7 +567,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/psych_predictors/ab',
+    'http://localhost/api/psych_predictors/sint',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -581,7 +581,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/ab"
+    "http://localhost/api/psych_predictors/sint"
 );
 
 let headers = {

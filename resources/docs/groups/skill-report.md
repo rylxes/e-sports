@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/skill_reports" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"speed":"illo","passing":"illum","shooting":"maxime","dribbling":"amet","heading":"perferendis","ball_control":"rerum","fitness":"voluptatem","movement":"et","awareness":"accusantium","decisions":"minima","workrate":"reiciendis","strength":"aliquam","crossing":"consequatur","finishing":"corrupti","positioning":"iure","anticipation":"optio","total":"et","overall_grade":"fugit","created_at":{},"updated_at":{}}'
+    -d '{"speed":"officia","passing":"qui","shooting":"natus","dribbling":"facere","heading":"perferendis","ball_control":"alias","fitness":"sed","movement":"ut","awareness":"aperiam","decisions":"rerum","workrate":"pariatur","strength":"nisi","crossing":"velit","finishing":"quidem","positioning":"reprehenderit","anticipation":"et","total":"mollitia","overall_grade":"minima","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,24 +112,24 @@ $response = $client->post(
             null,
             [],
             [
-                'speed' => 'illo',
-                'passing' => 'illum',
-                'shooting' => 'maxime',
-                'dribbling' => 'amet',
+                'speed' => 'officia',
+                'passing' => 'qui',
+                'shooting' => 'natus',
+                'dribbling' => 'facere',
                 'heading' => 'perferendis',
-                'ball_control' => 'rerum',
-                'fitness' => 'voluptatem',
-                'movement' => 'et',
-                'awareness' => 'accusantium',
-                'decisions' => 'minima',
-                'workrate' => 'reiciendis',
-                'strength' => 'aliquam',
-                'crossing' => 'consequatur',
-                'finishing' => 'corrupti',
-                'positioning' => 'iure',
-                'anticipation' => 'optio',
-                'total' => 'et',
-                'overall_grade' => 'fugit',
+                'ball_control' => 'alias',
+                'fitness' => 'sed',
+                'movement' => 'ut',
+                'awareness' => 'aperiam',
+                'decisions' => 'rerum',
+                'workrate' => 'pariatur',
+                'strength' => 'nisi',
+                'crossing' => 'velit',
+                'finishing' => 'quidem',
+                'positioning' => 'reprehenderit',
+                'anticipation' => 'et',
+                'total' => 'mollitia',
+                'overall_grade' => 'minima',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -152,24 +152,24 @@ let headers = {
 };
 
 let body = {
-    "speed": "illo",
-    "passing": "illum",
-    "shooting": "maxime",
-    "dribbling": "amet",
+    "speed": "officia",
+    "passing": "qui",
+    "shooting": "natus",
+    "dribbling": "facere",
     "heading": "perferendis",
-    "ball_control": "rerum",
-    "fitness": "voluptatem",
-    "movement": "et",
-    "awareness": "accusantium",
-    "decisions": "minima",
-    "workrate": "reiciendis",
-    "strength": "aliquam",
-    "crossing": "consequatur",
-    "finishing": "corrupti",
-    "positioning": "iure",
-    "anticipation": "optio",
-    "total": "et",
-    "overall_grade": "fugit",
+    "ball_control": "alias",
+    "fitness": "sed",
+    "movement": "ut",
+    "awareness": "aperiam",
+    "decisions": "rerum",
+    "workrate": "pariatur",
+    "strength": "nisi",
+    "crossing": "velit",
+    "finishing": "quidem",
+    "positioning": "reprehenderit",
+    "anticipation": "et",
+    "total": "mollitia",
+    "overall_grade": "minima",
     "created_at": {},
     "updated_at": {}
 }
@@ -315,7 +315,7 @@ GET|HEAD /skillReports/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_reports/voluptas" \
+    -G "http://localhost/api/skill_reports/officiis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -324,7 +324,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/skill_reports/voluptas',
+    'http://localhost/api/skill_reports/officiis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -338,7 +338,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_reports/voluptas"
+    "http://localhost/api/skill_reports/officiis"
 );
 
 let headers = {
@@ -399,10 +399,10 @@ PUT/PATCH /skillReports/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_reports/nemo" \
+    "http://localhost/api/skill_reports/inventore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":20,"speed":"dignissimos","passing":"cupiditate","shooting":"consequatur","dribbling":"exercitationem","heading":"delectus","ball_control":"soluta","fitness":"maxime","movement":"vel","awareness":"odio","decisions":"dolor","workrate":"harum","strength":"minus","crossing":"soluta","finishing":"velit","positioning":"sed","anticipation":"exercitationem","total":"nesciunt","overall_grade":"corrupti","created_at":{},"updated_at":{}}'
+    -d '{"user_id":6,"speed":"dicta","passing":"non","shooting":"qui","dribbling":"magnam","heading":"qui","ball_control":"nisi","fitness":"harum","movement":"autem","awareness":"fuga","decisions":"quis","workrate":"modi","strength":"eos","crossing":"itaque","finishing":"magni","positioning":"molestiae","anticipation":"repellendus","total":"nemo","overall_grade":"impedit","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -410,7 +410,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/skill_reports/nemo',
+    'http://localhost/api/skill_reports/inventore',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -423,25 +423,25 @@ $response = $client->put(
             null,
             [],
             [
-                'user_id' => 20,
-                'speed' => 'dignissimos',
-                'passing' => 'cupiditate',
-                'shooting' => 'consequatur',
-                'dribbling' => 'exercitationem',
-                'heading' => 'delectus',
-                'ball_control' => 'soluta',
-                'fitness' => 'maxime',
-                'movement' => 'vel',
-                'awareness' => 'odio',
-                'decisions' => 'dolor',
-                'workrate' => 'harum',
-                'strength' => 'minus',
-                'crossing' => 'soluta',
-                'finishing' => 'velit',
-                'positioning' => 'sed',
-                'anticipation' => 'exercitationem',
-                'total' => 'nesciunt',
-                'overall_grade' => 'corrupti',
+                'user_id' => 6,
+                'speed' => 'dicta',
+                'passing' => 'non',
+                'shooting' => 'qui',
+                'dribbling' => 'magnam',
+                'heading' => 'qui',
+                'ball_control' => 'nisi',
+                'fitness' => 'harum',
+                'movement' => 'autem',
+                'awareness' => 'fuga',
+                'decisions' => 'quis',
+                'workrate' => 'modi',
+                'strength' => 'eos',
+                'crossing' => 'itaque',
+                'finishing' => 'magni',
+                'positioning' => 'molestiae',
+                'anticipation' => 'repellendus',
+                'total' => 'nemo',
+                'overall_grade' => 'impedit',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -455,7 +455,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_reports/nemo"
+    "http://localhost/api/skill_reports/inventore"
 );
 
 let headers = {
@@ -464,25 +464,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 20,
-    "speed": "dignissimos",
-    "passing": "cupiditate",
-    "shooting": "consequatur",
-    "dribbling": "exercitationem",
-    "heading": "delectus",
-    "ball_control": "soluta",
-    "fitness": "maxime",
-    "movement": "vel",
-    "awareness": "odio",
-    "decisions": "dolor",
-    "workrate": "harum",
-    "strength": "minus",
-    "crossing": "soluta",
-    "finishing": "velit",
-    "positioning": "sed",
-    "anticipation": "exercitationem",
-    "total": "nesciunt",
-    "overall_grade": "corrupti",
+    "user_id": 6,
+    "speed": "dicta",
+    "passing": "non",
+    "shooting": "qui",
+    "dribbling": "magnam",
+    "heading": "qui",
+    "ball_control": "nisi",
+    "fitness": "harum",
+    "movement": "autem",
+    "awareness": "fuga",
+    "decisions": "quis",
+    "workrate": "modi",
+    "strength": "eos",
+    "crossing": "itaque",
+    "finishing": "magni",
+    "positioning": "molestiae",
+    "anticipation": "repellendus",
+    "total": "nemo",
+    "overall_grade": "impedit",
     "created_at": {},
     "updated_at": {}
 }
@@ -643,7 +643,7 @@ DELETE /skillReports/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_reports/dolorum" \
+    "http://localhost/api/skill_reports/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -652,7 +652,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/skill_reports/dolorum',
+    'http://localhost/api/skill_reports/rerum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -666,7 +666,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_reports/dolorum"
+    "http://localhost/api/skill_reports/rerum"
 );
 
 let headers = {

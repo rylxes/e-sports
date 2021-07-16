@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/coaches/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"et","email":"nihil","first_name":"repudiandae","middle_name":"quam","last_name":"minus","dob":{},"gender":"perspiciatis","coaching_age":"officiis","coaching_gender":"ut","sports":"quam","specialization":"sed","language":"eos","nationality":"aut","city_id":"velit","employment_type":"eum","team_club":"corporis"}'
+    -d '{"password":"fuga","email":"quas","first_name":"autem","middle_name":"autem","last_name":"odit","dob":{},"gender":"eligendi","coaching_age":"aspernatur","coaching_gender":"aut","sports":"illum","specialization":"veniam","language":"odit","nationality":"vel","city_id":"omnis","employment_type":"laborum","team_club":"aut"}'
 
 ```
 
@@ -34,22 +34,22 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'et',
-                'email' => 'nihil',
-                'first_name' => 'repudiandae',
-                'middle_name' => 'quam',
-                'last_name' => 'minus',
+                'password' => 'fuga',
+                'email' => 'quas',
+                'first_name' => 'autem',
+                'middle_name' => 'autem',
+                'last_name' => 'odit',
                 'dob' => $o[0],
-                'gender' => 'perspiciatis',
-                'coaching_age' => 'officiis',
-                'coaching_gender' => 'ut',
-                'sports' => 'quam',
-                'specialization' => 'sed',
-                'language' => 'eos',
-                'nationality' => 'aut',
-                'city_id' => 'velit',
-                'employment_type' => 'eum',
-                'team_club' => 'corporis',
+                'gender' => 'eligendi',
+                'coaching_age' => 'aspernatur',
+                'coaching_gender' => 'aut',
+                'sports' => 'illum',
+                'specialization' => 'veniam',
+                'language' => 'odit',
+                'nationality' => 'vel',
+                'city_id' => 'omnis',
+                'employment_type' => 'laborum',
+                'team_club' => 'aut',
             ],
             []
         ),
@@ -70,22 +70,22 @@ let headers = {
 };
 
 let body = {
-    "password": "et",
-    "email": "nihil",
-    "first_name": "repudiandae",
-    "middle_name": "quam",
-    "last_name": "minus",
+    "password": "fuga",
+    "email": "quas",
+    "first_name": "autem",
+    "middle_name": "autem",
+    "last_name": "odit",
     "dob": {},
-    "gender": "perspiciatis",
-    "coaching_age": "officiis",
-    "coaching_gender": "ut",
-    "sports": "quam",
-    "specialization": "sed",
-    "language": "eos",
-    "nationality": "aut",
-    "city_id": "velit",
-    "employment_type": "eum",
-    "team_club": "corporis"
+    "gender": "eligendi",
+    "coaching_age": "aspernatur",
+    "coaching_gender": "aut",
+    "sports": "illum",
+    "specialization": "veniam",
+    "language": "odit",
+    "nationality": "vel",
+    "city_id": "omnis",
+    "employment_type": "laborum",
+    "team_club": "aut"
 }
 
 fetch(url, {
@@ -290,7 +290,7 @@ curl -X POST \
     "http://localhost/api/coaches" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"odit","email":"rem","first_name":"quidem","middle_name":"quis","last_name":"doloribus","dob":{},"gender":"quasi","coaching_age":"commodi","coaching_gender":"assumenda","sports":"culpa","specialization":"exercitationem","language":"est","nationality":"est","city_id":"dolorum","employment_type":"voluptas","team_club":"labore"}'
+    -d '{"password":"dolores","email":"possimus","first_name":"consequatur","middle_name":"ut","last_name":"ipsum","dob":{},"gender":"ad","coaching_age":"facilis","coaching_gender":"earum","sports":"praesentium","specialization":"et","language":"vel","nationality":"ipsam","city_id":"voluptas","employment_type":"voluptatem","team_club":"adipisci"}'
 
 ```
 
@@ -311,22 +311,22 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'odit',
-                'email' => 'rem',
-                'first_name' => 'quidem',
-                'middle_name' => 'quis',
-                'last_name' => 'doloribus',
+                'password' => 'dolores',
+                'email' => 'possimus',
+                'first_name' => 'consequatur',
+                'middle_name' => 'ut',
+                'last_name' => 'ipsum',
                 'dob' => $o[0],
-                'gender' => 'quasi',
-                'coaching_age' => 'commodi',
-                'coaching_gender' => 'assumenda',
-                'sports' => 'culpa',
-                'specialization' => 'exercitationem',
-                'language' => 'est',
-                'nationality' => 'est',
-                'city_id' => 'dolorum',
-                'employment_type' => 'voluptas',
-                'team_club' => 'labore',
+                'gender' => 'ad',
+                'coaching_age' => 'facilis',
+                'coaching_gender' => 'earum',
+                'sports' => 'praesentium',
+                'specialization' => 'et',
+                'language' => 'vel',
+                'nationality' => 'ipsam',
+                'city_id' => 'voluptas',
+                'employment_type' => 'voluptatem',
+                'team_club' => 'adipisci',
             ],
             []
         ),
@@ -347,22 +347,22 @@ let headers = {
 };
 
 let body = {
-    "password": "odit",
-    "email": "rem",
-    "first_name": "quidem",
-    "middle_name": "quis",
-    "last_name": "doloribus",
+    "password": "dolores",
+    "email": "possimus",
+    "first_name": "consequatur",
+    "middle_name": "ut",
+    "last_name": "ipsum",
     "dob": {},
-    "gender": "quasi",
-    "coaching_age": "commodi",
-    "coaching_gender": "assumenda",
-    "sports": "culpa",
-    "specialization": "exercitationem",
-    "language": "est",
-    "nationality": "est",
-    "city_id": "dolorum",
-    "employment_type": "voluptas",
-    "team_club": "labore"
+    "gender": "ad",
+    "coaching_age": "facilis",
+    "coaching_gender": "earum",
+    "sports": "praesentium",
+    "specialization": "et",
+    "language": "vel",
+    "nationality": "ipsam",
+    "city_id": "voluptas",
+    "employment_type": "voluptatem",
+    "team_club": "adipisci"
 }
 
 fetch(url, {
@@ -486,7 +486,7 @@ GET|HEAD /coaches/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/coaches/corporis" \
+    -G "http://localhost/api/coaches/eveniet" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -495,7 +495,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/coaches/corporis',
+    'http://localhost/api/coaches/eveniet',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -509,7 +509,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/corporis"
+    "http://localhost/api/coaches/eveniet"
 );
 
 let headers = {
@@ -570,10 +570,10 @@ PUT/PATCH /coaches/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/coaches/vel" \
+    "http://localhost/api/coaches/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"delectus","qualifications":"harum","user_id":15,"email":"omnis","first_name":"quo","middle_name":"qui","last_name":"vitae","dob":{},"gender":"itaque","coaching_age":"beatae","coaching_gender":"enim","sports":"at","specialization":"tempora","language":"corporis","nationality":"architecto","city_id":"sint","employment_type":"possimus","team_club":"consequatur","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"dignissimos","qualifications":"ea","user_id":15,"email":"facilis","first_name":"unde","middle_name":"id","last_name":"veniam","dob":{},"gender":"et","coaching_age":"id","coaching_gender":"nobis","sports":"libero","specialization":"quam","language":"iste","nationality":"molestiae","city_id":"sequi","employment_type":"enim","team_club":"quae","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -581,7 +581,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/coaches/vel',
+    'http://localhost/api/coaches/voluptas',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -594,24 +594,24 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'delectus',
-                'qualifications' => 'harum',
+                'profile_url' => 'dignissimos',
+                'qualifications' => 'ea',
                 'user_id' => 15,
-                'email' => 'omnis',
-                'first_name' => 'quo',
-                'middle_name' => 'qui',
-                'last_name' => 'vitae',
+                'email' => 'facilis',
+                'first_name' => 'unde',
+                'middle_name' => 'id',
+                'last_name' => 'veniam',
                 'dob' => $o[0],
-                'gender' => 'itaque',
-                'coaching_age' => 'beatae',
-                'coaching_gender' => 'enim',
-                'sports' => 'at',
-                'specialization' => 'tempora',
-                'language' => 'corporis',
-                'nationality' => 'architecto',
-                'city_id' => 'sint',
-                'employment_type' => 'possimus',
-                'team_club' => 'consequatur',
+                'gender' => 'et',
+                'coaching_age' => 'id',
+                'coaching_gender' => 'nobis',
+                'sports' => 'libero',
+                'specialization' => 'quam',
+                'language' => 'iste',
+                'nationality' => 'molestiae',
+                'city_id' => 'sequi',
+                'employment_type' => 'enim',
+                'team_club' => 'quae',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -625,7 +625,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/vel"
+    "http://localhost/api/coaches/voluptas"
 );
 
 let headers = {
@@ -634,24 +634,24 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "delectus",
-    "qualifications": "harum",
+    "profile_url": "dignissimos",
+    "qualifications": "ea",
     "user_id": 15,
-    "email": "omnis",
-    "first_name": "quo",
-    "middle_name": "qui",
-    "last_name": "vitae",
+    "email": "facilis",
+    "first_name": "unde",
+    "middle_name": "id",
+    "last_name": "veniam",
     "dob": {},
-    "gender": "itaque",
-    "coaching_age": "beatae",
-    "coaching_gender": "enim",
-    "sports": "at",
-    "specialization": "tempora",
-    "language": "corporis",
-    "nationality": "architecto",
-    "city_id": "sint",
-    "employment_type": "possimus",
-    "team_club": "consequatur",
+    "gender": "et",
+    "coaching_age": "id",
+    "coaching_gender": "nobis",
+    "sports": "libero",
+    "specialization": "quam",
+    "language": "iste",
+    "nationality": "molestiae",
+    "city_id": "sequi",
+    "employment_type": "enim",
+    "team_club": "quae",
     "created_at": {},
     "updated_at": {}
 }
@@ -807,7 +807,7 @@ DELETE /coaches/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/coaches/dolore" \
+    "http://localhost/api/coaches/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -816,7 +816,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/coaches/dolore',
+    'http://localhost/api/coaches/quia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -830,7 +830,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/dolore"
+    "http://localhost/api/coaches/quia"
 );
 
 let headers = {
