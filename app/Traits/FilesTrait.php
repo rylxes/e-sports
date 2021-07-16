@@ -27,7 +27,7 @@ trait FilesTrait
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ];
-        $role = Role::findByName($role);
+        $role = Role::findByName($role, 'api');
         $user = User::create($array);
         $user->assignRole($role);
         event(new Registered($user));
