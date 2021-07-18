@@ -1,6 +1,6 @@
 # Authenticating requests
 
-This API is authenticated by sending 
+To authenticate requests, include 
 
 All authenticated endpoints are marked with a `requires authentication` badge in the documentation below.
 

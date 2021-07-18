@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/video_types" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"odio","created_at":{},"updated_at":{}}'
+    -d '{"name":"hic","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,7 +112,7 @@ $response = $client->post(
             null,
             [],
             [
-                'name' => 'odio',
+                'name' => 'hic',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -135,7 +135,7 @@ let headers = {
 };
 
 let body = {
-    "name": "odio",
+    "name": "hic",
     "created_at": {},
     "updated_at": {}
 }
@@ -196,7 +196,7 @@ GET|HEAD /videoTypes/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/video_types/molestiae" \
+    -G "http://localhost/api/video_types/soluta" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -205,7 +205,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/video_types/molestiae',
+    'http://localhost/api/video_types/soluta',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -219,7 +219,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/video_types/molestiae"
+    "http://localhost/api/video_types/soluta"
 );
 
 let headers = {
@@ -280,10 +280,10 @@ PUT/PATCH /videoTypes/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/video_types/necessitatibus" \
+    "http://localhost/api/video_types/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"nesciunt","created_at":{},"updated_at":{}}'
+    -d '{"name":"vel","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -291,7 +291,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/video_types/necessitatibus',
+    'http://localhost/api/video_types/quia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -304,7 +304,7 @@ $response = $client->put(
             null,
             [],
             [
-                'name' => 'nesciunt',
+                'name' => 'vel',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -318,7 +318,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/video_types/necessitatibus"
+    "http://localhost/api/video_types/quia"
 );
 
 let headers = {
@@ -327,7 +327,7 @@ let headers = {
 };
 
 let body = {
-    "name": "nesciunt",
+    "name": "vel",
     "created_at": {},
     "updated_at": {}
 }
@@ -398,7 +398,7 @@ DELETE /videoTypes/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/video_types/architecto" \
+    "http://localhost/api/video_types/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -407,7 +407,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/video_types/architecto',
+    'http://localhost/api/video_types/et',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -421,7 +421,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/video_types/architecto"
+    "http://localhost/api/video_types/et"
 );
 
 let headers = {

@@ -1,0 +1,835 @@
+# Academy
+
+
+## Store a newly created Academy in storage.
+
+
+POST /academies
+
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/academies/register" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"name":"voluptas","reg_date":{},"profile_url":"veniam","academy_age":"voluptatem","capacity":"aperiam","country_id":13,"location":"id"}'
+
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/academies/register',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'name' => 'voluptas',
+                'reg_date' => $o[0],
+                'profile_url' => 'veniam',
+                'academy_age' => 'voluptatem',
+                'capacity' => 'aperiam',
+                'country_id' => 13,
+                'location' => 'id',
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies/register"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "voluptas",
+    "reg_date": {},
+    "profile_url": "veniam",
+    "academy_age": "voluptatem",
+    "capacity": "aperiam",
+    "country_id": 13,
+    "location": "id"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-academies-register" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-academies-register"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-academies-register"></code></pre>
+</div>
+<div id="execution-error-POSTapi-academies-register" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-academies-register"></code></pre>
+</div>
+<form id="form-POSTapi-academies-register" data-method="POST" data-path="api/academies/register" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-academies-register', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-academies-register" onclick="tryItOut('POSTapi-academies-register');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-academies-register" onclick="cancelTryOut('POSTapi-academies-register');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-academies-register" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/academies/register</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="name" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>reg_date</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="reg_date" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>profile_url</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="profile_url" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>academy_age</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="academy_age" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>capacity</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="capacity" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>country_id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
+<input type="number" name="country_id" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>location</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="location" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
+<br>
+</p>
+
+</form>
+
+
+## api/academies/uploadProfile
+
+
+
+
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/academies/uploadProfile" \
+    -H "Content-Type: multipart/form-data" \
+    -H "Accept: application/json" \
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpG0QUqF" 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/academies/uploadProfile',
+    [
+        'headers' => [
+            'Content-Type' => 'multipart/form-data',
+            'Accept' => 'application/json',
+        ],
+        'multipart' => [
+            [
+                'name' => 'file',
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpG0QUqF', 'r')
+            ],
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies/uploadProfile"
+);
+
+let headers = {
+    "Content-Type": "multipart/form-data",
+    "Accept": "application/json",
+};
+
+const body = new FormData();
+body.append('file', document.querySelector('input[name="file"]').files[0]);
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-academies-uploadProfile" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-academies-uploadProfile"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-academies-uploadProfile"></code></pre>
+</div>
+<div id="execution-error-POSTapi-academies-uploadProfile" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-academies-uploadProfile"></code></pre>
+</div>
+<form id="form-POSTapi-academies-uploadProfile" data-method="POST" data-path="api/academies/uploadProfile" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-academies-uploadProfile', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-academies-uploadProfile" onclick="tryItOut('POSTapi-academies-uploadProfile');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-academies-uploadProfile" onclick="cancelTryOut('POSTapi-academies-uploadProfile');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-academies-uploadProfile" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/academies/uploadProfile</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>file</code></b>&nbsp;&nbsp;<small>file</small>     <i>optional</i> &nbsp;
+<input type="file" name="file" data-endpoint="POSTapi-academies-uploadProfile" data-component="body"  hidden>
+<br>
+The value must be a file.</p>
+
+</form>
+
+
+## api/academies/uploadPictures
+
+
+
+
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/academies/uploadPictures" \
+    -H "Content-Type: multipart/form-data" \
+    -H "Accept: application/json" \
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpZ1d1b3" 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/academies/uploadPictures',
+    [
+        'headers' => [
+            'Content-Type' => 'multipart/form-data',
+            'Accept' => 'application/json',
+        ],
+        'multipart' => [
+            [
+                'name' => 'pictures[]',
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpZ1d1b3', 'r')
+            ],
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies/uploadPictures"
+);
+
+let headers = {
+    "Content-Type": "multipart/form-data",
+    "Accept": "application/json",
+};
+
+const body = new FormData();
+body.append('pictures[]', document.querySelector('input[name="pictures[]"]').files[0]);
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-academies-uploadPictures" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-academies-uploadPictures"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-academies-uploadPictures"></code></pre>
+</div>
+<div id="execution-error-POSTapi-academies-uploadPictures" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-academies-uploadPictures"></code></pre>
+</div>
+<form id="form-POSTapi-academies-uploadPictures" data-method="POST" data-path="api/academies/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-academies-uploadPictures', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-academies-uploadPictures" onclick="tryItOut('POSTapi-academies-uploadPictures');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-academies-uploadPictures" onclick="cancelTryOut('POSTapi-academies-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-academies-uploadPictures" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/academies/uploadPictures</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
+<input type="file" name="pictures.0" data-endpoint="POSTapi-academies-uploadPictures" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-academies-uploadPictures" data-component="body" hidden>
+<br>
+The value must be a file.</p>
+
+</form>
+
+
+## Display a listing of the Academy.
+
+
+GET|HEAD /academies
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "http://localhost/api/academies" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/academies',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response => response.json());
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthorized",
+    "status": 401
+}
+```
+<div id="execution-results-GETapi-academies" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-academies"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-academies"></code></pre>
+</div>
+<div id="execution-error-GETapi-academies" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-academies"></code></pre>
+</div>
+<form id="form-GETapi-academies" data-method="GET" data-path="api/academies" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-academies', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-academies" onclick="tryItOut('GETapi-academies');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-academies" onclick="cancelTryOut('GETapi-academies');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-academies" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/academies</code></b>
+</p>
+</form>
+
+
+## Store a newly created Academy in storage.
+
+
+POST /academies
+
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/academies" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"name":"asperiores","reg_date":{},"profile_url":"est","academy_age":"odit","capacity":"voluptatem","country_id":14,"location":"ipsam"}'
+
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/academies',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'name' => 'asperiores',
+                'reg_date' => $o[0],
+                'profile_url' => 'est',
+                'academy_age' => 'odit',
+                'capacity' => 'voluptatem',
+                'country_id' => 14,
+                'location' => 'ipsam',
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "asperiores",
+    "reg_date": {},
+    "profile_url": "est",
+    "academy_age": "odit",
+    "capacity": "voluptatem",
+    "country_id": 14,
+    "location": "ipsam"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-academies" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-academies"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-academies"></code></pre>
+</div>
+<div id="execution-error-POSTapi-academies" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-academies"></code></pre>
+</div>
+<form id="form-POSTapi-academies" data-method="POST" data-path="api/academies" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-academies', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-academies" onclick="tryItOut('POSTapi-academies');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-academies" onclick="cancelTryOut('POSTapi-academies');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-academies" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/academies</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="name" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>reg_date</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="reg_date" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>profile_url</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="profile_url" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>academy_age</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="academy_age" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>capacity</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="capacity" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>country_id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
+<input type="number" name="country_id" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>location</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="location" data-endpoint="POSTapi-academies" data-component="body"  hidden>
+<br>
+</p>
+
+</form>
+
+
+## Display the specified Academy.
+
+
+GET|HEAD /academies/{id}
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "http://localhost/api/academies/qui" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->get(
+    'http://localhost/api/academies/qui',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies/qui"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response => response.json());
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthorized",
+    "status": 401
+}
+```
+<div id="execution-results-GETapi-academies--academy-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-academies--academy-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-academies--academy-"></code></pre>
+</div>
+<div id="execution-error-GETapi-academies--academy-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-academies--academy-"></code></pre>
+</div>
+<form id="form-GETapi-academies--academy-" data-method="GET" data-path="api/academies/{academy}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-academies--academy-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-academies--academy-" onclick="tryItOut('GETapi-academies--academy-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-academies--academy-" onclick="cancelTryOut('GETapi-academies--academy-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-academies--academy-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/academies/{academy}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>academy</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="academy" data-endpoint="GETapi-academies--academy-" data-component="url" required  hidden>
+<br>
+</p>
+</form>
+
+
+## Update the specified Academy in storage.
+
+
+PUT/PATCH /academies/{id}
+
+> Example request:
+
+```bash
+curl -X PUT \
+    "http://localhost/api/academies/omnis" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"name":"fuga","reg_date":{},"profile_url":"in","academy_age":"consequatur","capacity":"ut","country_id":2,"location":"repudiandae"}'
+
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->put(
+    'http://localhost/api/academies/omnis',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+        'json' => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+            $o = [
+                clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['stdClass'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('stdClass')),
+            ],
+            null,
+            [],
+            [
+                'name' => 'fuga',
+                'reg_date' => $o[0],
+                'profile_url' => 'in',
+                'academy_age' => 'consequatur',
+                'capacity' => 'ut',
+                'country_id' => 2,
+                'location' => 'repudiandae',
+            ],
+            []
+        ),
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies/omnis"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "fuga",
+    "reg_date": {},
+    "profile_url": "in",
+    "academy_age": "consequatur",
+    "capacity": "ut",
+    "country_id": 2,
+    "location": "repudiandae"
+}
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-PUTapi-academies--academy-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTapi-academies--academy-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-academies--academy-"></code></pre>
+</div>
+<div id="execution-error-PUTapi-academies--academy-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-academies--academy-"></code></pre>
+</div>
+<form id="form-PUTapi-academies--academy-" data-method="PUT" data-path="api/academies/{academy}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTapi-academies--academy-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTapi-academies--academy-" onclick="tryItOut('PUTapi-academies--academy-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTapi-academies--academy-" onclick="cancelTryOut('PUTapi-academies--academy-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTapi-academies--academy-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-darkblue">PUT</small>
+ <b><code>api/academies/{academy}</code></b>
+</p>
+<p>
+<small class="badge badge-purple">PATCH</small>
+ <b><code>api/academies/{academy}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>academy</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="academy" data-endpoint="PUTapi-academies--academy-" data-component="url" required  hidden>
+<br>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="name" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>reg_date</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="reg_date" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>profile_url</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="profile_url" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>academy_age</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="academy_age" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>capacity</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="capacity" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>country_id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
+<input type="number" name="country_id" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+<p>
+<b><code>location</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="location" data-endpoint="PUTapi-academies--academy-" data-component="body"  hidden>
+<br>
+</p>
+
+</form>
+
+
+## Remove the specified Academy from storage.
+
+
+DELETE /academies/{id}
+
+> Example request:
+
+```bash
+curl -X DELETE \
+    "http://localhost/api/academies/labore" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->delete(
+    'http://localhost/api/academies/labore',
+    [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/academies/labore"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-DELETEapi-academies--academy-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEapi-academies--academy-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-academies--academy-"></code></pre>
+</div>
+<div id="execution-error-DELETEapi-academies--academy-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-academies--academy-"></code></pre>
+</div>
+<form id="form-DELETEapi-academies--academy-" data-method="DELETE" data-path="api/academies/{academy}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEapi-academies--academy-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEapi-academies--academy-" onclick="tryItOut('DELETEapi-academies--academy-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEapi-academies--academy-" onclick="cancelTryOut('DELETEapi-academies--academy-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEapi-academies--academy-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-red">DELETE</small>
+ <b><code>api/academies/{academy}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>academy</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="academy" data-endpoint="DELETEapi-academies--academy-" data-component="url" required  hidden>
+<br>
+</p>
+</form>
+
+
+

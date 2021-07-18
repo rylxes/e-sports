@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/cities/byState" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"state_id":"quasi"}'
+    -d '{"state_id":"et"}'
 
 ```
 
@@ -28,7 +28,7 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'state_id' => 'quasi',
+            'state_id' => 'et',
         ],
     ]
 );
@@ -47,7 +47,7 @@ let headers = {
 };
 
 let body = {
-    "state_id": "quasi"
+    "state_id": "et"
 }
 
 fetch(url, {

@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/videos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"type_id":4,"skill_test_id":1,"url":"impedit","created_at":{},"updated_at":{}}'
+    -d '{"type_id":13,"skill_test_id":12,"url":"exercitationem","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,9 +112,9 @@ $response = $client->post(
             null,
             [],
             [
-                'type_id' => 4,
-                'skill_test_id' => 1,
-                'url' => 'impedit',
+                'type_id' => 13,
+                'skill_test_id' => 12,
+                'url' => 'exercitationem',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -137,9 +137,9 @@ let headers = {
 };
 
 let body = {
-    "type_id": 4,
-    "skill_test_id": 1,
-    "url": "impedit",
+    "type_id": 13,
+    "skill_test_id": 12,
+    "url": "exercitationem",
     "created_at": {},
     "updated_at": {}
 }
@@ -210,7 +210,7 @@ GET|HEAD /videos/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/videos/sit" \
+    -G "http://localhost/api/videos/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -219,7 +219,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/videos/sit',
+    'http://localhost/api/videos/sint',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -233,7 +233,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/sit"
+    "http://localhost/api/videos/sint"
 );
 
 let headers = {
@@ -294,10 +294,10 @@ PUT/PATCH /videos/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/videos/aliquam" \
+    "http://localhost/api/videos/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"type_id":6,"skill_test_id":8,"url":"sed","created_at":{},"updated_at":{}}'
+    -d '{"type_id":5,"skill_test_id":4,"url":"sed","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -305,7 +305,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/videos/aliquam',
+    'http://localhost/api/videos/nulla',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -318,8 +318,8 @@ $response = $client->put(
             null,
             [],
             [
-                'type_id' => 6,
-                'skill_test_id' => 8,
+                'type_id' => 5,
+                'skill_test_id' => 4,
                 'url' => 'sed',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
@@ -334,7 +334,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/aliquam"
+    "http://localhost/api/videos/nulla"
 );
 
 let headers = {
@@ -343,8 +343,8 @@ let headers = {
 };
 
 let body = {
-    "type_id": 6,
-    "skill_test_id": 8,
+    "type_id": 5,
+    "skill_test_id": 4,
     "url": "sed",
     "created_at": {},
     "updated_at": {}
@@ -426,7 +426,7 @@ DELETE /videos/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/videos/sunt" \
+    "http://localhost/api/videos/impedit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -435,7 +435,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/videos/sunt',
+    'http://localhost/api/videos/impedit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -449,7 +449,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/videos/sunt"
+    "http://localhost/api/videos/impedit"
 );
 
 let headers = {
