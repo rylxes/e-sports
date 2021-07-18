@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Validation\ValidationException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -49,6 +50,9 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $exception)
     {
         // dd($exception->getMessage());
+        if (config('app.env') == 'local' && !($exception instanceof ValidationException)) {
+            dd($exception->getMessage(), $exception->getFile(), $exception->getLine());
+        }
         if ($request->wantsJson()) {   //add Accept: application/json in request
             return $this->handleApiException($request, $exception);
         } else {

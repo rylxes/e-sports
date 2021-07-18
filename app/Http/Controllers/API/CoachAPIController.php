@@ -4,6 +4,8 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Requests\API\CreateCoachAPIRequest;
 use App\Http\Requests\API\UpdateCoachAPIRequest;
+use App\Http\Requests\API\UploadPicturesAPIRequest;
+use App\Http\Requests\API\UploadProfileAPIRequest;
 use App\Models\Coach;
 use App\Repositories\CoachRepository;
 use App\Traits\FilesTrait;
@@ -67,7 +69,7 @@ class CoachAPIController extends AppBaseController
         if (!$this->isFileSuccess && $this->hasFile) {
             return $__response;
         }
-        $__response = $this->uploadMultipleFile($request, $coach, 'License', 'license');
+        $__response = $this->uploadOneFile($request, $coach, 'License', 'license');
         if (!$this->isFileSuccess && $this->hasFile) {
             return $__response;
         }
@@ -81,6 +83,34 @@ class CoachAPIController extends AppBaseController
         }
 
         return $this->sendResponse($coach->toArray(), 'Coach saved successfully');
+    }
+
+
+     public function uploadProfile(UploadProfileAPIRequest $request)
+    {
+        DB::beginTransaction();
+        $user = auth()->user()->id;
+        $response = Coach::where('user_id', $user)->first();
+        $__response = $this->uploadOneFile($request, $response, 'Profile', 'file');
+        if (!$this->isFileSuccess && $this->hasFile) {
+            return $__response;
+        }
+        DB::commit();
+        return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
+    }
+
+
+    public function uploadPictures(UploadPicturesAPIRequest $request)
+    {
+        DB::beginTransaction();
+        $user = auth()->user()->id;
+        $response = Coach::where('user_id', $user)->first();
+        $__response = $this->uploadMultipleFile($request, $response, 'License', 'pictures');
+        if (!$this->isFileSuccess && $this->hasFile) {
+            return $__response;
+        }
+        DB::commit();
+        return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 
     /**

@@ -38,22 +38,27 @@ trait FilesTrait
     function uploadMultipleFile(Request $request, AppModel $file, $collection, $fileName)
     {
         $this->isFileSuccess = false;
-        if (!empty($request->file($fileName))) {
-            $this->deleteMultipleFile($file, $collection);
-            $this->hasFile = true;
-            try {
-                $file->addMedia($request->file($fileName))
-                    ->toMediaCollection($collection);
-                $this->isFileSuccess = true;
-                if (empty($file->media)) {
+        $files = $request->allFiles();
+
+        if (!empty($files)) {
+            //$this->deleteMultipleFile($file, $collection);
+            foreach ($files as $eachFile) {
+                $this->hasFile = true;
+                try {
+                    $file->addMedia($eachFile)
+                        ->toMediaCollection($collection);
+                    $this->isFileSuccess = true;
+                    if (empty($file->media)) {
+                        DB::rollBack();
+                        return $this->sendError("There was an issue uploading your file");
+                    }
+                } catch (\Throwable $exception) {
+                    //dd($exception->getMessage());
                     DB::rollBack();
-                    return $this->sendError("There was an issue uploading your file");
+                    return $this->sendError($exception->getMessage());
                 }
-            } catch (\Throwable $exception) {
-                //dd($exception->getMessage());
-                DB::rollBack();
-                return $this->sendError($exception->getMessage());
             }
+
         }
     }
 

@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
+
 /**
  *
  * @group Auth
@@ -119,6 +120,31 @@ class LoginController extends Controller
         $data = new \stdClass();
         $data->user = Auth::user();
         $data->accessToken = $this->accessToken;
+        //dd(\auth()->user()->roles->pluck('name')->toArray());
+        $data->roles = \auth()->user()->roles->pluck('name')->toArray();
+        if (\auth()->user()->hasAllRoles(['academies'])) {
+            $data->profile = \auth()->user()->academies;
+        }
+
+        if (\auth()->user()->hasAllRoles(['agents'])) {
+            $data->profile = \auth()->user()->agents;
+        }
+
+        if (\auth()->user()->hasAllRoles(['performance_coach'])) {
+            $data->profile = \auth()->user()->performance_coach;
+        }
+
+        if (\auth()->user()->hasAllRoles(['talent'])) {
+            $data->profile = \auth()->user()->talent;
+        }
+
+        if (\auth()->user()->hasAllRoles(['coach'])) {
+            $data->profile = \auth()->user()->coach;
+        }
+
+        if (\auth()->user()->hasAllRoles(['scout'])) {
+            $data->profile = \auth()->user()->scout;
+        }
 
         $message = 'Successful Login';
         return $this->sendResponse($data, $message);

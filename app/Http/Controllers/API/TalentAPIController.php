@@ -4,6 +4,8 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Requests\API\CreateTalentAPIRequest;
 use App\Http\Requests\API\UpdateTalentAPIRequest;
+use App\Http\Requests\API\UploadPicturesAPIRequest;
+use App\Http\Requests\API\UploadProfileAPIRequest;
 use App\Models\Talent;
 use App\Repositories\TalentRepository;
 use App\Traits\FilesTrait;
@@ -67,7 +69,7 @@ class TalentAPIController extends AppBaseController
         if (!$this->isFileSuccess && $this->hasFile) {
             return $__response;
         }
-        $__response = $this->uploadMultipleFile($request, $talent, 'Educational Background', 'qualifications');
+        $__response = $this->uploadOneFile($request, $talent, 'Educational Background', 'qualifications');
         if (!$this->isFileSuccess && $this->hasFile) {
             return $__response;
         }
@@ -80,6 +82,34 @@ class TalentAPIController extends AppBaseController
             $this->talentRepository->update($input, $talent->id);
         }
         return $this->sendResponse($talent->toArray(), 'Talent saved successfully');
+    }
+
+
+    public function uploadProfile(UploadProfileAPIRequest $request)
+    {
+        DB::beginTransaction();
+        $user = auth()->user()->id;
+        $talent = Talent::where('user_id', $user)->first();
+        $__response = $this->uploadOneFile($request, $talent, 'Profile', 'file');
+        if (!$this->isFileSuccess && $this->hasFile) {
+            return $__response;
+        }
+        DB::commit();
+        return $this->sendResponse($talent->toArray(), 'Uploaded Successfully');
+    }
+
+
+    public function uploadPictures(UploadPicturesAPIRequest $request)
+    {
+        DB::beginTransaction();
+        $user = auth()->user()->id;
+        $talent = Talent::where('user_id', $user)->first();
+        $__response = $this->uploadMultipleFile($request, $talent, 'Educational Background', 'pictures');
+        if (!$this->isFileSuccess && $this->hasFile) {
+            return $__response;
+        }
+        DB::commit();
+        return $this->sendResponse($talent->toArray(), 'Uploaded Successfully');
     }
 
 

@@ -58,4 +58,36 @@ class User extends Authenticatable
     {
         $this->notify(new CustomPasswordReset($token, $this->getEmailForPasswordReset()));
     }
+
+
+    public function academies()
+    {
+        return $this->hasOne(Academy::class, 'user_id');
+    }
+
+
+    public function scout()
+    {
+        return $this->hasOne(Scout::class, 'user_id');
+    }
+
+    public function coach()
+    {
+        return $this->hasOne(Coach::class, 'user_id');
+    }
+
+    public function talent()
+    {
+        return $this->hasOne(Talent::class, 'user_id');
+    }
+
+    public function performance_coach()
+    {
+        return $this->hasOne(PerformanceCoach::class, 'user_id');
+    }
+
+    public function agents()
+    {
+        return $this->hasOne(Agent::class, 'user_id');
+    }
 }
