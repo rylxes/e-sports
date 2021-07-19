@@ -34,6 +34,8 @@ class CreateAcademyAPIRequest extends APIRequest
             //$rules['file'] = 'file';
         }
         $otherRules = [
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email' => 'required|string|max:255',
             'name' => 'nullable|string|max:255',
             'reg_date' => 'nullable',
             'profile_url' => 'nullable|string|max:255',

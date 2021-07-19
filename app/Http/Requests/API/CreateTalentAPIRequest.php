@@ -38,8 +38,9 @@ class CreateTalentAPIRequest extends APIRequest
            // 'license' => 'nullable|file|mimes:jpg,jpeg,bmp,png,doc,docx,rtf,pdf,zip|max:2048',
            // 'qualifications' => 'nullable|file|mimes:jpg,jpeg,bmp,png|max:2048',
             // 'qualifications' => 'nullable|string|max:255',
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+
             'scheme' => 'nullable|string|max:255',
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
             'email' => 'required|string|max:255',
             'first_name' => 'required|string|max:255',
             'middle_name' => 'nullable|string|max:255',
