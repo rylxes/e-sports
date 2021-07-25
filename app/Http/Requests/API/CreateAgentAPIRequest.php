@@ -34,6 +34,7 @@ class CreateAgentAPIRequest extends APIRequest
             //$rules['file'] = 'file';
         }
         $otherRules = [
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
             'first_name' => 'nullable|string|max:255',
             'middle_name' => 'nullable|string|max:255',
             'last_name' => 'nullable|string|max:255',
@@ -43,10 +44,8 @@ class CreateAgentAPIRequest extends APIRequest
             'language' => 'nullable|string',
             'nationality' => 'nullable|string',
             'city_id' => 'nullable|string|max:255',
-            'user_id' => 'nullable|integer',
             'email' => 'nullable|string|max:255',
             'employment_type' => 'nullable|string|max:255',
-            'qualifications' => 'nullable|string|max:255',
         ];
         return array_merge($rules, $otherRules);
     }

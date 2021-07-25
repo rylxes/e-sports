@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/academies/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"voluptas","reg_date":{},"profile_url":"veniam","academy_age":"voluptatem","capacity":"aperiam","country_id":13,"location":"id"}'
+    -d '{"password":"mollitia","email":"esse","name":"quos","reg_date":{},"profile_url":"qui","academy_age":"ipsum","capacity":"ut","country_id":12,"location":"et"}'
 
 ```
 
@@ -34,13 +34,15 @@ $response = $client->post(
             null,
             [],
             [
-                'name' => 'voluptas',
+                'password' => 'mollitia',
+                'email' => 'esse',
+                'name' => 'quos',
                 'reg_date' => $o[0],
-                'profile_url' => 'veniam',
-                'academy_age' => 'voluptatem',
-                'capacity' => 'aperiam',
-                'country_id' => 13,
-                'location' => 'id',
+                'profile_url' => 'qui',
+                'academy_age' => 'ipsum',
+                'capacity' => 'ut',
+                'country_id' => 12,
+                'location' => 'et',
             ],
             []
         ),
@@ -61,13 +63,15 @@ let headers = {
 };
 
 let body = {
-    "name": "voluptas",
+    "password": "mollitia",
+    "email": "esse",
+    "name": "quos",
     "reg_date": {},
-    "profile_url": "veniam",
-    "academy_age": "voluptatem",
-    "capacity": "aperiam",
-    "country_id": 13,
-    "location": "id"
+    "profile_url": "qui",
+    "academy_age": "ipsum",
+    "capacity": "ut",
+    "country_id": 12,
+    "location": "et"
 }
 
 fetch(url, {
@@ -98,6 +102,16 @@ fetch(url, {
  <b><code>api/academies/register</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-academies-register" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-academies-register" data-component="body" required  hidden>
+<br>
+</p>
 <p>
 <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="name" data-endpoint="POSTapi-academies-register" data-component="body"  hidden>
@@ -149,7 +163,7 @@ curl -X POST \
     "http://localhost/api/academies/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpG0QUqF" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php3M8Q4a" 
 ```
 
 ```php
@@ -165,7 +179,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpG0QUqF', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php3M8Q4a', 'r')
             ],
         ],
     ]
@@ -224,7 +238,7 @@ The value must be a file.</p>
 </form>
 
 
-## api/academies/uploadPictures
+## api/academies/uploadDocs
 
 
 
@@ -233,17 +247,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/academies/uploadPictures" \
+    "http://localhost/api/academies/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpZ1d1b3" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php66n2j9" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/academies/uploadPictures',
+    'http://localhost/api/academies/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -252,7 +266,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpZ1d1b3', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php66n2j9', 'r')
             ],
         ],
     ]
@@ -263,7 +277,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/uploadPictures"
+    "http://localhost/api/academies/uploadDocs"
 );
 
 let headers = {
@@ -282,30 +296,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-academies-uploadPictures" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-academies-uploadPictures"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-academies-uploadPictures"></code></pre>
+<div id="execution-results-POSTapi-academies-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-academies-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-academies-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-academies-uploadPictures" hidden>
+<div id="execution-error-POSTapi-academies-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-academies-uploadPictures"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-academies-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-academies-uploadPictures" data-method="POST" data-path="api/academies/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-academies-uploadPictures', this);">
+<form id="form-POSTapi-academies-uploadDocs" data-method="POST" data-path="api/academies/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-academies-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-academies-uploadPictures" onclick="tryItOut('POSTapi-academies-uploadPictures');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-academies-uploadPictures" onclick="cancelTryOut('POSTapi-academies-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-academies-uploadPictures" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-academies-uploadDocs" onclick="tryItOut('POSTapi-academies-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-academies-uploadDocs" onclick="cancelTryOut('POSTapi-academies-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-academies-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/academies/uploadPictures</code></b>
+ <b><code>api/academies/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-academies-uploadPictures" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-academies-uploadPictures" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-academies-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-academies-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -402,7 +416,7 @@ curl -X POST \
     "http://localhost/api/academies" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"asperiores","reg_date":{},"profile_url":"est","academy_age":"odit","capacity":"voluptatem","country_id":14,"location":"ipsam"}'
+    -d '{"password":"veniam","email":"autem","name":"assumenda","reg_date":{},"profile_url":"nihil","academy_age":"similique","capacity":"veritatis","country_id":13,"location":"asperiores"}'
 
 ```
 
@@ -423,13 +437,15 @@ $response = $client->post(
             null,
             [],
             [
-                'name' => 'asperiores',
+                'password' => 'veniam',
+                'email' => 'autem',
+                'name' => 'assumenda',
                 'reg_date' => $o[0],
-                'profile_url' => 'est',
-                'academy_age' => 'odit',
-                'capacity' => 'voluptatem',
-                'country_id' => 14,
-                'location' => 'ipsam',
+                'profile_url' => 'nihil',
+                'academy_age' => 'similique',
+                'capacity' => 'veritatis',
+                'country_id' => 13,
+                'location' => 'asperiores',
             ],
             []
         ),
@@ -450,13 +466,15 @@ let headers = {
 };
 
 let body = {
-    "name": "asperiores",
+    "password": "veniam",
+    "email": "autem",
+    "name": "assumenda",
     "reg_date": {},
-    "profile_url": "est",
-    "academy_age": "odit",
-    "capacity": "voluptatem",
-    "country_id": 14,
-    "location": "ipsam"
+    "profile_url": "nihil",
+    "academy_age": "similique",
+    "capacity": "veritatis",
+    "country_id": 13,
+    "location": "asperiores"
 }
 
 fetch(url, {
@@ -487,6 +505,16 @@ fetch(url, {
  <b><code>api/academies</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-academies" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-academies" data-component="body" required  hidden>
+<br>
+</p>
 <p>
 <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="name" data-endpoint="POSTapi-academies" data-component="body"  hidden>
@@ -535,7 +563,7 @@ GET|HEAD /academies/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/academies/qui" \
+    -G "http://localhost/api/academies/illo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -544,7 +572,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/academies/qui',
+    'http://localhost/api/academies/illo',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -558,7 +586,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/qui"
+    "http://localhost/api/academies/illo"
 );
 
 let headers = {
@@ -619,10 +647,10 @@ PUT/PATCH /academies/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/academies/omnis" \
+    "http://localhost/api/academies/ipsum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"fuga","reg_date":{},"profile_url":"in","academy_age":"consequatur","capacity":"ut","country_id":2,"location":"repudiandae"}'
+    -d '{"name":"voluptas","reg_date":{},"profile_url":"numquam","academy_age":"sit","capacity":"aut","country_id":17,"location":"nihil"}'
 
 ```
 
@@ -630,7 +658,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/academies/omnis',
+    'http://localhost/api/academies/ipsum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -643,13 +671,13 @@ $response = $client->put(
             null,
             [],
             [
-                'name' => 'fuga',
+                'name' => 'voluptas',
                 'reg_date' => $o[0],
-                'profile_url' => 'in',
-                'academy_age' => 'consequatur',
-                'capacity' => 'ut',
-                'country_id' => 2,
-                'location' => 'repudiandae',
+                'profile_url' => 'numquam',
+                'academy_age' => 'sit',
+                'capacity' => 'aut',
+                'country_id' => 17,
+                'location' => 'nihil',
             ],
             []
         ),
@@ -661,7 +689,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/omnis"
+    "http://localhost/api/academies/ipsum"
 );
 
 let headers = {
@@ -670,13 +698,13 @@ let headers = {
 };
 
 let body = {
-    "name": "fuga",
+    "name": "voluptas",
     "reg_date": {},
-    "profile_url": "in",
-    "academy_age": "consequatur",
-    "capacity": "ut",
-    "country_id": 2,
-    "location": "repudiandae"
+    "profile_url": "numquam",
+    "academy_age": "sit",
+    "capacity": "aut",
+    "country_id": 17,
+    "location": "nihil"
 }
 
 fetch(url, {
@@ -765,7 +793,7 @@ DELETE /academies/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/academies/labore" \
+    "http://localhost/api/academies/dolores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -774,7 +802,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/academies/labore',
+    'http://localhost/api/academies/dolores',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -788,7 +816,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/labore"
+    "http://localhost/api/academies/dolores"
 );
 
 let headers = {

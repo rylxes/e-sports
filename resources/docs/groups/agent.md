@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/agents/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"perspiciatis","middle_name":"sapiente","last_name":"itaque","dob":{},"gender":"aliquam","sports":"est","language":"suscipit","nationality":"optio","city_id":"omnis","user_id":16,"email":"quia","employment_type":"iste","qualifications":"sed"}'
+    -d '{"password":"temporibus","first_name":"et","middle_name":"et","last_name":"corporis","dob":{},"gender":"earum","sports":"deleniti","language":"harum","nationality":"et","city_id":"est","email":"est","employment_type":"eum"}'
 
 ```
 
@@ -34,19 +34,18 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'perspiciatis',
-                'middle_name' => 'sapiente',
-                'last_name' => 'itaque',
+                'password' => 'temporibus',
+                'first_name' => 'et',
+                'middle_name' => 'et',
+                'last_name' => 'corporis',
                 'dob' => $o[0],
-                'gender' => 'aliquam',
-                'sports' => 'est',
-                'language' => 'suscipit',
-                'nationality' => 'optio',
-                'city_id' => 'omnis',
-                'user_id' => 16,
-                'email' => 'quia',
-                'employment_type' => 'iste',
-                'qualifications' => 'sed',
+                'gender' => 'earum',
+                'sports' => 'deleniti',
+                'language' => 'harum',
+                'nationality' => 'et',
+                'city_id' => 'est',
+                'email' => 'est',
+                'employment_type' => 'eum',
             ],
             []
         ),
@@ -67,19 +66,18 @@ let headers = {
 };
 
 let body = {
-    "first_name": "perspiciatis",
-    "middle_name": "sapiente",
-    "last_name": "itaque",
+    "password": "temporibus",
+    "first_name": "et",
+    "middle_name": "et",
+    "last_name": "corporis",
     "dob": {},
-    "gender": "aliquam",
-    "sports": "est",
-    "language": "suscipit",
-    "nationality": "optio",
-    "city_id": "omnis",
-    "user_id": 16,
-    "email": "quia",
-    "employment_type": "iste",
-    "qualifications": "sed"
+    "gender": "earum",
+    "sports": "deleniti",
+    "language": "harum",
+    "nationality": "et",
+    "city_id": "est",
+    "email": "est",
+    "employment_type": "eum"
 }
 
 fetch(url, {
@@ -110,6 +108,11 @@ fetch(url, {
  <b><code>api/agents/register</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-agents-register" data-component="body" required  hidden>
+<br>
+</p>
 <p>
 <b><code>first_name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="first_name" data-endpoint="POSTapi-agents-register" data-component="body"  hidden>
@@ -156,11 +159,6 @@ fetch(url, {
 <br>
 </p>
 <p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
-<input type="number" name="user_id" data-endpoint="POSTapi-agents-register" data-component="body"  hidden>
-<br>
-</p>
-<p>
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-agents-register" data-component="body"  hidden>
 <br>
@@ -168,11 +166,6 @@ fetch(url, {
 <p>
 <b><code>employment_type</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="employment_type" data-endpoint="POSTapi-agents-register" data-component="body"  hidden>
-<br>
-</p>
-<p>
-<b><code>qualifications</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="qualifications" data-endpoint="POSTapi-agents-register" data-component="body"  hidden>
 <br>
 </p>
 
@@ -191,7 +184,7 @@ curl -X POST \
     "http://localhost/api/agents/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpOblg35" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpMnMlOg" 
 ```
 
 ```php
@@ -207,7 +200,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpOblg35', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpMnMlOg', 'r')
             ],
         ],
     ]
@@ -266,7 +259,7 @@ The value must be a file.</p>
 </form>
 
 
-## api/agents/uploadPictures
+## api/agents/uploadDocs
 
 
 
@@ -275,17 +268,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/agents/uploadPictures" \
+    "http://localhost/api/agents/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpkMVgkk" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpFApSjT" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/agents/uploadPictures',
+    'http://localhost/api/agents/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -294,7 +287,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpkMVgkk', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpFApSjT', 'r')
             ],
         ],
     ]
@@ -305,7 +298,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/uploadPictures"
+    "http://localhost/api/agents/uploadDocs"
 );
 
 let headers = {
@@ -324,30 +317,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-agents-uploadPictures" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-agents-uploadPictures"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-agents-uploadPictures"></code></pre>
+<div id="execution-results-POSTapi-agents-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-agents-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-agents-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-agents-uploadPictures" hidden>
+<div id="execution-error-POSTapi-agents-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-agents-uploadPictures"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-agents-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-agents-uploadPictures" data-method="POST" data-path="api/agents/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-agents-uploadPictures', this);">
+<form id="form-POSTapi-agents-uploadDocs" data-method="POST" data-path="api/agents/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-agents-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-agents-uploadPictures" onclick="tryItOut('POSTapi-agents-uploadPictures');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-agents-uploadPictures" onclick="cancelTryOut('POSTapi-agents-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-agents-uploadPictures" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-agents-uploadDocs" onclick="tryItOut('POSTapi-agents-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-agents-uploadDocs" onclick="cancelTryOut('POSTapi-agents-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-agents-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/agents/uploadPictures</code></b>
+ <b><code>api/agents/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-agents-uploadPictures" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-agents-uploadPictures" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-agents-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-agents-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -444,7 +437,7 @@ curl -X POST \
     "http://localhost/api/agents" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"ut","middle_name":"optio","last_name":"et","dob":{},"gender":"molestiae","sports":"et","language":"dolores","nationality":"est","city_id":"et","user_id":1,"email":"sed","employment_type":"est","qualifications":"modi"}'
+    -d '{"password":"optio","first_name":"pariatur","middle_name":"aperiam","last_name":"quia","dob":{},"gender":"qui","sports":"ipsum","language":"sed","nationality":"est","city_id":"rem","email":"ad","employment_type":"id"}'
 
 ```
 
@@ -465,19 +458,18 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'ut',
-                'middle_name' => 'optio',
-                'last_name' => 'et',
+                'password' => 'optio',
+                'first_name' => 'pariatur',
+                'middle_name' => 'aperiam',
+                'last_name' => 'quia',
                 'dob' => $o[0],
-                'gender' => 'molestiae',
-                'sports' => 'et',
-                'language' => 'dolores',
+                'gender' => 'qui',
+                'sports' => 'ipsum',
+                'language' => 'sed',
                 'nationality' => 'est',
-                'city_id' => 'et',
-                'user_id' => 1,
-                'email' => 'sed',
-                'employment_type' => 'est',
-                'qualifications' => 'modi',
+                'city_id' => 'rem',
+                'email' => 'ad',
+                'employment_type' => 'id',
             ],
             []
         ),
@@ -498,19 +490,18 @@ let headers = {
 };
 
 let body = {
-    "first_name": "ut",
-    "middle_name": "optio",
-    "last_name": "et",
+    "password": "optio",
+    "first_name": "pariatur",
+    "middle_name": "aperiam",
+    "last_name": "quia",
     "dob": {},
-    "gender": "molestiae",
-    "sports": "et",
-    "language": "dolores",
+    "gender": "qui",
+    "sports": "ipsum",
+    "language": "sed",
     "nationality": "est",
-    "city_id": "et",
-    "user_id": 1,
-    "email": "sed",
-    "employment_type": "est",
-    "qualifications": "modi"
+    "city_id": "rem",
+    "email": "ad",
+    "employment_type": "id"
 }
 
 fetch(url, {
@@ -541,6 +532,11 @@ fetch(url, {
  <b><code>api/agents</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-agents" data-component="body" required  hidden>
+<br>
+</p>
 <p>
 <b><code>first_name</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="first_name" data-endpoint="POSTapi-agents" data-component="body"  hidden>
@@ -587,11 +583,6 @@ fetch(url, {
 <br>
 </p>
 <p>
-<b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
-<input type="number" name="user_id" data-endpoint="POSTapi-agents" data-component="body"  hidden>
-<br>
-</p>
-<p>
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="email" data-endpoint="POSTapi-agents" data-component="body"  hidden>
 <br>
@@ -599,11 +590,6 @@ fetch(url, {
 <p>
 <b><code>employment_type</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
 <input type="text" name="employment_type" data-endpoint="POSTapi-agents" data-component="body"  hidden>
-<br>
-</p>
-<p>
-<b><code>qualifications</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="qualifications" data-endpoint="POSTapi-agents" data-component="body"  hidden>
 <br>
 </p>
 
@@ -619,7 +605,7 @@ GET|HEAD /agents/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/agents/esse" \
+    -G "http://localhost/api/agents/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -628,7 +614,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/agents/esse',
+    'http://localhost/api/agents/nulla',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -642,7 +628,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/esse"
+    "http://localhost/api/agents/nulla"
 );
 
 let headers = {
@@ -703,10 +689,10 @@ PUT/PATCH /agents/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/agents/aut" \
+    "http://localhost/api/agents/alias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"sapiente","first_name":"expedita","middle_name":"officiis","last_name":"dolor","dob":{},"gender":"consequatur","sports":"praesentium","language":"et","nationality":"voluptate","city_id":"ab","user_id":12,"email":"excepturi","employment_type":"sunt","qualifications":"atque","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"deleniti","first_name":"voluptate","middle_name":"dolor","last_name":"reiciendis","dob":{},"gender":"sunt","sports":"beatae","language":"dolore","nationality":"est","city_id":"et","user_id":7,"email":"occaecati","employment_type":"iusto","qualifications":"vitae","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -714,7 +700,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/agents/aut',
+    'http://localhost/api/agents/alias',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -727,20 +713,20 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'sapiente',
-                'first_name' => 'expedita',
-                'middle_name' => 'officiis',
-                'last_name' => 'dolor',
+                'profile_url' => 'deleniti',
+                'first_name' => 'voluptate',
+                'middle_name' => 'dolor',
+                'last_name' => 'reiciendis',
                 'dob' => $o[0],
-                'gender' => 'consequatur',
-                'sports' => 'praesentium',
-                'language' => 'et',
-                'nationality' => 'voluptate',
-                'city_id' => 'ab',
-                'user_id' => 12,
-                'email' => 'excepturi',
-                'employment_type' => 'sunt',
-                'qualifications' => 'atque',
+                'gender' => 'sunt',
+                'sports' => 'beatae',
+                'language' => 'dolore',
+                'nationality' => 'est',
+                'city_id' => 'et',
+                'user_id' => 7,
+                'email' => 'occaecati',
+                'employment_type' => 'iusto',
+                'qualifications' => 'vitae',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -754,7 +740,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/aut"
+    "http://localhost/api/agents/alias"
 );
 
 let headers = {
@@ -763,20 +749,20 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "sapiente",
-    "first_name": "expedita",
-    "middle_name": "officiis",
-    "last_name": "dolor",
+    "profile_url": "deleniti",
+    "first_name": "voluptate",
+    "middle_name": "dolor",
+    "last_name": "reiciendis",
     "dob": {},
-    "gender": "consequatur",
-    "sports": "praesentium",
-    "language": "et",
-    "nationality": "voluptate",
-    "city_id": "ab",
-    "user_id": 12,
-    "email": "excepturi",
-    "employment_type": "sunt",
-    "qualifications": "atque",
+    "gender": "sunt",
+    "sports": "beatae",
+    "language": "dolore",
+    "nationality": "est",
+    "city_id": "et",
+    "user_id": 7,
+    "email": "occaecati",
+    "employment_type": "iusto",
+    "qualifications": "vitae",
     "created_at": {},
     "updated_at": {}
 }
@@ -912,7 +898,7 @@ DELETE /agents/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/agents/perferendis" \
+    "http://localhost/api/agents/maiores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -921,7 +907,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/agents/perferendis',
+    'http://localhost/api/agents/maiores',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -935,7 +921,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/perferendis"
+    "http://localhost/api/agents/maiores"
 );
 
 let headers = {

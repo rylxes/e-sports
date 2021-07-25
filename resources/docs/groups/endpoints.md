@@ -376,7 +376,7 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/oauth/tokens/repellat" \
+    "http://localhost/oauth/tokens/aspernatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -385,7 +385,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/oauth/tokens/repellat',
+    'http://localhost/oauth/tokens/aspernatur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -399,7 +399,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/tokens/repellat"
+    "http://localhost/oauth/tokens/aspernatur"
 );
 
 let headers = {
@@ -670,7 +670,7 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/oauth/clients/veniam" \
+    "http://localhost/oauth/clients/illum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -679,7 +679,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/oauth/clients/veniam',
+    'http://localhost/oauth/clients/illum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -693,7 +693,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/clients/veniam"
+    "http://localhost/oauth/clients/illum"
 );
 
 let headers = {
@@ -746,7 +746,7 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/oauth/clients/libero" \
+    "http://localhost/oauth/clients/corporis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -755,7 +755,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/oauth/clients/libero',
+    'http://localhost/oauth/clients/corporis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -769,7 +769,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/clients/libero"
+    "http://localhost/oauth/clients/corporis"
 );
 
 let headers = {
@@ -1048,7 +1048,7 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/oauth/personal-access-tokens/voluptate" \
+    "http://localhost/oauth/personal-access-tokens/dolores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -1057,7 +1057,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/oauth/personal-access-tokens/voluptate',
+    'http://localhost/oauth/personal-access-tokens/dolores',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1071,7 +1071,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/oauth/personal-access-tokens/voluptate"
+    "http://localhost/oauth/personal-access-tokens/dolores"
 );
 
 let headers = {

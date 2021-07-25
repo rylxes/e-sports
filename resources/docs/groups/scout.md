@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/scouts/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"ex","middle_name":"necessitatibus","last_name":"molestiae","dob":{},"gender":"ipsa","scouting_age":"ad","scouting_gender":"temporibus","sports":"necessitatibus","specialization":"eligendi","language":"sed","nationality":"ut","city_id":"adipisci","user_id":18,"email":"sit","employment_type":"sit","scouting_level":"possimus","qualifications":"id","team_club":"commodi"}'
+    -d '{"first_name":"omnis","middle_name":"nobis","last_name":"dicta","dob":{},"gender":"aperiam","scouting_age":"temporibus","scouting_gender":"aut","sports":"aut","specialization":"officiis","language":"corporis","nationality":"praesentium","city_id":"quis","user_id":18,"password":"cum","email":"consequatur","employment_type":"et","scouting_level":"ea","qualifications":"nobis","team_club":"at"}'
 
 ```
 
@@ -34,24 +34,25 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'ex',
-                'middle_name' => 'necessitatibus',
-                'last_name' => 'molestiae',
+                'first_name' => 'omnis',
+                'middle_name' => 'nobis',
+                'last_name' => 'dicta',
                 'dob' => $o[0],
-                'gender' => 'ipsa',
-                'scouting_age' => 'ad',
-                'scouting_gender' => 'temporibus',
-                'sports' => 'necessitatibus',
-                'specialization' => 'eligendi',
-                'language' => 'sed',
-                'nationality' => 'ut',
-                'city_id' => 'adipisci',
+                'gender' => 'aperiam',
+                'scouting_age' => 'temporibus',
+                'scouting_gender' => 'aut',
+                'sports' => 'aut',
+                'specialization' => 'officiis',
+                'language' => 'corporis',
+                'nationality' => 'praesentium',
+                'city_id' => 'quis',
                 'user_id' => 18,
-                'email' => 'sit',
-                'employment_type' => 'sit',
-                'scouting_level' => 'possimus',
-                'qualifications' => 'id',
-                'team_club' => 'commodi',
+                'password' => 'cum',
+                'email' => 'consequatur',
+                'employment_type' => 'et',
+                'scouting_level' => 'ea',
+                'qualifications' => 'nobis',
+                'team_club' => 'at',
             ],
             []
         ),
@@ -72,24 +73,25 @@ let headers = {
 };
 
 let body = {
-    "first_name": "ex",
-    "middle_name": "necessitatibus",
-    "last_name": "molestiae",
+    "first_name": "omnis",
+    "middle_name": "nobis",
+    "last_name": "dicta",
     "dob": {},
-    "gender": "ipsa",
-    "scouting_age": "ad",
-    "scouting_gender": "temporibus",
-    "sports": "necessitatibus",
-    "specialization": "eligendi",
-    "language": "sed",
-    "nationality": "ut",
-    "city_id": "adipisci",
+    "gender": "aperiam",
+    "scouting_age": "temporibus",
+    "scouting_gender": "aut",
+    "sports": "aut",
+    "specialization": "officiis",
+    "language": "corporis",
+    "nationality": "praesentium",
+    "city_id": "quis",
     "user_id": 18,
-    "email": "sit",
-    "employment_type": "sit",
-    "scouting_level": "possimus",
-    "qualifications": "id",
-    "team_club": "commodi"
+    "password": "cum",
+    "email": "consequatur",
+    "employment_type": "et",
+    "scouting_level": "ea",
+    "qualifications": "nobis",
+    "team_club": "at"
 }
 
 fetch(url, {
@@ -186,8 +188,13 @@ fetch(url, {
 <br>
 </p>
 <p>
-<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="email" data-endpoint="POSTapi-scouts-register" data-component="body"  hidden>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-scouts-register" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-scouts-register" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -226,7 +233,7 @@ curl -X POST \
     "http://localhost/api/scouts/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpPLkM8r" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpEG462z" 
 ```
 
 ```php
@@ -242,7 +249,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpPLkM8r', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpEG462z', 'r')
             ],
         ],
     ]
@@ -301,7 +308,7 @@ The value must be a file.</p>
 </form>
 
 
-## api/scouts/uploadPictures
+## api/scouts/uploadDocs
 
 
 
@@ -310,17 +317,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/scouts/uploadPictures" \
+    "http://localhost/api/scouts/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php1TCO8a" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpCE2XZZ" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/scouts/uploadPictures',
+    'http://localhost/api/scouts/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -329,7 +336,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php1TCO8a', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpCE2XZZ', 'r')
             ],
         ],
     ]
@@ -340,7 +347,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/uploadPictures"
+    "http://localhost/api/scouts/uploadDocs"
 );
 
 let headers = {
@@ -359,30 +366,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-scouts-uploadPictures" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-scouts-uploadPictures"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-scouts-uploadPictures"></code></pre>
+<div id="execution-results-POSTapi-scouts-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-scouts-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-scouts-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-scouts-uploadPictures" hidden>
+<div id="execution-error-POSTapi-scouts-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-scouts-uploadPictures"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-scouts-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-scouts-uploadPictures" data-method="POST" data-path="api/scouts/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-scouts-uploadPictures', this);">
+<form id="form-POSTapi-scouts-uploadDocs" data-method="POST" data-path="api/scouts/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-scouts-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-scouts-uploadPictures" onclick="tryItOut('POSTapi-scouts-uploadPictures');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-scouts-uploadPictures" onclick="cancelTryOut('POSTapi-scouts-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-scouts-uploadPictures" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-scouts-uploadDocs" onclick="tryItOut('POSTapi-scouts-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-scouts-uploadDocs" onclick="cancelTryOut('POSTapi-scouts-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-scouts-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/scouts/uploadPictures</code></b>
+ <b><code>api/scouts/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-scouts-uploadPictures" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-scouts-uploadPictures" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-scouts-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-scouts-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -479,7 +486,7 @@ curl -X POST \
     "http://localhost/api/scouts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"possimus","middle_name":"assumenda","last_name":"illo","dob":{},"gender":"sapiente","scouting_age":"sunt","scouting_gender":"laboriosam","sports":"ipsa","specialization":"aut","language":"mollitia","nationality":"aut","city_id":"odit","user_id":3,"email":"quia","employment_type":"quia","scouting_level":"minus","qualifications":"dolores","team_club":"eius"}'
+    -d '{"first_name":"ea","middle_name":"doloremque","last_name":"et","dob":{},"gender":"dignissimos","scouting_age":"culpa","scouting_gender":"qui","sports":"voluptatem","specialization":"dignissimos","language":"eaque","nationality":"accusantium","city_id":"labore","user_id":16,"password":"nisi","email":"ducimus","employment_type":"nam","scouting_level":"tempore","qualifications":"molestias","team_club":"commodi"}'
 
 ```
 
@@ -500,24 +507,25 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'possimus',
-                'middle_name' => 'assumenda',
-                'last_name' => 'illo',
+                'first_name' => 'ea',
+                'middle_name' => 'doloremque',
+                'last_name' => 'et',
                 'dob' => $o[0],
-                'gender' => 'sapiente',
-                'scouting_age' => 'sunt',
-                'scouting_gender' => 'laboriosam',
-                'sports' => 'ipsa',
-                'specialization' => 'aut',
-                'language' => 'mollitia',
-                'nationality' => 'aut',
-                'city_id' => 'odit',
-                'user_id' => 3,
-                'email' => 'quia',
-                'employment_type' => 'quia',
-                'scouting_level' => 'minus',
-                'qualifications' => 'dolores',
-                'team_club' => 'eius',
+                'gender' => 'dignissimos',
+                'scouting_age' => 'culpa',
+                'scouting_gender' => 'qui',
+                'sports' => 'voluptatem',
+                'specialization' => 'dignissimos',
+                'language' => 'eaque',
+                'nationality' => 'accusantium',
+                'city_id' => 'labore',
+                'user_id' => 16,
+                'password' => 'nisi',
+                'email' => 'ducimus',
+                'employment_type' => 'nam',
+                'scouting_level' => 'tempore',
+                'qualifications' => 'molestias',
+                'team_club' => 'commodi',
             ],
             []
         ),
@@ -538,24 +546,25 @@ let headers = {
 };
 
 let body = {
-    "first_name": "possimus",
-    "middle_name": "assumenda",
-    "last_name": "illo",
+    "first_name": "ea",
+    "middle_name": "doloremque",
+    "last_name": "et",
     "dob": {},
-    "gender": "sapiente",
-    "scouting_age": "sunt",
-    "scouting_gender": "laboriosam",
-    "sports": "ipsa",
-    "specialization": "aut",
-    "language": "mollitia",
-    "nationality": "aut",
-    "city_id": "odit",
-    "user_id": 3,
-    "email": "quia",
-    "employment_type": "quia",
-    "scouting_level": "minus",
-    "qualifications": "dolores",
-    "team_club": "eius"
+    "gender": "dignissimos",
+    "scouting_age": "culpa",
+    "scouting_gender": "qui",
+    "sports": "voluptatem",
+    "specialization": "dignissimos",
+    "language": "eaque",
+    "nationality": "accusantium",
+    "city_id": "labore",
+    "user_id": 16,
+    "password": "nisi",
+    "email": "ducimus",
+    "employment_type": "nam",
+    "scouting_level": "tempore",
+    "qualifications": "molestias",
+    "team_club": "commodi"
 }
 
 fetch(url, {
@@ -652,8 +661,13 @@ fetch(url, {
 <br>
 </p>
 <p>
-<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="email" data-endpoint="POSTapi-scouts" data-component="body"  hidden>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-scouts" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-scouts" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -689,7 +703,7 @@ GET|HEAD /scouts/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/scouts/molestias" \
+    -G "http://localhost/api/scouts/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -698,7 +712,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/scouts/molestias',
+    'http://localhost/api/scouts/voluptas',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -712,7 +726,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/molestias"
+    "http://localhost/api/scouts/voluptas"
 );
 
 let headers = {
@@ -773,10 +787,10 @@ PUT/PATCH /scouts/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/scouts/commodi" \
+    "http://localhost/api/scouts/placeat" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"atque","first_name":"omnis","middle_name":"aut","last_name":"tempore","dob":{},"gender":"animi","scouting_age":"voluptas","scouting_gender":"optio","sports":"voluptatum","specialization":"aperiam","language":"velit","nationality":"aliquid","city_id":"voluptatibus","user_id":16,"email":"qui","employment_type":"optio","scouting_level":"quia","qualifications":"quae","team_club":"molestias","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"officiis","first_name":"atque","middle_name":"sunt","last_name":"quidem","dob":{},"gender":"ipsum","scouting_age":"consectetur","scouting_gender":"quia","sports":"voluptas","specialization":"facilis","language":"harum","nationality":"et","city_id":"accusamus","user_id":1,"email":"aspernatur","employment_type":"eveniet","scouting_level":"aut","qualifications":"assumenda","team_club":"ipsam","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -784,7 +798,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/scouts/commodi',
+    'http://localhost/api/scouts/placeat',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -797,25 +811,25 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'atque',
-                'first_name' => 'omnis',
-                'middle_name' => 'aut',
-                'last_name' => 'tempore',
+                'profile_url' => 'officiis',
+                'first_name' => 'atque',
+                'middle_name' => 'sunt',
+                'last_name' => 'quidem',
                 'dob' => $o[0],
-                'gender' => 'animi',
-                'scouting_age' => 'voluptas',
-                'scouting_gender' => 'optio',
-                'sports' => 'voluptatum',
-                'specialization' => 'aperiam',
-                'language' => 'velit',
-                'nationality' => 'aliquid',
-                'city_id' => 'voluptatibus',
-                'user_id' => 16,
-                'email' => 'qui',
-                'employment_type' => 'optio',
-                'scouting_level' => 'quia',
-                'qualifications' => 'quae',
-                'team_club' => 'molestias',
+                'gender' => 'ipsum',
+                'scouting_age' => 'consectetur',
+                'scouting_gender' => 'quia',
+                'sports' => 'voluptas',
+                'specialization' => 'facilis',
+                'language' => 'harum',
+                'nationality' => 'et',
+                'city_id' => 'accusamus',
+                'user_id' => 1,
+                'email' => 'aspernatur',
+                'employment_type' => 'eveniet',
+                'scouting_level' => 'aut',
+                'qualifications' => 'assumenda',
+                'team_club' => 'ipsam',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -829,7 +843,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/commodi"
+    "http://localhost/api/scouts/placeat"
 );
 
 let headers = {
@@ -838,25 +852,25 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "atque",
-    "first_name": "omnis",
-    "middle_name": "aut",
-    "last_name": "tempore",
+    "profile_url": "officiis",
+    "first_name": "atque",
+    "middle_name": "sunt",
+    "last_name": "quidem",
     "dob": {},
-    "gender": "animi",
-    "scouting_age": "voluptas",
-    "scouting_gender": "optio",
-    "sports": "voluptatum",
-    "specialization": "aperiam",
-    "language": "velit",
-    "nationality": "aliquid",
-    "city_id": "voluptatibus",
-    "user_id": 16,
-    "email": "qui",
-    "employment_type": "optio",
-    "scouting_level": "quia",
-    "qualifications": "quae",
-    "team_club": "molestias",
+    "gender": "ipsum",
+    "scouting_age": "consectetur",
+    "scouting_gender": "quia",
+    "sports": "voluptas",
+    "specialization": "facilis",
+    "language": "harum",
+    "nationality": "et",
+    "city_id": "accusamus",
+    "user_id": 1,
+    "email": "aspernatur",
+    "employment_type": "eveniet",
+    "scouting_level": "aut",
+    "qualifications": "assumenda",
+    "team_club": "ipsam",
     "created_at": {},
     "updated_at": {}
 }
@@ -1017,7 +1031,7 @@ DELETE /scouts/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/scouts/animi" \
+    "http://localhost/api/scouts/fugiat" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -1026,7 +1040,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/scouts/animi',
+    'http://localhost/api/scouts/fugiat',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1040,7 +1054,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/animi"
+    "http://localhost/api/scouts/fugiat"
 );
 
 let headers = {

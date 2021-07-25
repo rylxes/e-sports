@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/coaches/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"omnis","email":"voluptas","first_name":"earum","middle_name":"exercitationem","last_name":"voluptatem","dob":{},"gender":"exercitationem","coaching_age":"enim","coaching_gender":"libero","sports":"nulla","specialization":"nam","language":"autem","nationality":"atque","city_id":"quibusdam","employment_type":"aspernatur","team_club":"perferendis"}'
+    -d '{"password":"fugiat","email":"voluptas","first_name":"illo","middle_name":"illum","last_name":"quia","dob":{},"gender":"provident","coaching_age":"distinctio","coaching_gender":"excepturi","sports":"voluptatem","specialization":"ut","language":"blanditiis","nationality":"vero","city_id":"reiciendis","employment_type":"error","team_club":"a"}'
 
 ```
 
@@ -34,22 +34,22 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'omnis',
+                'password' => 'fugiat',
                 'email' => 'voluptas',
-                'first_name' => 'earum',
-                'middle_name' => 'exercitationem',
-                'last_name' => 'voluptatem',
+                'first_name' => 'illo',
+                'middle_name' => 'illum',
+                'last_name' => 'quia',
                 'dob' => $o[0],
-                'gender' => 'exercitationem',
-                'coaching_age' => 'enim',
-                'coaching_gender' => 'libero',
-                'sports' => 'nulla',
-                'specialization' => 'nam',
-                'language' => 'autem',
-                'nationality' => 'atque',
-                'city_id' => 'quibusdam',
-                'employment_type' => 'aspernatur',
-                'team_club' => 'perferendis',
+                'gender' => 'provident',
+                'coaching_age' => 'distinctio',
+                'coaching_gender' => 'excepturi',
+                'sports' => 'voluptatem',
+                'specialization' => 'ut',
+                'language' => 'blanditiis',
+                'nationality' => 'vero',
+                'city_id' => 'reiciendis',
+                'employment_type' => 'error',
+                'team_club' => 'a',
             ],
             []
         ),
@@ -70,22 +70,22 @@ let headers = {
 };
 
 let body = {
-    "password": "omnis",
+    "password": "fugiat",
     "email": "voluptas",
-    "first_name": "earum",
-    "middle_name": "exercitationem",
-    "last_name": "voluptatem",
+    "first_name": "illo",
+    "middle_name": "illum",
+    "last_name": "quia",
     "dob": {},
-    "gender": "exercitationem",
-    "coaching_age": "enim",
-    "coaching_gender": "libero",
-    "sports": "nulla",
-    "specialization": "nam",
-    "language": "autem",
-    "nationality": "atque",
-    "city_id": "quibusdam",
-    "employment_type": "aspernatur",
-    "team_club": "perferendis"
+    "gender": "provident",
+    "coaching_age": "distinctio",
+    "coaching_gender": "excepturi",
+    "sports": "voluptatem",
+    "specialization": "ut",
+    "language": "blanditiis",
+    "nationality": "vero",
+    "city_id": "reiciendis",
+    "employment_type": "error",
+    "team_club": "a"
 }
 
 fetch(url, {
@@ -212,7 +212,7 @@ curl -X POST \
     "http://localhost/api/coaches/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpayDV9j" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpvyVrOY" 
 ```
 
 ```php
@@ -228,7 +228,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpayDV9j', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpvyVrOY', 'r')
             ],
         ],
     ]
@@ -287,7 +287,7 @@ The value must be a file.</p>
 </form>
 
 
-## api/coaches/uploadPictures
+## api/coaches/uploadDocs
 
 
 
@@ -296,17 +296,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/coaches/uploadPictures" \
+    "http://localhost/api/coaches/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php00hyJ9" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpO6ex45" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/coaches/uploadPictures',
+    'http://localhost/api/coaches/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -315,7 +315,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php00hyJ9', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpO6ex45', 'r')
             ],
         ],
     ]
@@ -326,7 +326,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/uploadPictures"
+    "http://localhost/api/coaches/uploadDocs"
 );
 
 let headers = {
@@ -345,30 +345,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-coaches-uploadPictures" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-coaches-uploadPictures"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-coaches-uploadPictures"></code></pre>
+<div id="execution-results-POSTapi-coaches-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-coaches-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-coaches-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-coaches-uploadPictures" hidden>
+<div id="execution-error-POSTapi-coaches-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-coaches-uploadPictures"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-coaches-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-coaches-uploadPictures" data-method="POST" data-path="api/coaches/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-coaches-uploadPictures', this);">
+<form id="form-POSTapi-coaches-uploadDocs" data-method="POST" data-path="api/coaches/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-coaches-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-coaches-uploadPictures" onclick="tryItOut('POSTapi-coaches-uploadPictures');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-coaches-uploadPictures" onclick="cancelTryOut('POSTapi-coaches-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-coaches-uploadPictures" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-coaches-uploadDocs" onclick="tryItOut('POSTapi-coaches-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-coaches-uploadDocs" onclick="cancelTryOut('POSTapi-coaches-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-coaches-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/coaches/uploadPictures</code></b>
+ <b><code>api/coaches/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-coaches-uploadPictures" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-coaches-uploadPictures" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-coaches-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-coaches-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -465,7 +465,7 @@ curl -X POST \
     "http://localhost/api/coaches" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"voluptate","email":"maiores","first_name":"consequuntur","middle_name":"consectetur","last_name":"perferendis","dob":{},"gender":"et","coaching_age":"et","coaching_gender":"recusandae","sports":"aut","specialization":"minima","language":"dolorem","nationality":"impedit","city_id":"voluptate","employment_type":"dolorum","team_club":"nostrum"}'
+    -d '{"password":"labore","email":"perferendis","first_name":"mollitia","middle_name":"consequatur","last_name":"fugiat","dob":{},"gender":"ipsam","coaching_age":"dolores","coaching_gender":"eum","sports":"quam","specialization":"nulla","language":"asperiores","nationality":"iste","city_id":"id","employment_type":"sint","team_club":"totam"}'
 
 ```
 
@@ -486,22 +486,22 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'voluptate',
-                'email' => 'maiores',
-                'first_name' => 'consequuntur',
-                'middle_name' => 'consectetur',
-                'last_name' => 'perferendis',
+                'password' => 'labore',
+                'email' => 'perferendis',
+                'first_name' => 'mollitia',
+                'middle_name' => 'consequatur',
+                'last_name' => 'fugiat',
                 'dob' => $o[0],
-                'gender' => 'et',
-                'coaching_age' => 'et',
-                'coaching_gender' => 'recusandae',
-                'sports' => 'aut',
-                'specialization' => 'minima',
-                'language' => 'dolorem',
-                'nationality' => 'impedit',
-                'city_id' => 'voluptate',
-                'employment_type' => 'dolorum',
-                'team_club' => 'nostrum',
+                'gender' => 'ipsam',
+                'coaching_age' => 'dolores',
+                'coaching_gender' => 'eum',
+                'sports' => 'quam',
+                'specialization' => 'nulla',
+                'language' => 'asperiores',
+                'nationality' => 'iste',
+                'city_id' => 'id',
+                'employment_type' => 'sint',
+                'team_club' => 'totam',
             ],
             []
         ),
@@ -522,22 +522,22 @@ let headers = {
 };
 
 let body = {
-    "password": "voluptate",
-    "email": "maiores",
-    "first_name": "consequuntur",
-    "middle_name": "consectetur",
-    "last_name": "perferendis",
+    "password": "labore",
+    "email": "perferendis",
+    "first_name": "mollitia",
+    "middle_name": "consequatur",
+    "last_name": "fugiat",
     "dob": {},
-    "gender": "et",
-    "coaching_age": "et",
-    "coaching_gender": "recusandae",
-    "sports": "aut",
-    "specialization": "minima",
-    "language": "dolorem",
-    "nationality": "impedit",
-    "city_id": "voluptate",
-    "employment_type": "dolorum",
-    "team_club": "nostrum"
+    "gender": "ipsam",
+    "coaching_age": "dolores",
+    "coaching_gender": "eum",
+    "sports": "quam",
+    "specialization": "nulla",
+    "language": "asperiores",
+    "nationality": "iste",
+    "city_id": "id",
+    "employment_type": "sint",
+    "team_club": "totam"
 }
 
 fetch(url, {
@@ -661,7 +661,7 @@ GET|HEAD /coaches/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/coaches/voluptate" \
+    -G "http://localhost/api/coaches/qui" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -670,7 +670,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/coaches/voluptate',
+    'http://localhost/api/coaches/qui',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -684,7 +684,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/voluptate"
+    "http://localhost/api/coaches/qui"
 );
 
 let headers = {
@@ -745,10 +745,10 @@ PUT/PATCH /coaches/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/coaches/ut" \
+    "http://localhost/api/coaches/soluta" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"a","qualifications":"et","user_id":14,"email":"rerum","first_name":"veniam","middle_name":"consectetur","last_name":"rem","dob":{},"gender":"vero","coaching_age":"praesentium","coaching_gender":"reprehenderit","sports":"sapiente","specialization":"magnam","language":"a","nationality":"nam","city_id":"velit","employment_type":"mollitia","team_club":"rerum","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"in","qualifications":"placeat","user_id":7,"email":"voluptates","first_name":"natus","middle_name":"pariatur","last_name":"ut","dob":{},"gender":"quis","coaching_age":"voluptatem","coaching_gender":"officia","sports":"dolorem","specialization":"quas","language":"autem","nationality":"autem","city_id":"sunt","employment_type":"voluptatum","team_club":"officiis","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -756,7 +756,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/coaches/ut',
+    'http://localhost/api/coaches/soluta',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -769,24 +769,24 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'a',
-                'qualifications' => 'et',
-                'user_id' => 14,
-                'email' => 'rerum',
-                'first_name' => 'veniam',
-                'middle_name' => 'consectetur',
-                'last_name' => 'rem',
+                'profile_url' => 'in',
+                'qualifications' => 'placeat',
+                'user_id' => 7,
+                'email' => 'voluptates',
+                'first_name' => 'natus',
+                'middle_name' => 'pariatur',
+                'last_name' => 'ut',
                 'dob' => $o[0],
-                'gender' => 'vero',
-                'coaching_age' => 'praesentium',
-                'coaching_gender' => 'reprehenderit',
-                'sports' => 'sapiente',
-                'specialization' => 'magnam',
-                'language' => 'a',
-                'nationality' => 'nam',
-                'city_id' => 'velit',
-                'employment_type' => 'mollitia',
-                'team_club' => 'rerum',
+                'gender' => 'quis',
+                'coaching_age' => 'voluptatem',
+                'coaching_gender' => 'officia',
+                'sports' => 'dolorem',
+                'specialization' => 'quas',
+                'language' => 'autem',
+                'nationality' => 'autem',
+                'city_id' => 'sunt',
+                'employment_type' => 'voluptatum',
+                'team_club' => 'officiis',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -800,7 +800,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/ut"
+    "http://localhost/api/coaches/soluta"
 );
 
 let headers = {
@@ -809,24 +809,24 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "a",
-    "qualifications": "et",
-    "user_id": 14,
-    "email": "rerum",
-    "first_name": "veniam",
-    "middle_name": "consectetur",
-    "last_name": "rem",
+    "profile_url": "in",
+    "qualifications": "placeat",
+    "user_id": 7,
+    "email": "voluptates",
+    "first_name": "natus",
+    "middle_name": "pariatur",
+    "last_name": "ut",
     "dob": {},
-    "gender": "vero",
-    "coaching_age": "praesentium",
-    "coaching_gender": "reprehenderit",
-    "sports": "sapiente",
-    "specialization": "magnam",
-    "language": "a",
-    "nationality": "nam",
-    "city_id": "velit",
-    "employment_type": "mollitia",
-    "team_club": "rerum",
+    "gender": "quis",
+    "coaching_age": "voluptatem",
+    "coaching_gender": "officia",
+    "sports": "dolorem",
+    "specialization": "quas",
+    "language": "autem",
+    "nationality": "autem",
+    "city_id": "sunt",
+    "employment_type": "voluptatum",
+    "team_club": "officiis",
     "created_at": {},
     "updated_at": {}
 }
@@ -982,7 +982,7 @@ DELETE /coaches/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/coaches/odio" \
+    "http://localhost/api/coaches/totam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -991,7 +991,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/coaches/odio',
+    'http://localhost/api/coaches/totam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1005,7 +1005,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/coaches/odio"
+    "http://localhost/api/coaches/totam"
 );
 
 let headers = {

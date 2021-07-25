@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "E-sports App API Documentation",
-        "_postman_id": "5cae90ca-7cae-46ab-b800-92d4b53a2ae4",
+        "_postman_id": "9ac15f95-6a56-48ff-b6ec-af363e7abdee",
         "description": "E-sports App API Documentation",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -42,7 +42,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"voluptas\",\n    \"reg_date\": {},\n    \"profile_url\": \"veniam\",\n    \"academy_age\": \"voluptatem\",\n    \"capacity\": \"aperiam\",\n    \"country_id\": 13,\n    \"location\": \"id\"\n}"
+                            "raw": "{\n    \"password\": \"mollitia\",\n    \"email\": \"esse\",\n    \"name\": \"quos\",\n    \"reg_date\": {},\n    \"profile_url\": \"qui\",\n    \"academy_age\": \"ipsum\",\n    \"capacity\": \"ut\",\n    \"country_id\": 12,\n    \"location\": \"et\"\n}"
                         },
                         "description": "POST \/academies",
                         "auth": {
@@ -90,14 +90,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/academies\/uploadPictures",
+                    "name": "api\/academies\/uploadDocs",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/academies\/uploadPictures",
+                            "path": "api\/academies\/uploadDocs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/academies\/uploadPictures"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/academies\/uploadDocs"
                         },
                         "method": "POST",
                         "header": [
@@ -179,7 +179,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"asperiores\",\n    \"reg_date\": {},\n    \"profile_url\": \"est\",\n    \"academy_age\": \"odit\",\n    \"capacity\": \"voluptatem\",\n    \"country_id\": 14,\n    \"location\": \"ipsam\"\n}"
+                            "raw": "{\n    \"password\": \"veniam\",\n    \"email\": \"autem\",\n    \"name\": \"assumenda\",\n    \"reg_date\": {},\n    \"profile_url\": \"nihil\",\n    \"academy_age\": \"similique\",\n    \"capacity\": \"veritatis\",\n    \"country_id\": 13,\n    \"location\": \"asperiores\"\n}"
                         },
                         "description": "POST \/academies",
                         "auth": {
@@ -201,7 +201,7 @@
                                 {
                                     "id": "academy",
                                     "key": "academy",
-                                    "value": "qui",
+                                    "value": "illo",
                                     "description": ""
                                 }
                             ]
@@ -238,7 +238,7 @@
                                 {
                                     "id": "academy",
                                     "key": "academy",
-                                    "value": "omnis",
+                                    "value": "ipsum",
                                     "description": ""
                                 }
                             ]
@@ -256,7 +256,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"fuga\",\n    \"reg_date\": {},\n    \"profile_url\": \"in\",\n    \"academy_age\": \"consequatur\",\n    \"capacity\": \"ut\",\n    \"country_id\": 2,\n    \"location\": \"repudiandae\"\n}"
+                            "raw": "{\n    \"name\": \"voluptas\",\n    \"reg_date\": {},\n    \"profile_url\": \"numquam\",\n    \"academy_age\": \"sit\",\n    \"capacity\": \"aut\",\n    \"country_id\": 17,\n    \"location\": \"nihil\"\n}"
                         },
                         "description": "PUT\/PATCH \/academies\/{id}",
                         "auth": {
@@ -278,7 +278,7 @@
                                 {
                                     "id": "academy",
                                     "key": "academy",
-                                    "value": "labore",
+                                    "value": "dolores",
                                     "description": ""
                                 }
                             ]
@@ -331,7 +331,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"perspiciatis\",\n    \"middle_name\": \"sapiente\",\n    \"last_name\": \"itaque\",\n    \"dob\": {},\n    \"gender\": \"aliquam\",\n    \"sports\": \"est\",\n    \"language\": \"suscipit\",\n    \"nationality\": \"optio\",\n    \"city_id\": \"omnis\",\n    \"user_id\": 16,\n    \"email\": \"quia\",\n    \"employment_type\": \"iste\",\n    \"qualifications\": \"sed\"\n}"
+                            "raw": "{\n    \"password\": \"temporibus\",\n    \"first_name\": \"et\",\n    \"middle_name\": \"et\",\n    \"last_name\": \"corporis\",\n    \"dob\": {},\n    \"gender\": \"earum\",\n    \"sports\": \"deleniti\",\n    \"language\": \"harum\",\n    \"nationality\": \"et\",\n    \"city_id\": \"est\",\n    \"email\": \"est\",\n    \"employment_type\": \"eum\"\n}"
                         },
                         "description": "POST \/agents",
                         "auth": {
@@ -379,14 +379,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/agents\/uploadPictures",
+                    "name": "api\/agents\/uploadDocs",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/agents\/uploadPictures",
+                            "path": "api\/agents\/uploadDocs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/agents\/uploadPictures"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/agents\/uploadDocs"
                         },
                         "method": "POST",
                         "header": [
@@ -468,7 +468,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"ut\",\n    \"middle_name\": \"optio\",\n    \"last_name\": \"et\",\n    \"dob\": {},\n    \"gender\": \"molestiae\",\n    \"sports\": \"et\",\n    \"language\": \"dolores\",\n    \"nationality\": \"est\",\n    \"city_id\": \"et\",\n    \"user_id\": 1,\n    \"email\": \"sed\",\n    \"employment_type\": \"est\",\n    \"qualifications\": \"modi\"\n}"
+                            "raw": "{\n    \"password\": \"optio\",\n    \"first_name\": \"pariatur\",\n    \"middle_name\": \"aperiam\",\n    \"last_name\": \"quia\",\n    \"dob\": {},\n    \"gender\": \"qui\",\n    \"sports\": \"ipsum\",\n    \"language\": \"sed\",\n    \"nationality\": \"est\",\n    \"city_id\": \"rem\",\n    \"email\": \"ad\",\n    \"employment_type\": \"id\"\n}"
                         },
                         "description": "POST \/agents",
                         "auth": {
@@ -490,7 +490,7 @@
                                 {
                                     "id": "agent",
                                     "key": "agent",
-                                    "value": "esse",
+                                    "value": "nulla",
                                     "description": ""
                                 }
                             ]
@@ -527,7 +527,7 @@
                                 {
                                     "id": "agent",
                                     "key": "agent",
-                                    "value": "aut",
+                                    "value": "alias",
                                     "description": ""
                                 }
                             ]
@@ -545,7 +545,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"profile_url\": \"sapiente\",\n    \"first_name\": \"expedita\",\n    \"middle_name\": \"officiis\",\n    \"last_name\": \"dolor\",\n    \"dob\": {},\n    \"gender\": \"consequatur\",\n    \"sports\": \"praesentium\",\n    \"language\": \"et\",\n    \"nationality\": \"voluptate\",\n    \"city_id\": \"ab\",\n    \"user_id\": 12,\n    \"email\": \"excepturi\",\n    \"employment_type\": \"sunt\",\n    \"qualifications\": \"atque\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"profile_url\": \"deleniti\",\n    \"first_name\": \"voluptate\",\n    \"middle_name\": \"dolor\",\n    \"last_name\": \"reiciendis\",\n    \"dob\": {},\n    \"gender\": \"sunt\",\n    \"sports\": \"beatae\",\n    \"language\": \"dolore\",\n    \"nationality\": \"est\",\n    \"city_id\": \"et\",\n    \"user_id\": 7,\n    \"email\": \"occaecati\",\n    \"employment_type\": \"iusto\",\n    \"qualifications\": \"vitae\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/agents\/{id}",
                         "auth": {
@@ -567,7 +567,7 @@
                                 {
                                     "id": "agent",
                                     "key": "agent",
-                                    "value": "perferendis",
+                                    "value": "maiores",
                                     "description": ""
                                 }
                             ]
@@ -620,7 +620,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"sromaguera@example.net\",\n    \"password\": \"sed\"\n}"
+                            "raw": "{\n    \"email\": \"leffler.alysson@example.net\",\n    \"password\": \"ut\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -681,7 +681,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"assumenda\",\n    \"last_name\": \"animi\",\n    \"email\": \"estefania15@example.net\",\n    \"password\": \"ab\",\n    \"password_confirmation\": \"expedita\"\n}"
+                            "raw": "{\n    \"first_name\": \"eligendi\",\n    \"last_name\": \"pariatur\",\n    \"email\": \"kennith.hoeger@example.org\",\n    \"password\": \"dolor\",\n    \"password_confirmation\": \"doloremque\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -713,7 +713,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"leffler.rebeka@example.com\"\n}"
+                            "raw": "{\n    \"email\": \"ally.barton@example.net\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -735,7 +735,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "quia",
+                                    "value": "rerum",
                                     "description": ""
                                 }
                             ]
@@ -830,13 +830,13 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolorem",
+                                    "value": "et",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "eius",
+                                    "value": "quia",
                                     "description": ""
                                 }
                             ]
@@ -918,7 +918,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"state_id\": \"et\"\n}"
+                            "raw": "{\n    \"state_id\": \"doloremque\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -985,7 +985,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"doloribus\",\n    \"motivation\": \"debitis\",\n    \"achievement\": \"quae\",\n    \"admired_sportsperson\": \"rerum\",\n    \"top_athlete_plans\": \"recusandae\",\n    \"current_team\": \"doloremque\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"inventore\",\n    \"nickname\": \"id\",\n    \"favourite_sports_team\": \"maiores\",\n    \"why_like_team\": \"inventore\",\n    \"no_of_teams_played_for\": 18,\n    \"why_leave\": \"qui\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"non\",\n    \"preferred_foot\": \"dicta\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"debitis\",\n    \"motivation\": \"quos\",\n    \"achievement\": \"maxime\",\n    \"admired_sportsperson\": \"sed\",\n    \"top_athlete_plans\": \"minus\",\n    \"current_team\": \"sit\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"commodi\",\n    \"nickname\": \"qui\",\n    \"favourite_sports_team\": \"nostrum\",\n    \"why_like_team\": \"reprehenderit\",\n    \"no_of_teams_played_for\": 9,\n    \"why_leave\": \"veritatis\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"quia\",\n    \"preferred_foot\": \"cumque\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/clubAssesments",
                         "auth": {
@@ -1007,7 +1007,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "cupiditate",
+                                    "value": "corporis",
                                     "description": ""
                                 }
                             ]
@@ -1044,7 +1044,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "doloremque",
+                                    "value": "nobis",
                                     "description": ""
                                 }
                             ]
@@ -1062,7 +1062,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"aperiam\",\n    \"motivation\": \"natus\",\n    \"achievement\": \"vel\",\n    \"admired_sportsperson\": \"consequatur\",\n    \"top_athlete_plans\": \"molestias\",\n    \"current_team\": \"molestias\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"consequuntur\",\n    \"nickname\": \"quos\",\n    \"favourite_sports_team\": \"ut\",\n    \"why_like_team\": \"accusantium\",\n    \"no_of_teams_played_for\": 17,\n    \"why_leave\": \"ut\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"aut\",\n    \"preferred_foot\": \"eos\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"enjoy_practice_routines\": false,\n    \"is_participated_in_competitions\": false,\n    \"is_selected_to_represent\": false,\n    \"competitions\": \"suscipit\",\n    \"motivation\": \"perferendis\",\n    \"achievement\": \"laudantium\",\n    \"admired_sportsperson\": \"expedita\",\n    \"top_athlete_plans\": \"consequuntur\",\n    \"current_team\": \"dignissimos\",\n    \"date_joined_team\": {},\n    \"favourite_jersey_number\": \"maiores\",\n    \"nickname\": \"cumque\",\n    \"favourite_sports_team\": \"ad\",\n    \"why_like_team\": \"quod\",\n    \"no_of_teams_played_for\": 15,\n    \"why_leave\": \"non\",\n    \"can_improve_in_team\": false,\n    \"is_like_coach_team\": false,\n    \"positions_play\": \"molestiae\",\n    \"preferred_foot\": \"autem\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/clubAssesments\/{id}",
                         "auth": {
@@ -1084,7 +1084,7 @@
                                 {
                                     "id": "club_assesment",
                                     "key": "club_assesment",
-                                    "value": "distinctio",
+                                    "value": "itaque",
                                     "description": ""
                                 }
                             ]
@@ -1137,7 +1137,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"password\": \"omnis\",\n    \"email\": \"voluptas\",\n    \"first_name\": \"earum\",\n    \"middle_name\": \"exercitationem\",\n    \"last_name\": \"voluptatem\",\n    \"dob\": {},\n    \"gender\": \"exercitationem\",\n    \"coaching_age\": \"enim\",\n    \"coaching_gender\": \"libero\",\n    \"sports\": \"nulla\",\n    \"specialization\": \"nam\",\n    \"language\": \"autem\",\n    \"nationality\": \"atque\",\n    \"city_id\": \"quibusdam\",\n    \"employment_type\": \"aspernatur\",\n    \"team_club\": \"perferendis\"\n}"
+                            "raw": "{\n    \"password\": \"fugiat\",\n    \"email\": \"voluptas\",\n    \"first_name\": \"illo\",\n    \"middle_name\": \"illum\",\n    \"last_name\": \"quia\",\n    \"dob\": {},\n    \"gender\": \"provident\",\n    \"coaching_age\": \"distinctio\",\n    \"coaching_gender\": \"excepturi\",\n    \"sports\": \"voluptatem\",\n    \"specialization\": \"ut\",\n    \"language\": \"blanditiis\",\n    \"nationality\": \"vero\",\n    \"city_id\": \"reiciendis\",\n    \"employment_type\": \"error\",\n    \"team_club\": \"a\"\n}"
                         },
                         "description": "POST \/coaches",
                         "auth": {
@@ -1185,14 +1185,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/coaches\/uploadPictures",
+                    "name": "api\/coaches\/uploadDocs",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/coaches\/uploadPictures",
+                            "path": "api\/coaches\/uploadDocs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches\/uploadPictures"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/coaches\/uploadDocs"
                         },
                         "method": "POST",
                         "header": [
@@ -1274,7 +1274,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"password\": \"voluptate\",\n    \"email\": \"maiores\",\n    \"first_name\": \"consequuntur\",\n    \"middle_name\": \"consectetur\",\n    \"last_name\": \"perferendis\",\n    \"dob\": {},\n    \"gender\": \"et\",\n    \"coaching_age\": \"et\",\n    \"coaching_gender\": \"recusandae\",\n    \"sports\": \"aut\",\n    \"specialization\": \"minima\",\n    \"language\": \"dolorem\",\n    \"nationality\": \"impedit\",\n    \"city_id\": \"voluptate\",\n    \"employment_type\": \"dolorum\",\n    \"team_club\": \"nostrum\"\n}"
+                            "raw": "{\n    \"password\": \"labore\",\n    \"email\": \"perferendis\",\n    \"first_name\": \"mollitia\",\n    \"middle_name\": \"consequatur\",\n    \"last_name\": \"fugiat\",\n    \"dob\": {},\n    \"gender\": \"ipsam\",\n    \"coaching_age\": \"dolores\",\n    \"coaching_gender\": \"eum\",\n    \"sports\": \"quam\",\n    \"specialization\": \"nulla\",\n    \"language\": \"asperiores\",\n    \"nationality\": \"iste\",\n    \"city_id\": \"id\",\n    \"employment_type\": \"sint\",\n    \"team_club\": \"totam\"\n}"
                         },
                         "description": "POST \/coaches",
                         "auth": {
@@ -1296,7 +1296,7 @@
                                 {
                                     "id": "coach",
                                     "key": "coach",
-                                    "value": "voluptate",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -1333,7 +1333,7 @@
                                 {
                                     "id": "coach",
                                     "key": "coach",
-                                    "value": "ut",
+                                    "value": "soluta",
                                     "description": ""
                                 }
                             ]
@@ -1351,7 +1351,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"profile_url\": \"a\",\n    \"qualifications\": \"et\",\n    \"user_id\": 14,\n    \"email\": \"rerum\",\n    \"first_name\": \"veniam\",\n    \"middle_name\": \"consectetur\",\n    \"last_name\": \"rem\",\n    \"dob\": {},\n    \"gender\": \"vero\",\n    \"coaching_age\": \"praesentium\",\n    \"coaching_gender\": \"reprehenderit\",\n    \"sports\": \"sapiente\",\n    \"specialization\": \"magnam\",\n    \"language\": \"a\",\n    \"nationality\": \"nam\",\n    \"city_id\": \"velit\",\n    \"employment_type\": \"mollitia\",\n    \"team_club\": \"rerum\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"profile_url\": \"in\",\n    \"qualifications\": \"placeat\",\n    \"user_id\": 7,\n    \"email\": \"voluptates\",\n    \"first_name\": \"natus\",\n    \"middle_name\": \"pariatur\",\n    \"last_name\": \"ut\",\n    \"dob\": {},\n    \"gender\": \"quis\",\n    \"coaching_age\": \"voluptatem\",\n    \"coaching_gender\": \"officia\",\n    \"sports\": \"dolorem\",\n    \"specialization\": \"quas\",\n    \"language\": \"autem\",\n    \"nationality\": \"autem\",\n    \"city_id\": \"sunt\",\n    \"employment_type\": \"voluptatum\",\n    \"team_club\": \"officiis\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/coaches\/{id}",
                         "auth": {
@@ -1373,7 +1373,7 @@
                                 {
                                     "id": "coach",
                                     "key": "coach",
-                                    "value": "odio",
+                                    "value": "totam",
                                     "description": ""
                                 }
                             ]
@@ -1455,7 +1455,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"sortname\": \"quia\",\n    \"name\": \"et\",\n    \"phonecode\": 15\n}"
+                            "raw": "{\n    \"sortname\": \"distinctio\",\n    \"name\": \"voluptatem\",\n    \"phonecode\": 11\n}"
                         },
                         "description": "POST \/countries",
                         "auth": {
@@ -1477,7 +1477,7 @@
                                 {
                                     "id": "country",
                                     "key": "country",
-                                    "value": "occaecati",
+                                    "value": "velit",
                                     "description": ""
                                 }
                             ]
@@ -1514,7 +1514,7 @@
                                 {
                                     "id": "country",
                                     "key": "country",
-                                    "value": "eos",
+                                    "value": "voluptatibus",
                                     "description": ""
                                 }
                             ]
@@ -1532,7 +1532,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"sortname\": \"corrupti\",\n    \"name\": \"dolore\",\n    \"phonecode\": 11\n}"
+                            "raw": "{\n    \"sortname\": \"ut\",\n    \"name\": \"rem\",\n    \"phonecode\": 8\n}"
                         },
                         "description": "PUT\/PATCH \/countries\/{id}",
                         "auth": {
@@ -1554,7 +1554,7 @@
                                 {
                                     "id": "country",
                                     "key": "country",
-                                    "value": "ut",
+                                    "value": "ea",
                                     "description": ""
                                 }
                             ]
@@ -1742,7 +1742,7 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "repellat",
+                                    "value": "aspernatur",
                                     "description": ""
                                 }
                             ]
@@ -1866,7 +1866,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "veniam",
+                                    "value": "illum",
                                     "description": ""
                                 }
                             ]
@@ -1903,7 +1903,7 @@
                                 {
                                     "id": "client_id",
                                     "key": "client_id",
-                                    "value": "libero",
+                                    "value": "corporis",
                                     "description": ""
                                 }
                             ]
@@ -2027,7 +2027,7 @@
                                 {
                                     "id": "token_id",
                                     "key": "token_id",
-                                    "value": "voluptate",
+                                    "value": "dolores",
                                     "description": ""
                                 }
                             ]
@@ -2045,6 +2045,295 @@
                         ],
                         "body": null,
                         "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Fitness Coach",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store a newly created FitnessCoach in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"ab\",\n    \"first_name\": \"quia\",\n    \"middle_name\": \"sed\",\n    \"last_name\": \"qui\",\n    \"dob\": {},\n    \"gender\": \"temporibus\",\n    \"language\": \"nemo\",\n    \"nationality\": \"eum\",\n    \"city_id\": \"numquam\",\n    \"email\": \"corporis\",\n    \"employment_type\": \"quisquam\",\n    \"qualifications\": \"ad\"\n}"
+                        },
+                        "description": "POST \/fitnessCoaches",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/fitness_coaches\/uploadProfile",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches\/uploadProfile",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches\/uploadProfile"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "file",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/fitness_coaches\/uploadDocs",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches\/uploadDocs",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches\/uploadDocs"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "pictures[]",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the FitnessCoach.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/fitnessCoaches",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created FitnessCoach in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"officia\",\n    \"first_name\": \"et\",\n    \"middle_name\": \"commodi\",\n    \"last_name\": \"rerum\",\n    \"dob\": {},\n    \"gender\": \"et\",\n    \"language\": \"est\",\n    \"nationality\": \"rem\",\n    \"city_id\": \"qui\",\n    \"email\": \"temporibus\",\n    \"employment_type\": \"laudantium\",\n    \"qualifications\": \"ut\"\n}"
+                        },
+                        "description": "POST \/fitnessCoaches",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified FitnessCoach.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches\/:fitness_coach",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches\/:fitness_coach",
+                            "variable": [
+                                {
+                                    "id": "fitness_coach",
+                                    "key": "fitness_coach",
+                                    "value": "rem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/fitnessCoaches\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified FitnessCoach in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches\/:fitness_coach",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches\/:fitness_coach",
+                            "variable": [
+                                {
+                                    "id": "fitness_coach",
+                                    "key": "fitness_coach",
+                                    "value": "et",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"profile_url\": \"iure\",\n    \"first_name\": \"quis\",\n    \"middle_name\": \"ut\",\n    \"last_name\": \"repellendus\",\n    \"dob\": {},\n    \"gender\": \"qui\",\n    \"language\": \"totam\",\n    \"nationality\": \"libero\",\n    \"city_id\": \"eveniet\",\n    \"user_id\": 3,\n    \"email\": \"et\",\n    \"employment_type\": \"dolor\",\n    \"qualifications\": \"excepturi\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/fitnessCoaches\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified FitnessCoach from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/fitness_coaches\/:fitness_coach",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/fitness_coaches\/:fitness_coach",
+                            "variable": [
+                                {
+                                    "id": "fitness_coach",
+                                    "key": "fitness_coach",
+                                    "value": "ad",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/fitnessCoaches\/{id}",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2109,7 +2398,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"blood_group\": \"ex\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"enim\",\n    \"long_term_injury\": \"odit\",\n    \"treatment_type\": \"consequatur\",\n    \"current_health_injury\": \"et\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"numquam\",\n    \"injury_seriousness\": \"voluptate\",\n    \"medical_treatment\": \"ut\",\n    \"injury_location\": \"illo\",\n    \"genotype\": \"et\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"blood_group\": \"quia\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"similique\",\n    \"long_term_injury\": \"vitae\",\n    \"treatment_type\": \"aspernatur\",\n    \"current_health_injury\": \"minima\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"rerum\",\n    \"injury_seriousness\": \"et\",\n    \"medical_treatment\": \"aut\",\n    \"injury_location\": \"optio\",\n    \"genotype\": \"perferendis\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/healthPredictors",
                         "auth": {
@@ -2131,7 +2420,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "adipisci",
+                                    "value": "atque",
                                     "description": ""
                                 }
                             ]
@@ -2168,7 +2457,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "harum",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -2186,7 +2475,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 20,\n    \"blood_group\": \"qui\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"voluptas\",\n    \"long_term_injury\": \"quo\",\n    \"treatment_type\": \"officiis\",\n    \"current_health_injury\": \"nulla\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"dolore\",\n    \"injury_seriousness\": \"dolorem\",\n    \"medical_treatment\": \"voluptatem\",\n    \"injury_location\": \"corrupti\",\n    \"genotype\": \"culpa\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 12,\n    \"blood_group\": \"reprehenderit\",\n    \"is_hereditary_issue\": false,\n    \"is_current_health_injury\": false,\n    \"is_receiving_treatment\": false,\n    \"is_long_term_injury\": false,\n    \"hereditary_issue\": \"assumenda\",\n    \"long_term_injury\": \"distinctio\",\n    \"treatment_type\": \"natus\",\n    \"current_health_injury\": \"repellendus\",\n    \"is_personal_health_challenge\": false,\n    \"personal_health_challenge\": \"enim\",\n    \"injury_seriousness\": \"itaque\",\n    \"medical_treatment\": \"dolore\",\n    \"injury_location\": \"quos\",\n    \"genotype\": \"dignissimos\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/healthPredictors\/{id}",
                         "auth": {
@@ -2208,7 +2497,7 @@
                                 {
                                     "id": "health_predictor",
                                     "key": "health_predictor",
-                                    "value": "ex",
+                                    "value": "sunt",
                                     "description": ""
                                 }
                             ]
@@ -2226,6 +2515,508 @@
                         ],
                         "body": null,
                         "description": "DELETE \/healthPredictors\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Nuritionist",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store a newly created Nuritionist in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"quis\",\n    \"first_name\": \"ratione\",\n    \"middle_name\": \"sed\",\n    \"last_name\": \"et\",\n    \"dob\": {},\n    \"gender\": \"facere\",\n    \"language\": \"nihil\",\n    \"nationality\": \"perspiciatis\",\n    \"city_id\": \"officia\",\n    \"email\": \"veniam\",\n    \"employment_type\": \"neque\",\n    \"qualifications\": \"dicta\"\n}"
+                        },
+                        "description": "POST \/nuritionists",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the Nuritionist.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/nuritionists",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created Nuritionist in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"quo\",\n    \"first_name\": \"quisquam\",\n    \"middle_name\": \"quae\",\n    \"last_name\": \"molestias\",\n    \"dob\": {},\n    \"gender\": \"sit\",\n    \"language\": \"voluptatem\",\n    \"nationality\": \"et\",\n    \"city_id\": \"et\",\n    \"email\": \"dignissimos\",\n    \"employment_type\": \"doloribus\",\n    \"qualifications\": \"dolorem\"\n}"
+                        },
+                        "description": "POST \/nuritionists",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified Nuritionist.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists\/:nuritionist",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists\/:nuritionist",
+                            "variable": [
+                                {
+                                    "id": "nuritionist",
+                                    "key": "nuritionist",
+                                    "value": "saepe",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/nuritionists\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Nuritionist in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists\/:nuritionist",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists\/:nuritionist",
+                            "variable": [
+                                {
+                                    "id": "nuritionist",
+                                    "key": "nuritionist",
+                                    "value": "velit",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"profile_url\": \"deleniti\",\n    \"first_name\": \"consequatur\",\n    \"middle_name\": \"mollitia\",\n    \"last_name\": \"recusandae\",\n    \"dob\": {},\n    \"gender\": \"totam\",\n    \"language\": \"qui\",\n    \"nationality\": \"alias\",\n    \"city_id\": \"iste\",\n    \"user_id\": 16,\n    \"email\": \"sed\",\n    \"employment_type\": \"accusantium\",\n    \"qualifications\": \"ex\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/nuritionists\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Nuritionist from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists\/:nuritionist",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists\/:nuritionist",
+                            "variable": [
+                                {
+                                    "id": "nuritionist",
+                                    "key": "nuritionist",
+                                    "value": "autem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/nuritionists\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Ortopedic And Surgeon",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store a newly created OrtopedicAndSurgeon in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/ortopedic_and_surgeons\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/ortopedic_and_surgeons\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"error\",\n    \"first_name\": \"accusamus\",\n    \"middle_name\": \"qui\",\n    \"last_name\": \"deleniti\",\n    \"dob\": {},\n    \"gender\": \"porro\",\n    \"language\": \"autem\",\n    \"nationality\": \"sed\",\n    \"city_id\": \"ex\",\n    \"email\": \"rerum\",\n    \"employment_type\": \"praesentium\",\n    \"qualifications\": \"aut\"\n}"
+                        },
+                        "description": "POST \/ortopedicAndSurgeons",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/nuritionists\/uploadProfile",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists\/uploadProfile",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists\/uploadProfile"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "file",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/nuritionists\/uploadDocs",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/nuritionists\/uploadDocs",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/nuritionists\/uploadDocs"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "pictures[]",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the OrtopedicAndSurgeon.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/ortopedic_and_surgeons",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/ortopedic_and_surgeons"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/ortopedicAndSurgeons",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created OrtopedicAndSurgeon in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/ortopedic_and_surgeons",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/ortopedic_and_surgeons"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"nemo\",\n    \"first_name\": \"id\",\n    \"middle_name\": \"recusandae\",\n    \"last_name\": \"sapiente\",\n    \"dob\": {},\n    \"gender\": \"eius\",\n    \"language\": \"voluptatem\",\n    \"nationality\": \"quam\",\n    \"city_id\": \"natus\",\n    \"email\": \"sapiente\",\n    \"employment_type\": \"eos\",\n    \"qualifications\": \"fugiat\"\n}"
+                        },
+                        "description": "POST \/ortopedicAndSurgeons",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified OrtopedicAndSurgeon.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/ortopedic_and_surgeons\/:ortopedic_and_surgeon",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/ortopedic_and_surgeons\/:ortopedic_and_surgeon",
+                            "variable": [
+                                {
+                                    "id": "ortopedic_and_surgeon",
+                                    "key": "ortopedic_and_surgeon",
+                                    "value": "repellat",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/ortopedicAndSurgeons\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified OrtopedicAndSurgeon in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/ortopedic_and_surgeons\/:ortopedic_and_surgeon",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/ortopedic_and_surgeons\/:ortopedic_and_surgeon",
+                            "variable": [
+                                {
+                                    "id": "ortopedic_and_surgeon",
+                                    "key": "ortopedic_and_surgeon",
+                                    "value": "facere",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"profile_url\": \"aliquam\",\n    \"first_name\": \"voluptate\",\n    \"middle_name\": \"alias\",\n    \"last_name\": \"aut\",\n    \"dob\": {},\n    \"gender\": \"magnam\",\n    \"language\": \"magni\",\n    \"nationality\": \"sunt\",\n    \"city_id\": \"exercitationem\",\n    \"user_id\": 8,\n    \"email\": \"fugit\",\n    \"employment_type\": \"praesentium\",\n    \"qualifications\": \"eveniet\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/ortopedicAndSurgeons\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified OrtopedicAndSurgeon from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/ortopedic_and_surgeons\/:ortopedic_and_surgeon",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/ortopedic_and_surgeons\/:ortopedic_and_surgeon",
+                            "variable": [
+                                {
+                                    "id": "ortopedic_and_surgeon",
+                                    "key": "ortopedic_and_surgeon",
+                                    "value": "debitis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/ortopedicAndSurgeons\/{id}",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2261,7 +3052,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"accusantium\",\n    \"middle_name\": \"enim\",\n    \"last_name\": \"officiis\",\n    \"dob\": {},\n    \"gender\": \"harum\",\n    \"language\": \"nihil\",\n    \"nationality\": \"et\",\n    \"city_id\": \"vel\",\n    \"user_id\": 20,\n    \"email\": \"nobis\",\n    \"employment_type\": \"et\",\n    \"qualifications\": \"qui\"\n}"
+                            "raw": "{\n    \"first_name\": \"quas\",\n    \"middle_name\": \"fuga\",\n    \"last_name\": \"ut\",\n    \"dob\": {},\n    \"gender\": \"et\",\n    \"language\": \"nemo\",\n    \"nationality\": \"quos\",\n    \"city_id\": \"itaque\",\n    \"user_id\": 14,\n    \"password\": \"est\",\n    \"email\": \"aliquid\",\n    \"employment_type\": \"consequatur\",\n    \"qualifications\": \"est\"\n}"
                         },
                         "description": "POST \/performanceCoaches",
                         "auth": {
@@ -2309,14 +3100,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/performance_coaches\/uploadPictures",
+                    "name": "api\/performance_coaches\/uploadDocs",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/performance_coaches\/uploadPictures",
+                            "path": "api\/performance_coaches\/uploadDocs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/performance_coaches\/uploadPictures"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/performance_coaches\/uploadDocs"
                         },
                         "method": "POST",
                         "header": [
@@ -2398,7 +3189,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"animi\",\n    \"middle_name\": \"velit\",\n    \"last_name\": \"vel\",\n    \"dob\": {},\n    \"gender\": \"non\",\n    \"language\": \"et\",\n    \"nationality\": \"ab\",\n    \"city_id\": \"aut\",\n    \"user_id\": 9,\n    \"email\": \"consequatur\",\n    \"employment_type\": \"atque\",\n    \"qualifications\": \"commodi\"\n}"
+                            "raw": "{\n    \"first_name\": \"minima\",\n    \"middle_name\": \"veniam\",\n    \"last_name\": \"ea\",\n    \"dob\": {},\n    \"gender\": \"consequatur\",\n    \"language\": \"quis\",\n    \"nationality\": \"dolores\",\n    \"city_id\": \"est\",\n    \"user_id\": 17,\n    \"password\": \"libero\",\n    \"email\": \"sit\",\n    \"employment_type\": \"fugiat\",\n    \"qualifications\": \"necessitatibus\"\n}"
                         },
                         "description": "POST \/performanceCoaches",
                         "auth": {
@@ -2420,7 +3211,7 @@
                                 {
                                     "id": "performance_coach",
                                     "key": "performance_coach",
-                                    "value": "qui",
+                                    "value": "illo",
                                     "description": ""
                                 }
                             ]
@@ -2457,7 +3248,7 @@
                                 {
                                     "id": "performance_coach",
                                     "key": "performance_coach",
-                                    "value": "dolor",
+                                    "value": "voluptate",
                                     "description": ""
                                 }
                             ]
@@ -2475,7 +3266,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"profile_url\": \"dolorum\",\n    \"first_name\": \"et\",\n    \"middle_name\": \"maxime\",\n    \"last_name\": \"maiores\",\n    \"dob\": {},\n    \"gender\": \"maiores\",\n    \"language\": \"nulla\",\n    \"nationality\": \"voluptas\",\n    \"city_id\": \"officia\",\n    \"user_id\": 11,\n    \"email\": \"quos\",\n    \"employment_type\": \"eos\",\n    \"qualifications\": \"ullam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"profile_url\": \"ex\",\n    \"first_name\": \"doloribus\",\n    \"middle_name\": \"itaque\",\n    \"last_name\": \"eum\",\n    \"dob\": {},\n    \"gender\": \"nemo\",\n    \"language\": \"et\",\n    \"nationality\": \"quo\",\n    \"city_id\": \"quis\",\n    \"user_id\": 3,\n    \"email\": \"voluptate\",\n    \"employment_type\": \"illum\",\n    \"qualifications\": \"aliquam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/performanceCoaches\/{id}",
                         "auth": {
@@ -2497,7 +3288,7 @@
                                 {
                                     "id": "performance_coach",
                                     "key": "performance_coach",
-                                    "value": "quos",
+                                    "value": "totam",
                                     "description": ""
                                 }
                             ]
@@ -2579,7 +3370,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 14,\n    \"first_name\": \"praesentium\",\n    \"marital_status\": \"nobis\",\n    \"mother_maiden_name\": \"voluptas\",\n    \"last_name\": \"ullam\",\n    \"height\": \"ipsum\",\n    \"body_weight\": \"dolores\",\n    \"phone\": \"ratione\",\n    \"sm_handle\": \"veritatis\",\n    \"highest_education\": \"illo\",\n    \"place_of_birth\": \"ipsam\",\n    \"school\": \"eius\",\n    \"career_preference\": \"voluptas\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"non\",\n    \"dob\": {},\n    \"country_id\": 15,\n    \"state_of_origin\": 19,\n    \"zipcode\": 2,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 18,\n    \"first_name\": \"saepe\",\n    \"marital_status\": \"dolorem\",\n    \"mother_maiden_name\": \"voluptates\",\n    \"last_name\": \"doloremque\",\n    \"height\": \"voluptatem\",\n    \"body_weight\": \"maiores\",\n    \"phone\": \"possimus\",\n    \"sm_handle\": \"molestiae\",\n    \"highest_education\": \"dolor\",\n    \"place_of_birth\": \"est\",\n    \"school\": \"a\",\n    \"career_preference\": \"et\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"inventore\",\n    \"dob\": {},\n    \"country_id\": 8,\n    \"state_of_origin\": 10,\n    \"zipcode\": 9,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/personalDetails",
                         "auth": {
@@ -2601,7 +3392,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "aut",
+                                    "value": "velit",
                                     "description": ""
                                 }
                             ]
@@ -2638,7 +3429,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "aliquam",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -2656,7 +3447,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"eligendi\",\n    \"marital_status\": \"qui\",\n    \"mother_maiden_name\": \"iure\",\n    \"last_name\": \"qui\",\n    \"height\": \"tenetur\",\n    \"body_weight\": \"et\",\n    \"phone\": \"et\",\n    \"sm_handle\": \"eos\",\n    \"highest_education\": \"odit\",\n    \"place_of_birth\": \"corrupti\",\n    \"school\": \"earum\",\n    \"career_preference\": \"consequuntur\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"autem\",\n    \"dob\": {},\n    \"country_id\": 9,\n    \"state_of_origin\": 16,\n    \"zipcode\": 20,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"first_name\": \"quis\",\n    \"marital_status\": \"libero\",\n    \"mother_maiden_name\": \"corrupti\",\n    \"last_name\": \"ipsum\",\n    \"height\": \"expedita\",\n    \"body_weight\": \"autem\",\n    \"phone\": \"accusamus\",\n    \"sm_handle\": \"excepturi\",\n    \"highest_education\": \"cumque\",\n    \"place_of_birth\": \"nesciunt\",\n    \"school\": \"tempore\",\n    \"career_preference\": \"sit\",\n    \"is_still_schooling\": false,\n    \"contact_address\": \"soluta\",\n    \"dob\": {},\n    \"country_id\": 12,\n    \"state_of_origin\": 1,\n    \"zipcode\": 16,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/personalDetails\/{id}",
                         "auth": {
@@ -2678,7 +3469,7 @@
                                 {
                                     "id": "personal_detail",
                                     "key": "personal_detail",
-                                    "value": "quibusdam",
+                                    "value": "expedita",
                                     "description": ""
                                 }
                             ]
@@ -2696,6 +3487,295 @@
                         ],
                         "body": null,
                         "description": "DELETE \/personalDetails\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Physio",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store a newly created Physio in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"sit\",\n    \"first_name\": \"placeat\",\n    \"middle_name\": \"est\",\n    \"last_name\": \"consequatur\",\n    \"dob\": {},\n    \"gender\": \"delectus\",\n    \"language\": \"officiis\",\n    \"nationality\": \"optio\",\n    \"city_id\": \"facilis\",\n    \"email\": \"sint\",\n    \"employment_type\": \"incidunt\",\n    \"qualifications\": \"illo\"\n}"
+                        },
+                        "description": "POST \/physios",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/physios\/uploadProfile",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios\/uploadProfile",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios\/uploadProfile"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "file",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/physios\/uploadDocs",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios\/uploadDocs",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios\/uploadDocs"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "pictures[]",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the Physio.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/physios",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created Physio in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"est\",\n    \"first_name\": \"harum\",\n    \"middle_name\": \"voluptatibus\",\n    \"last_name\": \"recusandae\",\n    \"dob\": {},\n    \"gender\": \"sunt\",\n    \"language\": \"rem\",\n    \"nationality\": \"quam\",\n    \"city_id\": \"facere\",\n    \"email\": \"cum\",\n    \"employment_type\": \"explicabo\",\n    \"qualifications\": \"in\"\n}"
+                        },
+                        "description": "POST \/physios",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified Physio.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios\/:physio",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios\/:physio",
+                            "variable": [
+                                {
+                                    "id": "physio",
+                                    "key": "physio",
+                                    "value": "assumenda",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "GET|HEAD \/physios\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified Physio in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios\/:physio",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios\/:physio",
+                            "variable": [
+                                {
+                                    "id": "physio",
+                                    "key": "physio",
+                                    "value": "laudantium",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"profile_url\": \"corporis\",\n    \"first_name\": \"ea\",\n    \"middle_name\": \"iste\",\n    \"last_name\": \"qui\",\n    \"dob\": {},\n    \"gender\": \"natus\",\n    \"language\": \"pariatur\",\n    \"nationality\": \"et\",\n    \"city_id\": \"et\",\n    \"user_id\": 3,\n    \"email\": \"commodi\",\n    \"employment_type\": \"pariatur\",\n    \"qualifications\": \"sed\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                        },
+                        "description": "PUT\/PATCH \/physios\/{id}",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified Physio from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/physios\/:physio",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/physios\/:physio",
+                            "variable": [
+                                {
+                                    "id": "physio",
+                                    "key": "physio",
+                                    "value": "corporis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "DELETE \/physios\/{id}",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2760,7 +3840,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"time_practice_in_week\": 4,\n    \"hours_practice_in_week\": 14,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"dolore\",\n    \"challenges\": \"sed\",\n    \"greatest_motivation\": \"eveniet\",\n    \"strength\": \"odit\",\n    \"weakness\": \"neque\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"sed\",\n    \"rating_sports\": \"velit\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"time_practice_in_week\": 11,\n    \"hours_practice_in_week\": 6,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"consequatur\",\n    \"challenges\": \"et\",\n    \"greatest_motivation\": \"eligendi\",\n    \"strength\": \"non\",\n    \"weakness\": \"illum\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"voluptatem\",\n    \"rating_sports\": \"impedit\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/psychPredictors",
                         "auth": {
@@ -2782,7 +3862,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "tempore",
+                                    "value": "aliquid",
                                     "description": ""
                                 }
                             ]
@@ -2819,7 +3899,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "saepe",
+                                    "value": "accusamus",
                                     "description": ""
                                 }
                             ]
@@ -2837,7 +3917,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"time_practice_in_week\": 16,\n    \"hours_practice_in_week\": 9,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"placeat\",\n    \"challenges\": \"quia\",\n    \"greatest_motivation\": \"omnis\",\n    \"strength\": \"ut\",\n    \"weakness\": \"quaerat\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"ut\",\n    \"rating_sports\": \"similique\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"time_practice_in_week\": 10,\n    \"hours_practice_in_week\": 11,\n    \"is_parent_in_support\": false,\n    \"is_team_player\": false,\n    \"parent_in_support_reason\": \"dolores\",\n    \"challenges\": \"quas\",\n    \"greatest_motivation\": \"doloremque\",\n    \"strength\": \"expedita\",\n    \"weakness\": \"vitae\",\n    \"can_overcome_challenges\": false,\n    \"time_start_sport\": \"magnam\",\n    \"rating_sports\": \"voluptate\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/psychPredictors\/{id}",
                         "auth": {
@@ -2859,7 +3939,7 @@
                                 {
                                     "id": "psych_predictor",
                                     "key": "psych_predictor",
-                                    "value": "sunt",
+                                    "value": "nemo",
                                     "description": ""
                                 }
                             ]
@@ -2912,7 +3992,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"ex\",\n    \"middle_name\": \"necessitatibus\",\n    \"last_name\": \"molestiae\",\n    \"dob\": {},\n    \"gender\": \"ipsa\",\n    \"scouting_age\": \"ad\",\n    \"scouting_gender\": \"temporibus\",\n    \"sports\": \"necessitatibus\",\n    \"specialization\": \"eligendi\",\n    \"language\": \"sed\",\n    \"nationality\": \"ut\",\n    \"city_id\": \"adipisci\",\n    \"user_id\": 18,\n    \"email\": \"sit\",\n    \"employment_type\": \"sit\",\n    \"scouting_level\": \"possimus\",\n    \"qualifications\": \"id\",\n    \"team_club\": \"commodi\"\n}"
+                            "raw": "{\n    \"first_name\": \"omnis\",\n    \"middle_name\": \"nobis\",\n    \"last_name\": \"dicta\",\n    \"dob\": {},\n    \"gender\": \"aperiam\",\n    \"scouting_age\": \"temporibus\",\n    \"scouting_gender\": \"aut\",\n    \"sports\": \"aut\",\n    \"specialization\": \"officiis\",\n    \"language\": \"corporis\",\n    \"nationality\": \"praesentium\",\n    \"city_id\": \"quis\",\n    \"user_id\": 18,\n    \"password\": \"cum\",\n    \"email\": \"consequatur\",\n    \"employment_type\": \"et\",\n    \"scouting_level\": \"ea\",\n    \"qualifications\": \"nobis\",\n    \"team_club\": \"at\"\n}"
                         },
                         "description": "POST \/scouts",
                         "auth": {
@@ -2960,14 +4040,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/scouts\/uploadPictures",
+                    "name": "api\/scouts\/uploadDocs",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/scouts\/uploadPictures",
+                            "path": "api\/scouts\/uploadDocs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/scouts\/uploadPictures"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/scouts\/uploadDocs"
                         },
                         "method": "POST",
                         "header": [
@@ -3049,7 +4129,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"first_name\": \"possimus\",\n    \"middle_name\": \"assumenda\",\n    \"last_name\": \"illo\",\n    \"dob\": {},\n    \"gender\": \"sapiente\",\n    \"scouting_age\": \"sunt\",\n    \"scouting_gender\": \"laboriosam\",\n    \"sports\": \"ipsa\",\n    \"specialization\": \"aut\",\n    \"language\": \"mollitia\",\n    \"nationality\": \"aut\",\n    \"city_id\": \"odit\",\n    \"user_id\": 3,\n    \"email\": \"quia\",\n    \"employment_type\": \"quia\",\n    \"scouting_level\": \"minus\",\n    \"qualifications\": \"dolores\",\n    \"team_club\": \"eius\"\n}"
+                            "raw": "{\n    \"first_name\": \"ea\",\n    \"middle_name\": \"doloremque\",\n    \"last_name\": \"et\",\n    \"dob\": {},\n    \"gender\": \"dignissimos\",\n    \"scouting_age\": \"culpa\",\n    \"scouting_gender\": \"qui\",\n    \"sports\": \"voluptatem\",\n    \"specialization\": \"dignissimos\",\n    \"language\": \"eaque\",\n    \"nationality\": \"accusantium\",\n    \"city_id\": \"labore\",\n    \"user_id\": 16,\n    \"password\": \"nisi\",\n    \"email\": \"ducimus\",\n    \"employment_type\": \"nam\",\n    \"scouting_level\": \"tempore\",\n    \"qualifications\": \"molestias\",\n    \"team_club\": \"commodi\"\n}"
                         },
                         "description": "POST \/scouts",
                         "auth": {
@@ -3071,7 +4151,7 @@
                                 {
                                     "id": "scout",
                                     "key": "scout",
-                                    "value": "molestias",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -3108,7 +4188,7 @@
                                 {
                                     "id": "scout",
                                     "key": "scout",
-                                    "value": "commodi",
+                                    "value": "placeat",
                                     "description": ""
                                 }
                             ]
@@ -3126,7 +4206,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"profile_url\": \"atque\",\n    \"first_name\": \"omnis\",\n    \"middle_name\": \"aut\",\n    \"last_name\": \"tempore\",\n    \"dob\": {},\n    \"gender\": \"animi\",\n    \"scouting_age\": \"voluptas\",\n    \"scouting_gender\": \"optio\",\n    \"sports\": \"voluptatum\",\n    \"specialization\": \"aperiam\",\n    \"language\": \"velit\",\n    \"nationality\": \"aliquid\",\n    \"city_id\": \"voluptatibus\",\n    \"user_id\": 16,\n    \"email\": \"qui\",\n    \"employment_type\": \"optio\",\n    \"scouting_level\": \"quia\",\n    \"qualifications\": \"quae\",\n    \"team_club\": \"molestias\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"profile_url\": \"officiis\",\n    \"first_name\": \"atque\",\n    \"middle_name\": \"sunt\",\n    \"last_name\": \"quidem\",\n    \"dob\": {},\n    \"gender\": \"ipsum\",\n    \"scouting_age\": \"consectetur\",\n    \"scouting_gender\": \"quia\",\n    \"sports\": \"voluptas\",\n    \"specialization\": \"facilis\",\n    \"language\": \"harum\",\n    \"nationality\": \"et\",\n    \"city_id\": \"accusamus\",\n    \"user_id\": 1,\n    \"email\": \"aspernatur\",\n    \"employment_type\": \"eveniet\",\n    \"scouting_level\": \"aut\",\n    \"qualifications\": \"assumenda\",\n    \"team_club\": \"ipsam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/scouts\/{id}",
                         "auth": {
@@ -3148,7 +4228,7 @@
                                 {
                                     "id": "scout",
                                     "key": "scout",
-                                    "value": "animi",
+                                    "value": "fugiat",
                                     "description": ""
                                 }
                             ]
@@ -3230,7 +4310,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"speed\": \"consectetur\",\n    \"passing\": \"et\",\n    \"shooting\": \"quia\",\n    \"dribbling\": \"laboriosam\",\n    \"heading\": \"distinctio\",\n    \"ball_control\": \"exercitationem\",\n    \"fitness\": \"quia\",\n    \"movement\": \"perferendis\",\n    \"awareness\": \"doloribus\",\n    \"decisions\": \"at\",\n    \"workrate\": \"aperiam\",\n    \"strength\": \"cumque\",\n    \"crossing\": \"magnam\",\n    \"finishing\": \"voluptatibus\",\n    \"positioning\": \"optio\",\n    \"anticipation\": \"natus\",\n    \"total\": \"voluptatem\",\n    \"overall_grade\": \"occaecati\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"speed\": \"dolor\",\n    \"passing\": \"ullam\",\n    \"shooting\": \"occaecati\",\n    \"dribbling\": \"magni\",\n    \"heading\": \"omnis\",\n    \"ball_control\": \"eum\",\n    \"fitness\": \"adipisci\",\n    \"movement\": \"vel\",\n    \"awareness\": \"necessitatibus\",\n    \"decisions\": \"quo\",\n    \"workrate\": \"blanditiis\",\n    \"strength\": \"porro\",\n    \"crossing\": \"et\",\n    \"finishing\": \"architecto\",\n    \"positioning\": \"cum\",\n    \"anticipation\": \"ea\",\n    \"total\": \"corporis\",\n    \"overall_grade\": \"ratione\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillReports",
                         "auth": {
@@ -3252,7 +4332,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "deleniti",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -3289,7 +4369,7 @@
                                 {
                                     "id": "skill_report",
                                     "key": "skill_report",
-                                    "value": "est",
+                                    "value": "eum",
                                     "description": ""
                                 }
                             ]
@@ -3307,7 +4387,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 12,\n    \"speed\": \"voluptas\",\n    \"passing\": \"omnis\",\n    \"shooting\": \"voluptatem\",\n    \"dribbling\": \"impedit\",\n    \"heading\": \"quibusdam\",\n    \"ball_control\": \"velit\",\n    \"fitness\": \"quaerat\",\n    \"movement\": \"enim\",\n    \"awareness\": \"veniam\",\n    \"decisions\": \"voluptatibus\",\n    \"workrate\": \"quam\",\n    \"strength\": \"est\",\n    \"crossing\": \"ex\",\n    \"finishing\": \"deleniti\",\n    \"positioning\": \"error\",\n    \"anticipation\": \"et\",\n    \"total\": \"iste\",\n    \"overall_grade\": \"voluptatibus\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"user_id\": 10,\n    \"speed\": \"recusandae\",\n    \"passing\": \"et\",\n    \"shooting\": \"id\",\n    \"dribbling\": \"minus\",\n    \"heading\": \"sint\",\n    \"ball_control\": \"voluptatem\",\n    \"fitness\": \"consequatur\",\n    \"movement\": \"minima\",\n    \"awareness\": \"distinctio\",\n    \"decisions\": \"reprehenderit\",\n    \"workrate\": \"aut\",\n    \"strength\": \"beatae\",\n    \"crossing\": \"commodi\",\n    \"finishing\": \"numquam\",\n    \"positioning\": \"a\",\n    \"anticipation\": \"ad\",\n    \"total\": \"autem\",\n    \"overall_grade\": \"assumenda\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillReports\/{id}",
                         "auth": {
@@ -3411,7 +4491,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"odio\",\n    \"sport_id\": 14,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"molestiae\",\n    \"sport_id\": 10,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/skillTests",
                         "auth": {
@@ -3433,7 +4513,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "aperiam",
+                                    "value": "officia",
                                     "description": ""
                                 }
                             ]
@@ -3470,7 +4550,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "quidem",
+                                    "value": "minima",
                                     "description": ""
                                 }
                             ]
@@ -3488,7 +4568,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"consequatur\",\n    \"sport_id\": 5,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"eaque\",\n    \"sport_id\": 2,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/skillTests\/{id}",
                         "auth": {
@@ -3510,7 +4590,7 @@
                                 {
                                     "id": "skill_test",
                                     "key": "skill_test",
-                                    "value": "aperiam",
+                                    "value": "praesentium",
                                     "description": ""
                                 }
                             ]
@@ -3592,7 +4672,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"cupiditate\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"molestiae\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/sports",
                         "auth": {
@@ -3614,7 +4694,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "animi",
+                                    "value": "aut",
                                     "description": ""
                                 }
                             ]
@@ -3651,7 +4731,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "accusantium",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -3669,7 +4749,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"numquam\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"fugiat\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/sports\/{id}",
                         "auth": {
@@ -3691,7 +4771,7 @@
                                 {
                                     "id": "sport",
                                     "key": "sport",
-                                    "value": "ut",
+                                    "value": "cupiditate",
                                     "description": ""
                                 }
                             ]
@@ -3734,7 +4814,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "suscipit",
+                                    "value": "ad",
                                     "description": ""
                                 }
                             ]
@@ -3787,7 +4867,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"password\": \"ducimus\",\n    \"scheme\": \"est\",\n    \"email\": \"inventore\",\n    \"first_name\": \"mollitia\",\n    \"middle_name\": \"maxime\",\n    \"last_name\": \"beatae\",\n    \"dob\": {},\n    \"age\": 6,\n    \"gender\": \"tempore\",\n    \"languages\": \"sunt\",\n    \"city_id\": \"aut\",\n    \"genotype\": \"aliquam\",\n    \"blood_group\": \"quia\",\n    \"sports\": \"exercitationem\",\n    \"positions\": \"officia\",\n    \"educational_background\": \"odio\",\n    \"nationality\": \"et\",\n    \"height\": 405280126.1,\n    \"weight\": 8.46821\n}"
+                            "raw": "{\n    \"scheme\": \"ullam\",\n    \"password\": \"excepturi\",\n    \"email\": \"perspiciatis\",\n    \"first_name\": \"aut\",\n    \"middle_name\": \"ut\",\n    \"last_name\": \"incidunt\",\n    \"dob\": {},\n    \"age\": 10,\n    \"gender\": \"minus\",\n    \"languages\": \"dicta\",\n    \"city_id\": \"at\",\n    \"genotype\": \"at\",\n    \"blood_group\": \"delectus\",\n    \"sports\": \"vel\",\n    \"positions\": \"error\",\n    \"educational_background\": \"repellat\",\n    \"nationality\": \"nostrum\",\n    \"height\": 23063151.5444,\n    \"weight\": 850.6\n}"
                         },
                         "description": "POST \/talent",
                         "auth": {
@@ -3835,14 +4915,14 @@
                     "response": []
                 },
                 {
-                    "name": "api\/talent\/uploadPictures",
+                    "name": "api\/talent\/uploadDocs",
                     "request": {
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/talent\/uploadPictures",
+                            "path": "api\/talent\/uploadDocs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/talent\/uploadPictures"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/talent\/uploadDocs"
                         },
                         "method": "POST",
                         "header": [
@@ -3924,7 +5004,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"password\": \"sunt\",\n    \"scheme\": \"et\",\n    \"email\": \"qui\",\n    \"first_name\": \"velit\",\n    \"middle_name\": \"quibusdam\",\n    \"last_name\": \"ratione\",\n    \"dob\": {},\n    \"age\": 10,\n    \"gender\": \"explicabo\",\n    \"languages\": \"reiciendis\",\n    \"city_id\": \"ex\",\n    \"genotype\": \"voluptas\",\n    \"blood_group\": \"error\",\n    \"sports\": \"unde\",\n    \"positions\": \"rerum\",\n    \"educational_background\": \"eveniet\",\n    \"nationality\": \"corporis\",\n    \"height\": 3.959705135,\n    \"weight\": 62219715.518258266\n}"
+                            "raw": "{\n    \"scheme\": \"et\",\n    \"password\": \"ut\",\n    \"email\": \"iusto\",\n    \"first_name\": \"a\",\n    \"middle_name\": \"aspernatur\",\n    \"last_name\": \"consequuntur\",\n    \"dob\": {},\n    \"age\": 5,\n    \"gender\": \"quas\",\n    \"languages\": \"est\",\n    \"city_id\": \"similique\",\n    \"genotype\": \"iste\",\n    \"blood_group\": \"architecto\",\n    \"sports\": \"laborum\",\n    \"positions\": \"doloremque\",\n    \"educational_background\": \"qui\",\n    \"nationality\": \"aliquid\",\n    \"height\": 31382.834,\n    \"weight\": 39675451.8451625\n}"
                         },
                         "description": "POST \/talent",
                         "auth": {
@@ -3946,7 +5026,7 @@
                                 {
                                     "id": "talent",
                                     "key": "talent",
-                                    "value": "harum",
+                                    "value": "maxime",
                                     "description": ""
                                 }
                             ]
@@ -3983,7 +5063,7 @@
                                 {
                                     "id": "talent",
                                     "key": "talent",
-                                    "value": "consectetur",
+                                    "value": "enim",
                                     "description": ""
                                 }
                             ]
@@ -4001,7 +5081,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"profile_url\": \"reiciendis\",\n    \"qualifications\": \"earum\",\n    \"scheme\": \"consectetur\",\n    \"user_id\": 4,\n    \"email\": \"et\",\n    \"first_name\": \"et\",\n    \"middle_name\": \"possimus\",\n    \"last_name\": \"voluptatem\",\n    \"dob\": {},\n    \"age\": 17,\n    \"gender\": \"voluptatum\",\n    \"languages\": \"dolorem\",\n    \"city_id\": \"ipsam\",\n    \"genotype\": \"assumenda\",\n    \"blood_group\": \"ut\",\n    \"sports\": \"sit\",\n    \"positions\": \"commodi\",\n    \"educational_background\": \"iure\",\n    \"nationality\": \"officiis\",\n    \"height\": 302961.5,\n    \"weight\": 12960106.9,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"profile_url\": \"fugit\",\n    \"qualifications\": \"ratione\",\n    \"scheme\": \"eveniet\",\n    \"user_id\": 5,\n    \"email\": \"et\",\n    \"first_name\": \"ullam\",\n    \"middle_name\": \"ut\",\n    \"last_name\": \"aut\",\n    \"dob\": {},\n    \"age\": 15,\n    \"gender\": \"accusamus\",\n    \"languages\": \"explicabo\",\n    \"city_id\": \"laborum\",\n    \"genotype\": \"quis\",\n    \"blood_group\": \"deleniti\",\n    \"sports\": \"iure\",\n    \"positions\": \"eaque\",\n    \"educational_background\": \"et\",\n    \"nationality\": \"consequatur\",\n    \"height\": 98.949784049,\n    \"weight\": 115779852.278,\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/talent\/{id}",
                         "auth": {
@@ -4023,7 +5103,7 @@
                                 {
                                     "id": "talent",
                                     "key": "talent",
-                                    "value": "tempora",
+                                    "value": "sed",
                                     "description": ""
                                 }
                             ]
@@ -4105,7 +5185,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"type_id\": 13,\n    \"skill_test_id\": 12,\n    \"url\": \"exercitationem\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"type_id\": 16,\n    \"skill_test_id\": 6,\n    \"url\": \"quos\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/videos",
                         "auth": {
@@ -4127,7 +5207,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "sint",
+                                    "value": "magnam",
                                     "description": ""
                                 }
                             ]
@@ -4164,7 +5244,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "nulla",
+                                    "value": "sint",
                                     "description": ""
                                 }
                             ]
@@ -4182,7 +5262,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"type_id\": 5,\n    \"skill_test_id\": 4,\n    \"url\": \"sed\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"type_id\": 6,\n    \"skill_test_id\": 3,\n    \"url\": \"qui\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/videos\/{id}",
                         "auth": {
@@ -4204,7 +5284,7 @@
                                 {
                                     "id": "video",
                                     "key": "video",
-                                    "value": "impedit",
+                                    "value": "laboriosam",
                                     "description": ""
                                 }
                             ]
@@ -4286,7 +5366,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"hic\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"consequuntur\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "POST \/videoTypes",
                         "auth": {
@@ -4308,7 +5388,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "soluta",
+                                    "value": "dignissimos",
                                     "description": ""
                                 }
                             ]
@@ -4345,7 +5425,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "quia",
+                                    "value": "eum",
                                     "description": ""
                                 }
                             ]
@@ -4363,7 +5443,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"vel\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
+                            "raw": "{\n    \"name\": \"qui\",\n    \"created_at\": {},\n    \"updated_at\": {}\n}"
                         },
                         "description": "PUT\/PATCH \/videoTypes\/{id}",
                         "auth": {
@@ -4385,7 +5465,7 @@
                                 {
                                     "id": "video_type",
                                     "key": "video_type",
-                                    "value": "et",
+                                    "value": "velit",
                                     "description": ""
                                 }
                             ]

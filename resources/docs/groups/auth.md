@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"sromaguera@example.net","password":"sed"}'
+    -d '{"email":"leffler.alysson@example.net","password":"ut"}'
 
 ```
 
@@ -28,8 +28,8 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'email' => 'sromaguera@example.net',
-            'password' => 'sed',
+            'email' => 'leffler.alysson@example.net',
+            'password' => 'ut',
         ],
     ]
 );
@@ -48,8 +48,8 @@ let headers = {
 };
 
 let body = {
-    "email": "sromaguera@example.net",
-    "password": "sed"
+    "email": "leffler.alysson@example.net",
+    "password": "ut"
 }
 
 fetch(url, {
@@ -176,7 +176,7 @@ curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"assumenda","last_name":"animi","email":"estefania15@example.net","password":"ab","password_confirmation":"expedita"}'
+    -d '{"first_name":"eligendi","last_name":"pariatur","email":"kennith.hoeger@example.org","password":"dolor","password_confirmation":"doloremque"}'
 
 ```
 
@@ -191,11 +191,11 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'first_name' => 'assumenda',
-            'last_name' => 'animi',
-            'email' => 'estefania15@example.net',
-            'password' => 'ab',
-            'password_confirmation' => 'expedita',
+            'first_name' => 'eligendi',
+            'last_name' => 'pariatur',
+            'email' => 'kennith.hoeger@example.org',
+            'password' => 'dolor',
+            'password_confirmation' => 'doloremque',
         ],
     ]
 );
@@ -214,11 +214,11 @@ let headers = {
 };
 
 let body = {
-    "first_name": "assumenda",
-    "last_name": "animi",
-    "email": "estefania15@example.net",
-    "password": "ab",
-    "password_confirmation": "expedita"
+    "first_name": "eligendi",
+    "last_name": "pariatur",
+    "email": "kennith.hoeger@example.org",
+    "password": "dolor",
+    "password_confirmation": "doloremque"
 }
 
 fetch(url, {
@@ -290,7 +290,7 @@ curl -X POST \
     "http://localhost/api/password/email" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"leffler.rebeka@example.com"}'
+    -d '{"email":"ally.barton@example.net"}'
 
 ```
 
@@ -305,7 +305,7 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'email' => 'leffler.rebeka@example.com',
+            'email' => 'ally.barton@example.net',
         ],
     ]
 );
@@ -324,7 +324,7 @@ let headers = {
 };
 
 let body = {
-    "email": "leffler.rebeka@example.com"
+    "email": "ally.barton@example.net"
 }
 
 fetch(url, {
@@ -373,7 +373,7 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/password/reset/quia" \
+    -G "http://localhost/api/password/reset/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -382,7 +382,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/password/reset/quia',
+    'http://localhost/api/password/reset/rerum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -396,7 +396,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/password/reset/quia"
+    "http://localhost/api/password/reset/rerum"
 );
 
 let headers = {
@@ -461,8 +461,8 @@ fetch(url, {
         <p class="login-box-msg">Reset your password</p>
 
         <form method="post" action="http://localhost/password/reset">
-            <input type="hidden" name="_token" value="rjJ4f6Z6nxEYtYMuKQu3f0Lgb2QjeZVO6Aqi8eTw">
-            <input type="hidden" name="token" value="quia">
+            <input type="hidden" name="_token" value="A9yXjmCkWDPdA2ncHMoriEu5teww9NX4Pa6A5JrN">
+            <input type="hidden" name="token" value="rerum">
 
             <div class="form-group has-feedback ">
                 <input type="email" class="form-control" name="email" value="" placeholder="Email">
@@ -690,7 +690,7 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/email/verify/dolorem/eius" \
+    -G "http://localhost/api/email/verify/et/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -699,7 +699,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/email/verify/dolorem/eius',
+    'http://localhost/api/email/verify/et/quia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -713,7 +713,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/email/verify/dolorem/eius"
+    "http://localhost/api/email/verify/et/quia"
 );
 
 let headers = {

@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/personal_details" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":14,"first_name":"praesentium","marital_status":"nobis","mother_maiden_name":"voluptas","last_name":"ullam","height":"ipsum","body_weight":"dolores","phone":"ratione","sm_handle":"veritatis","highest_education":"illo","place_of_birth":"ipsam","school":"eius","career_preference":"voluptas","is_still_schooling":false,"contact_address":"non","dob":{},"country_id":15,"state_of_origin":19,"zipcode":2,"created_at":{},"updated_at":{}}'
+    -d '{"user_id":18,"first_name":"saepe","marital_status":"dolorem","mother_maiden_name":"voluptates","last_name":"doloremque","height":"voluptatem","body_weight":"maiores","phone":"possimus","sm_handle":"molestiae","highest_education":"dolor","place_of_birth":"est","school":"a","career_preference":"et","is_still_schooling":false,"contact_address":"inventore","dob":{},"country_id":8,"state_of_origin":10,"zipcode":9,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,25 +112,25 @@ $response = $client->post(
             null,
             [],
             [
-                'user_id' => 14,
-                'first_name' => 'praesentium',
-                'marital_status' => 'nobis',
-                'mother_maiden_name' => 'voluptas',
-                'last_name' => 'ullam',
-                'height' => 'ipsum',
-                'body_weight' => 'dolores',
-                'phone' => 'ratione',
-                'sm_handle' => 'veritatis',
-                'highest_education' => 'illo',
-                'place_of_birth' => 'ipsam',
-                'school' => 'eius',
-                'career_preference' => 'voluptas',
+                'user_id' => 18,
+                'first_name' => 'saepe',
+                'marital_status' => 'dolorem',
+                'mother_maiden_name' => 'voluptates',
+                'last_name' => 'doloremque',
+                'height' => 'voluptatem',
+                'body_weight' => 'maiores',
+                'phone' => 'possimus',
+                'sm_handle' => 'molestiae',
+                'highest_education' => 'dolor',
+                'place_of_birth' => 'est',
+                'school' => 'a',
+                'career_preference' => 'et',
                 'is_still_schooling' => false,
-                'contact_address' => 'non',
+                'contact_address' => 'inventore',
                 'dob' => $o[0],
-                'country_id' => 15,
-                'state_of_origin' => 19,
-                'zipcode' => 2,
+                'country_id' => 8,
+                'state_of_origin' => 10,
+                'zipcode' => 9,
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -153,25 +153,25 @@ let headers = {
 };
 
 let body = {
-    "user_id": 14,
-    "first_name": "praesentium",
-    "marital_status": "nobis",
-    "mother_maiden_name": "voluptas",
-    "last_name": "ullam",
-    "height": "ipsum",
-    "body_weight": "dolores",
-    "phone": "ratione",
-    "sm_handle": "veritatis",
-    "highest_education": "illo",
-    "place_of_birth": "ipsam",
-    "school": "eius",
-    "career_preference": "voluptas",
+    "user_id": 18,
+    "first_name": "saepe",
+    "marital_status": "dolorem",
+    "mother_maiden_name": "voluptates",
+    "last_name": "doloremque",
+    "height": "voluptatem",
+    "body_weight": "maiores",
+    "phone": "possimus",
+    "sm_handle": "molestiae",
+    "highest_education": "dolor",
+    "place_of_birth": "est",
+    "school": "a",
+    "career_preference": "et",
     "is_still_schooling": false,
-    "contact_address": "non",
+    "contact_address": "inventore",
     "dob": {},
-    "country_id": 15,
-    "state_of_origin": 19,
-    "zipcode": 2,
+    "country_id": 8,
+    "state_of_origin": 10,
+    "zipcode": 9,
     "created_at": {},
     "updated_at": {}
 }
@@ -323,7 +323,7 @@ GET|HEAD /personalDetails/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/personal_details/aut" \
+    -G "http://localhost/api/personal_details/velit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -332,7 +332,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/personal_details/aut',
+    'http://localhost/api/personal_details/velit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -346,7 +346,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/aut"
+    "http://localhost/api/personal_details/velit"
 );
 
 let headers = {
@@ -407,10 +407,10 @@ PUT/PATCH /personalDetails/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/personal_details/aliquam" \
+    "http://localhost/api/personal_details/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"eligendi","marital_status":"qui","mother_maiden_name":"iure","last_name":"qui","height":"tenetur","body_weight":"et","phone":"et","sm_handle":"eos","highest_education":"odit","place_of_birth":"corrupti","school":"earum","career_preference":"consequuntur","is_still_schooling":false,"contact_address":"autem","dob":{},"country_id":9,"state_of_origin":16,"zipcode":20,"created_at":{},"updated_at":{}}'
+    -d '{"first_name":"quis","marital_status":"libero","mother_maiden_name":"corrupti","last_name":"ipsum","height":"expedita","body_weight":"autem","phone":"accusamus","sm_handle":"excepturi","highest_education":"cumque","place_of_birth":"nesciunt","school":"tempore","career_preference":"sit","is_still_schooling":false,"contact_address":"soluta","dob":{},"country_id":12,"state_of_origin":1,"zipcode":16,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -418,7 +418,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/personal_details/aliquam',
+    'http://localhost/api/personal_details/et',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -431,24 +431,24 @@ $response = $client->put(
             null,
             [],
             [
-                'first_name' => 'eligendi',
-                'marital_status' => 'qui',
-                'mother_maiden_name' => 'iure',
-                'last_name' => 'qui',
-                'height' => 'tenetur',
-                'body_weight' => 'et',
-                'phone' => 'et',
-                'sm_handle' => 'eos',
-                'highest_education' => 'odit',
-                'place_of_birth' => 'corrupti',
-                'school' => 'earum',
-                'career_preference' => 'consequuntur',
+                'first_name' => 'quis',
+                'marital_status' => 'libero',
+                'mother_maiden_name' => 'corrupti',
+                'last_name' => 'ipsum',
+                'height' => 'expedita',
+                'body_weight' => 'autem',
+                'phone' => 'accusamus',
+                'sm_handle' => 'excepturi',
+                'highest_education' => 'cumque',
+                'place_of_birth' => 'nesciunt',
+                'school' => 'tempore',
+                'career_preference' => 'sit',
                 'is_still_schooling' => false,
-                'contact_address' => 'autem',
+                'contact_address' => 'soluta',
                 'dob' => $o[0],
-                'country_id' => 9,
-                'state_of_origin' => 16,
-                'zipcode' => 20,
+                'country_id' => 12,
+                'state_of_origin' => 1,
+                'zipcode' => 16,
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -462,7 +462,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/aliquam"
+    "http://localhost/api/personal_details/et"
 );
 
 let headers = {
@@ -471,24 +471,24 @@ let headers = {
 };
 
 let body = {
-    "first_name": "eligendi",
-    "marital_status": "qui",
-    "mother_maiden_name": "iure",
-    "last_name": "qui",
-    "height": "tenetur",
-    "body_weight": "et",
-    "phone": "et",
-    "sm_handle": "eos",
-    "highest_education": "odit",
-    "place_of_birth": "corrupti",
-    "school": "earum",
-    "career_preference": "consequuntur",
+    "first_name": "quis",
+    "marital_status": "libero",
+    "mother_maiden_name": "corrupti",
+    "last_name": "ipsum",
+    "height": "expedita",
+    "body_weight": "autem",
+    "phone": "accusamus",
+    "sm_handle": "excepturi",
+    "highest_education": "cumque",
+    "place_of_birth": "nesciunt",
+    "school": "tempore",
+    "career_preference": "sit",
     "is_still_schooling": false,
-    "contact_address": "autem",
+    "contact_address": "soluta",
     "dob": {},
-    "country_id": 9,
-    "state_of_origin": 16,
-    "zipcode": 20,
+    "country_id": 12,
+    "state_of_origin": 1,
+    "zipcode": 16,
     "created_at": {},
     "updated_at": {}
 }
@@ -645,7 +645,7 @@ DELETE /personalDetails/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/personal_details/quibusdam" \
+    "http://localhost/api/personal_details/expedita" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -654,7 +654,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/personal_details/quibusdam',
+    'http://localhost/api/personal_details/expedita',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -668,7 +668,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/personal_details/quibusdam"
+    "http://localhost/api/personal_details/expedita"
 );
 
 let headers = {

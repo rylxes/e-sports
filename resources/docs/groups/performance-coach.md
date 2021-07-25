@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/performance_coaches/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"accusantium","middle_name":"enim","last_name":"officiis","dob":{},"gender":"harum","language":"nihil","nationality":"et","city_id":"vel","user_id":20,"email":"nobis","employment_type":"et","qualifications":"qui"}'
+    -d '{"first_name":"quas","middle_name":"fuga","last_name":"ut","dob":{},"gender":"et","language":"nemo","nationality":"quos","city_id":"itaque","user_id":14,"password":"est","email":"aliquid","employment_type":"consequatur","qualifications":"est"}'
 
 ```
 
@@ -34,18 +34,19 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'accusantium',
-                'middle_name' => 'enim',
-                'last_name' => 'officiis',
+                'first_name' => 'quas',
+                'middle_name' => 'fuga',
+                'last_name' => 'ut',
                 'dob' => $o[0],
-                'gender' => 'harum',
-                'language' => 'nihil',
-                'nationality' => 'et',
-                'city_id' => 'vel',
-                'user_id' => 20,
-                'email' => 'nobis',
-                'employment_type' => 'et',
-                'qualifications' => 'qui',
+                'gender' => 'et',
+                'language' => 'nemo',
+                'nationality' => 'quos',
+                'city_id' => 'itaque',
+                'user_id' => 14,
+                'password' => 'est',
+                'email' => 'aliquid',
+                'employment_type' => 'consequatur',
+                'qualifications' => 'est',
             ],
             []
         ),
@@ -66,18 +67,19 @@ let headers = {
 };
 
 let body = {
-    "first_name": "accusantium",
-    "middle_name": "enim",
-    "last_name": "officiis",
+    "first_name": "quas",
+    "middle_name": "fuga",
+    "last_name": "ut",
     "dob": {},
-    "gender": "harum",
-    "language": "nihil",
-    "nationality": "et",
-    "city_id": "vel",
-    "user_id": 20,
-    "email": "nobis",
-    "employment_type": "et",
-    "qualifications": "qui"
+    "gender": "et",
+    "language": "nemo",
+    "nationality": "quos",
+    "city_id": "itaque",
+    "user_id": 14,
+    "password": "est",
+    "email": "aliquid",
+    "employment_type": "consequatur",
+    "qualifications": "est"
 }
 
 fetch(url, {
@@ -154,8 +156,13 @@ fetch(url, {
 <br>
 </p>
 <p>
-<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="email" data-endpoint="POSTapi-performance_coaches-register" data-component="body"  hidden>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-performance_coaches-register" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-performance_coaches-register" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -184,7 +191,7 @@ curl -X POST \
     "http://localhost/api/performance_coaches/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpb5bo7E" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpDFNCp1" 
 ```
 
 ```php
@@ -200,7 +207,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpb5bo7E', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpDFNCp1', 'r')
             ],
         ],
     ]
@@ -259,7 +266,7 @@ The value must be a file.</p>
 </form>
 
 
-## api/performance_coaches/uploadPictures
+## api/performance_coaches/uploadDocs
 
 
 
@@ -268,17 +275,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/performance_coaches/uploadPictures" \
+    "http://localhost/api/performance_coaches/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpIhFV1u" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpBvi5ZT" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/performance_coaches/uploadPictures',
+    'http://localhost/api/performance_coaches/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -287,7 +294,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpIhFV1u', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpBvi5ZT', 'r')
             ],
         ],
     ]
@@ -298,7 +305,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/performance_coaches/uploadPictures"
+    "http://localhost/api/performance_coaches/uploadDocs"
 );
 
 let headers = {
@@ -317,30 +324,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-performance_coaches-uploadPictures" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-performance_coaches-uploadPictures"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-performance_coaches-uploadPictures"></code></pre>
+<div id="execution-results-POSTapi-performance_coaches-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-performance_coaches-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-performance_coaches-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-performance_coaches-uploadPictures" hidden>
+<div id="execution-error-POSTapi-performance_coaches-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-performance_coaches-uploadPictures"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-performance_coaches-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-performance_coaches-uploadPictures" data-method="POST" data-path="api/performance_coaches/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-performance_coaches-uploadPictures', this);">
+<form id="form-POSTapi-performance_coaches-uploadDocs" data-method="POST" data-path="api/performance_coaches/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-performance_coaches-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-performance_coaches-uploadPictures" onclick="tryItOut('POSTapi-performance_coaches-uploadPictures');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-performance_coaches-uploadPictures" onclick="cancelTryOut('POSTapi-performance_coaches-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-performance_coaches-uploadPictures" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-performance_coaches-uploadDocs" onclick="tryItOut('POSTapi-performance_coaches-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-performance_coaches-uploadDocs" onclick="cancelTryOut('POSTapi-performance_coaches-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-performance_coaches-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/performance_coaches/uploadPictures</code></b>
+ <b><code>api/performance_coaches/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-performance_coaches-uploadPictures" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-performance_coaches-uploadPictures" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-performance_coaches-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-performance_coaches-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -437,7 +444,7 @@ curl -X POST \
     "http://localhost/api/performance_coaches" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"animi","middle_name":"velit","last_name":"vel","dob":{},"gender":"non","language":"et","nationality":"ab","city_id":"aut","user_id":9,"email":"consequatur","employment_type":"atque","qualifications":"commodi"}'
+    -d '{"first_name":"minima","middle_name":"veniam","last_name":"ea","dob":{},"gender":"consequatur","language":"quis","nationality":"dolores","city_id":"est","user_id":17,"password":"libero","email":"sit","employment_type":"fugiat","qualifications":"necessitatibus"}'
 
 ```
 
@@ -458,18 +465,19 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'animi',
-                'middle_name' => 'velit',
-                'last_name' => 'vel',
+                'first_name' => 'minima',
+                'middle_name' => 'veniam',
+                'last_name' => 'ea',
                 'dob' => $o[0],
-                'gender' => 'non',
-                'language' => 'et',
-                'nationality' => 'ab',
-                'city_id' => 'aut',
-                'user_id' => 9,
-                'email' => 'consequatur',
-                'employment_type' => 'atque',
-                'qualifications' => 'commodi',
+                'gender' => 'consequatur',
+                'language' => 'quis',
+                'nationality' => 'dolores',
+                'city_id' => 'est',
+                'user_id' => 17,
+                'password' => 'libero',
+                'email' => 'sit',
+                'employment_type' => 'fugiat',
+                'qualifications' => 'necessitatibus',
             ],
             []
         ),
@@ -490,18 +498,19 @@ let headers = {
 };
 
 let body = {
-    "first_name": "animi",
-    "middle_name": "velit",
-    "last_name": "vel",
+    "first_name": "minima",
+    "middle_name": "veniam",
+    "last_name": "ea",
     "dob": {},
-    "gender": "non",
-    "language": "et",
-    "nationality": "ab",
-    "city_id": "aut",
-    "user_id": 9,
-    "email": "consequatur",
-    "employment_type": "atque",
-    "qualifications": "commodi"
+    "gender": "consequatur",
+    "language": "quis",
+    "nationality": "dolores",
+    "city_id": "est",
+    "user_id": 17,
+    "password": "libero",
+    "email": "sit",
+    "employment_type": "fugiat",
+    "qualifications": "necessitatibus"
 }
 
 fetch(url, {
@@ -578,8 +587,13 @@ fetch(url, {
 <br>
 </p>
 <p>
-<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="email" data-endpoint="POSTapi-performance_coaches" data-component="body"  hidden>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-performance_coaches" data-component="body" required  hidden>
+<br>
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-performance_coaches" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -605,7 +619,7 @@ GET|HEAD /performanceCoaches/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/performance_coaches/qui" \
+    -G "http://localhost/api/performance_coaches/illo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -614,7 +628,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/performance_coaches/qui',
+    'http://localhost/api/performance_coaches/illo',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -628,7 +642,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/performance_coaches/qui"
+    "http://localhost/api/performance_coaches/illo"
 );
 
 let headers = {
@@ -689,10 +703,10 @@ PUT/PATCH /performanceCoaches/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/performance_coaches/dolor" \
+    "http://localhost/api/performance_coaches/voluptate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"dolorum","first_name":"et","middle_name":"maxime","last_name":"maiores","dob":{},"gender":"maiores","language":"nulla","nationality":"voluptas","city_id":"officia","user_id":11,"email":"quos","employment_type":"eos","qualifications":"ullam","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"ex","first_name":"doloribus","middle_name":"itaque","last_name":"eum","dob":{},"gender":"nemo","language":"et","nationality":"quo","city_id":"quis","user_id":3,"email":"voluptate","employment_type":"illum","qualifications":"aliquam","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -700,7 +714,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/performance_coaches/dolor',
+    'http://localhost/api/performance_coaches/voluptate',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -713,19 +727,19 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'dolorum',
-                'first_name' => 'et',
-                'middle_name' => 'maxime',
-                'last_name' => 'maiores',
+                'profile_url' => 'ex',
+                'first_name' => 'doloribus',
+                'middle_name' => 'itaque',
+                'last_name' => 'eum',
                 'dob' => $o[0],
-                'gender' => 'maiores',
-                'language' => 'nulla',
-                'nationality' => 'voluptas',
-                'city_id' => 'officia',
-                'user_id' => 11,
-                'email' => 'quos',
-                'employment_type' => 'eos',
-                'qualifications' => 'ullam',
+                'gender' => 'nemo',
+                'language' => 'et',
+                'nationality' => 'quo',
+                'city_id' => 'quis',
+                'user_id' => 3,
+                'email' => 'voluptate',
+                'employment_type' => 'illum',
+                'qualifications' => 'aliquam',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -739,7 +753,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/performance_coaches/dolor"
+    "http://localhost/api/performance_coaches/voluptate"
 );
 
 let headers = {
@@ -748,19 +762,19 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "dolorum",
-    "first_name": "et",
-    "middle_name": "maxime",
-    "last_name": "maiores",
+    "profile_url": "ex",
+    "first_name": "doloribus",
+    "middle_name": "itaque",
+    "last_name": "eum",
     "dob": {},
-    "gender": "maiores",
-    "language": "nulla",
-    "nationality": "voluptas",
-    "city_id": "officia",
-    "user_id": 11,
-    "email": "quos",
-    "employment_type": "eos",
-    "qualifications": "ullam",
+    "gender": "nemo",
+    "language": "et",
+    "nationality": "quo",
+    "city_id": "quis",
+    "user_id": 3,
+    "email": "voluptate",
+    "employment_type": "illum",
+    "qualifications": "aliquam",
     "created_at": {},
     "updated_at": {}
 }
@@ -891,7 +905,7 @@ DELETE /performanceCoaches/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/performance_coaches/quos" \
+    "http://localhost/api/performance_coaches/totam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -900,7 +914,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/performance_coaches/quos',
+    'http://localhost/api/performance_coaches/totam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -914,7 +928,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/performance_coaches/quos"
+    "http://localhost/api/performance_coaches/totam"
 );
 
 let headers = {

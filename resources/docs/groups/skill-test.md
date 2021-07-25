@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/skill_tests" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"odio","sport_id":14,"created_at":{},"updated_at":{}}'
+    -d '{"name":"molestiae","sport_id":10,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,8 +112,8 @@ $response = $client->post(
             null,
             [],
             [
-                'name' => 'odio',
-                'sport_id' => 14,
+                'name' => 'molestiae',
+                'sport_id' => 10,
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -136,8 +136,8 @@ let headers = {
 };
 
 let body = {
-    "name": "odio",
-    "sport_id": 14,
+    "name": "molestiae",
+    "sport_id": 10,
     "created_at": {},
     "updated_at": {}
 }
@@ -203,7 +203,7 @@ GET|HEAD /skillTests/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/skill_tests/aperiam" \
+    -G "http://localhost/api/skill_tests/officia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -212,7 +212,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/skill_tests/aperiam',
+    'http://localhost/api/skill_tests/officia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -226,7 +226,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/aperiam"
+    "http://localhost/api/skill_tests/officia"
 );
 
 let headers = {
@@ -287,10 +287,10 @@ PUT/PATCH /skillTests/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/skill_tests/quidem" \
+    "http://localhost/api/skill_tests/minima" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"consequatur","sport_id":5,"created_at":{},"updated_at":{}}'
+    -d '{"name":"eaque","sport_id":2,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -298,7 +298,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/skill_tests/quidem',
+    'http://localhost/api/skill_tests/minima',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -311,8 +311,8 @@ $response = $client->put(
             null,
             [],
             [
-                'name' => 'consequatur',
-                'sport_id' => 5,
+                'name' => 'eaque',
+                'sport_id' => 2,
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -326,7 +326,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/quidem"
+    "http://localhost/api/skill_tests/minima"
 );
 
 let headers = {
@@ -335,8 +335,8 @@ let headers = {
 };
 
 let body = {
-    "name": "consequatur",
-    "sport_id": 5,
+    "name": "eaque",
+    "sport_id": 2,
     "created_at": {},
     "updated_at": {}
 }
@@ -412,7 +412,7 @@ DELETE /skillTests/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/skill_tests/aperiam" \
+    "http://localhost/api/skill_tests/praesentium" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -421,7 +421,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/skill_tests/aperiam',
+    'http://localhost/api/skill_tests/praesentium',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -435,7 +435,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/skill_tests/aperiam"
+    "http://localhost/api/skill_tests/praesentium"
 );
 
 let headers = {

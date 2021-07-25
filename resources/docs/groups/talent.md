@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/talent/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"ducimus","scheme":"est","email":"inventore","first_name":"mollitia","middle_name":"maxime","last_name":"beatae","dob":{},"age":6,"gender":"tempore","languages":"sunt","city_id":"aut","genotype":"aliquam","blood_group":"quia","sports":"exercitationem","positions":"officia","educational_background":"odio","nationality":"et","height":405280126.1,"weight":8.46821}'
+    -d '{"scheme":"ullam","password":"excepturi","email":"perspiciatis","first_name":"aut","middle_name":"ut","last_name":"incidunt","dob":{},"age":10,"gender":"minus","languages":"dicta","city_id":"at","genotype":"at","blood_group":"delectus","sports":"vel","positions":"error","educational_background":"repellat","nationality":"nostrum","height":23063151.5444,"weight":850.6}'
 
 ```
 
@@ -34,25 +34,25 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'ducimus',
-                'scheme' => 'est',
-                'email' => 'inventore',
-                'first_name' => 'mollitia',
-                'middle_name' => 'maxime',
-                'last_name' => 'beatae',
+                'scheme' => 'ullam',
+                'password' => 'excepturi',
+                'email' => 'perspiciatis',
+                'first_name' => 'aut',
+                'middle_name' => 'ut',
+                'last_name' => 'incidunt',
                 'dob' => $o[0],
-                'age' => 6,
-                'gender' => 'tempore',
-                'languages' => 'sunt',
-                'city_id' => 'aut',
-                'genotype' => 'aliquam',
-                'blood_group' => 'quia',
-                'sports' => 'exercitationem',
-                'positions' => 'officia',
-                'educational_background' => 'odio',
-                'nationality' => 'et',
-                'height' => 405280126.1,
-                'weight' => 8.46821,
+                'age' => 10,
+                'gender' => 'minus',
+                'languages' => 'dicta',
+                'city_id' => 'at',
+                'genotype' => 'at',
+                'blood_group' => 'delectus',
+                'sports' => 'vel',
+                'positions' => 'error',
+                'educational_background' => 'repellat',
+                'nationality' => 'nostrum',
+                'height' => 23063151.5444,
+                'weight' => 850.6,
             ],
             []
         ),
@@ -73,25 +73,25 @@ let headers = {
 };
 
 let body = {
-    "password": "ducimus",
-    "scheme": "est",
-    "email": "inventore",
-    "first_name": "mollitia",
-    "middle_name": "maxime",
-    "last_name": "beatae",
+    "scheme": "ullam",
+    "password": "excepturi",
+    "email": "perspiciatis",
+    "first_name": "aut",
+    "middle_name": "ut",
+    "last_name": "incidunt",
     "dob": {},
-    "age": 6,
-    "gender": "tempore",
-    "languages": "sunt",
-    "city_id": "aut",
-    "genotype": "aliquam",
-    "blood_group": "quia",
-    "sports": "exercitationem",
-    "positions": "officia",
-    "educational_background": "odio",
-    "nationality": "et",
-    "height": 405280126.1,
-    "weight": 8.46821
+    "age": 10,
+    "gender": "minus",
+    "languages": "dicta",
+    "city_id": "at",
+    "genotype": "at",
+    "blood_group": "delectus",
+    "sports": "vel",
+    "positions": "error",
+    "educational_background": "repellat",
+    "nationality": "nostrum",
+    "height": 23063151.5444,
+    "weight": 850.6
 }
 
 fetch(url, {
@@ -123,13 +123,13 @@ fetch(url, {
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
-<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="password" data-endpoint="POSTapi-talent-register" data-component="body" required  hidden>
+<b><code>scheme</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="scheme" data-endpoint="POSTapi-talent-register" data-component="body"  hidden>
 <br>
 </p>
 <p>
-<b><code>scheme</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="scheme" data-endpoint="POSTapi-talent-register" data-component="body"  hidden>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-talent-register" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -233,7 +233,7 @@ curl -X POST \
     "http://localhost/api/talent/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phps0bAkz" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpxKbF9F" 
 ```
 
 ```php
@@ -249,7 +249,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phps0bAkz', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpxKbF9F', 'r')
             ],
         ],
     ]
@@ -308,7 +308,7 @@ The value must be a file.</p>
 </form>
 
 
-## api/talent/uploadPictures
+## api/talent/uploadDocs
 
 
 
@@ -317,17 +317,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/talent/uploadPictures" \
+    "http://localhost/api/talent/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpVdL7NA" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php206Hm5" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/talent/uploadPictures',
+    'http://localhost/api/talent/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -336,7 +336,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpVdL7NA', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php206Hm5', 'r')
             ],
         ],
     ]
@@ -347,7 +347,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/uploadPictures"
+    "http://localhost/api/talent/uploadDocs"
 );
 
 let headers = {
@@ -366,30 +366,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-talent-uploadPictures" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-talent-uploadPictures"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-talent-uploadPictures"></code></pre>
+<div id="execution-results-POSTapi-talent-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-talent-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-talent-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-talent-uploadPictures" hidden>
+<div id="execution-error-POSTapi-talent-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-talent-uploadPictures"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-talent-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-talent-uploadPictures" data-method="POST" data-path="api/talent/uploadPictures" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-talent-uploadPictures', this);">
+<form id="form-POSTapi-talent-uploadDocs" data-method="POST" data-path="api/talent/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-talent-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-talent-uploadPictures" onclick="tryItOut('POSTapi-talent-uploadPictures');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-talent-uploadPictures" onclick="cancelTryOut('POSTapi-talent-uploadPictures');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-talent-uploadPictures" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-talent-uploadDocs" onclick="tryItOut('POSTapi-talent-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-talent-uploadDocs" onclick="cancelTryOut('POSTapi-talent-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-talent-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/talent/uploadPictures</code></b>
+ <b><code>api/talent/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-talent-uploadPictures" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-talent-uploadPictures" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-talent-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-talent-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -486,7 +486,7 @@ curl -X POST \
     "http://localhost/api/talent" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"sunt","scheme":"et","email":"qui","first_name":"velit","middle_name":"quibusdam","last_name":"ratione","dob":{},"age":10,"gender":"explicabo","languages":"reiciendis","city_id":"ex","genotype":"voluptas","blood_group":"error","sports":"unde","positions":"rerum","educational_background":"eveniet","nationality":"corporis","height":3.959705135,"weight":62219715.518258266}'
+    -d '{"scheme":"et","password":"ut","email":"iusto","first_name":"a","middle_name":"aspernatur","last_name":"consequuntur","dob":{},"age":5,"gender":"quas","languages":"est","city_id":"similique","genotype":"iste","blood_group":"architecto","sports":"laborum","positions":"doloremque","educational_background":"qui","nationality":"aliquid","height":31382.834,"weight":39675451.8451625}'
 
 ```
 
@@ -507,25 +507,25 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'sunt',
                 'scheme' => 'et',
-                'email' => 'qui',
-                'first_name' => 'velit',
-                'middle_name' => 'quibusdam',
-                'last_name' => 'ratione',
+                'password' => 'ut',
+                'email' => 'iusto',
+                'first_name' => 'a',
+                'middle_name' => 'aspernatur',
+                'last_name' => 'consequuntur',
                 'dob' => $o[0],
-                'age' => 10,
-                'gender' => 'explicabo',
-                'languages' => 'reiciendis',
-                'city_id' => 'ex',
-                'genotype' => 'voluptas',
-                'blood_group' => 'error',
-                'sports' => 'unde',
-                'positions' => 'rerum',
-                'educational_background' => 'eveniet',
-                'nationality' => 'corporis',
-                'height' => 3.959705135,
-                'weight' => 62219715.518258266,
+                'age' => 5,
+                'gender' => 'quas',
+                'languages' => 'est',
+                'city_id' => 'similique',
+                'genotype' => 'iste',
+                'blood_group' => 'architecto',
+                'sports' => 'laborum',
+                'positions' => 'doloremque',
+                'educational_background' => 'qui',
+                'nationality' => 'aliquid',
+                'height' => 31382.834,
+                'weight' => 39675451.8451625,
             ],
             []
         ),
@@ -546,25 +546,25 @@ let headers = {
 };
 
 let body = {
-    "password": "sunt",
     "scheme": "et",
-    "email": "qui",
-    "first_name": "velit",
-    "middle_name": "quibusdam",
-    "last_name": "ratione",
+    "password": "ut",
+    "email": "iusto",
+    "first_name": "a",
+    "middle_name": "aspernatur",
+    "last_name": "consequuntur",
     "dob": {},
-    "age": 10,
-    "gender": "explicabo",
-    "languages": "reiciendis",
-    "city_id": "ex",
-    "genotype": "voluptas",
-    "blood_group": "error",
-    "sports": "unde",
-    "positions": "rerum",
-    "educational_background": "eveniet",
-    "nationality": "corporis",
-    "height": 3.959705135,
-    "weight": 62219715.518258266
+    "age": 5,
+    "gender": "quas",
+    "languages": "est",
+    "city_id": "similique",
+    "genotype": "iste",
+    "blood_group": "architecto",
+    "sports": "laborum",
+    "positions": "doloremque",
+    "educational_background": "qui",
+    "nationality": "aliquid",
+    "height": 31382.834,
+    "weight": 39675451.8451625
 }
 
 fetch(url, {
@@ -596,13 +596,13 @@ fetch(url, {
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
-<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="password" data-endpoint="POSTapi-talent" data-component="body" required  hidden>
+<b><code>scheme</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="scheme" data-endpoint="POSTapi-talent" data-component="body"  hidden>
 <br>
 </p>
 <p>
-<b><code>scheme</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-<input type="text" name="scheme" data-endpoint="POSTapi-talent" data-component="body"  hidden>
+<b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="password" data-endpoint="POSTapi-talent" data-component="body" required  hidden>
 <br>
 </p>
 <p>
@@ -703,7 +703,7 @@ GET|HEAD /talent/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/talent/harum" \
+    -G "http://localhost/api/talent/maxime" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -712,7 +712,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/talent/harum',
+    'http://localhost/api/talent/maxime',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -726,7 +726,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/harum"
+    "http://localhost/api/talent/maxime"
 );
 
 let headers = {
@@ -787,10 +787,10 @@ PUT/PATCH /talent/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/talent/consectetur" \
+    "http://localhost/api/talent/enim" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"reiciendis","qualifications":"earum","scheme":"consectetur","user_id":4,"email":"et","first_name":"et","middle_name":"possimus","last_name":"voluptatem","dob":{},"age":17,"gender":"voluptatum","languages":"dolorem","city_id":"ipsam","genotype":"assumenda","blood_group":"ut","sports":"sit","positions":"commodi","educational_background":"iure","nationality":"officiis","height":302961.5,"weight":12960106.9,"created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"fugit","qualifications":"ratione","scheme":"eveniet","user_id":5,"email":"et","first_name":"ullam","middle_name":"ut","last_name":"aut","dob":{},"age":15,"gender":"accusamus","languages":"explicabo","city_id":"laborum","genotype":"quis","blood_group":"deleniti","sports":"iure","positions":"eaque","educational_background":"et","nationality":"consequatur","height":98.949784049,"weight":115779852.278,"created_at":{},"updated_at":{}}'
 
 ```
 
@@ -798,7 +798,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/talent/consectetur',
+    'http://localhost/api/talent/enim',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -811,27 +811,27 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'reiciendis',
-                'qualifications' => 'earum',
-                'scheme' => 'consectetur',
-                'user_id' => 4,
+                'profile_url' => 'fugit',
+                'qualifications' => 'ratione',
+                'scheme' => 'eveniet',
+                'user_id' => 5,
                 'email' => 'et',
-                'first_name' => 'et',
-                'middle_name' => 'possimus',
-                'last_name' => 'voluptatem',
+                'first_name' => 'ullam',
+                'middle_name' => 'ut',
+                'last_name' => 'aut',
                 'dob' => $o[0],
-                'age' => 17,
-                'gender' => 'voluptatum',
-                'languages' => 'dolorem',
-                'city_id' => 'ipsam',
-                'genotype' => 'assumenda',
-                'blood_group' => 'ut',
-                'sports' => 'sit',
-                'positions' => 'commodi',
-                'educational_background' => 'iure',
-                'nationality' => 'officiis',
-                'height' => 302961.5,
-                'weight' => 12960106.9,
+                'age' => 15,
+                'gender' => 'accusamus',
+                'languages' => 'explicabo',
+                'city_id' => 'laborum',
+                'genotype' => 'quis',
+                'blood_group' => 'deleniti',
+                'sports' => 'iure',
+                'positions' => 'eaque',
+                'educational_background' => 'et',
+                'nationality' => 'consequatur',
+                'height' => 98.949784049,
+                'weight' => 115779852.278,
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -845,7 +845,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/consectetur"
+    "http://localhost/api/talent/enim"
 );
 
 let headers = {
@@ -854,27 +854,27 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "reiciendis",
-    "qualifications": "earum",
-    "scheme": "consectetur",
-    "user_id": 4,
+    "profile_url": "fugit",
+    "qualifications": "ratione",
+    "scheme": "eveniet",
+    "user_id": 5,
     "email": "et",
-    "first_name": "et",
-    "middle_name": "possimus",
-    "last_name": "voluptatem",
+    "first_name": "ullam",
+    "middle_name": "ut",
+    "last_name": "aut",
     "dob": {},
-    "age": 17,
-    "gender": "voluptatum",
-    "languages": "dolorem",
-    "city_id": "ipsam",
-    "genotype": "assumenda",
-    "blood_group": "ut",
-    "sports": "sit",
-    "positions": "commodi",
-    "educational_background": "iure",
-    "nationality": "officiis",
-    "height": 302961.5,
-    "weight": 12960106.9,
+    "age": 15,
+    "gender": "accusamus",
+    "languages": "explicabo",
+    "city_id": "laborum",
+    "genotype": "quis",
+    "blood_group": "deleniti",
+    "sports": "iure",
+    "positions": "eaque",
+    "educational_background": "et",
+    "nationality": "consequatur",
+    "height": 98.949784049,
+    "weight": 115779852.278,
     "created_at": {},
     "updated_at": {}
 }
@@ -1045,7 +1045,7 @@ DELETE /talent/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/talent/tempora" \
+    "http://localhost/api/talent/sed" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -1054,7 +1054,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/talent/tempora',
+    'http://localhost/api/talent/sed',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1068,7 +1068,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/talent/tempora"
+    "http://localhost/api/talent/sed"
 );
 
 let headers = {
