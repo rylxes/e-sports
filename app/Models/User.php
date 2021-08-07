@@ -91,6 +91,11 @@ class User extends Authenticatable
         return $this->hasOne(FitnessCoach::class, 'user_id');
     }
 
+    public function nutritionist()
+    {
+        return $this->hasOne(Nuritionist::class, 'user_id');
+    }
+
 
     public function agents()
     {
