@@ -138,9 +138,19 @@ class LoginController extends Controller
             $data->profile = \auth()->user()->talent;
         }
 
+        if (\auth()->user()->hasAllRoles(['specialists'])) {
+            $data->profile = \auth()->user()->specialists;
+        }
+
+
+
         if (\auth()->user()->hasAllRoles(['fitness_coach'])) {
             $data->profile = \auth()->user()->fitness_coach;
         }
+         if (\auth()->user()->hasAllRoles(['physios'])) {
+            $data->profile = \auth()->user()->physios;
+        }
+
 
         if (\auth()->user()->hasAllRoles(['nutritionist'])) {
             $data->profile = \auth()->user()->nutritionist;
