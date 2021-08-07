@@ -86,6 +86,12 @@ class User extends Authenticatable
         return $this->hasOne(PerformanceCoach::class, 'user_id');
     }
 
+    public function fitness_coach()
+    {
+        return $this->hasOne(FitnessCoach::class, 'user_id');
+    }
+
+
     public function agents()
     {
         return $this->hasOne(Agent::class, 'user_id');
