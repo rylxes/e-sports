@@ -62,7 +62,7 @@ class PhysioAPIController extends AppBaseController
         DB::beginTransaction();
         $input = $request->all();
         $input['name'] = $input['last_name'] . " " . $input['first_name'];
-        $user = $this->createUser($input, 'specialists');
+        $user = $this->createUser($input, 'physios');
         $input['user_id'] = $user->id;
 
         $physio = $this->physioRepository->create($input);
