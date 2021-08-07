@@ -95,6 +95,12 @@ class PhysioAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $physio = $this->physioRepository->find($response->id);
+            $mediaItems = $physio->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->physioRepository->update($input, $physio->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

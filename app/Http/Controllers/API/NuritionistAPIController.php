@@ -94,6 +94,12 @@ class NuritionistAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $nuritionist = $this->nuritionistRepository->find($response->id);
+            $mediaItems = $nuritionist->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->nuritionistRepository->update($input, $nuritionist->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

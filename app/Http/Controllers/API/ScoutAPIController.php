@@ -94,6 +94,12 @@ class ScoutAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $scout = $this->scoutRepository->find($response->id);
+            $mediaItems = $scout->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->scoutRepository->update($input, $scout->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

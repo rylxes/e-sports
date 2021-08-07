@@ -97,6 +97,13 @@ class PerformanceCoachAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+         if ($this->hasFile) {
+            $performanceCoach = $this->performanceCoachRepository->find($response->id);
+            $mediaItems = $performanceCoach->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->performanceCoachRepository->update($input, $performanceCoach->id);
+        }
+
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

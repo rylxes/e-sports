@@ -95,6 +95,12 @@ class TalentAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $talent = $this->talentRepository->find($talent->id);
+            $mediaItems = $talent->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $talent = $this->talentRepository->update($input, $talent->id);
+        }
         return $this->sendResponse($talent->toArray(), 'Uploaded Successfully');
     }
 

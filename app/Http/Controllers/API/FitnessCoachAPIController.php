@@ -95,6 +95,12 @@ class FitnessCoachAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $fitnessCoach = $this->fitnessCoachRepository->find($response->id);
+            $mediaItems = $fitnessCoach->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->fitnessCoachRepository->update($input, $fitnessCoach->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

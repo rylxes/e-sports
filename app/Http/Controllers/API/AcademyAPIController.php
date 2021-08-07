@@ -95,6 +95,12 @@ class AcademyAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $academy = $this->academyRepository->find($response->id);
+            $mediaItems = $academy->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->academyRepository->update($input, $academy->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

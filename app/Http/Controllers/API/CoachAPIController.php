@@ -96,6 +96,13 @@ class CoachAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $coach = $this->coachRepository->find($response->id);
+            $mediaItems = $coach->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->coachRepository->update($input, $coach->id);
+        }
+
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

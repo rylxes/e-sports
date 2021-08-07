@@ -95,6 +95,12 @@ class OrtopedicAndSurgeonAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $ortopedicAndSurgeon = $this->ortopedicAndSurgeonRepository->find($response->id);
+            $mediaItems = $ortopedicAndSurgeon->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->ortopedicAndSurgeonRepository->update($input, $ortopedicAndSurgeon->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 

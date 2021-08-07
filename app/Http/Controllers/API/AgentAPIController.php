@@ -95,6 +95,12 @@ class AgentAPIController extends AppBaseController
             return $__response;
         }
         DB::commit();
+        if ($this->hasFile) {
+            $agent = $this->agentRepository->find($response->id);
+            $mediaItems = $agent->getMedia('Profile');
+            $input['profile_url'] = $mediaItems[0]->getFullUrl();
+            $response = $this->agentRepository->update($input, $agent->id);
+        }
         return $this->sendResponse($response->toArray(), 'Uploaded Successfully');
     }
 
