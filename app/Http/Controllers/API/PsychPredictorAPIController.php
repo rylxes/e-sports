@@ -73,7 +73,7 @@ class PsychPredictorAPIController extends AppBaseController
     public function show($id)
     {
         /** @var PsychPredictor $psychPredictor */
-        $psychPredictor = $this->psychPredictorRepository->find($id);
+        $psychPredictor = $this->psychPredictorRepository->find($id, ['media']);
 
         if (empty($psychPredictor)) {
             return $this->sendError('Psych Predictor not found');

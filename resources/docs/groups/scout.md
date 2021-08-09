@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/scouts/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"omnis","middle_name":"nobis","last_name":"dicta","dob":{},"gender":"aperiam","scouting_age":"temporibus","scouting_gender":"aut","sports":"aut","specialization":"officiis","language":"corporis","nationality":"praesentium","city_id":"quis","user_id":18,"password":"cum","email":"consequatur","employment_type":"et","scouting_level":"ea","qualifications":"nobis","team_club":"at"}'
+    -d '{"first_name":"odit","middle_name":"unde","last_name":"repellendus","dob":{},"gender":"et","scouting_age":"dignissimos","scouting_gender":"commodi","sports":"aut","specialization":"similique","language":"doloribus","nationality":"mollitia","city_id":"maxime","user_id":13,"password":"fuga","email":"id","employment_type":"sit","scouting_level":"natus","qualifications":"error","team_club":"aut"}'
 
 ```
 
@@ -34,25 +34,25 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'omnis',
-                'middle_name' => 'nobis',
-                'last_name' => 'dicta',
+                'first_name' => 'odit',
+                'middle_name' => 'unde',
+                'last_name' => 'repellendus',
                 'dob' => $o[0],
-                'gender' => 'aperiam',
-                'scouting_age' => 'temporibus',
-                'scouting_gender' => 'aut',
+                'gender' => 'et',
+                'scouting_age' => 'dignissimos',
+                'scouting_gender' => 'commodi',
                 'sports' => 'aut',
-                'specialization' => 'officiis',
-                'language' => 'corporis',
-                'nationality' => 'praesentium',
-                'city_id' => 'quis',
-                'user_id' => 18,
-                'password' => 'cum',
-                'email' => 'consequatur',
-                'employment_type' => 'et',
-                'scouting_level' => 'ea',
-                'qualifications' => 'nobis',
-                'team_club' => 'at',
+                'specialization' => 'similique',
+                'language' => 'doloribus',
+                'nationality' => 'mollitia',
+                'city_id' => 'maxime',
+                'user_id' => 13,
+                'password' => 'fuga',
+                'email' => 'id',
+                'employment_type' => 'sit',
+                'scouting_level' => 'natus',
+                'qualifications' => 'error',
+                'team_club' => 'aut',
             ],
             []
         ),
@@ -73,25 +73,25 @@ let headers = {
 };
 
 let body = {
-    "first_name": "omnis",
-    "middle_name": "nobis",
-    "last_name": "dicta",
+    "first_name": "odit",
+    "middle_name": "unde",
+    "last_name": "repellendus",
     "dob": {},
-    "gender": "aperiam",
-    "scouting_age": "temporibus",
-    "scouting_gender": "aut",
+    "gender": "et",
+    "scouting_age": "dignissimos",
+    "scouting_gender": "commodi",
     "sports": "aut",
-    "specialization": "officiis",
-    "language": "corporis",
-    "nationality": "praesentium",
-    "city_id": "quis",
-    "user_id": 18,
-    "password": "cum",
-    "email": "consequatur",
-    "employment_type": "et",
-    "scouting_level": "ea",
-    "qualifications": "nobis",
-    "team_club": "at"
+    "specialization": "similique",
+    "language": "doloribus",
+    "nationality": "mollitia",
+    "city_id": "maxime",
+    "user_id": 13,
+    "password": "fuga",
+    "email": "id",
+    "employment_type": "sit",
+    "scouting_level": "natus",
+    "qualifications": "error",
+    "team_club": "aut"
 }
 
 fetch(url, {
@@ -233,7 +233,7 @@ curl -X POST \
     "http://localhost/api/scouts/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpEG462z" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php9Mun9b" 
 ```
 
 ```php
@@ -249,7 +249,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpEG462z', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php9Mun9b', 'r')
             ],
         ],
     ]
@@ -320,7 +320,7 @@ curl -X POST \
     "http://localhost/api/scouts/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpCE2XZZ" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php8FAS5J" 
 ```
 
 ```php
@@ -336,7 +336,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpCE2XZZ', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php8FAS5J', 'r')
             ],
         ],
     ]
@@ -486,7 +486,7 @@ curl -X POST \
     "http://localhost/api/scouts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"first_name":"ea","middle_name":"doloremque","last_name":"et","dob":{},"gender":"dignissimos","scouting_age":"culpa","scouting_gender":"qui","sports":"voluptatem","specialization":"dignissimos","language":"eaque","nationality":"accusantium","city_id":"labore","user_id":16,"password":"nisi","email":"ducimus","employment_type":"nam","scouting_level":"tempore","qualifications":"molestias","team_club":"commodi"}'
+    -d '{"first_name":"id","middle_name":"et","last_name":"odit","dob":{},"gender":"ut","scouting_age":"est","scouting_gender":"incidunt","sports":"similique","specialization":"quia","language":"nihil","nationality":"nostrum","city_id":"repellendus","user_id":1,"password":"ducimus","email":"omnis","employment_type":"vel","scouting_level":"ipsum","qualifications":"qui","team_club":"provident"}'
 
 ```
 
@@ -507,25 +507,25 @@ $response = $client->post(
             null,
             [],
             [
-                'first_name' => 'ea',
-                'middle_name' => 'doloremque',
-                'last_name' => 'et',
+                'first_name' => 'id',
+                'middle_name' => 'et',
+                'last_name' => 'odit',
                 'dob' => $o[0],
-                'gender' => 'dignissimos',
-                'scouting_age' => 'culpa',
-                'scouting_gender' => 'qui',
-                'sports' => 'voluptatem',
-                'specialization' => 'dignissimos',
-                'language' => 'eaque',
-                'nationality' => 'accusantium',
-                'city_id' => 'labore',
-                'user_id' => 16,
-                'password' => 'nisi',
-                'email' => 'ducimus',
-                'employment_type' => 'nam',
-                'scouting_level' => 'tempore',
-                'qualifications' => 'molestias',
-                'team_club' => 'commodi',
+                'gender' => 'ut',
+                'scouting_age' => 'est',
+                'scouting_gender' => 'incidunt',
+                'sports' => 'similique',
+                'specialization' => 'quia',
+                'language' => 'nihil',
+                'nationality' => 'nostrum',
+                'city_id' => 'repellendus',
+                'user_id' => 1,
+                'password' => 'ducimus',
+                'email' => 'omnis',
+                'employment_type' => 'vel',
+                'scouting_level' => 'ipsum',
+                'qualifications' => 'qui',
+                'team_club' => 'provident',
             ],
             []
         ),
@@ -546,25 +546,25 @@ let headers = {
 };
 
 let body = {
-    "first_name": "ea",
-    "middle_name": "doloremque",
-    "last_name": "et",
+    "first_name": "id",
+    "middle_name": "et",
+    "last_name": "odit",
     "dob": {},
-    "gender": "dignissimos",
-    "scouting_age": "culpa",
-    "scouting_gender": "qui",
-    "sports": "voluptatem",
-    "specialization": "dignissimos",
-    "language": "eaque",
-    "nationality": "accusantium",
-    "city_id": "labore",
-    "user_id": 16,
-    "password": "nisi",
-    "email": "ducimus",
-    "employment_type": "nam",
-    "scouting_level": "tempore",
-    "qualifications": "molestias",
-    "team_club": "commodi"
+    "gender": "ut",
+    "scouting_age": "est",
+    "scouting_gender": "incidunt",
+    "sports": "similique",
+    "specialization": "quia",
+    "language": "nihil",
+    "nationality": "nostrum",
+    "city_id": "repellendus",
+    "user_id": 1,
+    "password": "ducimus",
+    "email": "omnis",
+    "employment_type": "vel",
+    "scouting_level": "ipsum",
+    "qualifications": "qui",
+    "team_club": "provident"
 }
 
 fetch(url, {
@@ -703,7 +703,7 @@ GET|HEAD /scouts/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/scouts/voluptas" \
+    -G "http://localhost/api/scouts/est" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -712,7 +712,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/scouts/voluptas',
+    'http://localhost/api/scouts/est',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -726,7 +726,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/voluptas"
+    "http://localhost/api/scouts/est"
 );
 
 let headers = {
@@ -787,10 +787,10 @@ PUT/PATCH /scouts/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/scouts/placeat" \
+    "http://localhost/api/scouts/vitae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"officiis","first_name":"atque","middle_name":"sunt","last_name":"quidem","dob":{},"gender":"ipsum","scouting_age":"consectetur","scouting_gender":"quia","sports":"voluptas","specialization":"facilis","language":"harum","nationality":"et","city_id":"accusamus","user_id":1,"email":"aspernatur","employment_type":"eveniet","scouting_level":"aut","qualifications":"assumenda","team_club":"ipsam","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"placeat","first_name":"molestiae","middle_name":"tenetur","last_name":"quos","dob":{},"gender":"distinctio","scouting_age":"sit","scouting_gender":"ex","sports":"soluta","specialization":"qui","language":"quisquam","nationality":"nobis","city_id":"adipisci","user_id":16,"email":"quibusdam","employment_type":"repellat","scouting_level":"minima","qualifications":"voluptatem","team_club":"in","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -798,7 +798,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/scouts/placeat',
+    'http://localhost/api/scouts/vitae',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -811,25 +811,25 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'officiis',
-                'first_name' => 'atque',
-                'middle_name' => 'sunt',
-                'last_name' => 'quidem',
+                'profile_url' => 'placeat',
+                'first_name' => 'molestiae',
+                'middle_name' => 'tenetur',
+                'last_name' => 'quos',
                 'dob' => $o[0],
-                'gender' => 'ipsum',
-                'scouting_age' => 'consectetur',
-                'scouting_gender' => 'quia',
-                'sports' => 'voluptas',
-                'specialization' => 'facilis',
-                'language' => 'harum',
-                'nationality' => 'et',
-                'city_id' => 'accusamus',
-                'user_id' => 1,
-                'email' => 'aspernatur',
-                'employment_type' => 'eveniet',
-                'scouting_level' => 'aut',
-                'qualifications' => 'assumenda',
-                'team_club' => 'ipsam',
+                'gender' => 'distinctio',
+                'scouting_age' => 'sit',
+                'scouting_gender' => 'ex',
+                'sports' => 'soluta',
+                'specialization' => 'qui',
+                'language' => 'quisquam',
+                'nationality' => 'nobis',
+                'city_id' => 'adipisci',
+                'user_id' => 16,
+                'email' => 'quibusdam',
+                'employment_type' => 'repellat',
+                'scouting_level' => 'minima',
+                'qualifications' => 'voluptatem',
+                'team_club' => 'in',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -843,7 +843,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/placeat"
+    "http://localhost/api/scouts/vitae"
 );
 
 let headers = {
@@ -852,25 +852,25 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "officiis",
-    "first_name": "atque",
-    "middle_name": "sunt",
-    "last_name": "quidem",
+    "profile_url": "placeat",
+    "first_name": "molestiae",
+    "middle_name": "tenetur",
+    "last_name": "quos",
     "dob": {},
-    "gender": "ipsum",
-    "scouting_age": "consectetur",
-    "scouting_gender": "quia",
-    "sports": "voluptas",
-    "specialization": "facilis",
-    "language": "harum",
-    "nationality": "et",
-    "city_id": "accusamus",
-    "user_id": 1,
-    "email": "aspernatur",
-    "employment_type": "eveniet",
-    "scouting_level": "aut",
-    "qualifications": "assumenda",
-    "team_club": "ipsam",
+    "gender": "distinctio",
+    "scouting_age": "sit",
+    "scouting_gender": "ex",
+    "sports": "soluta",
+    "specialization": "qui",
+    "language": "quisquam",
+    "nationality": "nobis",
+    "city_id": "adipisci",
+    "user_id": 16,
+    "email": "quibusdam",
+    "employment_type": "repellat",
+    "scouting_level": "minima",
+    "qualifications": "voluptatem",
+    "team_club": "in",
     "created_at": {},
     "updated_at": {}
 }
@@ -1031,7 +1031,7 @@ DELETE /scouts/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/scouts/fugiat" \
+    "http://localhost/api/scouts/sed" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -1040,7 +1040,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/scouts/fugiat',
+    'http://localhost/api/scouts/sed',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1054,7 +1054,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/scouts/fugiat"
+    "http://localhost/api/scouts/sed"
 );
 
 let headers = {

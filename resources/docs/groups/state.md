@@ -10,7 +10,7 @@
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/states/byCountry/ad" \
+    -G "http://localhost/api/states/byCountry/occaecati" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -19,7 +19,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/states/byCountry/ad',
+    'http://localhost/api/states/byCountry/occaecati',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -33,7 +33,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/states/byCountry/ad"
+    "http://localhost/api/states/byCountry/occaecati"
 );
 
 let headers = {

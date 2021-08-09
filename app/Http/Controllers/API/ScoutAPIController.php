@@ -128,7 +128,7 @@ class ScoutAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Scout $scout */
-        $scout = $this->scoutRepository->find($id);
+        $scout = $this->scoutRepository->find($id, ['media']);
 
         if (empty($scout)) {
             return $this->sendError('Scout not found');

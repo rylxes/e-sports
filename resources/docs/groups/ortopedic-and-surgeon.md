@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/ortopedic_and_surgeons/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"error","first_name":"accusamus","middle_name":"qui","last_name":"deleniti","dob":{},"gender":"porro","language":"autem","nationality":"sed","city_id":"ex","email":"rerum","employment_type":"praesentium","qualifications":"aut"}'
+    -d '{"password":"nostrum","first_name":"asperiores","middle_name":"sunt","last_name":"aut","dob":{},"gender":"quia","language":"modi","nationality":"modi","city_id":"quidem","email":"sed","employment_type":"corporis","qualifications":"quod"}'
 
 ```
 
@@ -34,18 +34,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'error',
-                'first_name' => 'accusamus',
-                'middle_name' => 'qui',
-                'last_name' => 'deleniti',
+                'password' => 'nostrum',
+                'first_name' => 'asperiores',
+                'middle_name' => 'sunt',
+                'last_name' => 'aut',
                 'dob' => $o[0],
-                'gender' => 'porro',
-                'language' => 'autem',
-                'nationality' => 'sed',
-                'city_id' => 'ex',
-                'email' => 'rerum',
-                'employment_type' => 'praesentium',
-                'qualifications' => 'aut',
+                'gender' => 'quia',
+                'language' => 'modi',
+                'nationality' => 'modi',
+                'city_id' => 'quidem',
+                'email' => 'sed',
+                'employment_type' => 'corporis',
+                'qualifications' => 'quod',
             ],
             []
         ),
@@ -66,18 +66,18 @@ let headers = {
 };
 
 let body = {
-    "password": "error",
-    "first_name": "accusamus",
-    "middle_name": "qui",
-    "last_name": "deleniti",
+    "password": "nostrum",
+    "first_name": "asperiores",
+    "middle_name": "sunt",
+    "last_name": "aut",
     "dob": {},
-    "gender": "porro",
-    "language": "autem",
-    "nationality": "sed",
-    "city_id": "ex",
-    "email": "rerum",
-    "employment_type": "praesentium",
-    "qualifications": "aut"
+    "gender": "quia",
+    "language": "modi",
+    "nationality": "modi",
+    "city_id": "quidem",
+    "email": "sed",
+    "employment_type": "corporis",
+    "qualifications": "quod"
 }
 
 fetch(url, {
@@ -172,7 +172,7 @@ fetch(url, {
 </form>
 
 
-## api/nuritionists/uploadProfile
+## api/ortopedic_and_surgeons/uploadProfile
 
 
 
@@ -181,17 +181,17 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/nuritionists/uploadProfile" \
+    "http://localhost/api/ortopedic_and_surgeons/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpSwLKW8" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpsXd5Ei" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/nuritionists/uploadProfile',
+    'http://localhost/api/ortopedic_and_surgeons/uploadProfile',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -200,7 +200,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpSwLKW8', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpsXd5Ei', 'r')
             ],
         ],
     ]
@@ -211,7 +211,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/nuritionists/uploadProfile"
+    "http://localhost/api/ortopedic_and_surgeons/uploadProfile"
 );
 
 let headers = {
@@ -230,36 +230,36 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-nuritionists-uploadProfile" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-nuritionists-uploadProfile"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-nuritionists-uploadProfile"></code></pre>
+<div id="execution-results-POSTapi-ortopedic_and_surgeons-uploadProfile" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-ortopedic_and_surgeons-uploadProfile"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-ortopedic_and_surgeons-uploadProfile"></code></pre>
 </div>
-<div id="execution-error-POSTapi-nuritionists-uploadProfile" hidden>
+<div id="execution-error-POSTapi-ortopedic_and_surgeons-uploadProfile" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-nuritionists-uploadProfile"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-ortopedic_and_surgeons-uploadProfile"></code></pre>
 </div>
-<form id="form-POSTapi-nuritionists-uploadProfile" data-method="POST" data-path="api/nuritionists/uploadProfile" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-nuritionists-uploadProfile', this);">
+<form id="form-POSTapi-ortopedic_and_surgeons-uploadProfile" data-method="POST" data-path="api/ortopedic_and_surgeons/uploadProfile" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-ortopedic_and_surgeons-uploadProfile', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-nuritionists-uploadProfile" onclick="tryItOut('POSTapi-nuritionists-uploadProfile');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-nuritionists-uploadProfile" onclick="cancelTryOut('POSTapi-nuritionists-uploadProfile');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-nuritionists-uploadProfile" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-ortopedic_and_surgeons-uploadProfile" onclick="tryItOut('POSTapi-ortopedic_and_surgeons-uploadProfile');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-ortopedic_and_surgeons-uploadProfile" onclick="cancelTryOut('POSTapi-ortopedic_and_surgeons-uploadProfile');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-ortopedic_and_surgeons-uploadProfile" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/nuritionists/uploadProfile</code></b>
+ <b><code>api/ortopedic_and_surgeons/uploadProfile</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>file</code></b>&nbsp;&nbsp;<small>file</small>     <i>optional</i> &nbsp;
-<input type="file" name="file" data-endpoint="POSTapi-nuritionists-uploadProfile" data-component="body"  hidden>
+<input type="file" name="file" data-endpoint="POSTapi-ortopedic_and_surgeons-uploadProfile" data-component="body"  hidden>
 <br>
 The value must be a file.</p>
 
 </form>
 
 
-## api/nuritionists/uploadDocs
+## api/ortopedic_and_surgeons/uploadDocs
 
 
 
@@ -268,17 +268,17 @@ The value must be a file.</p>
 
 ```bash
 curl -X POST \
-    "http://localhost/api/nuritionists/uploadDocs" \
+    "http://localhost/api/ortopedic_and_surgeons/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpjf90HR" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpB7Xkjx" 
 ```
 
 ```php
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://localhost/api/nuritionists/uploadDocs',
+    'http://localhost/api/ortopedic_and_surgeons/uploadDocs',
     [
         'headers' => [
             'Content-Type' => 'multipart/form-data',
@@ -287,7 +287,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpjf90HR', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpB7Xkjx', 'r')
             ],
         ],
     ]
@@ -298,7 +298,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/nuritionists/uploadDocs"
+    "http://localhost/api/ortopedic_and_surgeons/uploadDocs"
 );
 
 let headers = {
@@ -317,30 +317,30 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-POSTapi-nuritionists-uploadDocs" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-nuritionists-uploadDocs"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-nuritionists-uploadDocs"></code></pre>
+<div id="execution-results-POSTapi-ortopedic_and_surgeons-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-ortopedic_and_surgeons-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-ortopedic_and_surgeons-uploadDocs"></code></pre>
 </div>
-<div id="execution-error-POSTapi-nuritionists-uploadDocs" hidden>
+<div id="execution-error-POSTapi-ortopedic_and_surgeons-uploadDocs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-nuritionists-uploadDocs"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-ortopedic_and_surgeons-uploadDocs"></code></pre>
 </div>
-<form id="form-POSTapi-nuritionists-uploadDocs" data-method="POST" data-path="api/nuritionists/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-nuritionists-uploadDocs', this);">
+<form id="form-POSTapi-ortopedic_and_surgeons-uploadDocs" data-method="POST" data-path="api/ortopedic_and_surgeons/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-ortopedic_and_surgeons-uploadDocs', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-nuritionists-uploadDocs" onclick="tryItOut('POSTapi-nuritionists-uploadDocs');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-nuritionists-uploadDocs" onclick="cancelTryOut('POSTapi-nuritionists-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-nuritionists-uploadDocs" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-ortopedic_and_surgeons-uploadDocs" onclick="tryItOut('POSTapi-ortopedic_and_surgeons-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-ortopedic_and_surgeons-uploadDocs" onclick="cancelTryOut('POSTapi-ortopedic_and_surgeons-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-ortopedic_and_surgeons-uploadDocs" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>api/nuritionists/uploadDocs</code></b>
+ <b><code>api/ortopedic_and_surgeons/uploadDocs</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
-<input type="file" name="pictures.0" data-endpoint="POSTapi-nuritionists-uploadDocs" data-component="body"  hidden>
-<input type="file" name="pictures.1" data-endpoint="POSTapi-nuritionists-uploadDocs" data-component="body" hidden>
+<input type="file" name="pictures.0" data-endpoint="POSTapi-ortopedic_and_surgeons-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-ortopedic_and_surgeons-uploadDocs" data-component="body" hidden>
 <br>
 The value must be a file.</p>
 
@@ -437,7 +437,7 @@ curl -X POST \
     "http://localhost/api/ortopedic_and_surgeons" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"nemo","first_name":"id","middle_name":"recusandae","last_name":"sapiente","dob":{},"gender":"eius","language":"voluptatem","nationality":"quam","city_id":"natus","email":"sapiente","employment_type":"eos","qualifications":"fugiat"}'
+    -d '{"password":"repellat","first_name":"quas","middle_name":"non","last_name":"ab","dob":{},"gender":"tenetur","language":"porro","nationality":"officiis","city_id":"labore","email":"consequuntur","employment_type":"harum","qualifications":"in"}'
 
 ```
 
@@ -458,18 +458,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'nemo',
-                'first_name' => 'id',
-                'middle_name' => 'recusandae',
-                'last_name' => 'sapiente',
+                'password' => 'repellat',
+                'first_name' => 'quas',
+                'middle_name' => 'non',
+                'last_name' => 'ab',
                 'dob' => $o[0],
-                'gender' => 'eius',
-                'language' => 'voluptatem',
-                'nationality' => 'quam',
-                'city_id' => 'natus',
-                'email' => 'sapiente',
-                'employment_type' => 'eos',
-                'qualifications' => 'fugiat',
+                'gender' => 'tenetur',
+                'language' => 'porro',
+                'nationality' => 'officiis',
+                'city_id' => 'labore',
+                'email' => 'consequuntur',
+                'employment_type' => 'harum',
+                'qualifications' => 'in',
             ],
             []
         ),
@@ -490,18 +490,18 @@ let headers = {
 };
 
 let body = {
-    "password": "nemo",
-    "first_name": "id",
-    "middle_name": "recusandae",
-    "last_name": "sapiente",
+    "password": "repellat",
+    "first_name": "quas",
+    "middle_name": "non",
+    "last_name": "ab",
     "dob": {},
-    "gender": "eius",
-    "language": "voluptatem",
-    "nationality": "quam",
-    "city_id": "natus",
-    "email": "sapiente",
-    "employment_type": "eos",
-    "qualifications": "fugiat"
+    "gender": "tenetur",
+    "language": "porro",
+    "nationality": "officiis",
+    "city_id": "labore",
+    "email": "consequuntur",
+    "employment_type": "harum",
+    "qualifications": "in"
 }
 
 fetch(url, {
@@ -605,7 +605,7 @@ GET|HEAD /ortopedicAndSurgeons/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/ortopedic_and_surgeons/repellat" \
+    -G "http://localhost/api/ortopedic_and_surgeons/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -614,7 +614,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/ortopedic_and_surgeons/repellat',
+    'http://localhost/api/ortopedic_and_surgeons/molestiae',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -628,7 +628,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/ortopedic_and_surgeons/repellat"
+    "http://localhost/api/ortopedic_and_surgeons/molestiae"
 );
 
 let headers = {
@@ -689,10 +689,10 @@ PUT/PATCH /ortopedicAndSurgeons/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/ortopedic_and_surgeons/facere" \
+    "http://localhost/api/ortopedic_and_surgeons/eum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"aliquam","first_name":"voluptate","middle_name":"alias","last_name":"aut","dob":{},"gender":"magnam","language":"magni","nationality":"sunt","city_id":"exercitationem","user_id":8,"email":"fugit","employment_type":"praesentium","qualifications":"eveniet","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"molestias","first_name":"quidem","middle_name":"rem","last_name":"qui","dob":{},"gender":"ratione","language":"veniam","nationality":"qui","city_id":"eligendi","user_id":17,"email":"et","employment_type":"deleniti","qualifications":"ut","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -700,7 +700,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/ortopedic_and_surgeons/facere',
+    'http://localhost/api/ortopedic_and_surgeons/eum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -713,19 +713,19 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'aliquam',
-                'first_name' => 'voluptate',
-                'middle_name' => 'alias',
-                'last_name' => 'aut',
+                'profile_url' => 'molestias',
+                'first_name' => 'quidem',
+                'middle_name' => 'rem',
+                'last_name' => 'qui',
                 'dob' => $o[0],
-                'gender' => 'magnam',
-                'language' => 'magni',
-                'nationality' => 'sunt',
-                'city_id' => 'exercitationem',
-                'user_id' => 8,
-                'email' => 'fugit',
-                'employment_type' => 'praesentium',
-                'qualifications' => 'eveniet',
+                'gender' => 'ratione',
+                'language' => 'veniam',
+                'nationality' => 'qui',
+                'city_id' => 'eligendi',
+                'user_id' => 17,
+                'email' => 'et',
+                'employment_type' => 'deleniti',
+                'qualifications' => 'ut',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -739,7 +739,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/ortopedic_and_surgeons/facere"
+    "http://localhost/api/ortopedic_and_surgeons/eum"
 );
 
 let headers = {
@@ -748,19 +748,19 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "aliquam",
-    "first_name": "voluptate",
-    "middle_name": "alias",
-    "last_name": "aut",
+    "profile_url": "molestias",
+    "first_name": "quidem",
+    "middle_name": "rem",
+    "last_name": "qui",
     "dob": {},
-    "gender": "magnam",
-    "language": "magni",
-    "nationality": "sunt",
-    "city_id": "exercitationem",
-    "user_id": 8,
-    "email": "fugit",
-    "employment_type": "praesentium",
-    "qualifications": "eveniet",
+    "gender": "ratione",
+    "language": "veniam",
+    "nationality": "qui",
+    "city_id": "eligendi",
+    "user_id": 17,
+    "email": "et",
+    "employment_type": "deleniti",
+    "qualifications": "ut",
     "created_at": {},
     "updated_at": {}
 }
@@ -891,7 +891,7 @@ DELETE /ortopedicAndSurgeons/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/ortopedic_and_surgeons/debitis" \
+    "http://localhost/api/ortopedic_and_surgeons/placeat" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -900,7 +900,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/ortopedic_and_surgeons/debitis',
+    'http://localhost/api/ortopedic_and_surgeons/placeat',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -914,7 +914,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/ortopedic_and_surgeons/debitis"
+    "http://localhost/api/ortopedic_and_surgeons/placeat"
 );
 
 let headers = {

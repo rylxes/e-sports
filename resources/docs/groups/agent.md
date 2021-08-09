@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/agents/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"temporibus","first_name":"et","middle_name":"et","last_name":"corporis","dob":{},"gender":"earum","sports":"deleniti","language":"harum","nationality":"et","city_id":"est","email":"est","employment_type":"eum"}'
+    -d '{"password":"non","first_name":"molestiae","middle_name":"dolorum","last_name":"veritatis","dob":{},"gender":"temporibus","sports":"non","language":"voluptatibus","nationality":"unde","city_id":"fuga","email":"et","employment_type":"voluptatem"}'
 
 ```
 
@@ -34,18 +34,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'temporibus',
-                'first_name' => 'et',
-                'middle_name' => 'et',
-                'last_name' => 'corporis',
+                'password' => 'non',
+                'first_name' => 'molestiae',
+                'middle_name' => 'dolorum',
+                'last_name' => 'veritatis',
                 'dob' => $o[0],
-                'gender' => 'earum',
-                'sports' => 'deleniti',
-                'language' => 'harum',
-                'nationality' => 'et',
-                'city_id' => 'est',
-                'email' => 'est',
-                'employment_type' => 'eum',
+                'gender' => 'temporibus',
+                'sports' => 'non',
+                'language' => 'voluptatibus',
+                'nationality' => 'unde',
+                'city_id' => 'fuga',
+                'email' => 'et',
+                'employment_type' => 'voluptatem',
             ],
             []
         ),
@@ -66,18 +66,18 @@ let headers = {
 };
 
 let body = {
-    "password": "temporibus",
-    "first_name": "et",
-    "middle_name": "et",
-    "last_name": "corporis",
+    "password": "non",
+    "first_name": "molestiae",
+    "middle_name": "dolorum",
+    "last_name": "veritatis",
     "dob": {},
-    "gender": "earum",
-    "sports": "deleniti",
-    "language": "harum",
-    "nationality": "et",
-    "city_id": "est",
-    "email": "est",
-    "employment_type": "eum"
+    "gender": "temporibus",
+    "sports": "non",
+    "language": "voluptatibus",
+    "nationality": "unde",
+    "city_id": "fuga",
+    "email": "et",
+    "employment_type": "voluptatem"
 }
 
 fetch(url, {
@@ -184,7 +184,7 @@ curl -X POST \
     "http://localhost/api/agents/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpMnMlOg" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpWr0hMd" 
 ```
 
 ```php
@@ -200,7 +200,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpMnMlOg', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpWr0hMd', 'r')
             ],
         ],
     ]
@@ -271,7 +271,7 @@ curl -X POST \
     "http://localhost/api/agents/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpFApSjT" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpzw5Z8C" 
 ```
 
 ```php
@@ -287,7 +287,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpFApSjT', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpzw5Z8C', 'r')
             ],
         ],
     ]
@@ -437,7 +437,7 @@ curl -X POST \
     "http://localhost/api/agents" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"optio","first_name":"pariatur","middle_name":"aperiam","last_name":"quia","dob":{},"gender":"qui","sports":"ipsum","language":"sed","nationality":"est","city_id":"rem","email":"ad","employment_type":"id"}'
+    -d '{"password":"deleniti","first_name":"eaque","middle_name":"omnis","last_name":"rerum","dob":{},"gender":"autem","sports":"atque","language":"quia","nationality":"consequatur","city_id":"rerum","email":"non","employment_type":"voluptatem"}'
 
 ```
 
@@ -458,18 +458,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'optio',
-                'first_name' => 'pariatur',
-                'middle_name' => 'aperiam',
-                'last_name' => 'quia',
+                'password' => 'deleniti',
+                'first_name' => 'eaque',
+                'middle_name' => 'omnis',
+                'last_name' => 'rerum',
                 'dob' => $o[0],
-                'gender' => 'qui',
-                'sports' => 'ipsum',
-                'language' => 'sed',
-                'nationality' => 'est',
-                'city_id' => 'rem',
-                'email' => 'ad',
-                'employment_type' => 'id',
+                'gender' => 'autem',
+                'sports' => 'atque',
+                'language' => 'quia',
+                'nationality' => 'consequatur',
+                'city_id' => 'rerum',
+                'email' => 'non',
+                'employment_type' => 'voluptatem',
             ],
             []
         ),
@@ -490,18 +490,18 @@ let headers = {
 };
 
 let body = {
-    "password": "optio",
-    "first_name": "pariatur",
-    "middle_name": "aperiam",
-    "last_name": "quia",
+    "password": "deleniti",
+    "first_name": "eaque",
+    "middle_name": "omnis",
+    "last_name": "rerum",
     "dob": {},
-    "gender": "qui",
-    "sports": "ipsum",
-    "language": "sed",
-    "nationality": "est",
-    "city_id": "rem",
-    "email": "ad",
-    "employment_type": "id"
+    "gender": "autem",
+    "sports": "atque",
+    "language": "quia",
+    "nationality": "consequatur",
+    "city_id": "rerum",
+    "email": "non",
+    "employment_type": "voluptatem"
 }
 
 fetch(url, {
@@ -605,7 +605,7 @@ GET|HEAD /agents/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/agents/nulla" \
+    -G "http://localhost/api/agents/vitae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -614,7 +614,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/agents/nulla',
+    'http://localhost/api/agents/vitae',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -628,7 +628,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/nulla"
+    "http://localhost/api/agents/vitae"
 );
 
 let headers = {
@@ -689,10 +689,10 @@ PUT/PATCH /agents/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/agents/alias" \
+    "http://localhost/api/agents/ratione" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"deleniti","first_name":"voluptate","middle_name":"dolor","last_name":"reiciendis","dob":{},"gender":"sunt","sports":"beatae","language":"dolore","nationality":"est","city_id":"et","user_id":7,"email":"occaecati","employment_type":"iusto","qualifications":"vitae","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"eos","first_name":"tenetur","middle_name":"consequatur","last_name":"magnam","dob":{},"gender":"eius","sports":"sunt","language":"iste","nationality":"qui","city_id":"ipsa","user_id":3,"email":"nulla","employment_type":"non","qualifications":"ipsa","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -700,7 +700,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/agents/alias',
+    'http://localhost/api/agents/ratione',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -713,20 +713,20 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'deleniti',
-                'first_name' => 'voluptate',
-                'middle_name' => 'dolor',
-                'last_name' => 'reiciendis',
+                'profile_url' => 'eos',
+                'first_name' => 'tenetur',
+                'middle_name' => 'consequatur',
+                'last_name' => 'magnam',
                 'dob' => $o[0],
-                'gender' => 'sunt',
-                'sports' => 'beatae',
-                'language' => 'dolore',
-                'nationality' => 'est',
-                'city_id' => 'et',
-                'user_id' => 7,
-                'email' => 'occaecati',
-                'employment_type' => 'iusto',
-                'qualifications' => 'vitae',
+                'gender' => 'eius',
+                'sports' => 'sunt',
+                'language' => 'iste',
+                'nationality' => 'qui',
+                'city_id' => 'ipsa',
+                'user_id' => 3,
+                'email' => 'nulla',
+                'employment_type' => 'non',
+                'qualifications' => 'ipsa',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -740,7 +740,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/alias"
+    "http://localhost/api/agents/ratione"
 );
 
 let headers = {
@@ -749,20 +749,20 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "deleniti",
-    "first_name": "voluptate",
-    "middle_name": "dolor",
-    "last_name": "reiciendis",
+    "profile_url": "eos",
+    "first_name": "tenetur",
+    "middle_name": "consequatur",
+    "last_name": "magnam",
     "dob": {},
-    "gender": "sunt",
-    "sports": "beatae",
-    "language": "dolore",
-    "nationality": "est",
-    "city_id": "et",
-    "user_id": 7,
-    "email": "occaecati",
-    "employment_type": "iusto",
-    "qualifications": "vitae",
+    "gender": "eius",
+    "sports": "sunt",
+    "language": "iste",
+    "nationality": "qui",
+    "city_id": "ipsa",
+    "user_id": 3,
+    "email": "nulla",
+    "employment_type": "non",
+    "qualifications": "ipsa",
     "created_at": {},
     "updated_at": {}
 }
@@ -898,7 +898,7 @@ DELETE /agents/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/agents/maiores" \
+    "http://localhost/api/agents/harum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -907,7 +907,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/agents/maiores',
+    'http://localhost/api/agents/harum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -921,7 +921,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/agents/maiores"
+    "http://localhost/api/agents/harum"
 );
 
 let headers = {

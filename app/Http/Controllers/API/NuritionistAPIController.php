@@ -128,7 +128,7 @@ class NuritionistAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Nuritionist $nuritionist */
-        $nuritionist = $this->nuritionistRepository->find($id);
+        $nuritionist = $this->nuritionistRepository->find($id, ['media']);
 
         if (empty($nuritionist)) {
             return $this->sendError('Nuritionist not found');

@@ -99,8 +99,8 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
         Route::post('nuritionists/uploadDocs', 'App\Http\Controllers\API\NuritionistAPIController@uploadPictures');
         Route::resource('nuritionists', App\Http\Controllers\API\NuritionistAPIController::class);
 
-        Route::post('nuritionists/uploadProfile', 'App\Http\Controllers\API\OrtopedicAndSurgeonAPIController@uploadProfile');
-        Route::post('nuritionists/uploadDocs', 'App\Http\Controllers\API\OrtopedicAndSurgeonAPIController@uploadPictures');
+        Route::post('ortopedic_and_surgeons/uploadProfile', 'App\Http\Controllers\API\OrtopedicAndSurgeonAPIController@uploadProfile');
+        Route::post('ortopedic_and_surgeons/uploadDocs', 'App\Http\Controllers\API\OrtopedicAndSurgeonAPIController@uploadPictures');
         Route::resource('ortopedic_and_surgeons', App\Http\Controllers\API\OrtopedicAndSurgeonAPIController::class);
     });
 

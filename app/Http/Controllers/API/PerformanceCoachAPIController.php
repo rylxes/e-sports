@@ -132,7 +132,7 @@ class PerformanceCoachAPIController extends AppBaseController
     public function show($id)
     {
         /** @var PerformanceCoach $performanceCoach */
-        $performanceCoach = $this->performanceCoachRepository->find($id);
+        $performanceCoach = $this->performanceCoachRepository->find($id, ['media']);
 
         if (empty($performanceCoach)) {
             return $this->sendError('Performance Coach not found');

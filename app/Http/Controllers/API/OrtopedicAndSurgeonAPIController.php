@@ -130,7 +130,7 @@ class OrtopedicAndSurgeonAPIController extends AppBaseController
     public function show($id)
     {
         /** @var OrtopedicAndSurgeon $ortopedicAndSurgeon */
-        $ortopedicAndSurgeon = $this->ortopedicAndSurgeonRepository->find($id);
+        $ortopedicAndSurgeon = $this->ortopedicAndSurgeonRepository->find($id, ['media']);
 
         if (empty($ortopedicAndSurgeon)) {
             return $this->sendError('Ortopedic And Surgeon not found');

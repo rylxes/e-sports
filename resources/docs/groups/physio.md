@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/physios/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"sit","first_name":"placeat","middle_name":"est","last_name":"consequatur","dob":{},"gender":"delectus","language":"officiis","nationality":"optio","city_id":"facilis","email":"sint","employment_type":"incidunt","qualifications":"illo"}'
+    -d '{"password":"sequi","first_name":"nisi","middle_name":"sed","last_name":"libero","dob":{},"gender":"quisquam","language":"aspernatur","nationality":"voluptates","city_id":"labore","email":"ipsa","employment_type":"vero","qualifications":"quia"}'
 
 ```
 
@@ -34,18 +34,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'sit',
-                'first_name' => 'placeat',
-                'middle_name' => 'est',
-                'last_name' => 'consequatur',
+                'password' => 'sequi',
+                'first_name' => 'nisi',
+                'middle_name' => 'sed',
+                'last_name' => 'libero',
                 'dob' => $o[0],
-                'gender' => 'delectus',
-                'language' => 'officiis',
-                'nationality' => 'optio',
-                'city_id' => 'facilis',
-                'email' => 'sint',
-                'employment_type' => 'incidunt',
-                'qualifications' => 'illo',
+                'gender' => 'quisquam',
+                'language' => 'aspernatur',
+                'nationality' => 'voluptates',
+                'city_id' => 'labore',
+                'email' => 'ipsa',
+                'employment_type' => 'vero',
+                'qualifications' => 'quia',
             ],
             []
         ),
@@ -66,18 +66,18 @@ let headers = {
 };
 
 let body = {
-    "password": "sit",
-    "first_name": "placeat",
-    "middle_name": "est",
-    "last_name": "consequatur",
+    "password": "sequi",
+    "first_name": "nisi",
+    "middle_name": "sed",
+    "last_name": "libero",
     "dob": {},
-    "gender": "delectus",
-    "language": "officiis",
-    "nationality": "optio",
-    "city_id": "facilis",
-    "email": "sint",
-    "employment_type": "incidunt",
-    "qualifications": "illo"
+    "gender": "quisquam",
+    "language": "aspernatur",
+    "nationality": "voluptates",
+    "city_id": "labore",
+    "email": "ipsa",
+    "employment_type": "vero",
+    "qualifications": "quia"
 }
 
 fetch(url, {
@@ -184,7 +184,7 @@ curl -X POST \
     "http://localhost/api/physios/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpHIn8TZ" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpvCc6Su" 
 ```
 
 ```php
@@ -200,7 +200,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpHIn8TZ', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpvCc6Su', 'r')
             ],
         ],
     ]
@@ -271,7 +271,7 @@ curl -X POST \
     "http://localhost/api/physios/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php1lYVoE" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpMWu543" 
 ```
 
 ```php
@@ -287,7 +287,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php1lYVoE', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpMWu543', 'r')
             ],
         ],
     ]
@@ -437,7 +437,7 @@ curl -X POST \
     "http://localhost/api/physios" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"est","first_name":"harum","middle_name":"voluptatibus","last_name":"recusandae","dob":{},"gender":"sunt","language":"rem","nationality":"quam","city_id":"facere","email":"cum","employment_type":"explicabo","qualifications":"in"}'
+    -d '{"password":"quasi","first_name":"laudantium","middle_name":"laudantium","last_name":"animi","dob":{},"gender":"repellendus","language":"accusantium","nationality":"qui","city_id":"dolore","email":"aperiam","employment_type":"ut","qualifications":"impedit"}'
 
 ```
 
@@ -458,18 +458,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'est',
-                'first_name' => 'harum',
-                'middle_name' => 'voluptatibus',
-                'last_name' => 'recusandae',
+                'password' => 'quasi',
+                'first_name' => 'laudantium',
+                'middle_name' => 'laudantium',
+                'last_name' => 'animi',
                 'dob' => $o[0],
-                'gender' => 'sunt',
-                'language' => 'rem',
-                'nationality' => 'quam',
-                'city_id' => 'facere',
-                'email' => 'cum',
-                'employment_type' => 'explicabo',
-                'qualifications' => 'in',
+                'gender' => 'repellendus',
+                'language' => 'accusantium',
+                'nationality' => 'qui',
+                'city_id' => 'dolore',
+                'email' => 'aperiam',
+                'employment_type' => 'ut',
+                'qualifications' => 'impedit',
             ],
             []
         ),
@@ -490,18 +490,18 @@ let headers = {
 };
 
 let body = {
-    "password": "est",
-    "first_name": "harum",
-    "middle_name": "voluptatibus",
-    "last_name": "recusandae",
+    "password": "quasi",
+    "first_name": "laudantium",
+    "middle_name": "laudantium",
+    "last_name": "animi",
     "dob": {},
-    "gender": "sunt",
-    "language": "rem",
-    "nationality": "quam",
-    "city_id": "facere",
-    "email": "cum",
-    "employment_type": "explicabo",
-    "qualifications": "in"
+    "gender": "repellendus",
+    "language": "accusantium",
+    "nationality": "qui",
+    "city_id": "dolore",
+    "email": "aperiam",
+    "employment_type": "ut",
+    "qualifications": "impedit"
 }
 
 fetch(url, {
@@ -605,7 +605,7 @@ GET|HEAD /physios/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/physios/assumenda" \
+    -G "http://localhost/api/physios/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -614,7 +614,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/physios/assumenda',
+    'http://localhost/api/physios/voluptas',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -628,7 +628,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/physios/assumenda"
+    "http://localhost/api/physios/voluptas"
 );
 
 let headers = {
@@ -689,10 +689,10 @@ PUT/PATCH /physios/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/physios/laudantium" \
+    "http://localhost/api/physios/consequatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"corporis","first_name":"ea","middle_name":"iste","last_name":"qui","dob":{},"gender":"natus","language":"pariatur","nationality":"et","city_id":"et","user_id":3,"email":"commodi","employment_type":"pariatur","qualifications":"sed","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"quis","first_name":"doloremque","middle_name":"velit","last_name":"et","dob":{},"gender":"nisi","language":"officiis","nationality":"dolor","city_id":"praesentium","user_id":9,"email":"omnis","employment_type":"debitis","qualifications":"excepturi","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -700,7 +700,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/physios/laudantium',
+    'http://localhost/api/physios/consequatur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -713,19 +713,19 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'corporis',
-                'first_name' => 'ea',
-                'middle_name' => 'iste',
-                'last_name' => 'qui',
+                'profile_url' => 'quis',
+                'first_name' => 'doloremque',
+                'middle_name' => 'velit',
+                'last_name' => 'et',
                 'dob' => $o[0],
-                'gender' => 'natus',
-                'language' => 'pariatur',
-                'nationality' => 'et',
-                'city_id' => 'et',
-                'user_id' => 3,
-                'email' => 'commodi',
-                'employment_type' => 'pariatur',
-                'qualifications' => 'sed',
+                'gender' => 'nisi',
+                'language' => 'officiis',
+                'nationality' => 'dolor',
+                'city_id' => 'praesentium',
+                'user_id' => 9,
+                'email' => 'omnis',
+                'employment_type' => 'debitis',
+                'qualifications' => 'excepturi',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -739,7 +739,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/physios/laudantium"
+    "http://localhost/api/physios/consequatur"
 );
 
 let headers = {
@@ -748,19 +748,19 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "corporis",
-    "first_name": "ea",
-    "middle_name": "iste",
-    "last_name": "qui",
+    "profile_url": "quis",
+    "first_name": "doloremque",
+    "middle_name": "velit",
+    "last_name": "et",
     "dob": {},
-    "gender": "natus",
-    "language": "pariatur",
-    "nationality": "et",
-    "city_id": "et",
-    "user_id": 3,
-    "email": "commodi",
-    "employment_type": "pariatur",
-    "qualifications": "sed",
+    "gender": "nisi",
+    "language": "officiis",
+    "nationality": "dolor",
+    "city_id": "praesentium",
+    "user_id": 9,
+    "email": "omnis",
+    "employment_type": "debitis",
+    "qualifications": "excepturi",
     "created_at": {},
     "updated_at": {}
 }
@@ -891,7 +891,7 @@ DELETE /physios/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/physios/corporis" \
+    "http://localhost/api/physios/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -900,7 +900,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/physios/corporis',
+    'http://localhost/api/physios/nihil',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -914,7 +914,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/physios/corporis"
+    "http://localhost/api/physios/nihil"
 );
 
 let headers = {

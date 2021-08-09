@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/academies/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"mollitia","email":"esse","name":"quos","reg_date":{},"profile_url":"qui","academy_age":"ipsum","capacity":"ut","country_id":12,"location":"et"}'
+    -d '{"password":"quasi","email":"recusandae","name":"est","reg_date":{},"profile_url":"laborum","academy_age":"porro","capacity":"cupiditate","country_id":7,"location":"minus"}'
 
 ```
 
@@ -34,15 +34,15 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'mollitia',
-                'email' => 'esse',
-                'name' => 'quos',
+                'password' => 'quasi',
+                'email' => 'recusandae',
+                'name' => 'est',
                 'reg_date' => $o[0],
-                'profile_url' => 'qui',
-                'academy_age' => 'ipsum',
-                'capacity' => 'ut',
-                'country_id' => 12,
-                'location' => 'et',
+                'profile_url' => 'laborum',
+                'academy_age' => 'porro',
+                'capacity' => 'cupiditate',
+                'country_id' => 7,
+                'location' => 'minus',
             ],
             []
         ),
@@ -63,15 +63,15 @@ let headers = {
 };
 
 let body = {
-    "password": "mollitia",
-    "email": "esse",
-    "name": "quos",
+    "password": "quasi",
+    "email": "recusandae",
+    "name": "est",
     "reg_date": {},
-    "profile_url": "qui",
-    "academy_age": "ipsum",
-    "capacity": "ut",
-    "country_id": 12,
-    "location": "et"
+    "profile_url": "laborum",
+    "academy_age": "porro",
+    "capacity": "cupiditate",
+    "country_id": 7,
+    "location": "minus"
 }
 
 fetch(url, {
@@ -163,7 +163,7 @@ curl -X POST \
     "http://localhost/api/academies/uploadProfile" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php3M8Q4a" 
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpnz5R7Q" 
 ```
 
 ```php
@@ -179,7 +179,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'file',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php3M8Q4a', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpnz5R7Q', 'r')
             ],
         ],
     ]
@@ -250,7 +250,7 @@ curl -X POST \
     "http://localhost/api/academies/uploadDocs" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php66n2j9" 
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpqySfmf" 
 ```
 
 ```php
@@ -266,7 +266,7 @@ $response = $client->post(
         'multipart' => [
             [
                 'name' => 'pictures[]',
-                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/php66n2j9', 'r')
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpqySfmf', 'r')
             ],
         ],
     ]
@@ -416,7 +416,7 @@ curl -X POST \
     "http://localhost/api/academies" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"veniam","email":"autem","name":"assumenda","reg_date":{},"profile_url":"nihil","academy_age":"similique","capacity":"veritatis","country_id":13,"location":"asperiores"}'
+    -d '{"password":"ea","email":"molestiae","name":"excepturi","reg_date":{},"profile_url":"consequatur","academy_age":"eum","capacity":"enim","country_id":14,"location":"sit"}'
 
 ```
 
@@ -437,15 +437,15 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'veniam',
-                'email' => 'autem',
-                'name' => 'assumenda',
+                'password' => 'ea',
+                'email' => 'molestiae',
+                'name' => 'excepturi',
                 'reg_date' => $o[0],
-                'profile_url' => 'nihil',
-                'academy_age' => 'similique',
-                'capacity' => 'veritatis',
-                'country_id' => 13,
-                'location' => 'asperiores',
+                'profile_url' => 'consequatur',
+                'academy_age' => 'eum',
+                'capacity' => 'enim',
+                'country_id' => 14,
+                'location' => 'sit',
             ],
             []
         ),
@@ -466,15 +466,15 @@ let headers = {
 };
 
 let body = {
-    "password": "veniam",
-    "email": "autem",
-    "name": "assumenda",
+    "password": "ea",
+    "email": "molestiae",
+    "name": "excepturi",
     "reg_date": {},
-    "profile_url": "nihil",
-    "academy_age": "similique",
-    "capacity": "veritatis",
-    "country_id": 13,
-    "location": "asperiores"
+    "profile_url": "consequatur",
+    "academy_age": "eum",
+    "capacity": "enim",
+    "country_id": 14,
+    "location": "sit"
 }
 
 fetch(url, {
@@ -563,7 +563,7 @@ GET|HEAD /academies/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/academies/illo" \
+    -G "http://localhost/api/academies/fuga" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -572,7 +572,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/academies/illo',
+    'http://localhost/api/academies/fuga',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -586,7 +586,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/illo"
+    "http://localhost/api/academies/fuga"
 );
 
 let headers = {
@@ -647,10 +647,10 @@ PUT/PATCH /academies/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/academies/ipsum" \
+    "http://localhost/api/academies/omnis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"voluptas","reg_date":{},"profile_url":"numquam","academy_age":"sit","capacity":"aut","country_id":17,"location":"nihil"}'
+    -d '{"name":"nihil","reg_date":{},"profile_url":"nam","academy_age":"eligendi","capacity":"tempora","country_id":3,"location":"eveniet"}'
 
 ```
 
@@ -658,7 +658,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/academies/ipsum',
+    'http://localhost/api/academies/omnis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -671,13 +671,13 @@ $response = $client->put(
             null,
             [],
             [
-                'name' => 'voluptas',
+                'name' => 'nihil',
                 'reg_date' => $o[0],
-                'profile_url' => 'numquam',
-                'academy_age' => 'sit',
-                'capacity' => 'aut',
-                'country_id' => 17,
-                'location' => 'nihil',
+                'profile_url' => 'nam',
+                'academy_age' => 'eligendi',
+                'capacity' => 'tempora',
+                'country_id' => 3,
+                'location' => 'eveniet',
             ],
             []
         ),
@@ -689,7 +689,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/ipsum"
+    "http://localhost/api/academies/omnis"
 );
 
 let headers = {
@@ -698,13 +698,13 @@ let headers = {
 };
 
 let body = {
-    "name": "voluptas",
+    "name": "nihil",
     "reg_date": {},
-    "profile_url": "numquam",
-    "academy_age": "sit",
-    "capacity": "aut",
-    "country_id": 17,
-    "location": "nihil"
+    "profile_url": "nam",
+    "academy_age": "eligendi",
+    "capacity": "tempora",
+    "country_id": 3,
+    "location": "eveniet"
 }
 
 fetch(url, {
@@ -793,7 +793,7 @@ DELETE /academies/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/academies/dolores" \
+    "http://localhost/api/academies/eum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -802,7 +802,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/academies/dolores',
+    'http://localhost/api/academies/eum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -816,7 +816,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/academies/dolores"
+    "http://localhost/api/academies/eum"
 );
 
 let headers = {

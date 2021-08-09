@@ -129,7 +129,7 @@ class FitnessCoachAPIController extends AppBaseController
     public function show($id)
     {
         /** @var FitnessCoach $fitnessCoach */
-        $fitnessCoach = $this->fitnessCoachRepository->find($id);
+        $fitnessCoach = $this->fitnessCoachRepository->find($id, ['media']);
 
         if (empty($fitnessCoach)) {
             return $this->sendError('Fitness Coach not found');

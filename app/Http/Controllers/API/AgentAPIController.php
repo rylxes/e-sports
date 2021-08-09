@@ -129,7 +129,7 @@ class AgentAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Agent $agent */
-        $agent = $this->agentRepository->find($id);
+        $agent = $this->agentRepository->find($id, ['media']);
 
         if (empty($agent)) {
             return $this->sendError('Agent not found');

@@ -13,7 +13,7 @@ curl -X POST \
     "http://localhost/api/nuritionists/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"quis","first_name":"ratione","middle_name":"sed","last_name":"et","dob":{},"gender":"facere","language":"nihil","nationality":"perspiciatis","city_id":"officia","email":"veniam","employment_type":"neque","qualifications":"dicta"}'
+    -d '{"password":"vel","first_name":"corrupti","middle_name":"distinctio","last_name":"soluta","dob":{},"gender":"quasi","language":"dolorum","nationality":"itaque","city_id":"itaque","email":"est","employment_type":"quasi","qualifications":"temporibus"}'
 
 ```
 
@@ -34,18 +34,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'quis',
-                'first_name' => 'ratione',
-                'middle_name' => 'sed',
-                'last_name' => 'et',
+                'password' => 'vel',
+                'first_name' => 'corrupti',
+                'middle_name' => 'distinctio',
+                'last_name' => 'soluta',
                 'dob' => $o[0],
-                'gender' => 'facere',
-                'language' => 'nihil',
-                'nationality' => 'perspiciatis',
-                'city_id' => 'officia',
-                'email' => 'veniam',
-                'employment_type' => 'neque',
-                'qualifications' => 'dicta',
+                'gender' => 'quasi',
+                'language' => 'dolorum',
+                'nationality' => 'itaque',
+                'city_id' => 'itaque',
+                'email' => 'est',
+                'employment_type' => 'quasi',
+                'qualifications' => 'temporibus',
             ],
             []
         ),
@@ -66,18 +66,18 @@ let headers = {
 };
 
 let body = {
-    "password": "quis",
-    "first_name": "ratione",
-    "middle_name": "sed",
-    "last_name": "et",
+    "password": "vel",
+    "first_name": "corrupti",
+    "middle_name": "distinctio",
+    "last_name": "soluta",
     "dob": {},
-    "gender": "facere",
-    "language": "nihil",
-    "nationality": "perspiciatis",
-    "city_id": "officia",
-    "email": "veniam",
-    "employment_type": "neque",
-    "qualifications": "dicta"
+    "gender": "quasi",
+    "language": "dolorum",
+    "nationality": "itaque",
+    "city_id": "itaque",
+    "email": "est",
+    "employment_type": "quasi",
+    "qualifications": "temporibus"
 }
 
 fetch(url, {
@@ -172,6 +172,181 @@ fetch(url, {
 </form>
 
 
+## api/nuritionists/uploadProfile
+
+
+
+
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/nuritionists/uploadProfile" \
+    -H "Content-Type: multipart/form-data" \
+    -H "Accept: application/json" \
+    -F "file=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpfm8s7I" 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/nuritionists/uploadProfile',
+    [
+        'headers' => [
+            'Content-Type' => 'multipart/form-data',
+            'Accept' => 'application/json',
+        ],
+        'multipart' => [
+            [
+                'name' => 'file',
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpfm8s7I', 'r')
+            ],
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/nuritionists/uploadProfile"
+);
+
+let headers = {
+    "Content-Type": "multipart/form-data",
+    "Accept": "application/json",
+};
+
+const body = new FormData();
+body.append('file', document.querySelector('input[name="file"]').files[0]);
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-nuritionists-uploadProfile" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-nuritionists-uploadProfile"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-nuritionists-uploadProfile"></code></pre>
+</div>
+<div id="execution-error-POSTapi-nuritionists-uploadProfile" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-nuritionists-uploadProfile"></code></pre>
+</div>
+<form id="form-POSTapi-nuritionists-uploadProfile" data-method="POST" data-path="api/nuritionists/uploadProfile" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-nuritionists-uploadProfile', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-nuritionists-uploadProfile" onclick="tryItOut('POSTapi-nuritionists-uploadProfile');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-nuritionists-uploadProfile" onclick="cancelTryOut('POSTapi-nuritionists-uploadProfile');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-nuritionists-uploadProfile" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/nuritionists/uploadProfile</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>file</code></b>&nbsp;&nbsp;<small>file</small>     <i>optional</i> &nbsp;
+<input type="file" name="file" data-endpoint="POSTapi-nuritionists-uploadProfile" data-component="body"  hidden>
+<br>
+The value must be a file.</p>
+
+</form>
+
+
+## api/nuritionists/uploadDocs
+
+
+
+
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/nuritionists/uploadDocs" \
+    -H "Content-Type: multipart/form-data" \
+    -H "Accept: application/json" \
+    -F "pictures[]=@/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpshSAGA" 
+```
+
+```php
+
+$client = new \GuzzleHttp\Client();
+$response = $client->post(
+    'http://localhost/api/nuritionists/uploadDocs',
+    [
+        'headers' => [
+            'Content-Type' => 'multipart/form-data',
+            'Accept' => 'application/json',
+        ],
+        'multipart' => [
+            [
+                'name' => 'pictures[]',
+                'contents' => fopen('/private/var/folders/sd/h50tvsg11bzf8pm7x_71wpzr0000gn/T/phpshSAGA', 'r')
+            ],
+        ],
+    ]
+);
+$body = $response->getBody();
+print_r(json_decode((string) $body));
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/nuritionists/uploadDocs"
+);
+
+let headers = {
+    "Content-Type": "multipart/form-data",
+    "Accept": "application/json",
+};
+
+const body = new FormData();
+body.append('pictures[]', document.querySelector('input[name="pictures[]"]').files[0]);
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-nuritionists-uploadDocs" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-nuritionists-uploadDocs"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-nuritionists-uploadDocs"></code></pre>
+</div>
+<div id="execution-error-POSTapi-nuritionists-uploadDocs" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-nuritionists-uploadDocs"></code></pre>
+</div>
+<form id="form-POSTapi-nuritionists-uploadDocs" data-method="POST" data-path="api/nuritionists/uploadDocs" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-nuritionists-uploadDocs', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-nuritionists-uploadDocs" onclick="tryItOut('POSTapi-nuritionists-uploadDocs');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-nuritionists-uploadDocs" onclick="cancelTryOut('POSTapi-nuritionists-uploadDocs');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-nuritionists-uploadDocs" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/nuritionists/uploadDocs</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>pictures</code></b>&nbsp;&nbsp;<small>file[]</small>     <i>optional</i> &nbsp;
+<input type="file" name="pictures.0" data-endpoint="POSTapi-nuritionists-uploadDocs" data-component="body"  hidden>
+<input type="file" name="pictures.1" data-endpoint="POSTapi-nuritionists-uploadDocs" data-component="body" hidden>
+<br>
+The value must be a file.</p>
+
+</form>
+
+
 ## Display a listing of the Nuritionist.
 
 
@@ -262,7 +437,7 @@ curl -X POST \
     "http://localhost/api/nuritionists" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"quo","first_name":"quisquam","middle_name":"quae","last_name":"molestias","dob":{},"gender":"sit","language":"voluptatem","nationality":"et","city_id":"et","email":"dignissimos","employment_type":"doloribus","qualifications":"dolorem"}'
+    -d '{"password":"harum","first_name":"optio","middle_name":"porro","last_name":"velit","dob":{},"gender":"necessitatibus","language":"id","nationality":"facere","city_id":"quisquam","email":"esse","employment_type":"enim","qualifications":"ut"}'
 
 ```
 
@@ -283,18 +458,18 @@ $response = $client->post(
             null,
             [],
             [
-                'password' => 'quo',
-                'first_name' => 'quisquam',
-                'middle_name' => 'quae',
-                'last_name' => 'molestias',
+                'password' => 'harum',
+                'first_name' => 'optio',
+                'middle_name' => 'porro',
+                'last_name' => 'velit',
                 'dob' => $o[0],
-                'gender' => 'sit',
-                'language' => 'voluptatem',
-                'nationality' => 'et',
-                'city_id' => 'et',
-                'email' => 'dignissimos',
-                'employment_type' => 'doloribus',
-                'qualifications' => 'dolorem',
+                'gender' => 'necessitatibus',
+                'language' => 'id',
+                'nationality' => 'facere',
+                'city_id' => 'quisquam',
+                'email' => 'esse',
+                'employment_type' => 'enim',
+                'qualifications' => 'ut',
             ],
             []
         ),
@@ -315,18 +490,18 @@ let headers = {
 };
 
 let body = {
-    "password": "quo",
-    "first_name": "quisquam",
-    "middle_name": "quae",
-    "last_name": "molestias",
+    "password": "harum",
+    "first_name": "optio",
+    "middle_name": "porro",
+    "last_name": "velit",
     "dob": {},
-    "gender": "sit",
-    "language": "voluptatem",
-    "nationality": "et",
-    "city_id": "et",
-    "email": "dignissimos",
-    "employment_type": "doloribus",
-    "qualifications": "dolorem"
+    "gender": "necessitatibus",
+    "language": "id",
+    "nationality": "facere",
+    "city_id": "quisquam",
+    "email": "esse",
+    "employment_type": "enim",
+    "qualifications": "ut"
 }
 
 fetch(url, {
@@ -430,7 +605,7 @@ GET|HEAD /nuritionists/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/nuritionists/saepe" \
+    -G "http://localhost/api/nuritionists/consequatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -439,7 +614,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/nuritionists/saepe',
+    'http://localhost/api/nuritionists/consequatur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -453,7 +628,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/nuritionists/saepe"
+    "http://localhost/api/nuritionists/consequatur"
 );
 
 let headers = {
@@ -514,10 +689,10 @@ PUT/PATCH /nuritionists/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/nuritionists/velit" \
+    "http://localhost/api/nuritionists/iure" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"profile_url":"deleniti","first_name":"consequatur","middle_name":"mollitia","last_name":"recusandae","dob":{},"gender":"totam","language":"qui","nationality":"alias","city_id":"iste","user_id":16,"email":"sed","employment_type":"accusantium","qualifications":"ex","created_at":{},"updated_at":{}}'
+    -d '{"profile_url":"est","first_name":"aliquam","middle_name":"ducimus","last_name":"quas","dob":{},"gender":"quidem","language":"accusantium","nationality":"nulla","city_id":"sint","user_id":16,"email":"iusto","employment_type":"ut","qualifications":"sed","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -525,7 +700,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/nuritionists/velit',
+    'http://localhost/api/nuritionists/iure',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -538,19 +713,19 @@ $response = $client->put(
             null,
             [],
             [
-                'profile_url' => 'deleniti',
-                'first_name' => 'consequatur',
-                'middle_name' => 'mollitia',
-                'last_name' => 'recusandae',
+                'profile_url' => 'est',
+                'first_name' => 'aliquam',
+                'middle_name' => 'ducimus',
+                'last_name' => 'quas',
                 'dob' => $o[0],
-                'gender' => 'totam',
-                'language' => 'qui',
-                'nationality' => 'alias',
-                'city_id' => 'iste',
+                'gender' => 'quidem',
+                'language' => 'accusantium',
+                'nationality' => 'nulla',
+                'city_id' => 'sint',
                 'user_id' => 16,
-                'email' => 'sed',
-                'employment_type' => 'accusantium',
-                'qualifications' => 'ex',
+                'email' => 'iusto',
+                'employment_type' => 'ut',
+                'qualifications' => 'sed',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -564,7 +739,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/nuritionists/velit"
+    "http://localhost/api/nuritionists/iure"
 );
 
 let headers = {
@@ -573,19 +748,19 @@ let headers = {
 };
 
 let body = {
-    "profile_url": "deleniti",
-    "first_name": "consequatur",
-    "middle_name": "mollitia",
-    "last_name": "recusandae",
+    "profile_url": "est",
+    "first_name": "aliquam",
+    "middle_name": "ducimus",
+    "last_name": "quas",
     "dob": {},
-    "gender": "totam",
-    "language": "qui",
-    "nationality": "alias",
-    "city_id": "iste",
+    "gender": "quidem",
+    "language": "accusantium",
+    "nationality": "nulla",
+    "city_id": "sint",
     "user_id": 16,
-    "email": "sed",
-    "employment_type": "accusantium",
-    "qualifications": "ex",
+    "email": "iusto",
+    "employment_type": "ut",
+    "qualifications": "sed",
     "created_at": {},
     "updated_at": {}
 }
@@ -716,7 +891,7 @@ DELETE /nuritionists/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/nuritionists/autem" \
+    "http://localhost/api/nuritionists/cupiditate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -725,7 +900,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/nuritionists/autem',
+    'http://localhost/api/nuritionists/cupiditate',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -739,7 +914,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/nuritionists/autem"
+    "http://localhost/api/nuritionists/cupiditate"
 );
 
 let headers = {

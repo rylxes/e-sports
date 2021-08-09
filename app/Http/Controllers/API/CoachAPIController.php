@@ -131,7 +131,7 @@ class CoachAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Coach $coach */
-        $coach = $this->coachRepository->find($id);
+        $coach = $this->coachRepository->find($id, ['media']);
 
         if (empty($coach)) {
             return $this->sendError('Coach not found');

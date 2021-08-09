@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/health_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"blood_group":"quia","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"similique","long_term_injury":"vitae","treatment_type":"aspernatur","current_health_injury":"minima","is_personal_health_challenge":false,"personal_health_challenge":"rerum","injury_seriousness":"et","medical_treatment":"aut","injury_location":"optio","genotype":"perferendis","created_at":{},"updated_at":{}}'
+    -d '{"blood_group":"sapiente","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"amet","long_term_injury":"natus","treatment_type":"delectus","current_health_injury":"repudiandae","is_personal_health_challenge":false,"personal_health_challenge":"laboriosam","injury_seriousness":"perferendis","medical_treatment":"aut","injury_location":"assumenda","genotype":"quisquam","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,21 +112,21 @@ $response = $client->post(
             null,
             [],
             [
-                'blood_group' => 'quia',
+                'blood_group' => 'sapiente',
                 'is_hereditary_issue' => false,
                 'is_current_health_injury' => false,
                 'is_receiving_treatment' => false,
                 'is_long_term_injury' => false,
-                'hereditary_issue' => 'similique',
-                'long_term_injury' => 'vitae',
-                'treatment_type' => 'aspernatur',
-                'current_health_injury' => 'minima',
+                'hereditary_issue' => 'amet',
+                'long_term_injury' => 'natus',
+                'treatment_type' => 'delectus',
+                'current_health_injury' => 'repudiandae',
                 'is_personal_health_challenge' => false,
-                'personal_health_challenge' => 'rerum',
-                'injury_seriousness' => 'et',
+                'personal_health_challenge' => 'laboriosam',
+                'injury_seriousness' => 'perferendis',
                 'medical_treatment' => 'aut',
-                'injury_location' => 'optio',
-                'genotype' => 'perferendis',
+                'injury_location' => 'assumenda',
+                'genotype' => 'quisquam',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -149,21 +149,21 @@ let headers = {
 };
 
 let body = {
-    "blood_group": "quia",
+    "blood_group": "sapiente",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "similique",
-    "long_term_injury": "vitae",
-    "treatment_type": "aspernatur",
-    "current_health_injury": "minima",
+    "hereditary_issue": "amet",
+    "long_term_injury": "natus",
+    "treatment_type": "delectus",
+    "current_health_injury": "repudiandae",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "rerum",
-    "injury_seriousness": "et",
+    "personal_health_challenge": "laboriosam",
+    "injury_seriousness": "perferendis",
     "medical_treatment": "aut",
-    "injury_location": "optio",
-    "genotype": "perferendis",
+    "injury_location": "assumenda",
+    "genotype": "quisquam",
     "created_at": {},
     "updated_at": {}
 }
@@ -299,7 +299,7 @@ GET|HEAD /healthPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/health_predictors/atque" \
+    -G "http://localhost/api/health_predictors/dolore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -308,7 +308,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/health_predictors/atque',
+    'http://localhost/api/health_predictors/dolore',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -322,7 +322,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/atque"
+    "http://localhost/api/health_predictors/dolore"
 );
 
 let headers = {
@@ -383,10 +383,10 @@ PUT/PATCH /healthPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/health_predictors/et" \
+    "http://localhost/api/health_predictors/quasi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"user_id":12,"blood_group":"reprehenderit","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"assumenda","long_term_injury":"distinctio","treatment_type":"natus","current_health_injury":"repellendus","is_personal_health_challenge":false,"personal_health_challenge":"enim","injury_seriousness":"itaque","medical_treatment":"dolore","injury_location":"quos","genotype":"dignissimos","created_at":{},"updated_at":{}}'
+    -d '{"user_id":5,"blood_group":"minima","is_hereditary_issue":false,"is_current_health_injury":false,"is_receiving_treatment":false,"is_long_term_injury":false,"hereditary_issue":"dignissimos","long_term_injury":"voluptas","treatment_type":"necessitatibus","current_health_injury":"incidunt","is_personal_health_challenge":false,"personal_health_challenge":"et","injury_seriousness":"cupiditate","medical_treatment":"fugiat","injury_location":"dolor","genotype":"qui","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -394,7 +394,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/health_predictors/et',
+    'http://localhost/api/health_predictors/quasi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -407,22 +407,22 @@ $response = $client->put(
             null,
             [],
             [
-                'user_id' => 12,
-                'blood_group' => 'reprehenderit',
+                'user_id' => 5,
+                'blood_group' => 'minima',
                 'is_hereditary_issue' => false,
                 'is_current_health_injury' => false,
                 'is_receiving_treatment' => false,
                 'is_long_term_injury' => false,
-                'hereditary_issue' => 'assumenda',
-                'long_term_injury' => 'distinctio',
-                'treatment_type' => 'natus',
-                'current_health_injury' => 'repellendus',
+                'hereditary_issue' => 'dignissimos',
+                'long_term_injury' => 'voluptas',
+                'treatment_type' => 'necessitatibus',
+                'current_health_injury' => 'incidunt',
                 'is_personal_health_challenge' => false,
-                'personal_health_challenge' => 'enim',
-                'injury_seriousness' => 'itaque',
-                'medical_treatment' => 'dolore',
-                'injury_location' => 'quos',
-                'genotype' => 'dignissimos',
+                'personal_health_challenge' => 'et',
+                'injury_seriousness' => 'cupiditate',
+                'medical_treatment' => 'fugiat',
+                'injury_location' => 'dolor',
+                'genotype' => 'qui',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -436,7 +436,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/et"
+    "http://localhost/api/health_predictors/quasi"
 );
 
 let headers = {
@@ -445,22 +445,22 @@ let headers = {
 };
 
 let body = {
-    "user_id": 12,
-    "blood_group": "reprehenderit",
+    "user_id": 5,
+    "blood_group": "minima",
     "is_hereditary_issue": false,
     "is_current_health_injury": false,
     "is_receiving_treatment": false,
     "is_long_term_injury": false,
-    "hereditary_issue": "assumenda",
-    "long_term_injury": "distinctio",
-    "treatment_type": "natus",
-    "current_health_injury": "repellendus",
+    "hereditary_issue": "dignissimos",
+    "long_term_injury": "voluptas",
+    "treatment_type": "necessitatibus",
+    "current_health_injury": "incidunt",
     "is_personal_health_challenge": false,
-    "personal_health_challenge": "enim",
-    "injury_seriousness": "itaque",
-    "medical_treatment": "dolore",
-    "injury_location": "quos",
-    "genotype": "dignissimos",
+    "personal_health_challenge": "et",
+    "injury_seriousness": "cupiditate",
+    "medical_treatment": "fugiat",
+    "injury_location": "dolor",
+    "genotype": "qui",
     "created_at": {},
     "updated_at": {}
 }
@@ -611,7 +611,7 @@ DELETE /healthPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/health_predictors/sunt" \
+    "http://localhost/api/health_predictors/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -620,7 +620,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/health_predictors/sunt',
+    'http://localhost/api/health_predictors/quia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -634,7 +634,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/health_predictors/sunt"
+    "http://localhost/api/health_predictors/quia"
 );
 
 let headers = {

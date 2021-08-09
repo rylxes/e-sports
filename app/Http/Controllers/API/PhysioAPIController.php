@@ -129,7 +129,7 @@ class PhysioAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Physio $physio */
-        $physio = $this->physioRepository->find($id);
+        $physio = $this->physioRepository->find($id, ['media']);
 
         if (empty($physio)) {
             return $this->sendError('Physio not found');

@@ -129,7 +129,7 @@ class AcademyAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Academy $academy */
-        $academy = $this->academyRepository->find($id);
+        $academy = $this->academyRepository->find($id, ['media']);
 
         if (empty($academy)) {
             return $this->sendError('Academy not found');

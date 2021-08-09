@@ -91,7 +91,7 @@ curl -X POST \
     "http://localhost/api/psych_predictors" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":11,"hours_practice_in_week":6,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"consequatur","challenges":"et","greatest_motivation":"eligendi","strength":"non","weakness":"illum","can_overcome_challenges":false,"time_start_sport":"voluptatem","rating_sports":"impedit","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":9,"hours_practice_in_week":19,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"est","challenges":"ut","greatest_motivation":"quae","strength":"ullam","weakness":"aspernatur","can_overcome_challenges":false,"time_start_sport":"aut","rating_sports":"culpa","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -112,18 +112,18 @@ $response = $client->post(
             null,
             [],
             [
-                'time_practice_in_week' => 11,
-                'hours_practice_in_week' => 6,
+                'time_practice_in_week' => 9,
+                'hours_practice_in_week' => 19,
                 'is_parent_in_support' => false,
                 'is_team_player' => false,
-                'parent_in_support_reason' => 'consequatur',
-                'challenges' => 'et',
-                'greatest_motivation' => 'eligendi',
-                'strength' => 'non',
-                'weakness' => 'illum',
+                'parent_in_support_reason' => 'est',
+                'challenges' => 'ut',
+                'greatest_motivation' => 'quae',
+                'strength' => 'ullam',
+                'weakness' => 'aspernatur',
                 'can_overcome_challenges' => false,
-                'time_start_sport' => 'voluptatem',
-                'rating_sports' => 'impedit',
+                'time_start_sport' => 'aut',
+                'rating_sports' => 'culpa',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -146,18 +146,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 11,
-    "hours_practice_in_week": 6,
+    "time_practice_in_week": 9,
+    "hours_practice_in_week": 19,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "consequatur",
-    "challenges": "et",
-    "greatest_motivation": "eligendi",
-    "strength": "non",
-    "weakness": "illum",
+    "parent_in_support_reason": "est",
+    "challenges": "ut",
+    "greatest_motivation": "quae",
+    "strength": "ullam",
+    "weakness": "aspernatur",
     "can_overcome_challenges": false,
-    "time_start_sport": "voluptatem",
-    "rating_sports": "impedit",
+    "time_start_sport": "aut",
+    "rating_sports": "culpa",
     "created_at": {},
     "updated_at": {}
 }
@@ -276,7 +276,7 @@ GET|HEAD /psychPredictors/{id}
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/psych_predictors/aliquid" \
+    -G "http://localhost/api/psych_predictors/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -285,7 +285,7 @@ curl -X GET \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/psych_predictors/aliquid',
+    'http://localhost/api/psych_predictors/et',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -299,7 +299,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/aliquid"
+    "http://localhost/api/psych_predictors/et"
 );
 
 let headers = {
@@ -360,10 +360,10 @@ PUT/PATCH /psychPredictors/{id}
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/psych_predictors/accusamus" \
+    "http://localhost/api/psych_predictors/ullam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"time_practice_in_week":10,"hours_practice_in_week":11,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"dolores","challenges":"quas","greatest_motivation":"doloremque","strength":"expedita","weakness":"vitae","can_overcome_challenges":false,"time_start_sport":"magnam","rating_sports":"voluptate","created_at":{},"updated_at":{}}'
+    -d '{"time_practice_in_week":17,"hours_practice_in_week":5,"is_parent_in_support":false,"is_team_player":false,"parent_in_support_reason":"dolor","challenges":"officia","greatest_motivation":"dolorem","strength":"rerum","weakness":"repellendus","can_overcome_challenges":false,"time_start_sport":"a","rating_sports":"veniam","created_at":{},"updated_at":{}}'
 
 ```
 
@@ -371,7 +371,7 @@ curl -X PUT \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://localhost/api/psych_predictors/accusamus',
+    'http://localhost/api/psych_predictors/ullam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -384,18 +384,18 @@ $response = $client->put(
             null,
             [],
             [
-                'time_practice_in_week' => 10,
-                'hours_practice_in_week' => 11,
+                'time_practice_in_week' => 17,
+                'hours_practice_in_week' => 5,
                 'is_parent_in_support' => false,
                 'is_team_player' => false,
-                'parent_in_support_reason' => 'dolores',
-                'challenges' => 'quas',
-                'greatest_motivation' => 'doloremque',
-                'strength' => 'expedita',
-                'weakness' => 'vitae',
+                'parent_in_support_reason' => 'dolor',
+                'challenges' => 'officia',
+                'greatest_motivation' => 'dolorem',
+                'strength' => 'rerum',
+                'weakness' => 'repellendus',
                 'can_overcome_challenges' => false,
-                'time_start_sport' => 'magnam',
-                'rating_sports' => 'voluptate',
+                'time_start_sport' => 'a',
+                'rating_sports' => 'veniam',
                 'created_at' => $o[0],
                 'updated_at' => $o[0],
             ],
@@ -409,7 +409,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/accusamus"
+    "http://localhost/api/psych_predictors/ullam"
 );
 
 let headers = {
@@ -418,18 +418,18 @@ let headers = {
 };
 
 let body = {
-    "time_practice_in_week": 10,
-    "hours_practice_in_week": 11,
+    "time_practice_in_week": 17,
+    "hours_practice_in_week": 5,
     "is_parent_in_support": false,
     "is_team_player": false,
-    "parent_in_support_reason": "dolores",
-    "challenges": "quas",
-    "greatest_motivation": "doloremque",
-    "strength": "expedita",
-    "weakness": "vitae",
+    "parent_in_support_reason": "dolor",
+    "challenges": "officia",
+    "greatest_motivation": "dolorem",
+    "strength": "rerum",
+    "weakness": "repellendus",
     "can_overcome_challenges": false,
-    "time_start_sport": "magnam",
-    "rating_sports": "voluptate",
+    "time_start_sport": "a",
+    "rating_sports": "veniam",
     "created_at": {},
     "updated_at": {}
 }
@@ -558,7 +558,7 @@ DELETE /psychPredictors/{id}
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/psych_predictors/nemo" \
+    "http://localhost/api/psych_predictors/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -567,7 +567,7 @@ curl -X DELETE \
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://localhost/api/psych_predictors/nemo',
+    'http://localhost/api/psych_predictors/ut',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -581,7 +581,7 @@ print_r(json_decode((string) $body));
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/psych_predictors/nemo"
+    "http://localhost/api/psych_predictors/ut"
 );
 
 let headers = {

@@ -130,12 +130,11 @@ class TalentAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Talent $talent */
-        $talent = $this->talentRepository->find($id);
-
+        $talent = $this->talentRepository->find($id, ['media']);
+        // $talent = Talent::with('media')->find($id);
         if (empty($talent)) {
             return $this->sendError('Talent not found');
         }
-
         return $this->sendResponse($talent->toArray(), 'Talent retrieved successfully');
     }
 
